@@ -10,8 +10,10 @@ export default function Home() {
         <h2>Project Description</h2>
         <p>
           In the next few decades, we&rsquo;ll replace 1 billion household
-          machines for various functions. To help consumers choose and compare
-          these machines, take advantage of tax incentives, and assist
+          machines and appliances, and it's critical for the climate that we
+          replace them with clean electric versions instead of the fossil
+          fuel-based appliances of the past. To help consumers choose and
+          compare these machines, take advantage of tax incentives, and assist
           contractors in finding the right fit, we need a centralized platform.
         </p>
         <p>
@@ -54,19 +56,19 @@ export default function Home() {
                 borderRadius: "100px",
               }}
               src="/team-images/dan.jpeg"
-              alt="Dan Turzca"
+              alt="Dan Turcza"
             />
           </div>
           <div className={styles.profileContent}>
             <p className={styles.name}>
-              <strong>Dan Turzca</strong>
+              <strong>Dan Turcza</strong>
             </p>
             <p className={styles.title}>Backend Development</p>
             <p className={styles.description}>
               More description to come as the project develops!
             </p>
             {/* <p className={styles.description}>
-              Description of the role played by Dan Turzca. Lorem, ipsum dolor
+              Description of the role played by Dan Turcza. Lorem, ipsum dolor
               sit amet consectetur adipisicing elit. Id, libero? Expedita
               nesciunt excepturi quae dicta, officia aliquam esse iusto,
               blanditiis eligendi cumque repellat modi distinctio debitis!
