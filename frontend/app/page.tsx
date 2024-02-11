@@ -65,15 +65,17 @@ export default function Home() {
             </p>
             <p className={styles.title}>Backend Development</p>
             <p className={styles.description}>
-              More description to come as the project develops!
+              Along with Kevin, Dan will focus on the data discovery workstream,
+              which focuses on where appliance data sources are located. The
+              goal is to have a comprehensive understanding of all makes/models
+              of target appliances, validated by other aggregators in the space.
+              Along with Chris, Dan will also focus on the data processing
+              workstream, which is concerned with turning those data sources
+              into usable data that fits our schemas. This will involve
+              ingesting web resources and processing them to extract the data we
+              care about. Dan is also the team liaison with Rewiring America
+              since he has a preexisting relationship with them.
             </p>
-            {/* <p className={styles.description}>
-              Description of the role played by Dan Turcza. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Id, libero? Expedita
-              nesciunt excepturi quae dicta, officia aliquam esse iusto,
-              blanditiis eligendi cumque repellat modi distinctio debitis!
-              Fugiat molestias earum optio!
-            </p> */}
           </div>
         </div>
         <div className={styles.profileContainer}>
@@ -95,15 +97,17 @@ export default function Home() {
             </p>
             <p className={styles.title}>Backend Development</p>
             <p className={styles.description}>
-              More description to come as the project develops!
+              Along with Dan, Kevin will focus on the data discovery workstream,
+              which focuses on where appliance data sources are located. The
+              goal is to have a comprehensive understanding of all makes/models
+              of target appliances, validated by other aggregators in the space.
+              Along with Ricky, Kevin will work on frontend dev and the UX to
+              build a compelling and accessible web application that users can
+              use to explore the data that we've collected. A stretch goal for
+              this workstream is integration with other datasources such as
+              financial incentives in order to allow for more complex
+              applications.
             </p>
-            {/* <p className={styles.description}>
-              Description of the role played by Kevin Ferri. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Id, libero? Expedita
-              nesciunt excepturi quae dicta, officia aliquam esse iusto,
-              blanditiis eligendi cumque repellat modi distinctio debitis!
-              Fugiat molestias earum optio!
-            </p> */}
           </div>
         </div>
         <div className={styles.profileContainer}>
@@ -125,15 +129,13 @@ export default function Home() {
             </p>
             <p className={styles.title}>Front-End Development</p>
             <p className={styles.description}>
-              More description to come as the project develops!
+              Along with Kevin, Ricky will work on frontend dev and the UX to
+              build a compelling and accessible web application that users can
+              use to explore the data that we've collected. A stretch goal for
+              this workstream is integration with other datasources such as
+              financial incentives in order to allow for more complex
+              applications. Ricky is also the main author of this website.
             </p>
-            {/* <p className={styles.description}>
-              Description of the role played by Ricky Cheah. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Id, libero? Expedita
-              nesciunt excepturi quae dicta, officia aliquam esse iusto,
-              blanditiis eligendi cumque repellat modi distinctio debitis!
-              Fugiat molestias earum optio!
-            </p> */}
           </div>
         </div>
         <div className={styles.profileContainer}>
@@ -155,15 +157,14 @@ export default function Home() {
             </p>
             <p className={styles.title}>Backend Development</p>
             <p className={styles.description}>
-              More description to come as the project develops!
+              Along with Dan, Chris will focus on the data processing
+              workstream, which is concerned with turning those data sources
+              into usable data that fits our schemas. This will involve
+              ingesting web resources and processing them to extract the data we
+              care about. Chris will also be the primary database developer,
+              concerned with creating a viable database and serving API so that
+              clients can make use of the data that we've collected.
             </p>
-            {/* <p className={styles.description}>
-              Description of the role played by Chris Yang. Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Id, libero? Expedita
-              nesciunt excepturi quae dicta, officia aliquam esse iusto,
-              blanditiis eligendi cumque repellat modi distinctio debitis!
-              Fugiat molestias earum optio!
-            </p> */}
           </div>
         </div>
       </section>
