@@ -167,6 +167,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+        <h2>Lighthouse Scores</h2>
+        {/* <img alt="Lighthouse scores" src="/lighthouse.png"></img> */}
+        <div className={styles.lighthouse}>
+          <Image
+            style={{
+              width: "50%",
+              height: "auto",
+            }}
+            width={300}
+            height={1}
+            src="/lighthouse.png"
+            alt="Lighthouse scores"
+          />
+        </div>
+      </section>
     </main>
   );
 }
