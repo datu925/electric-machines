@@ -17,7 +17,7 @@
     color: black;
     display: inline-block;
     padding: 0.5rem;
-    font-size: 32px;
+    font-size: 24px;
     background-color: rgb(249, 214, 91);
     border: 5px solid #000;
     box-shadow: 5px 5px 0px grey;
@@ -36,13 +36,23 @@
   }
 
   section {
-    padding: 0.25rem 2rem 0.5rem; //top | right+left | bottom
+    padding: 0.25rem 2rem 1.5rem; //top | right+left | bottom
     margin-bottom: 4rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  a {
+    color: black;
+    text-decoration: none;
+
+    // Hover state
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
   /* default for larger screens */
   width: 970px; //
 
