@@ -178,17 +178,7 @@ export default function Home() {
             // width="476px"
             // height="288px"
             // frameborder="0"
-          >
-            This is an embedded{" "}
-            <a target="_blank" href="https://office.com">
-              Microsoft Office
-            </a>{" "}
-            presentation, powered by{" "}
-            <a target="_blank" href="https://office.com/webapps">
-              Office
-            </a>
-            .
-          </iframe>
+          ></iframe>
         </div>
         <br />
         <a
