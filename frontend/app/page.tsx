@@ -169,6 +169,17 @@ export default function Home() {
         </div>
       </section>
       <section>
+        <h2>P4 Presentation Slides</h2>
+        <br />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://gtvault-my.sharepoint.com/:p:/g/personal/dturcza3_gatech_edu/Ee9pvLgi0lVKvjsgmXPp2SQBXL6oFpBhD8kqMclmpE8kQA?e=h3ieay"
+        >
+          Click to view slides in a new tab.
+        </a>
+      </section>
+      <section>
         <h2>Lighthouse Scores</h2>
         {/* <img alt="Lighthouse scores" src="/lighthouse.png"></img> */}
         <div className={styles.lighthouse}>
