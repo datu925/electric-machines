@@ -171,6 +171,26 @@ export default function Home() {
       <section>
         <h2>P4 Presentation Slides</h2>
         <br />
+        <div className="">
+          <iframe
+            title="P4 Slides"
+            src="https://gtvault-my.sharepoint.com/personal/dturcza3_gatech_edu/_layouts/15/Doc.aspx?sourcedoc={b8bc69ef-d222-4a55-be3b-209973e9d924}&amp;action=embedview&amp;wdAr=1.7777777777777777"
+            // width="476px"
+            // height="288px"
+            // frameborder="0"
+          >
+            This is an embedded{" "}
+            <a target="_blank" href="https://office.com">
+              Microsoft Office
+            </a>{" "}
+            presentation, powered by{" "}
+            <a target="_blank" href="https://office.com/webapps">
+              Office
+            </a>
+            .
+          </iframe>
+        </div>
+        <br />
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -181,6 +201,7 @@ export default function Home() {
       </section>
       <section>
         <h2>Lighthouse Scores</h2>
+
         {/* <img alt="Lighthouse scores" src="/lighthouse.png"></img> */}
         <div className={styles.lighthouse}>
           <Image
