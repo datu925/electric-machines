@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 // import styles from "./page.module.css";
 import styles from "./page.module.scss";
+import ApplianceLookup from "./components/ApplianceLookup";
 
 export default function Home() {
   return (
@@ -181,7 +184,6 @@ export default function Home() {
       </section>
       <section>
         <h2>Lighthouse Scores</h2>
-        {/* <img alt="Lighthouse scores" src="/lighthouse.png"></img> */}
         <div className={styles.lighthouse}>
           <Image
             style={{
@@ -193,6 +195,12 @@ export default function Home() {
             src="/lighthouse.png"
             alt="Lighthouse scores"
           />
+        </div>
+      </section>
+      <section>
+        <h2>Appliance Lookup</h2>
+        <div>
+          <ApplianceLookup />
         </div>
       </section>
     </main>
