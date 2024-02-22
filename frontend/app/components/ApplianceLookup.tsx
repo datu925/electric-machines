@@ -5,12 +5,19 @@ import styles from "./ApplianceLookup.module.scss";
 
 const MachineLookup = () => {
   const [selectedAppliance, setSelectedAppliance] = useState("");
+  const [showResults, setShowResults] = useState(false);
 
+  //default values
   const [uef, setUef] = useState("1.95");
   const [fhr, setFhr] = useState("80");
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedAppliance(event.target.value);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setShowResults(true);
   };
 
   return (
@@ -27,7 +34,7 @@ const MachineLookup = () => {
       </select>
 
       {selectedAppliance === "HeatPumpWaterHeater" && (
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.radioGroup}>
             <label htmlFor="household-size">Household Size:</label>
             <div>
@@ -119,6 +126,7 @@ const MachineLookup = () => {
           </div>
         </form>
       )}
+      {showResults && <div>results</div>}
     </>
   );
 };
