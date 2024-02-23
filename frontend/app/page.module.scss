@@ -85,6 +85,24 @@
       width: 80px;
     }
   }
+
+  .disclaimer {
+    margin-bottom: 1rem;
+  }
+
+  .tasks {
+    .underline {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    color: blue;
+  }
 }
 
 .title {
