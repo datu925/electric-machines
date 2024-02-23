@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@ducanh2912/next-pwa": "^10.2.5",
+    "@types/react-table": "^7.7.19",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-table": "^7.8.0",
     "sharp": "^0.33.2"
   },
   "devDependencies": {

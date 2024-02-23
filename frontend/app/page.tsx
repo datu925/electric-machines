@@ -1,11 +1,68 @@
+"use client";
+
 import Image from "next/image";
 // import styles from "./page.module.css";
 import styles from "./page.module.scss";
+import ApplianceLookup from "./components/ApplianceLookup";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Energy Efficient Household Rewiring</h1>
+      <section>
+        <h2>Appliance Lookup</h2>
+        <div className={styles.disclaimer}>
+          <p>
+            This is a mockup for demonstration purposes only and does not
+            contain any real data. More input fields and output data will be
+            added in the future.
+          </p>
+          <div>
+            <p>
+              Please note the approximate time taken to complete each of the
+              tasks below.
+            </p>
+          </div>
+        </div>
+        <div className={styles.tasks}>
+          <p>
+            <span className={styles.underline}>Task 1</span>
+            <br />
+            1. Click the "Select Appliance" dropdown.
+            <br />
+            2. Select "Heat Pump Water Heater".
+          </p>
+        </div>
+        <div></div>
+        <div className={styles.tasks}>
+          <p>
+            <span className={styles.underline}>Task 2</span>
+            <br />
+            1. In the form, Select "3-4 people" for Household Size.
+            <br />
+            2. Enter a value of "2.5" for Uniform Energy Factor.
+            <br />
+            3. Enter a value of "50 gallons" for First Hour Rating.
+            <br />
+            4. Select the "Start Lookup" button.
+          </p>
+        </div>
+        <div>
+          <p>
+            After completing the tasks,{" "}
+            <span>
+              {" "}
+              <a className="anchor" href="https://forms.gle/buv6Hxdb3MkBgS9Y7">
+                click here to start the survey!
+              </a>
+            </span>
+          </p>
+        </div>
+        <hr />
+        <div>
+          <ApplianceLookup />
+        </div>
+      </section>
       <section>
         <h2>Project Description</h2>
         <p>
@@ -181,7 +238,6 @@ export default function Home() {
       </section>
       <section>
         <h2>Lighthouse Scores</h2>
-        {/* <img alt="Lighthouse scores" src="/lighthouse.png"></img> */}
         <div className={styles.lighthouse}>
           <Image
             style={{
