@@ -28,9 +28,7 @@ export default function Home() {
           <p>
             <span className={styles.underline}>Task 1</span>
             <br />
-            1. Click the "Select Appliance" dropdown.
-            <br />
-            2. Select "Heat Pump Water Heater".
+            Please choose 'Heat Pump Water Heater' as the appliance type.
           </p>
         </div>
         <div></div>
@@ -38,13 +36,9 @@ export default function Home() {
           <p>
             <span className={styles.underline}>Task 2</span>
             <br />
-            1. In the form, Select "3-4 people" for Household Size.
-            <br />
-            2. Enter a value of "2.5" for Uniform Energy Factor.
-            <br />
-            3. Enter a value of "50 gallons" for First Hour Rating.
-            <br />
-            4. Select the "Start Lookup" button.
+            Look up the data for a Heat Pump Water Heater for a household of 3-4
+            people with a Uniform Energy Factor of 2.5 and a 50-gallon First
+            Hour Rating.
           </p>
         </div>
         <div>
