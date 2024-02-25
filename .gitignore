@@ -137,3 +137,7 @@ sw.js.map
 swe-worker-*.js
 workbox-*.js
 workbox-*.js.map
+
+# Python
+
+__pycache__
