@@ -139,5 +139,16 @@ workbox-*.js
 workbox-*.js.map
 
 # Python
-
 __pycache__
+
+# Compiled JavaScript
+pipeline/build/
+
+# Tap
+.tap/
+
+# Output files
+data/**/*_llm.json
+data/**/merged.json
+data/**/dropped_files.json
+data/**/all_output.json
