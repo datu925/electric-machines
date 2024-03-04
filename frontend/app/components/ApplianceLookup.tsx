@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import styles from "./ApplianceLookup.module.scss";
 import TableContainer from "./TableContainer";
+import InfoSquare from "./InfoSquare";
 
 const MachineLookup = () => {
   const [selectedAppliance, setSelectedAppliance] = useState("");
@@ -105,7 +106,11 @@ const MachineLookup = () => {
       {selectedAppliance === "HeatPumpWaterHeater" && (
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.radioGroup}>
-            <label htmlFor="household-size">Household Size:</label>
+            <label className={styles.labelWithInfo} htmlFor="household-size">
+              <InfoSquare text="Reflects the number of people in your home, impacting hot water demand." />
+              <span>&nbsp;Household Size </span>
+            </label>
+
             <div>
               <div className={styles.radioOptions}>
                 <label htmlFor="size1-2">
@@ -155,8 +160,9 @@ const MachineLookup = () => {
             </div>
           </div>
           <div className={styles.sliderGroup}>
-            <label htmlFor="uef-slider">
-              Uniform Energy Factor (UEF): {uef}
+            <label className={styles.labelWithInfo} htmlFor="uef-slider">
+              <InfoSquare text="Measures overall energy efficiency, influencing long-term energy costs." />
+              &nbsp;Uniform Energy Factor (UEF): {uef}
             </label>
             <input
               type="range"
@@ -171,8 +177,9 @@ const MachineLookup = () => {
             />
           </div>
           <div className={styles.sliderGroup}>
-            <label htmlFor="fhr-slider">
-              First Hour Rating (FHR): {fhr} gallons
+            <label className={styles.labelWithInfo} htmlFor="fhr-slider">
+              <InfoSquare text="Estimates hot water supply in the first hour, crucial for peak demand." />
+              &nbsp;First Hour Rating (FHR): {fhr} gallons
             </label>
             <input
               type="range"

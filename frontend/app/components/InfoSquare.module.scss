@@ -1,0 +1,21 @@
+.tooltip {
+  position: absolute;
+  top: calc(100%);
+  background-color: white; // white opaque background
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+  white-space: normal; // wrapping
+  z-index: 1;
+  border: 1px solid gray; // gray border
+  font-size: 0.8rem;
+  //   height: auto;
+  width: 200px;
+  //   max-width: 250px;
+}
+
+.svgDiv {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
