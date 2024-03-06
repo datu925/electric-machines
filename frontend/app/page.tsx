@@ -220,6 +220,62 @@ export default function Home() {
         </div>
       </section>
       <section>
+        <h2>Team Weekly Updates</h2>
+        <div>
+          <p>
+            <strong>Dan</strong>
+            <br />
+            <u>Highlights:</u> Put up a PR introducing schema. <br />
+            <u>Challenges:</u> File structure for multi-stage pipeline. <br />
+            <u>Next Steps:</u> Actualize the file structure; expand to at least
+            one more manufacturer. <br />
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Kevin</strong>
+            <br />
+            <u>Highlights:</u> Created a scraper that connects to the NEEP
+            database API. Ran a shell exploration of the API file structure.{" "}
+            <br />
+            <u>Challenges:</u> Database API is different when scraped compared
+            to the loaded webpage. Have to run the scraper for 2135 pages.{" "}
+            <br />
+            <u>Next Steps:</u> Finish the scraper and look into sustainability
+            of the code. Look into a similar scraper for water heaters. <br />
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Ricky</strong>
+            <br />
+            <u>Highlights:</u> Added a PR for tooltips. Explored potential
+            libraries/frameworks for connecting frontend & backend.
+            <br />
+            <u>Challenges:</u> Trouble with refactoring front end code so that
+            each component is modular. <br />
+            <u>Next Steps:</u> Figuring out how to do that
+            refactoring/modularization efficiently and setup frontend to be
+            ready to consume API.
+            <br />
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Chris</strong>
+            <br />
+            <u>Highlights:</u> Looking into API libraries/frameworks. Fastify –
+            what RA uses for API. Looking into Express.js.
+            <br />
+            <u>Challenges:</u> Trying to find one that uses TypeScript and
+            adhering to what RA uses. <br />
+            <u>Next Steps:</u> Continue to work on API stuff. Dummy endpoint for
+            frontend to hit.
+            <br />
+          </p>
+        </div>
+      </section>
+      <section>
         <h2>P4 Presentation Slides</h2>
         <br />
         <a
