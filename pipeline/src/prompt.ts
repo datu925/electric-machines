@@ -1,3 +1,16 @@
+import { METADATA, FieldMetadata } from "./schemas";
+
+export function renderSchemaGuide(specs: {
+  [index: string]: FieldMetadata;
+}): string {
+  let output = "Schema: {\n";
+  for (const [key, metadata] of Object.entries(specs)) {
+    output += `  ${key}: ${metadata.description}\n`;
+  }
+  output += "}\n";
+  return output;
+}
+
 export const SYSTEM: string = `You are a helpful assistant.
 
 You will be given the output of a table that was read from a PDF and converted
@@ -15,23 +28,7 @@ If there are numeric row/column numbers in the table, you can ignore them.
 If the table is empty of any meaningful data, you can return an empty object for
 the data and mapping keys.
 
-Schema: {
-  model_number: string. Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.
-  tonnage: number. The nominal tonnage of the appliance.
-  shipping_weight_lbs: number. The weight of the appliance when shipped.
-  operating_weight_lbs: number. The weight of the equipment itself.
-  operating_size_length_inches: number. The operating length of the equipment in inches.
-  operating_size_width_inches: number. The operating width of the equipment in inches.
-  operating_size_height_inches: number. The operating height of the equipment in inches.
-  operating_size_length_mm: number. The operating length of the equipment in millimeters.
-  operating_size_width_mm: number. The operating width of the equipment in millimeters.
-  operating_size_height_mm: number. The operating height of the equipment in millimeters.
-  operating_size_length_mm: number. The operating length of the equipment in millimeters.
-  operating_size_width_mm: number. The operating width of the equipment in millimeters.
-  operating_size_height_mm: number. The operating height of the equipment in millimeters.
-  sound_level_db_min: number. The minimum sound level in decibels.
-  sound_level_db_max: number. The maximum sound level in decibels.
-}
+${renderSchemaGuide(METADATA)}
 `;
 
 export const EXAMPLE_1_INPUT: string = `{"0":{"0":"Physical Data","1":"Model No.#","2":"Nominal Tonnage","3":"Valve Connections","4":"Liquid Line O.D. \\u2013 in.","5":"Suction Line O.D. \\u2013 in.","6":"Refrigerant (R410A) furnished oz.\\u00b9","7":"Compressor Type","8":"Outdoor Coil","9":"Net face area \\u2013 Outer Coil","10":"Net face area \\u2013 Inner Coil","11":"Tube diameter \\u2013 in.","12":"Number of rows","13":"Fins per inch","14":"Outdoor Fan","15":"Diameter \\u2013 in.","16":"Number of blades","17":"Motor hp","18":"CFM","19":"RPM","20":"watts","21":"Shipping weight \\u2013 lbs.","22":"Operating  weight \\u2013 lbs."},
