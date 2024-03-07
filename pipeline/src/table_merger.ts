@@ -1,4 +1,5 @@
-import { Specs, IdentifierToSpecs } from "./schemas";
+import { Specs, IdentifierToSpecs, DATA_FIELDS } from "./schemas";
+import * as _ from "lodash";
 
 export function mergeTablesByModelNumber(tables: Specs[]): Specs[] {
   const output: IdentifierToSpecs = {};
@@ -13,4 +14,16 @@ export function mergeTablesByModelNumber(tables: Specs[]): Specs[] {
     }
   }
   return Object.values(output);
+}
+
+// Filter out anything that has no data from our schema at all.
+export function filterTables(tables: Specs[]): Specs[] {
+  return tables.filter((table) => {
+    const targetFields = _.pick(table, DATA_FIELDS);
+    const nonNull = Object.fromEntries(
+      Object.entries(targetFields).filter(([_, v]) => v != null)
+    );
+
+    return Object.keys(nonNull).length > 0;
+  });
 }

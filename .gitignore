@@ -149,6 +149,6 @@ pipeline/build/
 
 # Output files
 data/**/*_llm.json
+data/runs/*
+data/**/filtered.json
 data/**/merged.json
-data/**/dropped_files.json
-data/**/all_output.json

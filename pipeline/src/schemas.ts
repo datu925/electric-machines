@@ -1,3 +1,18 @@
+// TODO: move to JSON schema which will avoid some of this redundancy.
+export const DATA_FIELDS: string[] = [
+  "tonnage",
+  "shipping_weight_lbs",
+  "operating_weight_lbs",
+  "operating_size_length_inches",
+  "operating_size_width_inches",
+  "operating_size_height_inches",
+  "operating_size_length_mm",
+  "operating_size_width_mm",
+  "operating_size_height_mm",
+  "sound_level_db_min",
+  "sound_level_db_max ",
+];
+
 export type Specs = {
   model_number: string;
   tonnage?: number;
@@ -57,3 +72,4 @@ export const METADATA: SpecsMetadata = {
 };
 
 export type IdentifierToSpecs = { [index: string]: Specs };
+export type IdentifierToModels = { [index: string]: Specs[] };
