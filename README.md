@@ -34,7 +34,7 @@ We rely on the LLM to:
 2. figure out which empty cells should be filled with which text
 3. map original columns to our schema fields
 
-We then merge the parsed tables by model number, which assumes the LLM got that part right. We can revisit if this isn't often the case. We can eventually validate the schema with ajv to see what percentage of records were parsed correctly.
+This stage is still pretty un-typed and messy. We expect the LLM to throw pretty much anything at us. Since this is the part with the heaviest external dependency and financial cost, it is pretty tightly-scoped – we basically take the JSON, call the LLM, and write the results.
 
 Pre-work: I'd like to switch to Yarn eventually, but for some reason I was having trouble getting it to work, so for now, install `npm` and then do `npm install` from inside the `pipeline/` directory.
 
@@ -44,13 +44,26 @@ Input of this stage: previous stage output
 
 Usage: `npm run tsc && node build/src/parse_tables.js --wait 100 --folders <folders>`
 
-Unlike the Python stage, `<folders>` isn't smart enough to be recursive yet, so feed an actual folder like `heat-pumps/rheem/endeavor-line-prestige-rp18az`.
+The `<folders>` are walked recursively, so only pass in multiple if they don't overlap.
 
 Output of this stage:
 
-- parsed records for each model we detect. For each table, a `_llm.json` file is created next to each original `.json` file
-- global `all_outputs.json` and `dropped_files.json` files in the data directory. These should eventualy be put somewhere more logical.
-- For each `<any_identifier>` folder, a mapping from original column name in the tables to schema field name. These will be written to `merged.json` and `mappings.json` files in the directory above (under `<any_identifier>`, not `tables/`).
+- for each input table, a `.json` file from the LLM is created in the `llm/` directory. We hope that it has `data` and `mappings` keys, but nothing is guaranteed.
+- a `dropped_files.json` file in the `runs/` directory, noting which files could not be parsed by the LLM.
+
+### Merge and Filter
+
+We then merge the LLM tables by model number and filter the results to try to get rid of garbage models. The output of this stage is still schema-less, but is as clean as we're likely to get without starting to lose some of the data as we start to validate it.
+
+### Validate Collected Schema (not yet implemented)
+
+We will validate the data with a broader schema than the API schema. This schema has, for instance, multiple fields for different units (e.g. inches vs millimeters).
+
+### Validate API Schema (not yet implemented)
+
+Finally, we convert the collected data to servable API data and validate it again with ajv. This is our canonical schema and what we serve to customers.
+
+The conversion involves any derived fields or canonicalization, like converting inches to millimeters.
 
 ### Review (manual)
 

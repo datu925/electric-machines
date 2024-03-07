@@ -148,7 +148,8 @@ pipeline/build/
 .tap/
 
 # Output files
-data/**/*_llm.json
+data/**/llm/
+data/**/merged/
 data/runs/*
 data/**/filtered.json
 data/**/merged.json
