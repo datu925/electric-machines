@@ -3,8 +3,9 @@ import { program } from "commander";
 import fs = require("node:fs/promises");
 import path = require("node:path");
 
-import { Table, mergeTablesByModelNumber } from "./table_merger";
+import { Table, filterTables, mergeTablesByModelNumber } from "./table_merger";
 import { glob } from "glob";
+import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
 const INPUT_SUBDIR = "llm/";
@@ -27,6 +28,7 @@ async function main() {
     );
     for (const inputFolder of folders) {
       const applianceFolder = path.dirname(inputFolder);
+      const metadata = await retrieveMetadata(applianceFolder);
       const datalessFiles: string[] = [];
       let tables: Table[] = [];
       for (const file of await fs.readdir(inputFolder)) {
@@ -57,10 +59,16 @@ async function main() {
 
       const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
       await fs.mkdir(outputFolder, { recursive: true });
-      const merged = mergeTablesByModelNumber(tables);
+      const merged = mergeTablesByModelNumber(tables, metadata.brand);
       await fs.writeFile(
         path.join(outputFolder, "merged.json"),
         JSON.stringify(merged, null, 2) + "\n",
+        "utf-8"
+      );
+      const filtered = filterTables(merged);
+      await fs.writeFile(
+        path.join(outputFolder, "filtered.json"),
+        JSON.stringify(filtered, null, 2) + "\n",
         "utf-8"
       );
       await fs.writeFile(
