@@ -6,30 +6,49 @@ export type Table = {
 };
 export type IdentifierToTable = { [index: string]: Table };
 
-export function mergeTablesByModelNumber(tables: Table[]): Table[] {
+const BRANDS = {
+  rheem: "rheem",
+  unknown: "unknown",
+} as const;
+export type Brand = keyof typeof BRANDS;
+
+function canonicalModelNumber(modelNumber: string, brand: Brand): string {
+  if (brand === "rheem" && modelNumber.endsWith("A")) {
+    return modelNumber.slice(0, modelNumber.length - 1);
+  }
+  return modelNumber;
+}
+
+export function mergeTablesByModelNumber(
+  tables: Table[],
+  brand: Brand = "unknown"
+): Table[] {
   const output: IdentifierToTable = {};
   for (const table of tables) {
     if (table.model_number) {
-      if (output[table.model_number] === undefined) {
-        output[table.model_number] = { model_number: table.model_number };
+      const canonical = canonicalModelNumber(String(table.model_number), brand);
+      if (output[canonical] === undefined) {
+        output[canonical] = { model_number: canonical };
       }
-      // TODO: add better auditing of merging behavior so we know how often
-      // keys are overwritten.
-      output[table.model_number] = { ...output[table.model_number], ...table };
+      // TODO: add better auditing of merging behavior.
+      // Current behavior is first key wins.
+      output[canonical] = { ...table, ...output[canonical] };
     }
   }
   return Object.values(output);
 }
 
+function isValid(table: Table): boolean {
+  // For now, our simple test is that a valid model number can't
+  // have spaces. We'll evolve this over time.
+  if (!table["model_number"]) return false;
+  if ((table["model_number"] as String).includes(" ")) return false;
+
+  // We expect at least the model_number; if nothing else, drop.
+  return Object.keys(table).length > 1;
+}
+
 // Filter out anything that has no data from our schema at all.
 export function filterTables(tables: Table[]): Table[] {
-  return tables.filter((table) => {
-    const targetFields = _.pick(table, Object.keys(METADATA));
-    const nonNull = Object.fromEntries(
-      Object.entries(targetFields).filter(([_, v]) => v != null)
-    );
-
-    // We expect at least the model_number; if nothing else, drop.
-    return Object.keys(nonNull).length > 1;
-  });
+  return tables.filter((table) => isValid(table));
 }
