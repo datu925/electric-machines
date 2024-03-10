@@ -1,3 +1,5 @@
+// TODO: move to JSON schema which is a better approach.
+
 export type Specs = {
   model_number: string;
   tonnage?: number;
@@ -55,5 +57,3 @@ export const METADATA: SpecsMetadata = {
     description: "The maximum sound level in decibels.",
   },
 };
-
-export type IdentifierToSpecs = { [index: string]: Specs };

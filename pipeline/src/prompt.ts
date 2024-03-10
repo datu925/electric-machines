@@ -43,25 +43,25 @@ export const EXAMPLE_1_OUTPUT: string = `{
       "model_number": "RP1418",
       "tonnage": 1.5,
       "shipping_weight_lbs": 159,
-      "operating_weight_lbs": 152,
+      "operating_weight_lbs": 152
     },
     {
       "model_number": "RP1424",
       "tonnage": 2.0,
       "shipping_weight_lbs": 152,
-      "operating_weight_lbs": 145,
+      "operating_weight_lbs": 145
     },
     {
       "model_number": "RP1430",
       "tonnage": 2.5,
       "shipping_weight_lbs": 208,
-      "operating_weight_lbs": 201,
+      "operating_weight_lbs": 201
     }
   ],
   "mapping": {
     "Model No.#": "model_number",
     "Nominal Tonnage": "tonnage",
     "Shipping weight \\u2013 lbs.": "shipping_weight_lbs",
-    "Operating weight \\u2013 lbs.": "operating_weight_lbs",
+    "Operating weight \\u2013 lbs.": "operating_weight_lbs"
   }
 }`;

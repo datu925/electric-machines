@@ -1,9 +1,12 @@
 import { t } from "tap";
-import { Specs } from "../src/schemas";
-import { mergeTablesByModelNumber } from "../src/table_merger";
+import {
+  Table,
+  filterTables,
+  mergeTablesByModelNumber,
+} from "../src/table_merger";
 
 t.test("merge simple json files, overwriting", (t) => {
-  const specs: Specs[] = [
+  const specs: Table[] = [
     {
       model_number: "foo",
       tonnage: 3,
@@ -26,7 +29,7 @@ t.test("merge simple json files, overwriting", (t) => {
     },
   ];
   const merged = mergeTablesByModelNumber(specs);
-  const expected: Specs[] = [
+  const expected: Table[] = [
     {
       model_number: "foo",
       tonnage: 3,
@@ -40,5 +43,16 @@ t.test("merge simple json files, overwriting", (t) => {
     },
   ];
   t.matchOnlyStrict(merged, expected);
+  t.end();
+});
+
+t.test("filter tables with only nulls in our schema", (t) => {
+  const table: Table[] = [
+    {
+      model_number: "foo",
+      tonnage: null,
+    },
+  ];
+  t.equal(filterTables(table).length, 0);
   t.end();
 });

@@ -1,4 +1,4 @@
-import { program, Option, OptionValues } from "commander";
+import { program } from "commander";
 
 import fs = require("node:fs/promises");
 import path = require("node:path");
@@ -6,11 +6,12 @@ import path = require("node:path");
 import { SYSTEM, EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT } from "./prompt";
 
 import { GptWrapper } from "./gpt_wrapper";
-import { Specs, IdentifierToSpecs } from "./schemas";
-import { mergeTablesByModelNumber } from "./table_merger";
+import { glob } from "glob";
 
 const SPECS_FILE_BASE = "../data/";
-const TABLES_SUBDIR = "tables/";
+const INPUT_SUBDIR = "tables/";
+const OUTPUT_SUBDIR = "llm/";
+const RUNS = "runs/";
 const MODEL_FAMILY = "gpt"; // eventually support more options
 
 program
@@ -39,94 +40,70 @@ async function main() {
   const opts = program.opts();
 
   const allPromises: Promise<void>[] = [];
-  const output: IdentifierToSpecs = {};
-
   const droppedFiles: string[] = [];
-  for (const folder of opts.folders) {
-    const folderPromises: Promise<void>[] = [];
-    let folderSpecs: Specs[] = [];
-    const files = await fs.readdir(
-      path.join(SPECS_FILE_BASE, folder, TABLES_SUBDIR)
+  for (const topFolder of opts.folders) {
+    const folders = await glob(
+      path.join(SPECS_FILE_BASE, topFolder, "**", INPUT_SUBDIR),
+      { ignore: path.join(SPECS_FILE_BASE, RUNS) }
     );
-    for (const file of files) {
-      const jsonFilePath = path.join(
-        SPECS_FILE_BASE,
-        folder,
-        TABLES_SUBDIR,
-        file
-      );
-      if (!file.endsWith(".json") || file.endsWith("_llm.json")) continue;
-      const json = JSON.parse(
-        await fs.readFile(jsonFilePath, {
-          encoding: "utf8",
-        })
-      );
+    for (const inputFolder of folders) {
+      const applianceFolder = path.dirname(inputFolder);
+      const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
+      await fs.mkdir(outputFolder, { recursive: true });
+      const folderPromises: Promise<void>[] = [];
+      for (const file of await fs.readdir(inputFolder)) {
+        const tableFilePath = path.join(inputFolder, file);
+        if (!file.endsWith(".json")) continue;
+        const table = JSON.parse(
+          await fs.readFile(tableFilePath, {
+            encoding: "utf8",
+          })
+        );
 
-      if (json.length == 0 || isEmptyTable(json)) {
-        console.log(`Skipping ${jsonFilePath} because it is empty`);
-        continue;
-      }
-
-      if (opts.wait) {
-        await new Promise((f) => setTimeout(f, +opts.wait));
-      }
-
-      console.log(`Querying ${MODEL_FAMILY} with ${jsonFilePath}`);
-      const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
-      const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
-      const promise = queryFunc(JSON.stringify(json), SYSTEM, [
-        [EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT],
-      ]).then(async (msg: string) => {
-        if (msg == "") return;
-        console.log(`Got response from ${jsonFilePath}`);
-        try {
-          // TODO: validate LLM output once we have a schema.
-          let response = JSON.parse(msg);
-          // if (!(Symbol.iterator in Object(records))) {
-          //   records = [records];
-          // }
-
-          output[jsonFilePath] = response;
-          if ("data" in response) {
-            const data = response["data"];
-            folderSpecs = folderSpecs.concat(
-              Array.isArray(data) ? data : [data]
-            );
-          }
-          await fs.writeFile(
-            jsonFilePath.replace(".json", "_llm.json"),
-            JSON.stringify(response, null, 2),
-            {
-              encoding: "utf-8",
-              flag: "w",
-            }
-          );
-        } catch (error) {
-          console.error(`Error parsing json: ${error}, ${msg}`);
-          droppedFiles.push(jsonFilePath);
+        if (table.length == 0 || isEmptyTable(table)) {
+          console.log(`Skipping ${tableFilePath} because it is empty`);
+          continue;
         }
-      });
-      allPromises.push(promise);
-      folderPromises.push(promise);
-    }
-    Promise.allSettled(folderPromises).then(async () => {
-      console.log(folderSpecs);
-      const merged = mergeTablesByModelNumber(folderSpecs);
-      await fs.writeFile(
-        path.join(SPECS_FILE_BASE, folder, "merged.json"),
-        JSON.stringify(merged)
-      );
-    });
-  }
 
+        if (opts.wait) {
+          await new Promise((f) => setTimeout(f, +opts.wait));
+        }
+
+        console.log(`Querying ${MODEL_FAMILY} with ${tableFilePath}`);
+        const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
+        const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
+        const promise = queryFunc(JSON.stringify(table), SYSTEM, [
+          [EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT],
+        ]).then(async (msg: string) => {
+          if (msg == "") return;
+          console.log(`Got response from ${tableFilePath}`);
+          try {
+            let response = JSON.parse(msg);
+            await fs.writeFile(
+              path.join(outputFolder, file),
+              JSON.stringify(response, null, 2),
+              {
+                encoding: "utf-8",
+                flag: "w",
+              }
+            );
+          } catch (error) {
+            console.error(`Error parsing json: ${error}, ${msg}`);
+            droppedFiles.push(tableFilePath);
+          }
+        });
+        allPromises.push(promise);
+        folderPromises.push(promise);
+      }
+    }
+  }
   await Promise.allSettled(allPromises).then(async () => {
-    await fs.writeFile(
-      path.join(SPECS_FILE_BASE, "all_output.json"),
-      JSON.stringify(output)
-    );
+    const ts = Date.now();
+    const summaryDir = path.join(SPECS_FILE_BASE, RUNS, ts.toString());
+    await fs.mkdir(summaryDir, { recursive: true });
     if (droppedFiles.length > 0) {
       await fs.writeFile(
-        path.join(SPECS_FILE_BASE, "dropped_files.json"),
+        path.join(summaryDir, "dropped_files.json"),
         JSON.stringify(droppedFiles)
       );
     }
