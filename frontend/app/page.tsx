@@ -46,8 +46,8 @@ export default function Home() {
             After completing the tasks,{" "}
             <span>
               {" "}
-              <a className="anchor" href="https://forms.gle/buv6Hxdb3MkBgS9Y7">
-                click here to start the survey!
+              <a className="anchor" href="https://forms.gle/6cLn5GxrMtPPx7qv8">
+                click here to start the Project Peer Evaluations survey!
               </a>
             </span>
           </p>
