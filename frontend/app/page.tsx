@@ -14,8 +14,7 @@ export default function Home() {
         <div className={styles.disclaimer}>
           <p>
             This is a mockup for demonstration purposes only and does not
-            contain any real data. More input fields and output data will be
-            added in the future.
+            contain any real data.
           </p>
           <div>
             <p>
@@ -28,7 +27,8 @@ export default function Home() {
           <p>
             <span className={styles.underline}>Task 1</span>
             <br />
-            Please choose 'Heat Pump Water Heater' as the appliance type.
+            Look up the data for a Heat Pump Dryer with a high noise level, a
+            Combined Energy Factor of 5 and a capacity of 7 cu-ft.
           </p>
         </div>
         <div></div>
@@ -46,8 +46,8 @@ export default function Home() {
             After completing the tasks,{" "}
             <span>
               {" "}
-              <a className="anchor" href="https://forms.gle/buv6Hxdb3MkBgS9Y7">
-                click here to start the survey!
+              <a className="anchor" href="https://forms.gle/6cLn5GxrMtPPx7qv8">
+                click here to start the Project Peer Evaluations survey!
               </a>
             </span>
           </p>
