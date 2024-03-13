@@ -225,38 +225,43 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Put up a PR introducing schema. <br />
-            <u>Challenges:</u> File structure for multi-stage pipeline. <br />
-            <u>Next Steps:</u> Actualize the file structure; expand to at least
-            one more manufacturer. <br />
+            <u>Highlights:</u> Split pipeline into more stages, improved merging
+            and filtering. Introduced metadata and “canonical” model numbers.
+            <br />
+            <u>Challenges:</u> It would be easier if we knew in advance which
+            models we expect to find in each PDF, and it will not take them much
+            extra time to collect this in metadata.
+            <br />
+            <u>Next Steps:</u> Get data fully validated with schema as last step
+            of pipeline and committed to a data store. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Created a scraper that connects to the NEEP
-            database API. Ran a shell exploration of the API file structure.{" "}
+            <u>Highlights:</u> Full deep database scraper working. Up on GitHub
+            on neep_scraper branch. All data off API. Number of pages changes
+            day to day, so I have it just run until it gets a 404.
             <br />
-            <u>Challenges:</u> Database API is different when scraped compared
-            to the loaded webpage. Have to run the scraper for 2135 pages.{" "}
-            <br />
-            <u>Next Steps:</u> Finish the scraper and look into sustainability
-            of the code. Look into a similar scraper for water heaters. <br />
+            <u>Challenges:</u> It is a ton of info. Maybe concurrent scraping?
+            Verifying validating the data as several brands are the same. <br />
+            <u>Next Steps:</u> Coalescing brand. Look at energy star database
+            for heat pump water heaters? <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Added a PR for tooltips. Explored potential
-            libraries/frameworks for connecting frontend & backend.
+            <u>Highlights:</u> Got website ready for Peer Evaluations. Added
+            second appliance and created survey. Refactored out different
+            appliances into their own files.
             <br />
-            <u>Challenges:</u> Trouble with refactoring front end code so that
-            each component is modular. <br />
-            <u>Next Steps:</u> Figuring out how to do that
-            refactoring/modularization efficiently and setup frontend to be
-            ready to consume API.
+            <u>Challenges:</u> Need a working API to start linking with the
+            frontend soon. <br />
+            <u>Next Steps:</u> Implement interactive Javascript tables to
+            replace current one .
             <br />
           </p>
         </div>
@@ -264,13 +269,12 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Looking into API libraries/frameworks. Fastify –
-            what RA uses for API. Looking into Express.js.
+            <u>Highlights:</u> Looking into dummy API. Working on Fastify for
+            now.
             <br />
-            <u>Challenges:</u> Trying to find one that uses TypeScript and
-            adhering to what RA uses. <br />
-            <u>Next Steps:</u> Continue to work on API stuff. Dummy endpoint for
-            frontend to hit.
+            <u>Challenges:</u> Exam in GA.
+            <br />
+            <u>Next Steps:</u> Get something up and running.
             <br />
           </p>
         </div>
