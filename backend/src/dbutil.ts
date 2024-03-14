@@ -20,10 +20,6 @@ const dummyWaterHeater : dt.HeatPump = {
     taxRebate: false,
 };
 
-export function findHeatPump() {    
-    return {  dummyWaterHeater };
-}
-
 export function findWaterHeater() {
-    return { dummyWaterHeater };
+    return [dummyWaterHeater, dummyWaterHeater];
 }

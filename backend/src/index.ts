@@ -3,20 +3,12 @@ import * as db from "./dbutil";
 
 const server = fastify()
 
-server.get('/waterheater', function (request, reply) {
+server.get('/api/appliance', function (request, reply) {
   reply
     .code(200)
     .header('Content-Type', 'application/json; charset=utf-8')
     .send(db.findWaterHeater())
 })
-
-server.get('/heatpump', function (request, reply) {
-  reply
-    .code(200)
-    .header('Content-Type', 'application/json; charset=utf-8')
-    .send(db.findHeatPump())
-})
-
 
 server.listen({ port: 8080 }, (err, address) => {
   if (err) {
