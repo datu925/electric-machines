@@ -1,0 +1,64 @@
+{
+    "title": "Heat Pump",
+    "type": "object",
+    "properties": {
+      "brandName": {
+        "type": "string"
+      },
+      "modelNumber": {
+        "type": "string"
+      },
+      "modelType": {
+        "type": "string"
+      },
+      "weightInKg": {
+        "type": "number"
+      },
+      "widthInCm": {
+        "type": "number"
+      },
+      "heighInCm": {
+        "type": "number"
+      },
+      "DepthInCm": {
+        "type": "number"
+      },
+      "TankCapacity": {
+        "type": "number"
+      },
+      "indoorOutDoor": {
+        "enum": ["indoor", "outdoor"],
+        "type": "string"
+      },
+      "amperage": {
+        "type": "number"
+      },
+      "voltage": {
+        "type": "number"
+      },
+      "powerConsumption": {
+        "type": "number"
+      },
+      "electricalPhase": {
+        "enum": [1, 3],
+        "type": "number"
+      },
+      "circuitRequired": {
+        "type": "boolean"
+      },
+      "circuitCapacity": {
+        "type": "number"
+      },
+      "performanceRating": {
+        "type": "string"
+      },
+      "soundLevel": {
+        "type": "number"
+      },
+      "taxRebate": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["brandName", "modelName", "modelNumber", "modelType", "weightInKg", "widthInCm", "heighInCm", "DepthInCm", "TankCapacity", "indoorOutDoor", "amperage", "voltage", "powerConsumption", "electricalPhase", "minGasInputRate", "maxGasInputRate", "circuitRequired", "circuitCapacity", "performanceRating"]
+  }
