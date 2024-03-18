@@ -55,15 +55,9 @@ Output of this stage:
 
 We then merge the LLM tables by model number and filter the results to try to get rid of garbage models. The output of this stage is still schema-less, but is as clean as we're likely to get without starting to lose some of the data as we start to validate it.
 
-### Validate Collected Schema (not yet implemented)
+### Validate Against Schema (partially implemented)
 
-We will validate the data with a broader schema than the API schema. This schema has, for instance, multiple fields for different units (e.g. inches vs millimeters).
-
-### Validate API Schema (not yet implemented)
-
-Finally, we convert the collected data to servable API data and validate it again with ajv. This is our canonical schema and what we serve to customers.
-
-The conversion involves any derived fields or canonicalization, like converting inches to millimeters.
+We will validate the data against a schema using ajv. For now, we simply validate against the final serving API schema. Eventually, we may first validate against a broader schema than the API schema that would have, for instance, multiple fields for different units (e.g. inches vs millimeters), and then transform that collected data into the served version. The latter is our canonical schema and what we serve to customers.
 
 ### Review (manual)
 
