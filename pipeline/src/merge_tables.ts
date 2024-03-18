@@ -59,7 +59,7 @@ async function main() {
 
       const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
       await fs.mkdir(outputFolder, { recursive: true });
-      const merged = mergeTablesByModelNumber(tables, metadata.brand);
+      const merged = mergeTablesByModelNumber(tables, metadata.brandName);
       await fs.writeFile(
         path.join(outputFolder, "merged.json"),
         JSON.stringify(merged, null, 2) + "\n",

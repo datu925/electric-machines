@@ -3,7 +3,7 @@ import fs = require("node:fs/promises");
 import { Brand } from "./table_merger";
 
 export type Metadata = {
-  brand?: Brand;
+  brandName?: Brand;
 };
 
 export async function retrieveMetadata(directory: string): Promise<Metadata> {
