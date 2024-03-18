@@ -150,6 +150,7 @@ pipeline/build/
 # Output files
 data/**/llm/
 data/**/merged/
+data/**/validated/
 data/runs/*
 data/**/filtered.json
 data/**/merged.json
