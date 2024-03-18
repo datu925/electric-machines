@@ -1,10 +1,11 @@
 import Ajv, { JSONSchemaType } from "ajv";
 import { program } from "commander";
+import * as _ from "lodash";
 
 import fs = require("node:fs/promises");
 import path = require("node:path");
 
-import { Table, filterTables, mergeTablesByModelNumber } from "./table_merger";
+import { Table } from "./table_merger";
 import { HeatPump } from "../../backend/src/domain/heatpump";
 import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
@@ -14,6 +15,7 @@ const INPUT_SUBDIR = "merged/";
 const OUTPUT_SUBDIR = "validated/";
 const RUNS = "runs/";
 
+const metadataKeysToCopy = ["brandName"];
 const APPLIANCE_SCHEMA = "../backend/schema/heatpump.json";
 
 program.requiredOption(
@@ -58,15 +60,19 @@ async function main() {
           continue;
         }
 
+        const metadata = await retrieveMetadata(applianceFolder);
+        const metadataToCopy = _.pick(metadata, metadataKeysToCopy);
+
         const specs = Array.isArray(filtered) ? filtered : [filtered];
         for (const spec of specs) {
-          if (validate(spec)) {
-            valid.push(spec);
+          const augmentedSpec = { ...spec, ...metadataToCopy };
+          if (validate(augmentedSpec)) {
+            valid.push(augmentedSpec);
           } else {
             if (validate.errors !== undefined && validate.errors !== null) {
-              spec.errors = validate.errors;
+              augmentedSpec.errors = validate.errors;
             }
-            invalid.push(spec);
+            invalid.push(augmentedSpec);
           }
         }
         const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
