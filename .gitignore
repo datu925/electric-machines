@@ -154,3 +154,9 @@ data/**/validated/
 data/runs/*
 data/**/filtered.json
 data/**/merged.json
+
+# Vercel
+.vercel
+
+# Turborepo
+.turbo
