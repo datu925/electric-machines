@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel": "vercel dev"
   },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "@vercel/node": "^1.11.1"
   },
   "dependencies": {
     "fastify": "^4.26.2",
+    "dotenv": "^10.0.0",
     "json-schema-to-typescript": "^13.1.2"
   }
 }
