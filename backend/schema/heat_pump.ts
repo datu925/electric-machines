@@ -20,6 +20,7 @@ export const HEAT_PUMP_SCHEMA = {
     ...coreProperties,
     ...heatPumpProperties,
   },
+  additionalProperties: false,
   required: [...requiredMetadata, ...requiredCore, ...requiredHeatPump],
 } as const;
 

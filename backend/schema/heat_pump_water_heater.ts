@@ -22,6 +22,7 @@ export const HEAT_PUMP_WATER_HEATER_SCHEMA = {
     ...requiredCore,
     ...requiredHeatPumpWaterHeater,
   ],
+  additionalProperties: false,
 } as const;
 
 export type HeatPumpWaterHeater = FromSchema<
