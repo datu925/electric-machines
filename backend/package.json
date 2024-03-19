@@ -11,11 +11,11 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.4.2",
-    "@vercel/node": "^1.11.1"
+    "@vercel/node": "^1.11.1",
+    "json-schema-to-ts": "^3.0.1"
   },
   "dependencies": {
     "fastify": "^4.26.2",
-    "dotenv": "^10.0.0",
-    "json-schema-to-typescript": "^13.1.2"
+    "dotenv": "^10.0.0"
   }
 }

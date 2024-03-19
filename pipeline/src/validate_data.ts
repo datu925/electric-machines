@@ -1,4 +1,4 @@
-import Ajv, { JSONSchemaType } from "ajv";
+import Ajv, { ValidateFunction } from "ajv";
 import { program } from "commander";
 import * as _ from "lodash";
 
@@ -6,17 +6,17 @@ import fs = require("node:fs/promises");
 import path = require("node:path");
 
 import { Table } from "./table_merger";
-import { HeatPump } from "../../backend/src/domain/heatpump";
+import { Appliance } from "../../backend/schema/appliance";
+import { HEAT_PUMP_SCHEMA } from "../../backend/schema/heat_pump";
 import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
+import { MODEL_TYPES, requiredMetadata } from "../../backend/schema/metadata";
+import { HEAT_PUMP_WATER_HEATER_SCHEMA } from "../../backend/schema/heat_pump_water_heater";
 
 const SPECS_FILE_BASE = "../data/";
 const INPUT_SUBDIR = "merged/";
 const OUTPUT_SUBDIR = "validated/";
 const RUNS = "runs/";
-
-const metadataKeysToCopy = ["brandName"];
-const APPLIANCE_SCHEMA = "../backend/schema/heatpump.json";
 
 program.requiredOption(
   "-f, --folders <folders...>",
@@ -25,18 +25,21 @@ program.requiredOption(
 
 program.parse();
 
-async function createValidator() {
-  const applianceSchema: JSONSchemaType<HeatPump> = JSON.parse(
-    await fs.readFile(APPLIANCE_SCHEMA, "utf8")
-  );
+async function initializeValidators() {
+  const validators: { [index: string]: ValidateFunction<Appliance> } = {};
   const ajv = new Ajv({ allErrors: true });
-  const validate = ajv.compile(applianceSchema);
-  return validate;
+
+  validators[MODEL_TYPES.heat_pump] = ajv.compile(HEAT_PUMP_SCHEMA);
+  validators[MODEL_TYPES.heat_pump_water_heater] = ajv.compile(
+    HEAT_PUMP_WATER_HEATER_SCHEMA
+  );
+
+  return validators;
 }
 
 async function main() {
   const opts = program.opts();
-  const validate = await createValidator();
+  const validators = await initializeValidators();
   for (const topFolder of opts.folders) {
     const folders = await glob(
       path.join(SPECS_FILE_BASE, topFolder, "**", INPUT_SUBDIR),
@@ -44,7 +47,7 @@ async function main() {
     );
     for (const inputFolder of folders) {
       const applianceFolder = path.dirname(inputFolder);
-      const valid: HeatPump[] = [];
+      const valid: Appliance[] = [];
       const invalid: Table[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const filteredPath = path.join(inputFolder, file);
@@ -61,11 +64,12 @@ async function main() {
         }
 
         const metadata = await retrieveMetadata(applianceFolder);
-        const metadataToCopy = _.pick(metadata, metadataKeysToCopy);
+        const metadataToCopy = _.pick(metadata, requiredMetadata);
 
         const specs = Array.isArray(filtered) ? filtered : [filtered];
         for (const spec of specs) {
           const augmentedSpec = { ...spec, ...metadataToCopy };
+          const validate = validators[metadataToCopy.modelType!];
           if (validate(augmentedSpec)) {
             valid.push(augmentedSpec);
           } else {

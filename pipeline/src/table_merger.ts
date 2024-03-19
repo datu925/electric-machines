@@ -1,16 +1,10 @@
-import { METADATA } from "./schemas";
+import { Brand } from "../../backend/schema/metadata";
 import * as _ from "lodash";
 
 export type Table = {
   [index: string]: string | number | null;
 };
 export type IdentifierToTable = { [index: string]: Table };
-
-const BRANDS = {
-  rheem: "rheem",
-  unknown: "unknown",
-} as const;
-export type Brand = keyof typeof BRANDS;
 
 function canonicalModelNumber(modelNumber: string, brand: Brand): string {
   if (brand === "rheem" && modelNumber.endsWith("A")) {
@@ -25,10 +19,10 @@ export function mergeTablesByModelNumber(
 ): Table[] {
   const output: IdentifierToTable = {};
   for (const table of tables) {
-    if (table.model_number) {
-      const canonical = canonicalModelNumber(String(table.model_number), brand);
+    if (table.modelNumber) {
+      const canonical = canonicalModelNumber(String(table.modelNumber), brand);
       if (output[canonical] === undefined) {
-        output[canonical] = { model_number: canonical };
+        output[canonical] = { modelNumber: canonical };
       }
       // TODO: add better auditing of merging behavior.
       // Current behavior is first key wins.
@@ -41,10 +35,10 @@ export function mergeTablesByModelNumber(
 function isValid(table: Table): boolean {
   // For now, our simple test is that a valid model number can't
   // have spaces. We'll evolve this over time.
-  if (!table["model_number"]) return false;
-  if ((table["model_number"] as String).includes(" ")) return false;
+  if (!table["modelNumber"]) return false;
+  if ((table["modelNumber"] as String).includes(" ")) return false;
 
-  // We expect at least the model_number; if nothing else, drop.
+  // We expect at least the modelNumber; if nothing else, drop.
   return Object.keys(table).length > 1;
 }
 

@@ -1,9 +1,10 @@
 import path = require("node:path");
 import fs = require("node:fs/promises");
-import { Brand } from "./table_merger";
+import { Brand } from "../../backend/schema/metadata";
 
 export type Metadata = {
   brandName?: Brand;
+  modelType?: string;
 };
 
 export async function retrieveMetadata(directory: string): Promise<Metadata> {
