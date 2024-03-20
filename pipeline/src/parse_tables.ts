@@ -3,10 +3,22 @@ import { program } from "commander";
 import fs = require("node:fs/promises");
 import path = require("node:path");
 
-import { SYSTEM, EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT } from "./prompt";
+import {
+  renderSystemPrompt,
+  EXAMPLE_1_INPUT,
+  EXAMPLE_1_OUTPUT,
+} from "./prompt";
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
+import { MODEL_TYPES, ModelType } from "../../backend/schema/metadata";
+import {
+  HEAT_PUMP_METADATA,
+  HEAT_PUMP_WATER_HEATER_METADATA,
+  SpecsMetadata,
+} from "./schemas";
+import { ModelGeneratedAppliance } from "../../backend/schema/appliance";
+import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
 const INPUT_SUBDIR = "tables/";
@@ -69,12 +81,31 @@ async function main() {
           await new Promise((f) => setTimeout(f, +opts.wait));
         }
 
+        const metadata = await retrieveMetadata(applianceFolder);
+        if (!("modelType" in metadata)) {
+          throw new Error("modelType not set in metadata");
+        }
+        const modelType = metadata.modelType;
+
+        let modelMetadata: SpecsMetadata<ModelGeneratedAppliance>;
+        if (modelType === MODEL_TYPES.heat_pump) {
+          modelMetadata = HEAT_PUMP_METADATA;
+        } else if (modelType === MODEL_TYPES.heat_pump_water_heater) {
+          modelMetadata = HEAT_PUMP_WATER_HEATER_METADATA;
+        } else {
+          throw new Error(
+            "No model metadata configured for this appliance type"
+          );
+        }
+
         console.log(`Querying ${MODEL_FAMILY} with ${tableFilePath}`);
         const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
         const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
-        const promise = queryFunc(JSON.stringify(table), SYSTEM, [
-          [EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT],
-        ]).then(async (msg: string) => {
+        const promise = queryFunc(
+          JSON.stringify(table),
+          renderSystemPrompt(modelMetadata),
+          [[EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT]]
+        ).then(async (msg: string) => {
           if (msg == "") return;
           console.log(`Got response from ${tableFilePath}`);
           try {

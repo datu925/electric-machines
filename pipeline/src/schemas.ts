@@ -1,59 +1,75 @@
-// TODO: move to JSON schema which is a better approach.
-
-export type Specs = {
-  model_number: string;
-  tonnage?: number;
-  shipping_weight_lbs?: number;
-  operating_weight_lbs?: number;
-  operating_size_length_inches?: number;
-  operating_size_width_inches?: number;
-  operating_size_height_inches?: number;
-  operating_size_length_mm?: number;
-  operating_size_width_mm?: number;
-  operating_size_height_mm?: number;
-  sound_level_db_min?: number;
-  sound_level_db_max?: number;
-};
+import { HeatPumpModelGenerated } from "../../backend/schema/heat_pump";
+import { HeatPumpWaterHeaterModelGenerated } from "../../backend/schema/heat_pump_water_heater";
 
 export type FieldMetadata = { description: string };
-export type SpecsMetadata = { [K in keyof Specs]: FieldMetadata };
+export type SpecsMetadata<T> = { [K in keyof T]: FieldMetadata };
 
-export const METADATA: SpecsMetadata = {
-  model_number: {
+// TODO: dedupe these and tie more closely to the source schema.
+export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
+  modelNumber: {
     description:
       "Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
   },
   tonnage: {
     description: "The nominal tonnage of the appliance.",
   },
-  shipping_weight_lbs: {
-    description: "The weight of the appliance when shipped.",
+  weightInKg: {
+    description: "The weight or operating weight of the appliance.",
   },
-  operating_weight_lbs: {
-    description: "The weight of the equipment itself.",
+  lengthInCm: {
+    description: "The operating length of the equipment in centimeters.",
   },
-  operating_size_length_inches: {
-    description: "The operating length of the equipment in inches.",
+  widthInCm: {
+    description: "The operating width of the equipment in centimeters.",
   },
-  operating_size_width_inches: {
-    description: "The operating width of the equipment in inches.",
+  heightInCm: {
+    description: "The operating height of the equipment in centimeters.",
   },
-  operating_size_height_inches: {
-    description: "The operating height of the equipment in inches.",
+  amperage: {
+    description: "The required amperage for the equipment.",
   },
-  operating_size_length_mm: {
-    description: "The operating length of the equipment in millimeters.",
+  voltage: {
+    description: "The required voltage for the equipment.",
   },
-  operating_size_width_mm: {
-    description: "The operating width of the equipment in millimeters.",
-  },
-  operating_size_height_mm: {
-    description: "The operating height of the equipment in millimeters.",
-  },
-  sound_level_db_min: {
+  soundLevelMin: {
     description: "The minimum sound level in decibels.",
   },
-  sound_level_db_max: {
+  soundLevelMax: {
     description: "The maximum sound level in decibels.",
   },
 };
+
+export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterModelGenerated> =
+  {
+    modelNumber: {
+      description:
+        "Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
+    },
+    tankCapacityGallons: {
+      description: "The tank capacity in gallons.",
+    },
+    weightInKg: {
+      description: "The weight or operating weight of the appliance.",
+    },
+    lengthInCm: {
+      description: "The operating length of the equipment in centimeters.",
+    },
+    widthInCm: {
+      description: "The operating width of the equipment in centimeters.",
+    },
+    heightInCm: {
+      description: "The operating height of the equipment in centimeters.",
+    },
+    amperage: {
+      description: "The required amperage for the equipment.",
+    },
+    voltage: {
+      description: "The required voltage for the equipment.",
+    },
+    soundLevelMin: {
+      description: "The minimum sound level in decibels.",
+    },
+    soundLevelMax: {
+      description: "The maximum sound level in decibels.",
+    },
+  };
