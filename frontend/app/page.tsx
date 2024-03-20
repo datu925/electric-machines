@@ -225,43 +225,48 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Split pipeline into more stages, improved merging
-            and filtering. Introduced metadata and “canonical” model numbers.
+            <u>Highlights:</u> Added validation step to the end of the pipeline.
+            Poked around to understand roughly how many dryers, water heaters,
+            and induction stoves we care about. Overhauled the schema to be
+            closer to the data we’ve collected so far and changed the format to
+            be closer to what RA uses - PR pending.
             <br />
-            <u>Challenges:</u> It would be easier if we knew in advance which
-            models we expect to find in each PDF, and it will not take them much
-            extra time to collect this in metadata.
+            <u>Challenges:</u> All records fail schema validation because our
+            schema isn’t particularly close to what’s collected right now.
             <br />
-            <u>Next Steps:</u> Get data fully validated with schema as last step
-            of pipeline and committed to a data store. <br />
+            <u>Next Steps:</u> Either write a shell script to combine the stages
+            or refactor so they can be run more simply from a single .ts file.
+            Get something end to end. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Full deep database scraper working. Up on GitHub
-            on neep_scraper branch. All data off API. Number of pages changes
-            day to day, so I have it just run until it gets a 404.
+            <u>Highlights:</u> Retrieved some JSON data from Rheem heat pump
+            PDFs.
             <br />
-            <u>Challenges:</u> It is a ton of info. Maybe concurrent scraping?
-            Verifying validating the data as several brands are the same. <br />
-            <u>Next Steps:</u> Coalescing brand. Look at energy star database
-            for heat pump water heaters? <br />
+            <u>Challenges:</u> Finding appropriate seller websites and making
+            sure the PDFs have the information we’re seeking. Time-consuming
+            task. <br />
+            <u>Next Steps:</u> Will fill out the appliance metadata sheet for
+            major brands in the NEEP database for heat pumps and the energy star
+            database for water heaters. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Got website ready for Peer Evaluations. Added
-            second appliance and created survey. Refactored out different
-            appliances into their own files.
+            <u>Highlights:</u> Added pagination and column sorting in the result
+            tables.
             <br />
-            <u>Challenges:</u> Need a working API to start linking with the
-            frontend soon. <br />
-            <u>Next Steps:</u> Implement interactive Javascript tables to
-            replace current one .
+            <u>Challenges:</u> Ensuring custom CSS match RA by modifying CSS
+            file according to package provided naming conventions.
+            <br />
+            <u>Next Steps:</u> Clean up the code and remove unnecessary packages
+            from previous method of showing the tables. Get ready to adjust the
+            columns as needed for results we want to show.
             <br />
           </p>
         </div>
@@ -269,12 +274,13 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Looking into dummy API. Working on Fastify for
-            now.
+            <u>Highlights:</u> Refactored backend code to be compatible in
+            serverless configuration and deployable to Vercel.
             <br />
-            <u>Challenges:</u> Exam in GA.
+            <u>Challenges:</u> Did not have access to vercel deployment.
             <br />
-            <u>Next Steps:</u> Get something up and running.
+            <u>Next Steps:</u> Link up front-end and back-end + prototype on
+            vercel using postgres database.
             <br />
           </p>
         </div>
