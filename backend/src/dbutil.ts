@@ -1,18 +1,126 @@
-import * as dt from "../schema/heat_pump_water_heater";
+import * as dt from "../schema/appliance";
 
-const dummyWaterHeater: dt.HeatPumpWaterHeater = {
-  brandName: "Rheem",
-  modelNumber: "PROPH40 T0 RH120-M",
+export function findWaterHeater(size: number, uef: number, fhr: number) {
+  return dummyWaterHeaters;
+}
+
+export function findDryer(noise: number, cef: number, capacity: number) {
+  return dummyDryers;
+}
+
+const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
+  brandName: "Brand A",
+  modelNumber: "GEH50DFEJ2RA",
   modelType: "701460",
-  tankCapacityGallons: 40,
+  tankCapacityGallons: 60,
   weightInKg: 71.214,
   widthInCm: 50,
   heightInCm: 160.02,
   lengthInCm: 50,
   amperage: 3.67,
   voltage: 120,
-};
+  uef: 2.6,
+  fhr: 60,
+},
+{
+  brandName: "Brand B",
+  modelNumber: "HP10-80H42DV",
+  modelType: "701460",
+  tankCapacityGallons: 70,
+  weightInKg: 71.214,
+  widthInCm: 50,
+  heightInCm: 160.02,
+  lengthInCm: 50,
+  amperage: 3.67,
+  voltage: 120,
+  uef: 2.7,
+  fhr: 70,
+},
+{
+  brandName: "Brand C",
+  modelNumber: "RE2H80R10B-12CWT",
+  modelType: "701460",
+  tankCapacityGallons: 70,
+  weightInKg: 71.214,
+  widthInCm: 50,
+  heightInCm: 160.02,
+  lengthInCm: 50,
+  amperage: 3.67,
+  voltage: 120,
+  uef: 2.8,
+  fhr: 50,
+},
+{
+  brandName: "Brand D",
+  modelNumber: "RE22SR10B-12CWT",
+  modelType: "701460",
+  tankCapacityGallons: 60,
+  weightInKg: 71.214,
+  widthInCm: 50,
+  heightInCm: 160.02,
+  lengthInCm: 50,
+  amperage: 3.67,
+  voltage: 120,
+  uef: 2.9,
+  fhr: 60,
+},
+];
 
-export function findWaterHeater() {
-  return [dummyWaterHeater, dummyWaterHeater];
-}
+const dummyDryers: dt.HeatPumpDryer[] = [
+  {
+    brandName: "Brand1",
+    modelNumber: "XJ-75F",
+    modelType: "701460",
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    noise: "High",
+    cef: 5,
+    capacity: 7,
+  },
+  {
+    brandName: "Brand1",
+    modelNumber: "XJ-75F",
+    modelType: "701460",
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    noise: "High",
+    cef: 6,
+    capacity: 7.5,
+  },
+  {
+    brandName: "Brand3",
+    modelNumber: "LM-40K",
+    modelType: "701460",
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    noise: "High",
+    cef: 6.5,
+    capacity: 8,
+  },
+  {
+    brandName: "Brand4",
+    modelNumber: "AB-65R",
+    modelType: "701460",
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    noise: "High",
+    cef: 8,
+    capacity: 9,
+  },
+]

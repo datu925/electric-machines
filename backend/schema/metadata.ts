@@ -1,3 +1,4 @@
+// TODO: why is brand an enum instead of a string?
 export const BRANDS = {
   rheem: "rheem",
   unknown: "unknown",
@@ -7,6 +8,7 @@ export type Brand = keyof typeof BRANDS;
 export const MODEL_TYPES = {
   heat_pump: "heat_pump",
   heat_pump_water_heater: "heat_pump_water_heater",
+  heat_pump_dryer: "heat_pump_dryer",
 } as const;
 export type ModelType = keyof typeof MODEL_TYPES;
 

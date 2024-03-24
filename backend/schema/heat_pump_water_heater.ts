@@ -6,8 +6,14 @@ export const heatPumpWaterHeaterProperties = {
   tankCapacityGallons: {
     type: "number",
   },
+  uef: {
+    type: "number",
+  },
+  fhr: {
+    type: "number",
+  },
 } as const;
-export const requiredHeatPumpWaterHeater = ["tankCapacityGallons"] as const;
+export const requiredHeatPumpWaterHeater = ["tankCapacityGallons", "uef", "fhr"] as const;
 
 export const HEAT_PUMP_WATER_HEATER_SCHEMA = {
   title: "Heat Pump Water Heater",
