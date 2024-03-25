@@ -3,11 +3,13 @@ import InfoSquare from "../InfoSquare";
 import styles from "./sharedForms.module.scss";
 import { useState, useMemo } from "react";
 import TableContainer from "../TableContainer";
+import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 
 const HeatPumpWaterHeaterForm = () => {
   const [showResults, setShowResults] = useState(false);
 
   //default values
+  const [capacity, setCapacity] = useState("40");
   const [uef, setUef] = useState("2.0");
   const [fhr, setFhr] = useState("80");
 
@@ -50,89 +52,40 @@ const HeatPumpWaterHeaterForm = () => {
       uef: 2.9,
     },
   ]);
-
-  const columns = useMemo(
-    () => [
-      {
-        Header: "Brand",
-        accessor: "brand",
-      },
-      {
-        Header: "Model",
-        accessor: "model",
-      },
-      {
-        Header: "Capacity",
-        accessor: "capacity",
-      },
-      {
-        Header: "UEF",
-        accessor: "uef",
-      },
-      {
-        Header: "FHR",
-        accessor: "fhr",
-      },
-    ],
-    []
-  );
+  const columns: ColumnDefinition[] = [
+    { title: "Brand", field: "brand" },
+    { title: "Model", field: "model", hozAlign: "left" },
+    {
+      title: "Capacity (gallons)",
+      field: "capacity",
+      hozAlign: "center",
+      width: 150,
+    },
+    { title: "UEF", field: "uef", hozAlign: "center", width: 150 },
+    { title: "FHR", field: "fhr", hozAlign: "center", width: 150 },
+  ];
 
   return (
     <>
       <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.radioGroup}>
-          <label className={styles.labelWithInfo} htmlFor="household-size">
-            <InfoSquare text="Reflects the number of people in your home, impacting hot water demand." />
-            <span>&nbsp;Household Size </span>
+        <div className={styles.sliderGroup}>
+          <label className={styles.labelWithInfo} htmlFor="capacity-slider">
+            <InfoSquare
+              text={`Choose based upon your household's hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons. `}
+            />
+            &nbsp;Tank Capacity (gallons): {capacity}
           </label>
-
-          <div>
-            <div className={styles.radioOptions}>
-              <label htmlFor="size1-2">
-                <input
-                  type="radio"
-                  id="size1-2"
-                  name="household-size"
-                  value="1-2"
-                  className={styles.radioInput}
-                />
-                <span className={styles.radioText}>1-2 people</span>
-              </label>
-
-              <label htmlFor="size3-4">
-                <input
-                  type="radio"
-                  id="size3-4"
-                  name="household-size"
-                  value="3-4"
-                  className={styles.radioInput}
-                />
-                <span className={styles.radioText}>3-4 people</span>
-              </label>
-
-              <label htmlFor="size5-6">
-                <input
-                  type="radio"
-                  id="size5-6"
-                  name="household-size"
-                  value="5-6"
-                  className={styles.radioInput}
-                />
-                <span className={styles.radioText}>5-6 people</span>
-              </label>
-
-              <label htmlFor="size7-more">
-                <input
-                  type="radio"
-                  id="size7-more"
-                  name="household-size"
-                  value="7+"
-                  className={styles.radioInput}
-                />
-                <span className={styles.radioText}>7+ people</span>
-              </label>
-            </div>
-          </div>
+          <input
+            type="range"
+            id="capacity-slider"
+            name="capacity"
+            min="30"
+            max="80"
+            step="10"
+            value={capacity}
+            onChange={(e) => setCapacity(e.target.value)}
+            className={styles.slider}
+          />
         </div>
         <div className={styles.sliderGroup}>
           <label className={styles.labelWithInfo} htmlFor="uef-slider">
@@ -178,8 +131,15 @@ const HeatPumpWaterHeaterForm = () => {
       </form>
       {showResults && (
         <>
-          {/* <div>{JSON.stringify(results)}</div>*/}
-          <TableContainer columns={columns} data={results} />
+          <ReactTabulator
+            data={results}
+            columns={columns}
+            options={{
+              pagination: "local",
+              paginationSize: 5,
+              // selectable: true,
+            }}
+          />
         </>
       )}
     </>
