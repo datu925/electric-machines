@@ -9,7 +9,7 @@ export function findDryer(soundLevel: number, combinedEnergyFactor: number, capa
 }
 
 const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
-  brandName: "Brand A",
+  brandName: "Rheem",
   modelNumber: "GEH50DFEJ2RA",
   modelVairant: "701460",
   tankCapacityGallons: 60,
@@ -23,7 +23,7 @@ const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
   firstHourRating: 60,
 },
 {
-  brandName: "Brand B",
+  brandName: "Rheem",
   modelNumber: "HP10-80H42DV",
   modelVairant: "701460",
   tankCapacityGallons: 70,
@@ -37,7 +37,7 @@ const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
   firstHourRating: 70,
 },
 {
-  brandName: "Brand C",
+  brandName: "Rheem",
   modelNumber: "RE2H80R10B-12CWT",
   modelVairant: "701460",
   tankCapacityGallons: 70,
@@ -51,7 +51,7 @@ const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
   firstHourRating: 50,
 },
 {
-  brandName: "Brand D",
+  brandName: "Rheem",
   modelNumber: "RE22SR10B-12CWT",
   modelVairant: "701460",
   tankCapacityGallons: 60,
@@ -68,7 +68,7 @@ const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
 
 const dummyDryers: dt.HeatPumpDryer[] = [
   {
-    brandName: "Brand1",
+    brandName: "Rheem",
     modelNumber: "XJ-75F",
     modelVairant: "701460",
     weightInKg: 71.214,
@@ -82,7 +82,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
     capacity: 7,
   },
   {
-    brandName: "Brand1",
+    brandName: "Rheem",
     modelNumber: "XJ-75F",
     modelVairant: "701460",
     weightInKg: 71.214,
@@ -96,7 +96,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
     capacity: 7.5,
   },
   {
-    brandName: "Brand3",
+    brandName: "Rheem",
     modelNumber: "LM-40K",
     modelVairant: "701460",
     weightInKg: 71.214,
@@ -110,7 +110,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
     capacity: 8,
   },
   {
-    brandName: "Brand4",
+    brandName: "Rheem",
     modelNumber: "AB-65R",
     modelVairant: "701460",
     weightInKg: 71.214,
