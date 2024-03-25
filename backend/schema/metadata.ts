@@ -1,4 +1,3 @@
-// TODO: why is brand an enum instead of a string?
 export const BRANDS = {
   rheem: "rheem",
   unknown: "unknown",
@@ -20,7 +19,7 @@ export const metadataProperties = {
   modelNumber: {
     type: "string",
   },
-  modelType: {
+  modelVairant: {
     type: "string",
     enum: Object.keys(MODEL_TYPES),
   },
@@ -29,5 +28,5 @@ export const metadataProperties = {
 export const requiredMetadata = [
   "brandName",
   "modelNumber",
-  "modelType",
+  "modelVairant",
 ] as const;

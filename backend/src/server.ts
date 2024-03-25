@@ -1,6 +1,5 @@
 import { FastifyInstance, FastifyReply, FastifyRequest, FastifyServerOptions } from 'fastify'
 import * as db from "./dbutil";
-import * as util from "./utils"
 
 export default async function (instance: FastifyInstance, opts: FastifyServerOptions, done) {
 
@@ -25,15 +24,15 @@ function handleAppliance(req: FastifyRequest) {
     var modelType = req.query['modelType']
     switch (modelType) {
         case "hpwh":
-            var size: number = util.HouseholdSizeToCapacity(req.query['size'])
-            var uef: number = Number(req.query['uef'])
-            var fhr: number = Number(req.query['fhr'])
-            return db.findWaterHeater(size, uef, fhr)
+            var tankCapacity: number = Number(req.query['size'])
+            var uniformEnergyFactor: number = Number(req.query['uef'])
+            var firstHourRating: number = Number(req.query['fhr'])
+            return db.findWaterHeater(tankCapacity, uniformEnergyFactor, firstHourRating)
         case "hpd":
-            var noise: number = util.NoiseLevelToDecibel(req.query['noise'])
-            var cef: number = Number(req.query['cef'])
+            var soundLevel: number = Number(req.query['noise'])
+            var combinedEnergyFactor: number = Number(req.query['cef'])
             var capacity: number = Number(req.query['capacity'])
-            return db.findDryer(noise, cef, capacity)
+            return db.findDryer(soundLevel, combinedEnergyFactor, capacity)
         default: return [];
     }
 }

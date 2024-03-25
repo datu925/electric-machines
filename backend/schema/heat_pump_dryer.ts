@@ -2,23 +2,17 @@ import { FromSchema } from "json-schema-to-ts";
 import { metadataProperties, requiredMetadata } from "./metadata";
 import { coreProperties, requiredCore } from "./core";
 
-const noise = ["Low", "Medium", "High"];
-
 export const heatPumpDryerProperties = {
   capacity: {
     type: "number",
   },
-  noise: {
-    type: "string",
-    enum: noise,
-  },
-  cef: {
+  combinedEnergyFactor: {
     type: "number",
   },
 } as const;
-export const requiredHeatPumpDryer = ["capacity", "noise", "cef"] as const;
+export const requiredHeatPumpDryer = ["capacity", "combinedEnergyFactor"] as const;
 
-export const HEAT_PUMP_Dryer_SCHEMA = {
+export const HEAT_PUMP_DRYER_SCHEMA = {
   title: "Heat Pump Dryer",
   type: "object",
   properties: {
@@ -35,7 +29,7 @@ export const HEAT_PUMP_Dryer_SCHEMA = {
 } as const;
 
 export type HeatPumpDryer = FromSchema<
-  typeof HEAT_PUMP_Dryer_SCHEMA
+  typeof HEAT_PUMP_DRYER_SCHEMA
 >;
 export type HeatPumpDryerModelGenerated = Omit<
   HeatPumpDryer,
