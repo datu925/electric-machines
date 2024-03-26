@@ -70,20 +70,20 @@ const HeatPumpDryer = () => {
   ]);
 
   const columns: ColumnDefinition[] = [
-    { title: "Brand", field: "brand" },
-    { title: "Model", field: "model", hozAlign: "left" },
+    { title: "Brand", field: "brand", minWidth: 120 },
+    { title: "Model", field: "model", hozAlign: "left", minWidth: 120 },
     {
       title: "Capacity (cu-ft)",
       field: "capacity",
       hozAlign: "center",
-      width: 200,
+      minWidth: 150,
     },
-    { title: "CEF", field: "cef", hozAlign: "center", width: 150 },
+    { title: "CEF", field: "cef", hozAlign: "center", minWidth: 100 },
     {
       title: "Noise Level (dB)",
       field: "noise",
       hozAlign: "center",
-      width: 175,
+      minWidth: 150,
     },
   ];
 
@@ -192,7 +192,7 @@ const HeatPumpDryer = () => {
       {/* layout={"fitData"} */}
 
       {showResults && (
-        <>
+        <div className={styles.resultTable}>
           <ReactTabulator
             data={results}
             columns={columns}
@@ -201,7 +201,7 @@ const HeatPumpDryer = () => {
               paginationSize: 5,
             }}
           />
-        </>
+        </div>
       )}
     </>
   );
