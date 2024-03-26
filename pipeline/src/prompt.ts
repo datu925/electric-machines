@@ -17,7 +17,7 @@ export function renderSystemPrompt<T>(metadata: SpecsMetadata<T>) {
 You will be given the output of a table that was read from a PDF and converted
 to JSON. The tables contain technical specifications about heat pumps.
 The tables may contain data for multiple appliance models, and your task is to
-return valid JSON with one key-value record per model. 
+return valid JSON with one key-value record per model.
 
 There is a schema with fields you can try to match, but you can include data from the
 tables that is not in the schema. Do not return null values. The only required field is

@@ -29,13 +29,14 @@ t.test("render prompt correctly", (t) => {
 You will be given the output of a table that was read from a PDF and converted
 to JSON. The tables contain technical specifications about heat pumps.
 The tables may contain data for multiple appliance models, and your task is to
-return valid JSON that matches the following schema, with one record per
-appliance. All values in the schema are optional except the modelNumber. Do not
-return null values. The key for this output should be "data".
+return valid JSON with one key-value record per model.
+
+There is a schema with fields you can try to match, but you can include data from the
+tables that is not in the schema. Do not return null values. The only required field is
+modelNumber. The key for this output should be "data".
 
 You should also output the mapping you construct from column names
-in the tables to the fields in the schema. It is not expected that you will use
-all of the columns in the table. The key for this output should be "mapping".
+in the tables to the fields in the schema. The key for this output should be "mapping".
 
 If there are numeric row/column numbers in the table, you can ignore them.
 If the table is empty of any meaningful data, you can return an empty object for
