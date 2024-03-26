@@ -1,76 +1,85 @@
 import * as dt from "../schema/appliance";
 
-export function findWaterHeater(tankCapacity: number, uniformEnergyFactor: number, firstHourRating: number) {
+export function findWaterHeater(
+  tankCapacity: number,
+  uniformEnergyFactor: number,
+  firstHourRating: number
+) {
   return dummyWaterHeaters;
 }
 
-export function findDryer(soundLevel: number, combinedEnergyFactor: number, capacity: number) {
+export function findDryer(
+  soundLevel: number,
+  combinedEnergyFactor: number,
+  capacity: number
+) {
   return dummyDryers;
 }
 
-const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [{
-  brandName: "Rheem",
-  modelNumber: "GEH50DFEJ2RA",
-  modelVairant: "701460",
-  tankCapacityGallons: 60,
-  weightInKg: 71.214,
-  widthInCm: 50,
-  heightInCm: 160.02,
-  lengthInCm: 50,
-  amperage: 3.67,
-  voltage: 120,
-  uniformEnergyFactor: 2.6,
-  firstHourRating: 60,
-},
-{
-  brandName: "Rheem",
-  modelNumber: "HP10-80H42DV",
-  modelVairant: "701460",
-  tankCapacityGallons: 70,
-  weightInKg: 71.214,
-  widthInCm: 50,
-  heightInCm: 160.02,
-  lengthInCm: 50,
-  amperage: 3.67,
-  voltage: 120,
-  uniformEnergyFactor: 2.7,
-  firstHourRating: 70,
-},
-{
-  brandName: "Rheem",
-  modelNumber: "RE2H80R10B-12CWT",
-  modelVairant: "701460",
-  tankCapacityGallons: 70,
-  weightInKg: 71.214,
-  widthInCm: 50,
-  heightInCm: 160.02,
-  lengthInCm: 50,
-  amperage: 3.67,
-  voltage: 120,
-  uniformEnergyFactor: 2.8,
-  firstHourRating: 50,
-},
-{
-  brandName: "Rheem",
-  modelNumber: "RE22SR10B-12CWT",
-  modelVairant: "701460",
-  tankCapacityGallons: 60,
-  weightInKg: 71.214,
-  widthInCm: 50,
-  heightInCm: 160.02,
-  lengthInCm: 50,
-  amperage: 3.67,
-  voltage: 120,
-  uniformEnergyFactor: 2.9,
-  firstHourRating: 60,
-},
+const dummyWaterHeaters: dt.HeatPumpWaterHeater[] = [
+  {
+    brandName: "Rheem",
+    modelNumber: "GEH50DFEJ2RA",
+    modelVariant: "701460",
+    tankCapacityGallons: 60,
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    uniformEnergyFactor: 2.6,
+    firstHourRating: 60,
+  },
+  {
+    brandName: "Rheem",
+    modelNumber: "HP10-80H42DV",
+    modelVariant: "701460",
+    tankCapacityGallons: 70,
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    uniformEnergyFactor: 2.7,
+    firstHourRating: 70,
+  },
+  {
+    brandName: "Rheem",
+    modelNumber: "RE2H80R10B-12CWT",
+    modelVariant: "701460",
+    tankCapacityGallons: 70,
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    uniformEnergyFactor: 2.8,
+    firstHourRating: 50,
+  },
+  {
+    brandName: "Rheem",
+    modelNumber: "RE22SR10B-12CWT",
+    modelVariant: "701460",
+    tankCapacityGallons: 60,
+    weightInKg: 71.214,
+    widthInCm: 50,
+    heightInCm: 160.02,
+    lengthInCm: 50,
+    amperage: 3.67,
+    voltage: 120,
+    uniformEnergyFactor: 2.9,
+    firstHourRating: 60,
+  },
 ];
 
 const dummyDryers: dt.HeatPumpDryer[] = [
   {
     brandName: "Rheem",
     modelNumber: "XJ-75F",
-    modelVairant: "701460",
+    modelVariant: "701460",
     weightInKg: 71.214,
     widthInCm: 50,
     heightInCm: 160.02,
@@ -84,7 +93,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
   {
     brandName: "Rheem",
     modelNumber: "XJ-75F",
-    modelVairant: "701460",
+    modelVariant: "701460",
     weightInKg: 71.214,
     widthInCm: 50,
     heightInCm: 160.02,
@@ -98,7 +107,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
   {
     brandName: "Rheem",
     modelNumber: "LM-40K",
-    modelVairant: "701460",
+    modelVariant: "701460",
     weightInKg: 71.214,
     widthInCm: 50,
     heightInCm: 160.02,
@@ -112,7 +121,7 @@ const dummyDryers: dt.HeatPumpDryer[] = [
   {
     brandName: "Rheem",
     modelNumber: "AB-65R",
-    modelVairant: "701460",
+    modelVariant: "701460",
     weightInKg: 71.214,
     widthInCm: 50,
     heightInCm: 160.02,
@@ -123,4 +132,4 @@ const dummyDryers: dt.HeatPumpDryer[] = [
     combinedEnergyFactor: 8,
     capacity: 9,
   },
-]
+];

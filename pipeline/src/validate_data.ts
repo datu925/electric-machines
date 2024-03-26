@@ -10,7 +10,10 @@ import { Appliance } from "../../backend/schema/appliance";
 import { HEAT_PUMP_SCHEMA } from "../../backend/schema/heat_pump";
 import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
-import { MODEL_TYPES, requiredMetadata } from "../../backend/schema/metadata";
+import {
+  APPLIANCE_TYPES,
+  requiredMetadata,
+} from "../../backend/schema/metadata";
 import { HEAT_PUMP_WATER_HEATER_SCHEMA } from "../../backend/schema/heat_pump_water_heater";
 
 const SPECS_FILE_BASE = "../data/";
@@ -29,8 +32,8 @@ async function initializeValidators() {
   const validators: { [index: string]: ValidateFunction<Appliance> } = {};
   const ajv = new Ajv({ allErrors: true });
 
-  validators[MODEL_TYPES.heat_pump] = ajv.compile(HEAT_PUMP_SCHEMA);
-  validators[MODEL_TYPES.heat_pump_water_heater] = ajv.compile(
+  validators[APPLIANCE_TYPES.heat_pump] = ajv.compile(HEAT_PUMP_SCHEMA);
+  validators[APPLIANCE_TYPES.heat_pump_water_heater] = ajv.compile(
     HEAT_PUMP_WATER_HEATER_SCHEMA
   );
 
@@ -69,7 +72,7 @@ async function main() {
         const specs = Array.isArray(filtered) ? filtered : [filtered];
         for (const spec of specs) {
           const augmentedSpec = { ...spec, ...metadataToCopy };
-          const validate = validators[metadataToCopy.modelType!];
+          const validate = validators[metadataToCopy.applianceType!];
           if (validate(augmentedSpec)) {
             valid.push(augmentedSpec);
           } else {

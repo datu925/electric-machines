@@ -4,7 +4,7 @@ import { Brand } from "../../backend/schema/metadata";
 
 export type Metadata = {
   brandName?: Brand;
-  modelType?: string;
+  applianceType?: string;
 };
 
 export async function retrieveMetadata(directory: string): Promise<Metadata> {

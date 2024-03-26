@@ -11,8 +11,9 @@ import {
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
-import { MODEL_TYPES, ModelType } from "../../backend/schema/metadata";
+import { APPLIANCE_TYPES } from "../../backend/schema/metadata";
 import {
+  HEAT_PUMP_DRYER_METADATA,
   HEAT_PUMP_METADATA,
   HEAT_PUMP_WATER_HEATER_METADATA,
   SpecsMetadata,
@@ -82,16 +83,18 @@ async function main() {
         }
 
         const metadata = await retrieveMetadata(applianceFolder);
-        if (!("modelType" in metadata)) {
-          throw new Error("modelType not set in metadata");
+        if (!("applianceType" in metadata)) {
+          throw new Error("applianceType not set in metadata");
         }
-        const modelType = metadata.modelType;
+        const applianceType = metadata.applianceType;
 
         let modelMetadata: SpecsMetadata<ModelGeneratedAppliance>;
-        if (modelType === MODEL_TYPES.heat_pump) {
+        if (applianceType === APPLIANCE_TYPES.heat_pump) {
           modelMetadata = HEAT_PUMP_METADATA;
-        } else if (modelType === MODEL_TYPES.heat_pump_water_heater) {
+        } else if (applianceType === APPLIANCE_TYPES.heat_pump_water_heater) {
           modelMetadata = HEAT_PUMP_WATER_HEATER_METADATA;
+        } else if (applianceType === APPLIANCE_TYPES.heat_pump_dryer) {
+          modelMetadata = HEAT_PUMP_DRYER_METADATA;
         } else {
           throw new Error(
             "No model metadata configured for this appliance type"

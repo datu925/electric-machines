@@ -25,4 +25,4 @@ export const HEAT_PUMP_SCHEMA = {
 } as const;
 
 export type HeatPump = FromSchema<typeof HEAT_PUMP_SCHEMA>;
-export type HeatPumpModelGenerated = Omit<HeatPump, "brandName" | "modelType">;
+export type HeatPumpModelGenerated = Omit<HeatPump, "brandName">;
