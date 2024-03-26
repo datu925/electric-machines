@@ -15,10 +15,10 @@ export default async function (
     res.code(200).send(`Hello electrical-machine API`);
   });
 
-  // https://electric-machines-h6x1.vercel.app/api/appliance?applianceType=hpwh&capacity=40&urf=2.5&fhr=60
-  // https://electric-machines-h6x1.vercel.app/api/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacity=6.0
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacity=40&urf=2.5&fhr=60
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacity=6.0
   instance.get(
-    "/api/appliance",
+    "/api/v1/appliance",
     async (req: FastifyRequest, res: FastifyReply) => {
       var foundModels = handleAppliance(req);
       res
