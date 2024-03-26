@@ -225,48 +225,51 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Added validation step to the end of the pipeline.
-            Poked around to understand roughly how many dryers, water heaters,
-            and induction stoves we care about. Overhauled the schema to be
-            closer to the data we’ve collected so far and changed the format to
-            be closer to what RA uses - PR pending.
+            <u>Highlights:</u> Midterm presentation slides and delivery. Some
+            follow-ups to schema PR. Putting together demo presentation
             <br />
-            <u>Challenges:</u> All records fail schema validation because our
-            schema isn’t particularly close to what’s collected right now.
+            <u>Challenges:</u> Too much presentation and not enough coding 😊
+            (plus travel). Also, the fact that we have a monorepo without
+            monorepo tooling is starting to hurt a bit. Mobile experience with
+            the new tabulator table is not great - the table gets cut off to the
+            right and is hard to scroll.
             <br />
-            <u>Next Steps:</u> Either write a shell script to combine the stages
-            or refactor so they can be run more simply from a single .ts file.
-            Get something end to end. <br />
+            <u>Next Steps:</u> Need to tweak the pipeline to separate LLM table
+            normalization and column name mapping stages, since the latter
+            should go as late as. Then need to start running more appliances{" "}
+            <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Retrieved some JSON data from Rheem heat pump
-            PDFs.
+            <u>Highlights:</u> Read through peer reviews and summarized to the
+            team in Slack. Added more coverage for heat pumps in the URL
+            metadata file, and tackled a large part of the water heaters.
             <br />
-            <u>Challenges:</u> Finding appropriate seller websites and making
-            sure the PDFs have the information we’re seeking. Time-consuming
-            task. <br />
-            <u>Next Steps:</u> Will fill out the appliance metadata sheet for
-            major brands in the NEEP database for heat pumps and the energy star
-            database for water heaters. <br />
+            <u>Challenges:</u> Repeated model numbers across different
+            manufacturers means that searching spec sheets can bring up only the
+            same model from a different manufacturer that has better online
+            visibility. <br />
+            <u>Next Steps:</u> Continue increasing coverage for largest
+            manufacturers first and begin collecting spec sheets for dryers.
+            Take a breath-first approach to coverage across appliances. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Added pagination and column sorting in the result
-            tables.
+            <u>Highlights:</u> Pushed new table format, updated columns, updated
+            some input forms.
             <br />
-            <u>Challenges:</u> Ensuring custom CSS match RA by modifying CSS
-            file according to package provided naming conventions.
+            <u>Challenges:</u> Tried to implement selection feature on tabulator
+            to improve UX but couldn’t find enough information online. Lacks
+            freedom using tabulator for react.
             <br />
-            <u>Next Steps:</u> Clean up the code and remove unnecessary packages
-            from previous method of showing the tables. Get ready to adjust the
-            columns as needed for results we want to show.
+            <u>Next Steps:</u> Adjust table for mobile viewing, incorporate new
+            API results into frontend.
             <br />
           </p>
         </div>
@@ -274,13 +277,18 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Refactored backend code to be compatible in
-            serverless configuration and deployable to Vercel.
+            <u>Highlights:</u> Finalised and integrated backend API to return
+            data to front-end requests + researched on integrating database such
+            as Postgres with Vercel.
             <br />
-            <u>Challenges:</u> Did not have access to vercel deployment.
+            <u>Challenges:</u> Vercel only permits vercel-compliant database and
+            will lock down the project in the Vercel eco-system. This makes it
+            hard for the partner to move out of Vercel later on.
             <br />
-            <u>Next Steps:</u> Link up front-end and back-end + prototype on
-            vercel using postgres database.
+            <u>Next Steps:</u> Add versioning in the backend API. Instead of
+            integrating Vercel Postgres into the backend for querying, create a
+            db store with loading data from a raw json store alongside with the
+            project.
             <br />
           </p>
         </div>
