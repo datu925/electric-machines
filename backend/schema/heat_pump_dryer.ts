@@ -10,7 +10,10 @@ export const heatPumpDryerProperties = {
     type: "number",
   },
 } as const;
-export const requiredHeatPumpDryer = ["capacity", "combinedEnergyFactor"] as const;
+export const requiredHeatPumpDryer = [
+  "capacity",
+  "combinedEnergyFactor",
+] as const;
 
 export const HEAT_PUMP_DRYER_SCHEMA = {
   title: "Heat Pump Dryer",
@@ -20,18 +23,9 @@ export const HEAT_PUMP_DRYER_SCHEMA = {
     ...coreProperties,
     ...heatPumpDryerProperties,
   },
-  required: [
-    ...requiredMetadata,
-    ...requiredCore,
-    ...requiredHeatPumpDryer,
-  ],
+  required: [...requiredMetadata, ...requiredCore, ...requiredHeatPumpDryer],
   additionalProperties: false,
 } as const;
 
-export type HeatPumpDryer = FromSchema<
-  typeof HEAT_PUMP_DRYER_SCHEMA
->;
-export type HeatPumpDryerModelGenerated = Omit<
-  HeatPumpDryer,
-  "brandName" | "modelType"
->;
+export type HeatPumpDryer = FromSchema<typeof HEAT_PUMP_DRYER_SCHEMA>;
+export type HeatPumpDryerModelGenerated = Omit<HeatPumpDryer, "brandName">;
