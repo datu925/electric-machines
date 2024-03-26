@@ -53,16 +53,16 @@ const HeatPumpWaterHeaterForm = () => {
     },
   ]);
   const columns: ColumnDefinition[] = [
-    { title: "Brand", field: "brand" },
-    { title: "Model", field: "model", hozAlign: "left" },
+    { title: "Brand", field: "brand", minWidth: 120 },
+    { title: "Model", field: "model", hozAlign: "left", minWidth: 120 },
     {
       title: "Capacity (gallons)",
       field: "capacity",
       hozAlign: "center",
-      width: 150,
+      minWidth: 150,
     },
-    { title: "UEF", field: "uef", hozAlign: "center", width: 150 },
-    { title: "FHR", field: "fhr", hozAlign: "center", width: 150 },
+    { title: "UEF", field: "uef", hozAlign: "center", minWidth: 100 },
+    { title: "FHR", field: "fhr", hozAlign: "center", minWidth: 100 },
   ];
 
   return (
