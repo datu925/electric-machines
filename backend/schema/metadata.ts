@@ -7,6 +7,7 @@ export type Brand = keyof typeof BRANDS;
 export const MODEL_TYPES = {
   heat_pump: "heat_pump",
   heat_pump_water_heater: "heat_pump_water_heater",
+  heat_pump_dryer: "heat_pump_dryer",
 } as const;
 export type ModelType = keyof typeof MODEL_TYPES;
 
@@ -18,7 +19,7 @@ export const metadataProperties = {
   modelNumber: {
     type: "string",
   },
-  modelType: {
+  modelVairant: {
     type: "string",
     enum: Object.keys(MODEL_TYPES),
   },
@@ -27,5 +28,5 @@ export const metadataProperties = {
 export const requiredMetadata = [
   "brandName",
   "modelNumber",
-  "modelType",
+  "modelVairant",
 ] as const;
