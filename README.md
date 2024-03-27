@@ -2,8 +2,6 @@
 
 For Computing For Good project energy-efficient-household-rewiring
 
-The following is more of a long-term plan and should not be considered accurate documentation.
-
 ## Data Pipeline
 
 The data pipeline will eventually take a list of URLs, retrieve web content, extract tables/text, parse, and return records fit to our schema. For now, we have coverage of only some of these steps.
@@ -23,18 +21,15 @@ Usage: `python -m pipeline.extract_tables [<filter>]`, where `<filter>` is a fil
 
 Output of this stage: saved tables in CSV format in a `tables/` subdirectory in the folder specified above.
 
-### Parse Tables (Node)
+### Reformat Tables (Node)
 
-This step uses Node.js and relies on LLMs. The LLM provider is ultimately flexible, but for now, we'll use OpenAI/GPT. This step will
-cost money, but the costs are pretty reasonable as long as we're being careful.
+This step and all subsequent steps use Node.js. This step relies on LLMs. The LLM provider is ultimately flexible, but for now, we'll use OpenAI/GPT. This step will cost money, but the costs are pretty reasonable as long as we're being careful.
 
 We rely on the LLM to:
 
 1. sensibly ignore extraneous rows/columns
 2. figure out which empty cells should be filled with which text
-3. map original columns to our schema fields
-
-This stage is still pretty un-typed and messy. We expect the LLM to throw pretty much anything at us. Since this is the part with the heaviest external dependency and financial cost, it is pretty tightly-scoped – we basically take the JSON, call the LLM, and write the results.
+3. figure out which column is the model number. We don't remap any other columns at this time, but finding the model number is essentialy for the next steps of the pipeline.
 
 Pre-work: I'd like to switch to Yarn eventually, but for some reason I was having trouble getting it to work, so for now, install `npm` and then do `npm install` from inside the `pipeline/` directory.
 
@@ -42,22 +37,32 @@ Then, set up an account and API key with [OpenAI](https://openai.com/product). Y
 
 Input of this stage: previous stage output
 
-Usage: `npm run tsc && node build/src/parse_tables.js --wait 100 --folders <folders>`
+Usage: `npm run tsc && node build/src/reformat_tables.js --wait 100 --folders <folders>`
 
 The `<folders>` are walked recursively, so only pass in multiple if they don't overlap.
 
 Output of this stage:
 
-- for each input table, a `.json` file from the LLM is created in the `llm/` directory. We hope that it has `data` and `mappings` keys, but nothing is guaranteed.
+- for each input table, a `.json` file from the LLM is created in the `reformatted/` directory. It should just be a possibly-empty list of reformatted records.
 - a `dropped_files.json` file in the `runs/` directory, noting which files could not be parsed by the LLM.
 
 ### Merge and Filter
 
-We then merge the LLM tables by model number and filter the results to try to get rid of garbage models. The output of this stage is still schema-less, but is as clean as we're likely to get without starting to lose some of the data as we start to validate it.
+We then merge the reformatted tables by model number and do a minimal-effort filter on the results to try to get rid of garbage models. The output of this stage is still schema-less.
+
+Usage: `npm run tsc && node build/src/merge_tables.js --folders <folders>`
+
+### Rename Columns
+
+We now go back to the LLM to rename columns to try to fit our schema. We don't do this earlier to avoid throwing out/losing data too early, since a lot of things can go wrong in this stage.
+
+Usage: `npm run tsc && node build/src/rename_columns.js --wait 100 --folders <folders>`
 
 ### Validate Against Schema (partially implemented)
 
 We will validate the data against a schema using ajv. For now, we simply validate against the final serving API schema. Eventually, we may first validate against a broader schema than the API schema that would have, for instance, multiple fields for different units (e.g. inches vs millimeters), and then transform that collected data into the served version. The latter is our canonical schema and what we serve to customers.
+
+Usage: `npm run tsc && node build/src/validate_data.js --folders <folders>`
 
 ### Review (manual)
 
