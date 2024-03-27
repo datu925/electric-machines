@@ -17,7 +17,7 @@ import {
 import { HEAT_PUMP_WATER_HEATER_SCHEMA } from "../../backend/schema/heat_pump_water_heater";
 
 const SPECS_FILE_BASE = "../data/";
-const INPUT_SUBDIR = "merged/";
+const INPUT_SUBDIR = "renamed/";
 const OUTPUT_SUBDIR = "validated/";
 const RUNS = "runs/";
 
@@ -66,13 +66,25 @@ async function main() {
           continue;
         }
 
+        if (!("data" in filtered)) {
+          console.log(
+            `Skipping ${filteredPath} because it didn't contain a 'data' key`
+          );
+        }
+
         const metadata = await retrieveMetadata(applianceFolder);
         const metadataToCopy = _.pick(metadata, requiredMetadata);
 
-        const specs = Array.isArray(filtered) ? filtered : [filtered];
+        const specs = Array.isArray(filtered["data"])
+          ? filtered["data"]
+          : [filtered["data"]];
         for (const spec of specs) {
           const augmentedSpec = { ...spec, ...metadataToCopy };
-          const validate = validators[metadataToCopy.applianceType!];
+          const validate = validators[metadata.applianceType!];
+          if (!validate)
+            throw new Error(
+              `No validator function found for ${metadata.applianceType}`
+            );
           if (validate(augmentedSpec)) {
             valid.push(augmentedSpec);
           } else {

@@ -1,6 +1,6 @@
 import { t } from "tap";
 import { FieldMetadata } from "../src/schemas";
-import { renderSchemaGuide, renderSystemPrompt } from "../src/prompt";
+import { renderSchemaGuide, renderSystemPrompt } from "../src/prompts";
 
 t.test("render schema correctly", (t) => {
   const metadata: { [index: string]: FieldMetadata } = {
@@ -26,19 +26,20 @@ t.test("render prompt correctly", (t) => {
 
   const expected = `You are a helpful assistant.
   
-You will be given the output of a table that was read from a PDF and converted
-to JSON. The tables contain technical specifications about heat pumps.
-The tables may contain data for multiple appliance models, and your task is to
-return valid JSON with one key-value record per model.
+You will be given JSON input that contains technical specifications for
+appliances such as heat pumps or clothes dryers. Each record describes one
+appliance. Your task is to fit that data to the schema below and return one
+transformed record per original record.
 
-There is a schema with fields you can try to match, but you can include data from the
-tables that is not in the schema. Do not return null values. The only required field is
-modelNumber. The key for this output should be "data".
+Do not return null values. Ultimately, if you can't find a good fit for a field,
+it's okay to leave it blank.
+
+Put all converted records in an array, with the JSON key called "data".
 
 You should also output the mapping you construct from column names
-in the tables to the fields in the schema. The key for this output should be "mapping".
+in the input to the fields in the schema. Only give the mapping for fields that
+you use. The key for this output should be "mapping".
 
-If there are numeric row/column numbers in the table, you can ignore them.
 If the table is empty of any meaningful data, you can return an empty object for
 the data and mapping keys.
 

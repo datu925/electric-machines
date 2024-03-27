@@ -5,9 +5,10 @@ import path = require("node:path");
 
 import {
   renderSystemPrompt,
-  EXAMPLE_1_INPUT,
-  EXAMPLE_1_OUTPUT,
-} from "./prompt";
+  REFORMAT_EXAMPLE_1_INPUT,
+  REFORMAT_EXAMPLE_1_OUTPUT,
+  TABLE_REFORMAT_PROMPT,
+} from "./prompts";
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
@@ -23,7 +24,7 @@ import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
 const INPUT_SUBDIR = "tables/";
-const OUTPUT_SUBDIR = "llm/";
+const OUTPUT_SUBDIR = "reformatted/";
 const RUNS = "runs/";
 const MODEL_FAMILY = "gpt"; // eventually support more options
 
@@ -106,8 +107,8 @@ async function main() {
         const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
         const promise = queryFunc(
           JSON.stringify(table),
-          renderSystemPrompt(modelMetadata),
-          [[EXAMPLE_1_INPUT, EXAMPLE_1_OUTPUT]]
+          TABLE_REFORMAT_PROMPT,
+          [[REFORMAT_EXAMPLE_1_INPUT, REFORMAT_EXAMPLE_1_OUTPUT]]
         ).then(async (msg: string) => {
           if (msg == "") return;
           console.log(`Got response from ${tableFilePath}`);
