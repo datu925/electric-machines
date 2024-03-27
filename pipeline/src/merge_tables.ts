@@ -1,4 +1,5 @@
 import { program } from "commander";
+import util from "util";
 
 import fs = require("node:fs/promises");
 import path = require("node:path");
@@ -8,13 +9,13 @@ import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
-const INPUT_SUBDIR = "llm/";
+const INPUT_SUBDIR = "reformatted/";
 const OUTPUT_SUBDIR = "merged/";
 const RUNS = "runs/";
 
 program.requiredOption(
   "-f, --folders <folders...>",
-  "Name of folder(s) under incentives_data/ where llm data is located."
+  "Name of folder(s) under incentives_data/ where appliance data is located."
 );
 
 program.parse();
@@ -44,16 +45,19 @@ async function main() {
           console.log(`Skipping ${llmFilePath} because it is empty`);
           continue;
         }
-        if ("data" in llm_output) {
-          if (Array.isArray(llm_output["data"])) {
-            tables = tables.concat(llm_output["data"]);
-          } else if (Object.keys(llm_output["data"]).length === 0) {
-            // Skip – empty object is not uncommon
-          } else {
-            console.log(`Unable to parse llm output: ${llm_output["data"]}`);
-          }
+        if (Array.isArray(llm_output)) {
+          tables = tables.concat(llm_output);
+        } else if (Object.keys(llm_output).length === 0) {
+          // Skip – empty object is not uncommon
         } else {
-          datalessFiles.push(llmFilePath);
+          console.log(
+            `Unable to parse llm output for ${llmFilePath}: ${util.inspect(
+              llm_output,
+              {
+                depth: null,
+              }
+            )}`
+          );
         }
       }
 

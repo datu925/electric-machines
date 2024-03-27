@@ -148,7 +148,8 @@ pipeline/build/
 .tap/
 
 # Output files
-data/**/llm/
+data/**/reformatted/
+data/**/renamed/
 data/**/merged/
 data/**/validated/
 data/runs/*
