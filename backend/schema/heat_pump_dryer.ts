@@ -1,5 +1,9 @@
 import { FromSchema } from "json-schema-to-ts";
-import { metadataProperties, requiredMetadata } from "./metadata";
+import {
+  ManuallyEntered,
+  metadataProperties,
+  requiredMetadata,
+} from "./metadata";
 import { coreProperties, requiredCore } from "./core";
 
 export const heatPumpDryerProperties = {
@@ -28,4 +32,4 @@ export const HEAT_PUMP_DRYER_SCHEMA = {
 } as const;
 
 export type HeatPumpDryer = FromSchema<typeof HEAT_PUMP_DRYER_SCHEMA>;
-export type HeatPumpDryerModelGenerated = Omit<HeatPumpDryer, "brandName">;
+export type HeatPumpDryerModelGenerated = Omit<HeatPumpDryer, ManuallyEntered>;

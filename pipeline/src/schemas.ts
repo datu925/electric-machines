@@ -9,14 +9,15 @@ export type SpecsMetadata<T> = { [K in keyof T]: FieldMetadata };
 export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
   modelNumber: {
     description:
-      "Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
+      "Required field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
   },
   modelVariant: {
     description:
       "An optional, more fine-grained number similar to the model number that describes the type of appliance.",
   },
   tonnage: {
-    description: "The nominal tonnage of the appliance.",
+    description:
+      "The nominal tonnage of the appliance. Format as a number even if it is supplied as a string.",
   },
   weightInKg: {
     description: "The weight or operating weight of the appliance.",
@@ -30,8 +31,9 @@ export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
   heightInCm: {
     description: "The operating height of the equipment in centimeters.",
   },
-  amperage: {
-    description: "The required amperage for the equipment.",
+  electricBreakerSize: {
+    description:
+      "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
   },
   voltage: {
     description: "The required voltage for the equipment.",
@@ -48,7 +50,7 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
   {
     modelNumber: {
       description:
-        "Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
+        "Required field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
     },
     modelVariant: {
       description:
@@ -69,8 +71,9 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
     heightInCm: {
       description: "The operating height of the equipment in centimeters.",
     },
-    amperage: {
-      description: "The required amperage for the equipment.",
+    electricBreakerSize: {
+      description:
+        "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
     },
     voltage: {
       description: "The required voltage for the equipment.",
@@ -94,7 +97,7 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
   {
     modelNumber: {
       description:
-        "Reqired field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
+        "Required field. The appliance's model number. Will typically correspond to an entire column or row in the table.",
     },
     modelVariant: {
       description:
@@ -115,8 +118,9 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
     heightInCm: {
       description: "The operating height of the equipment in centimeters.",
     },
-    amperage: {
-      description: "The required amperage for the equipment.",
+    electricBreakerSize: {
+      description:
+        "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
     },
     voltage: {
       description: "The required voltage for the equipment.",

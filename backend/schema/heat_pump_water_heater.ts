@@ -1,5 +1,9 @@
 import { FromSchema } from "json-schema-to-ts";
-import { metadataProperties, requiredMetadata } from "./metadata";
+import {
+  ManuallyEntered,
+  metadataProperties,
+  requiredMetadata,
+} from "./metadata";
 import { coreProperties, requiredCore } from "./core";
 
 export const heatPumpWaterHeaterProperties = {
@@ -40,5 +44,5 @@ export type HeatPumpWaterHeater = FromSchema<
 >;
 export type HeatPumpWaterHeaterModelGenerated = Omit<
   HeatPumpWaterHeater,
-  "brandName"
+  ManuallyEntered
 >;

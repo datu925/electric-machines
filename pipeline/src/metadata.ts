@@ -4,6 +4,7 @@ import { Brand } from "../../backend/schema/metadata";
 
 export type Metadata = {
   brandName?: Brand;
+  sourceUrl?: string;
   applianceType?: string;
 };
 
