@@ -22,10 +22,10 @@ export const metadataProperties = {
   modelVariant: {
     type: "string",
   },
+  sourceUrl: {
+    type: "string",
+  },
 } as const;
 
-export const requiredMetadata = [
-  "brandName",
-  "modelNumber",
-  "modelVariant",
-] as const;
+export const requiredMetadata = ["brandName", "modelNumber"] as const;
+export type ManuallyEntered = "brandName" | "sourceUrl";

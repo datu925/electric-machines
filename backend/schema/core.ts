@@ -11,7 +11,7 @@ export const coreProperties = {
   heightInCm: {
     type: "number",
   },
-  amperage: {
+  electricBreakerSize: {
     type: "number",
   },
   voltage: {
@@ -30,6 +30,6 @@ export const requiredCore = [
   "lengthInCm",
   "widthInCm",
   "heightInCm",
-  "amperage",
+  "electricBreakerSize",
   "voltage",
 ] as const;

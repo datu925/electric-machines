@@ -10,10 +10,7 @@ import { Appliance } from "../../backend/schema/appliance";
 import { HEAT_PUMP_SCHEMA } from "../../backend/schema/heat_pump";
 import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
-import {
-  APPLIANCE_TYPES,
-  requiredMetadata,
-} from "../../backend/schema/metadata";
+import { APPLIANCE_TYPES } from "../../backend/schema/metadata";
 import { HEAT_PUMP_WATER_HEATER_SCHEMA } from "../../backend/schema/heat_pump_water_heater";
 
 const SPECS_FILE_BASE = "../data/";
@@ -73,7 +70,8 @@ async function main() {
         }
 
         const metadata = await retrieveMetadata(applianceFolder);
-        const metadataToCopy = _.pick(metadata, requiredMetadata);
+        const columnsToCopy = ["brandName", "sourceUrl"];
+        const metadataToCopy = _.pick(metadata, columnsToCopy);
 
         const specs = Array.isArray(filtered["data"])
           ? filtered["data"]
