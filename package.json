@@ -1,0 +1,16 @@
+{
+  "name": "electric-machines",
+  "version": "1.0.0",
+  "repository": "https://github.com/datu925/electric-machines",
+  "author": "Dan Turcza",
+  "license": "MIT",
+  "private": false,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "pipeline"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
