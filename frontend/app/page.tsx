@@ -13,43 +13,8 @@ export default function Home() {
         <h2>Appliance Lookup</h2>
         <div className={styles.disclaimer}>
           <p>
-            This is a mockup for demonstration purposes only and does not
+            This is a mockup for demonstration purposes only and does not yet
             contain any real data.
-          </p>
-          <div>
-            <p>
-              Please note the approximate time taken to complete each of the
-              tasks below.
-            </p>
-          </div>
-        </div>
-        <div className={styles.tasks}>
-          <p>
-            <span className={styles.underline}>Task 1</span>
-            <br />
-            Look up the data for a Heat Pump Dryer with a high noise level, a
-            Combined Energy Factor of 5 and a capacity of 7 cu-ft.
-          </p>
-        </div>
-        <div></div>
-        <div className={styles.tasks}>
-          <p>
-            <span className={styles.underline}>Task 2</span>
-            <br />
-            Look up the data for a Heat Pump Water Heater for a household of 3-4
-            people with a Uniform Energy Factor of 2.5 and a 50-gallon First
-            Hour Rating.
-          </p>
-        </div>
-        <div>
-          <p>
-            After completing the tasks,{" "}
-            <span>
-              {" "}
-              <a className="anchor" href="https://forms.gle/6cLn5GxrMtPPx7qv8">
-                click here to start the Project Peer Evaluations survey!
-              </a>
-            </span>
           </p>
         </div>
         <hr />

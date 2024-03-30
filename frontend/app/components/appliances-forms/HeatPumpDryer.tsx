@@ -9,79 +9,59 @@ const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
 
   //default values
-  const [cef, setCef] = useState("7.0");
+  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("7.0");
   const [capacity, setCapacity] = useState("6.0");
-  const [decibel, setDecibel] = useState("62");
+  const [soundLevelMin, setsoundLevelMin] = useState("62");
+
+  //sample API call
+  //electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevelMax=62&combinedEnergyFactor=7.0&capacity=6.0
+
+  //sample API results
+  // {
+  //   brandName: "Rheem",
+  //   modelNumber: "XJ-75F",
+  //   modelVariant: "701460",
+  //   weightInKg: 71.214,
+  //   widthInCm: 50,
+  //   heightInCm: 160.02,
+  //   lengthInCm: 50,
+  //   electricBreakerSize: 3.67,
+  //   voltage: 120,
+  //   soundLevelMin: 63,
+  //   combinedEnergyFactor: 5,
+  //   capacity: 7,
+  // }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const apiUrl =
+      "https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevelMin=62&combinedEnergyFactor=7.0&capacity=6.0";
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    setResults(data);
     setShowResults(true);
   };
 
-  const [results, setResults] = useState([
-    {
-      brand: "Brand1",
-      id: 1,
-      model: "XJ-75F",
-      capacity: 7,
-      noise: "62",
-      cef: 5,
-    },
-    {
-      brand: "Brand2",
-      id: 2,
-      model: "QW-90G",
-      capacity: 7.5,
-      noise: "62",
-      cef: 6,
-    },
-    {
-      brand: "Brand3",
-      id: 3,
-      model: "LM-40K",
-      capacity: 8,
-      noise: "65",
-      cef: 6.5,
-    },
-    {
-      brand: "Brand4",
-      id: 4,
-      model: "AB-65R",
-      capacity: 9,
-      noise: "66",
-      cef: 8,
-    },
-    {
-      brand: "Brand5",
-      id: 5,
-      model: "Model-5Z",
-      capacity: 7.5,
-      noise: "67",
-      cef: 9,
-    },
-    {
-      brand: "Brand6",
-      id: 6,
-      model: "Model-6Z",
-      capacity: 8.0,
-      noise: "68",
-      cef: 10,
-    },
-  ]);
+  const [results, setResults] = useState([]);
 
   const columns: ColumnDefinition[] = [
-    { title: "Brand", field: "brand", minWidth: 120 },
-    { title: "Model", field: "model", hozAlign: "left", minWidth: 120 },
+    { title: "Brand", field: "brandName", minWidth: 120 },
+    { title: "Model", field: "modelNumber", hozAlign: "left", minWidth: 120 },
     {
       title: "Capacity (cu-ft)",
       field: "capacity",
       hozAlign: "center",
       minWidth: 150,
     },
-    { title: "CEF", field: "cef", hozAlign: "center", minWidth: 100 },
+    {
+      title: "CEF",
+      field: "combinedEnergyFactor",
+      hozAlign: "center",
+      minWidth: 100,
+    },
     {
       title: "Noise Level (dB)",
-      field: "noise",
+      field: "soundLevelMin",
       hozAlign: "center",
       minWidth: 150,
     },
@@ -111,7 +91,7 @@ const HeatPumpDryer = () => {
         <div className={styles.sliderGroup}>
           <label className={styles.labelWithInfo} htmlFor="cef-slider">
             <InfoSquare text="A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings." />
-            &nbsp;Combined Energy Factor (CEF): {cef}
+            &nbsp;Combined Energy Factor (CEF): {combinedEnergyFactor}
           </label>
           <input
             type="range"
@@ -120,8 +100,8 @@ const HeatPumpDryer = () => {
             min="3"
             max="10"
             step="0.5"
-            value={cef}
-            onChange={(e) => setCef(e.target.value)}
+            value={combinedEnergyFactor}
+            onChange={(e) => setCombinedEnergyFactor(e.target.value)}
             className={styles.slider}
           />
         </div>

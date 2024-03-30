@@ -7,62 +7,65 @@ import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 
 const HeatPumpWaterHeaterForm = () => {
   const [showResults, setShowResults] = useState(false);
+  const [results, setResults] = useState([]);
 
   //default values
-  const [capacity, setCapacity] = useState("40");
-  const [uef, setUef] = useState("2.0");
-  const [fhr, setFhr] = useState("80");
+  const [tankCapacityGallons, setTankCapacityGallons] = useState("40");
+  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("2.0");
+  const [firstHourRating, setFirstHourRating] = useState("80");
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  // sample API call:
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&tankCapacityGallons=40&uniformEnergyFactor=2.5&firstHourRating=60
+
+  // Sample API response
+  // [
+  // {
+  //   brandName: "Rheem",
+  //   modelNumber: "GEH50DFEJ2RA",
+  //   modelVariant: "701460",
+  //   tankCapacityGallons: 60,
+  //   weightInKg: 71.214,
+  //   widthInCm: 50,
+  //   heightInCm: 160.02,
+  //   lengthInCm: 50,
+  //   amperage: 3.67,
+  //   voltage: 120,
+  //   uniformEnergyFactor: 2.6,
+  //   firstHourRating: 60,
+  // }
+  // ];
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const apiUrl =
+      "https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&tankCapacityGallons=40&uniformEnergyFactor=2.5&firstHourRating=60";
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    setResults(data);
     setShowResults(true);
   };
 
-  const [results, setResults] = useState([
-    {
-      brand: "BrandA",
-      id: 1,
-      model: "GEH50DFEJ2RA",
-      capacity: 60,
-      fhr: 60,
-      uef: 2.6,
-    },
-    {
-      brand: "BrandB",
-      id: 2,
-      model: "HP10-80H42DV",
-      capacity: 70,
-      fhr: 70,
-      uef: 2.7,
-    },
-    {
-      brand: "BrandC",
-      id: 3,
-      model: "RE2H80R10B-12CWT",
-      capacity: 70,
-      fhr: 50,
-      uef: 2.8,
-    },
-    {
-      brand: "BrandD",
-      id: 4,
-      model: "RE22SR10B-12CWT",
-      capacity: 60,
-      fhr: 60,
-      uef: 2.9,
-    },
-  ]);
   const columns: ColumnDefinition[] = [
-    { title: "Brand", field: "brand", minWidth: 120 },
-    { title: "Model", field: "model", hozAlign: "left", minWidth: 120 },
+    { title: "Brand", field: "brandName", minWidth: 120 },
+    { title: "Model", field: "modelNumber", hozAlign: "left", minWidth: 120 },
     {
       title: "Capacity (gallons)",
-      field: "capacity",
+      field: "tankCapacityGallons",
       hozAlign: "center",
       minWidth: 150,
     },
-    { title: "UEF", field: "uef", hozAlign: "center", minWidth: 100 },
-    { title: "FHR", field: "fhr", hozAlign: "center", minWidth: 100 },
+    {
+      title: "UEF",
+      field: "uniformEnergyFactor",
+      hozAlign: "center",
+      minWidth: 100,
+    },
+    {
+      title: "FHR",
+      field: "firstHourRating",
+      hozAlign: "center",
+      minWidth: 100,
+    },
   ];
 
   return (
@@ -73,7 +76,7 @@ const HeatPumpWaterHeaterForm = () => {
             <InfoSquare
               text={`Choose based upon your household's hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons. `}
             />
-            &nbsp;Tank Capacity (gallons): {capacity}
+            &nbsp;Tank Capacity (gallons): {tankCapacityGallons}
           </label>
           <input
             type="range"
@@ -82,15 +85,15 @@ const HeatPumpWaterHeaterForm = () => {
             min="30"
             max="80"
             step="10"
-            value={capacity}
-            onChange={(e) => setCapacity(e.target.value)}
+            value={tankCapacityGallons}
+            onChange={(e) => setTankCapacityGallons(e.target.value)}
             className={styles.slider}
           />
         </div>
         <div className={styles.sliderGroup}>
           <label className={styles.labelWithInfo} htmlFor="uef-slider">
             <InfoSquare text="Measures overall energy efficiency, influencing long-term energy costs." />
-            &nbsp;Uniform Energy Factor (UEF): {uef}
+            &nbsp;Uniform Energy Factor (UEF): {uniformEnergyFactor}
           </label>
           <input
             type="range"
@@ -99,15 +102,15 @@ const HeatPumpWaterHeaterForm = () => {
             min="0.90"
             max="3.00"
             step="0.1"
-            value={uef}
-            onChange={(e) => setUef(e.target.value)}
+            value={uniformEnergyFactor}
+            onChange={(e) => setUniformEnergyFactor(e.target.value)}
             className={styles.slider}
           />
         </div>
         <div className={styles.sliderGroup}>
           <label className={styles.labelWithInfo} htmlFor="fhr-slider">
             <InfoSquare text="Estimates hot water supply in the first hour, crucial for peak demand." />
-            &nbsp;First Hour Rating (FHR): {fhr} gallons
+            &nbsp;First Hour Rating (FHR): {firstHourRating} gallons
           </label>
           <input
             type="range"
@@ -116,8 +119,8 @@ const HeatPumpWaterHeaterForm = () => {
             min="40"
             max="120"
             step="10"
-            value={fhr}
-            onChange={(e) => setFhr(e.target.value)}
+            value={firstHourRating}
+            onChange={(e) => setFirstHourRating(e.target.value)}
             className={styles.slider}
           />
         </div>
