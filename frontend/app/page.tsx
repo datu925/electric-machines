@@ -258,6 +258,19 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <section>
+        <h2>P6 Demo Video</h2>
+        <br />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://gtvault-my.sharepoint.com/:v:/g/personal/dturcza3_gatech_edu/EQWgOA9UGAhOvvGOYhrMfgUBWu3TSDyySnpnUuyFu6Lq9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=l9Q88W"
+        >
+          Click to view demo video in a new tab.
+        </a>
+      </section>
+
       <section>
         <h2>P4 Presentation Slides</h2>
         <br />
