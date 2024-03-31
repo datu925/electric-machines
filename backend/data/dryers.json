@@ -1,0 +1,58 @@
+[
+  {
+    "brandName": "Rheem",
+    "modelNumber": "XJ-75F",
+    "modelVariant": "701460",
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "soundLevelMin": 63,
+    "combinedEnergyFactor": 5,
+    "capacity": 7
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "XJ-75F",
+    "modelVariant": "701460",
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "soundLevelMin": 62,
+    "combinedEnergyFactor": 6,
+    "capacity": 7.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "LM-40K",
+    "modelVariant": "701460",
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "soundLevelMin": 65,
+    "combinedEnergyFactor": 6.5,
+    "capacity": 8
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "AB-65R",
+    "modelVariant": "701460",
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "soundLevelMin": 65,
+    "combinedEnergyFactor": 8,
+    "capacity": 9
+  }
+]

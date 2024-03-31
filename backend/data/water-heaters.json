@@ -1,0 +1,58 @@
+[
+  {
+    "brandName": "Rheem",
+    "modelNumber": "GEH50DFEJ2RA",
+    "modelVariant": "701460",
+    "tankCapacityGallons": 60,
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "uniformEnergyFactor": 2.6,
+    "firstHourRating": 60
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "HP10-80H42DV",
+    "modelVariant": "701460",
+    "tankCapacityGallons": 70,
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "uniformEnergyFactor": 2.7,
+    "firstHourRating": 70
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RE2H80R10B-12CWT",
+    "modelVariant": "701460",
+    "tankCapacityGallons": 70,
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "uniformEnergyFactor": 2.8,
+    "firstHourRating": 50
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RE22SR10B-12CWT",
+    "modelVariant": "701460",
+    "tankCapacityGallons": 60,
+    "weightInKg": 71.214,
+    "widthInCm": 50,
+    "heightInCm": 160.02,
+    "lengthInCm": 50,
+    "electricBreakerSize": 3.67,
+    "voltage": 120,
+    "uniformEnergyFactor": 2.9,
+    "firstHourRating": 60
+  }
+]
