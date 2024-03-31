@@ -4,7 +4,7 @@
   "repository": "https://github.com/datu925/electric-machines",
   "author": "Dan Turcza",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "workspaces": [
     "backend",
     "frontend",
@@ -12,5 +12,6 @@
   ],
   "devDependencies": {
     "ts-node": "^10.9.2"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
