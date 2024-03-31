@@ -9,7 +9,7 @@
     "lengthInCm": 50,
     "electricBreakerSize": 3.67,
     "voltage": 120,
-    "soundLevelMin": 63,
+    "soundLevelMax": 63,
     "combinedEnergyFactor": 5,
     "capacity": 7
   },
@@ -23,7 +23,7 @@
     "lengthInCm": 50,
     "electricBreakerSize": 3.67,
     "voltage": 120,
-    "soundLevelMin": 62,
+    "soundLevelMax": 62,
     "combinedEnergyFactor": 6,
     "capacity": 7.5
   },
@@ -37,7 +37,7 @@
     "lengthInCm": 50,
     "electricBreakerSize": 3.67,
     "voltage": 120,
-    "soundLevelMin": 65,
+    "soundLevelMax": 65,
     "combinedEnergyFactor": 6.5,
     "capacity": 8
   },
@@ -51,7 +51,7 @@
     "lengthInCm": 50,
     "electricBreakerSize": 3.67,
     "voltage": 120,
-    "soundLevelMin": 65,
+    "soundLevelMax": 65,
     "combinedEnergyFactor": 8,
     "capacity": 9
   }
