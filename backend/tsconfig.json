@@ -5,6 +5,7 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "sourceMap": true,
+    "outDir": "build"
   },
-  "include": ["./api/*.js", "./src"],
+  "include": ["./api/*.js", "./src"]
 }

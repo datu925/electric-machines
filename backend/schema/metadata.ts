@@ -1,6 +1,6 @@
 export const BRANDS = {
-  rheem: "rheem",
-  unknown: "unknown",
+  Rheem: "Rheem",
+  Unknown: "Unknown",
 } as const;
 export type Brand = keyof typeof BRANDS;
 

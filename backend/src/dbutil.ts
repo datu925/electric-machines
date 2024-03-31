@@ -2,11 +2,11 @@ import * as dt from "../schema/appliance";
 import fs = require("fs");
 import path from "path";
 
-const waterHeaters: dt.HeatPumpWaterHeater[] = JSON.parse(
+export const WATER_HEATERS: dt.HeatPumpWaterHeater[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/water-heaters.json"), "utf-8")
 );
 
-const dryers: dt.HeatPumpDryer[] = JSON.parse(
+export const DRYERS: dt.HeatPumpDryer[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/dryers.json"), "utf-8")
 );
 
@@ -15,7 +15,7 @@ export function findWaterHeater(
   uniformEnergyFactor: number,
   firstHourRating: number
 ) {
-  return waterHeaters.filter((heater) => {
+  return WATER_HEATERS.filter((heater) => {
     if (heater.tankCapacityGallons < tankCapacity) {
       return false;
     }
@@ -34,7 +34,7 @@ export function findDryer(
   combinedEnergyFactor: number,
   capacity: number
 ) {
-  return dryers.filter((dryer) => {
+  return DRYERS.filter((dryer) => {
     if (dryer.soundLevelMax > soundLevel) {
       return false;
     }
