@@ -265,7 +265,7 @@ export default function Home() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://gtvault-my.sharepoint.com/:v:/g/personal/dturcza3_gatech_edu/EQWgOA9UGAhOvvGOYhrMfgUBWu3TSDyySnpnUuyFu6Lq9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=l9Q88W"
+          href="https://gtvault-my.sharepoint.com/:v:/g/personal/dturcza3_gatech_edu/EV8qoAco145AgtARnJHvXhwBtC-pPKNeynMA1GDXEnXyCA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5LAJqC"
         >
           Click to view demo video in a new tab.
         </a>
