@@ -9,9 +9,9 @@ const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
 
   //default values
-  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("7.0");
-  const [capacity, setCapacity] = useState("6.0");
-  const [soundLevel, setSoundLevel] = useState("62");
+  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("3.0");
+  const [capacity, setCapacity] = useState("3.0");
+  const [soundLevel, setSoundLevel] = useState("67");
 
   //sample API call
   //electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&combinedEnergyFactor=7.0&capacity=6.0
@@ -62,7 +62,7 @@ const HeatPumpDryer = () => {
     },
     {
       title: "Sound Level (dB)",
-      field: "soundLevelMin",
+      field: "soundLevelMax",
       hozAlign: "center",
       minWidth: 150,
     },
@@ -138,7 +138,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "64"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Silent(63-64dB)</span>
+                <span className={styles.radioText}>Silent(&lt;64dB)</span>
               </label>
 
               <label htmlFor="soundNormal">
@@ -151,7 +151,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "66"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Normal(65-66dB)</span>
+                <span className={styles.radioText}>Normal(&lt;66dB)</span>
               </label>
 
               <label htmlFor="soundLoud">
@@ -164,7 +164,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "67"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Loud(&gt;67dB)</span>
+                <span className={styles.radioText}>Loud(&lt;67dB)</span>
               </label>
             </div>
           </div>

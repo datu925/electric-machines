@@ -10,9 +10,9 @@ const HeatPumpWaterHeaterForm = () => {
   const [results, setResults] = useState([]);
 
   //default values
-  const [tankCapacityGallons, setTankCapacityGallons] = useState("40");
-  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("2.0");
-  const [firstHourRating, setFirstHourRating] = useState("80");
+  const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
+  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
+  const [firstHourRating, setFirstHourRating] = useState("40");
 
   // sample API call:
   // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&tankCapacityGallons=40&uniformEnergyFactor=2.5&firstHourRating=60
