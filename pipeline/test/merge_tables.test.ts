@@ -57,7 +57,7 @@ t.test("merge different versions of same model number", (t) => {
       operating_weight_lbs: 180,
     },
   ];
-  const merged = mergeTablesByModelNumber(specs, "rheem");
+  const merged = mergeTablesByModelNumber(specs, "Rheem");
   const expected: Table[] = [
     {
       modelNumber: "RP18AZ60AJVC",

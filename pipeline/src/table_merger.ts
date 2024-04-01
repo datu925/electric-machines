@@ -7,7 +7,7 @@ export type Table = {
 export type IdentifierToTable = { [index: string]: Table };
 
 function canonicalModelNumber(modelNumber: string, brand: Brand): string {
-  if (brand === "rheem" && modelNumber.endsWith("A")) {
+  if (brand === "Rheem" && modelNumber.endsWith("A")) {
     return modelNumber.slice(0, modelNumber.length - 1);
   }
   return modelNumber;
@@ -15,7 +15,7 @@ function canonicalModelNumber(modelNumber: string, brand: Brand): string {
 
 export function mergeTablesByModelNumber(
   tables: Table[],
-  brand: Brand = "unknown"
+  brand: Brand = "Unknown"
 ): Table[] {
   const output: IdentifierToTable = {};
   for (const table of tables) {
