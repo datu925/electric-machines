@@ -11,10 +11,10 @@ const HeatPumpDryer = () => {
   //default values
   const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("7.0");
   const [capacity, setCapacity] = useState("6.0");
-  const [soundLevelMin, setsoundLevelMin] = useState("62");
+  const [soundLevel, setSoundLevel] = useState("62");
 
   //sample API call
-  //electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevelMax=62&combinedEnergyFactor=7.0&capacity=6.0
+  //electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&combinedEnergyFactor=7.0&capacity=6.0
 
   //sample API results
   // {
@@ -34,10 +34,11 @@ const HeatPumpDryer = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const apiUrl =
-      "https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevelMin=62&combinedEnergyFactor=7.0&capacity=6.0";
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacity=${capacity}`;
+    // console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
+    // console.log(data);
     setResults(data);
     setShowResults(true);
   };
@@ -60,7 +61,7 @@ const HeatPumpDryer = () => {
       minWidth: 100,
     },
     {
-      title: "Noise Level (dB)",
+      title: "Sound Level (dB)",
       field: "soundLevelMin",
       hozAlign: "center",
       minWidth: 150,
@@ -106,54 +107,62 @@ const HeatPumpDryer = () => {
           />
         </div>
         <div className={styles.radioGroup}>
-          <label className={styles.labelWithInfo} htmlFor="noise-level">
-            <InfoSquare text="High noise levels are louder and might be more noticeable, but these models can be more cost-effective and are best placed in separate utility areas, away from living spaces." />
-            <span>&nbsp;Noise Level </span>
+          <label className={styles.labelWithInfo} htmlFor="sound-level">
+            <InfoSquare text="High sound levels are louder and might be more noticeable, but these models can be more cost-effective and are best placed in separate utility areas, away from living spaces." />
+            <span>&nbsp;Sound Level </span>
           </label>
 
           <div>
             <div className={styles.radioOptions}>
-              <label htmlFor="noiseExtraSilent">
+              <label htmlFor="soundExtraSilent">
                 <input
                   type="radio"
-                  id="noiseExtraSilent"
-                  name="noise-level"
-                  value="extraSilent"
+                  id="soundExtraSilent"
+                  name="sound-level"
+                  value="62"
                   className={styles.radioInput}
+                  checked={soundLevel === "62"}
+                  onChange={(event) => setSoundLevel(event.target.value)}
                 />
                 <span className={styles.radioText}>
                   Extra Silent(&lt;62 dB)
                 </span>
               </label>
-              <label htmlFor="noiseSilent">
+              <label htmlFor="soundSilent">
                 <input
                   type="radio"
-                  id="noiseSilent"
-                  name="noise-level"
-                  value="Silent"
+                  id="soundSilent"
+                  name="sound-level"
+                  value="64"
                   className={styles.radioInput}
+                  checked={soundLevel === "64"}
+                  onChange={(event) => setSoundLevel(event.target.value)}
                 />
                 <span className={styles.radioText}>Silent(63-64dB)</span>
               </label>
 
-              <label htmlFor="noiseNormal">
+              <label htmlFor="soundNormal">
                 <input
                   type="radio"
-                  id="noiseNormal"
-                  name="noise-level"
-                  value="Normal"
+                  id="soundNormal"
+                  name="sound-level"
+                  value="66"
                   className={styles.radioInput}
+                  checked={soundLevel === "66"}
+                  onChange={(event) => setSoundLevel(event.target.value)}
                 />
                 <span className={styles.radioText}>Normal(65-66dB)</span>
               </label>
 
-              <label htmlFor="noiseLoud">
+              <label htmlFor="soundLoud">
                 <input
                   type="radio"
-                  id="noiseLoud"
-                  name="noise-level"
-                  value="Loud"
+                  id="soundLoud"
+                  name="sound-level"
+                  value="67"
                   className={styles.radioInput}
+                  checked={soundLevel === "67"}
+                  onChange={(event) => setSoundLevel(event.target.value)}
                 />
                 <span className={styles.radioText}>Loud(&gt;67dB)</span>
               </label>

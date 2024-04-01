@@ -37,10 +37,11 @@ const HeatPumpWaterHeaterForm = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const apiUrl =
-      "https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&tankCapacityGallons=40&uniformEnergyFactor=2.5&firstHourRating=60";
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacity=${tankCapacityGallons}&uef=${uniformEnergyFactor}&fhr=${firstHourRating}`;
+    // console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
+    // console.log(data);
     setResults(data);
     setShowResults(true);
   };
