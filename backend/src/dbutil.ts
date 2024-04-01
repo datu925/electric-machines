@@ -11,13 +11,15 @@ export const DRYERS: dt.HeatPumpDryer[] = JSON.parse(
 );
 
 export function findWaterHeater(
-  tankCapacity: number,
+  tankCapacityMin: number,
+  tankCapacityMax: number,
   uniformEnergyFactor: number,
   firstHourRating: number
 ) {
   return WATER_HEATERS.filter((heater) => {
     return (
-      heater.tankCapacityGallons >= tankCapacity &&
+      heater.tankCapacityGallons >= tankCapacityMin &&
+      heater.tankCapacityGallons <= tankCapacityMax &&
       heater.uniformEnergyFactor >= uniformEnergyFactor &&
       heater.firstHourRating >= firstHourRating
     );
@@ -25,15 +27,17 @@ export function findWaterHeater(
 }
 
 export function findDryer(
+  capacityMin: number,
+  capacityMax: number,
   soundLevel: number,
-  combinedEnergyFactor: number,
-  capacity: number
+  combinedEnergyFactor: number
 ) {
   return DRYERS.filter((dryer) => {
     return (
+      dryer.capacity >= capacityMin &&
+      dryer.capacity <= capacityMax &&
       dryer.soundLevelMax <= soundLevel &&
-      dryer.combinedEnergyFactor >= combinedEnergyFactor &&
-      dryer.capacity >= capacity
+      dryer.combinedEnergyFactor >= combinedEnergyFactor
     );
   });
 }

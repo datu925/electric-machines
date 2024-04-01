@@ -34,7 +34,7 @@ const HeatPumpDryer = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacity=${capacity}`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=${capacity+1}`;
     // console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();

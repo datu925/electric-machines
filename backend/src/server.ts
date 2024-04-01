@@ -15,8 +15,8 @@ export default async function (
     res.code(200).send(`Hello electrical-machine API`);
   });
 
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacity=40&urf=2.5&fhr=60
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacity=6.0
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacityMin=40&capacityMax=60&urf=2.5&fhr=60
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacityMin=6.0&capacityMax=7.0
   instance.get(
     "/api/v1/appliance",
     async (req: FastifyRequest, res: FastifyReply) => {
@@ -47,19 +47,17 @@ function handleAppliance(req: FastifyRequest) {
   var applianceType = req.query["applianceType"];
   switch (applianceType) {
     case "hpwh":
-      var tankCapacity: number = Number(req.query["capacity"]);
+      var tankCapacityMin: number = Number(req.query["capacityMin"]);
+      var tankCapacityMax: number = Number(req.query["capacityMax"]);
       var uniformEnergyFactor: number = Number(req.query["uef"]);
       var firstHourRating: number = Number(req.query["fhr"]);
-      return db.findWaterHeater(
-        tankCapacity,
-        uniformEnergyFactor,
-        firstHourRating
-      );
+      return db.findWaterHeater(tankCapacityMin, tankCapacityMax, uniformEnergyFactor, firstHourRating);
     case "hpd":
-      var soundLevel: number = Number(req.query["soundLevel"]);
+      var capacityMin: number = Number(req.query["capacityMin"]);
+      var capacityMax: number = Number(req.query["capacityMax"]);
       var combinedEnergyFactor: number = Number(req.query["cef"]);
-      var capacity: number = Number(req.query["capacity"]);
-      return db.findDryer(soundLevel, combinedEnergyFactor, capacity);
+      var soundLevel: number = Number(req.query["soundLevel"]);
+      return db.findDryer(capacityMin, capacityMax, combinedEnergyFactor, soundLevel);
     default:
       return [];
   }
