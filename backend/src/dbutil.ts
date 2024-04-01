@@ -16,16 +16,9 @@ export function findWaterHeater(
   firstHourRating: number
 ) {
   return WATER_HEATERS.filter((heater) => {
-    if (heater.tankCapacityGallons < tankCapacity) {
-      return false;
-    }
-    if (heater.uniformEnergyFactor < uniformEnergyFactor) {
-      return false;
-    }
-    if (heater.firstHourRating < firstHourRating) {
-      return false;
-    }
-    return true;
+    heater.tankCapacityGallons >= tankCapacity &&
+    heater.uniformEnergyFactor >= uniformEnergyFactor &&
+    heater.firstHourRating >= firstHourRating
   });
 }
 
@@ -35,15 +28,13 @@ export function findDryer(
   capacity: number
 ) {
   return DRYERS.filter((dryer) => {
-    if (dryer.soundLevelMax > soundLevel) {
-      return false;
-    }
-    if (dryer.combinedEnergyFactor < combinedEnergyFactor) {
-      return false;
-    }
-    if (dryer.capacity < capacity) {
-      return false;
-    }
-    return true;
+    dryer.soundLevelMax <= soundLevel &&
+    dryer.combinedEnergyFactor >= combinedEnergyFactor &&
+    dryer.capacity >= capacity;
   });
+}
+
+export function allAppliances() {
+  return {"waterHeater": WATER_HEATERS,
+          "dryer": DRYERS};
 }

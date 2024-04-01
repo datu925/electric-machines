@@ -28,6 +28,17 @@ export default async function (
     }
   );
 
+  // https://electric-machines-h6x1.vercel.app/api/v1/allappliances
+  instance.get(
+    "/api/v1/allappliances",
+    async (req: FastifyRequest, res: FastifyReply) => {
+      res
+        .code(200)
+        .header("Content-Type", "application/json; charset=utf-8")
+        .send(db.allAppliances());
+    }
+  );
+
   done();
 }
 
