@@ -138,7 +138,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "64"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Silent(63-64dB)</span>
+                <span className={styles.radioText}>Silent(&lt;64dB)</span>
               </label>
 
               <label htmlFor="soundNormal">
@@ -151,7 +151,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "66"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Normal(65-66dB)</span>
+                <span className={styles.radioText}>Normal(&lt;66dB)</span>
               </label>
 
               <label htmlFor="soundLoud">
@@ -164,7 +164,7 @@ const HeatPumpDryer = () => {
                   checked={soundLevel === "67"}
                   onChange={(event) => setSoundLevel(event.target.value)}
                 />
-                <span className={styles.radioText}>Loud(&gt;67dB)</span>
+                <span className={styles.radioText}>Loud(&lt;67dB)</span>
               </label>
             </div>
           </div>
