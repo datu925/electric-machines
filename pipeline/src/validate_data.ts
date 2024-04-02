@@ -5,6 +5,8 @@ import * as _ from "lodash";
 import fs = require("node:fs/promises");
 import path = require("node:path");
 
+import { stringify } from "csv-stringify/sync";
+
 import { Table } from "./table_merger";
 import { Appliance } from "../../backend/schema/appliance";
 import { HEAT_PUMP_SCHEMA } from "../../backend/schema/heat_pump";
@@ -37,9 +39,24 @@ async function initializeValidators() {
   return validators;
 }
 
+function findMatchingInput(
+  modelNumber: string,
+  inputs: Table[]
+): Table | undefined {
+  if (modelNumber === undefined) return undefined;
+  for (const input of inputs) {
+    if ("modelNumber" in input && input["modelNumber"] === modelNumber) {
+      return input;
+    }
+  }
+  return undefined;
+}
+
 async function main() {
   const opts = program.opts();
   const validators = await initializeValidators();
+
+  const allRecords: Table[] = [];
   for (const topFolder of opts.folders) {
     const folders = await glob(
       path.join(SPECS_FILE_BASE, topFolder, "**", INPUT_SUBDIR),
@@ -85,6 +102,21 @@ async function main() {
             );
           if (validate(augmentedSpec)) {
             valid.push(augmentedSpec);
+            let spreadsheetRecord = {
+              valid: "true",
+              ...augmentedSpec,
+            };
+            const matchingRecord = findMatchingInput(
+              augmentedSpec.modelNumber,
+              filtered["input"]
+            );
+            if (matchingRecord) {
+              spreadsheetRecord = {
+                ...spreadsheetRecord,
+                ...matchingRecord,
+              };
+            }
+            allRecords.push(spreadsheetRecord);
           } else {
             if (validate.errors !== undefined && validate.errors !== null) {
               augmentedSpec.errors = validate.errors;
@@ -107,6 +139,12 @@ async function main() {
       }
     }
   }
+  const ts = Date.now();
+  await fs.writeFile(
+    path.join(SPECS_FILE_BASE, RUNS, ts.toString()),
+    stringify(allRecords),
+    "utf-8"
+  );
 }
 
 main();
