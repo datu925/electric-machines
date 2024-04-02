@@ -10,6 +10,10 @@ export const DRYERS: dt.HeatPumpDryer[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/dryers.json"), "utf-8")
 );
 
+export const HEATPUMPS: dt.HeatPump[] = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../data/hvac.json"), "utf-8")
+);
+
 export function findWaterHeater(
   tankCapacityMin: number,
   tankCapacityMax: number,
@@ -29,19 +33,31 @@ export function findWaterHeater(
 export function findDryer(
   capacityMin: number,
   capacityMax: number,
-  soundLevel: number,
-  combinedEnergyFactor: number
+  combinedEnergyFactor: number,
+  soundLevel: number
 ) {
   return DRYERS.filter((dryer) => {
     return (
       dryer.capacity >= capacityMin &&
       dryer.capacity <= capacityMax &&
-      dryer.soundLevelMax <= soundLevel &&
-      dryer.combinedEnergyFactor >= combinedEnergyFactor
+      dryer.combinedEnergyFactor >= combinedEnergyFactor &&
+      dryer.soundLevelMax <= soundLevel
+    );
+  });
+}
+
+export function findHvac(
+  tonnageMin: number,
+  tonnageMax: number,
+) {
+  return HEATPUMPS.filter((hp) => {
+    return (
+      hp.tonnage >= tonnageMin &&
+      hp.tonnage <= tonnageMax
     );
   });
 }
 
 export function allAppliances() {
-  return { waterHeater: WATER_HEATERS, dryer: DRYERS };
+  return { waterHeater: WATER_HEATERS, dryer: DRYERS, hvac: HEATPUMPS };
 }

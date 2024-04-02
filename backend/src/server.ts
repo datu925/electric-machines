@@ -15,8 +15,9 @@ export default async function (
     res.code(200).send(`Hello electrical-machine API`);
   });
 
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacityMin=40&capacityMax=60&urf=2.5&fhr=60
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacityMin=6.0&capacityMax=7.0
+  // Heatpump WaterHeater:  https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpwh&capacityMin=40&capacityMax=60&uef=2.5&fhr=60
+  // Heatpump Dryer:        https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&cef=7.0&capacityMin=6.0&capacityMax=7.0
+  // Heat Pump HVAC:        https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hphvac&tonnageMin=2.0&tonnageMax=4.5
   instance.get(
     "/api/v1/appliance",
     async (req: FastifyRequest, res: FastifyReply) => {
@@ -58,6 +59,10 @@ function handleAppliance(req: FastifyRequest) {
       var combinedEnergyFactor: number = Number(req.query["cef"]);
       var soundLevel: number = Number(req.query["soundLevel"]);
       return db.findDryer(capacityMin, capacityMax, combinedEnergyFactor, soundLevel);
+    case "hphvac":
+      var tonnageMin: number = Number(req.query["tonnageMin"]);
+      var tonnageMax: number = Number(req.query["tonnageMax"]);
+      return db.findHvac(tonnageMin, tonnageMax);
     default:
       return [];
   }
