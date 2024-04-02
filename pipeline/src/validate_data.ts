@@ -1,12 +1,18 @@
 import Ajv, { ValidateFunction } from "ajv";
+import { SomeJSONSchema } from "ajv/dist/types/json-schema";
 import { program } from "commander";
 import * as _ from "lodash";
 
 import fs = require("node:fs/promises");
 import path = require("node:path");
 
+import { stringify } from "csv-stringify/sync";
+
 import { Table } from "./table_merger";
-import { Appliance } from "../../backend/schema/appliance";
+import {
+  Appliance,
+  HEAT_PUMP_DRYER_SCHEMA,
+} from "../../backend/schema/appliance";
 import { HEAT_PUMP_SCHEMA } from "../../backend/schema/heat_pump";
 import { glob } from "glob";
 import { retrieveMetadata } from "./metadata";
@@ -33,13 +39,45 @@ async function initializeValidators() {
   validators[APPLIANCE_TYPES.heat_pump_water_heater] = ajv.compile(
     HEAT_PUMP_WATER_HEATER_SCHEMA
   );
+  validators[APPLIANCE_TYPES.heat_pump_dryer] = ajv.compile(
+    HEAT_PUMP_DRYER_SCHEMA
+  );
 
   return validators;
+}
+
+function findMatchingInput(
+  modelNumber: string,
+  inputs: Table[]
+): Table | undefined {
+  if (modelNumber === undefined) return undefined;
+  for (const input of inputs) {
+    if ("modelNumber" in input && input["modelNumber"] === modelNumber) {
+      return input;
+    }
+  }
+  return undefined;
+}
+
+function getColumns(records: Table[], schema: SomeJSONSchema): string[] {
+  // Preseed with properties from schema
+  let headers = Object.keys(schema.properties);
+  headers = ["valid"].concat(headers);
+  for (const record of records) {
+    for (const key in record) {
+      if (!headers.includes(key)) {
+        headers.push(key);
+      }
+    }
+  }
+  return headers;
 }
 
 async function main() {
   const opts = program.opts();
   const validators = await initializeValidators();
+
+  const allRecords: Table[] = [];
   for (const topFolder of opts.folders) {
     const folders = await glob(
       path.join(SPECS_FILE_BASE, topFolder, "**", INPUT_SUBDIR),
@@ -70,7 +108,7 @@ async function main() {
         }
 
         const metadata = await retrieveMetadata(applianceFolder);
-        const columnsToCopy = ["brandName", "sourceUrl"];
+        const columnsToCopy = ["applianceType", "brandName", "sourceUrl"];
         const metadataToCopy = _.pick(metadata, columnsToCopy);
 
         const specs = Array.isArray(filtered["data"])
@@ -91,6 +129,21 @@ async function main() {
             }
             invalid.push(augmentedSpec);
           }
+          let spreadsheetRecord = {
+            valid: validate(augmentedSpec) ? "true" : "false",
+            ...augmentedSpec,
+          };
+          const matchingRecord = findMatchingInput(
+            augmentedSpec.modelNumber,
+            filtered["input"]
+          );
+          if (matchingRecord) {
+            spreadsheetRecord = {
+              ...spreadsheetRecord,
+              ...matchingRecord,
+            };
+          }
+          allRecords.push(spreadsheetRecord);
         }
         const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
         await fs.mkdir(outputFolder, { recursive: true });
@@ -107,6 +160,16 @@ async function main() {
       }
     }
   }
+  const ts = Date.now();
+  await fs.mkdir(path.join(SPECS_FILE_BASE, RUNS, ts.toString()));
+  await fs.writeFile(
+    path.join(SPECS_FILE_BASE, RUNS, ts.toString(), "all_records.csv"),
+    stringify(allRecords, {
+      header: true,
+      columns: getColumns(allRecords, HEAT_PUMP_SCHEMA),
+    }),
+    "utf-8"
+  );
 }
 
 main();
