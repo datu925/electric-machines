@@ -36,7 +36,7 @@
   }
 
   section {
-    padding: 0.25rem 2rem 1.5rem; //top | right+left | bottom
+    padding: 2rem 4rem 2rem; //top | right+left | bottom
     margin-bottom: 4rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -54,7 +54,7 @@
     }
   }
   /* default for larger screens */
-  width: 970px; //
+  width: 90%; //
 
   /* medium-sized screens */
   //   @media (max-width: 992px) {

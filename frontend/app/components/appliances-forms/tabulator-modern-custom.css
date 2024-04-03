@@ -1165,11 +1165,13 @@
 }
 
 .tabulator-tooltip {
-  max-width: Min(500px, 100%);
+  max-width: Min(300px, 100%);
   padding: 3px 5px;
   border-radius: 2px;
+  border-color: #000;
+  background-color: white;
   box-shadow: none;
-  font-size: 12px;
+  font-size: 1rem;
   pointer-events: none;
 }
 
@@ -1562,7 +1564,7 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
 .tabulator .tabulator-header {
   border-bottom: 3px solid #4c01c3;
   margin-bottom: 4px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-size: 1.1em;
 }
 
@@ -1572,7 +1574,7 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
 }
 
 .tabulator .tabulator-header .tabulator-col:nth-child(1) {
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .tabulator
