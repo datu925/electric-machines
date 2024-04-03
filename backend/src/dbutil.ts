@@ -14,6 +14,10 @@ export const HEATPUMPS: dt.HeatPump[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/hvac.json"), "utf-8")
 );
 
+export const STOVE: dt.Stove[] = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../data/stove.json"), "utf-8")
+);
+
 export function findWaterHeater(
   tankCapacityMin: number,
   tankCapacityMax: number,
@@ -59,5 +63,5 @@ export function findHvac(
 }
 
 export function allAppliances() {
-  return { waterHeater: WATER_HEATERS, dryer: DRYERS, hvac: HEATPUMPS };
+  return { waterHeater: WATER_HEATERS, dryer: DRYERS, hvac: HEATPUMPS, stove: STOVE };
 }
