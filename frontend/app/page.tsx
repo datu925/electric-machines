@@ -190,18 +190,19 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Midterm presentation slides and delivery. Some
-            follow-ups to schema PR. Putting together demo presentation
+            <u>Highlights:</u> Accomplished – recorded P6 videos. First PR
+            setting up JSON data stores and making backend respect frontend
+            request params. generate_metadata_files script, export to csv add-on
+            to validate_data.ts.
             <br />
-            <u>Challenges:</u> Too much presentation and not enough coding 😊
-            (plus travel). Also, the fact that we have a monorepo without
-            monorepo tooling is starting to hurt a bit. Mobile experience with
-            the new tabulator table is not great - the table gets cut off to the
-            right and is hard to scroll.
+            <u>Challenges:</u> Dryer PDFs are more difficult to parse; unit
+            conversions still a challenge.
             <br />
-            <u>Next Steps:</u> Need to tweak the pipeline to separate LLM table
-            normalization and column name mapping stages, since the latter
-            should go as late as. Then need to start running more appliances{" "}
+            <u>Next Steps:</u> Tweak format of reformat_tables.ts to give the
+            LLM more context. Explore pdf-to-text parsing as an addition to the
+            table extraction since the dryer sheets don’t have many tables. This
+            is probably good for the other sheets anyway. Refine export-to-csv
+            procedure so that columns are easier to work with.
             <br />
           </p>
         </div>
@@ -209,32 +210,34 @@ export default function Home() {
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Read through peer reviews and summarized to the
-            team in Slack. Added more coverage for heat pumps in the URL
-            metadata file, and tackled a large part of the water heaters.
+            <u>Highlights:</u> Added dryers and ovens/stoves to component
+            metadata. Continued breath first approach to appliance data sheet
+            coverage.
             <br />
-            <u>Challenges:</u> Repeated model numbers across different
-            manufacturers means that searching spec sheets can bring up only the
-            same model from a different manufacturer that has better online
-            visibility. <br />
-            <u>Next Steps:</u> Continue increasing coverage for largest
-            manufacturers first and begin collecting spec sheets for dryers.
-            Take a breath-first approach to coverage across appliances. <br />
+            <u>Challenges:</u> Dryers and oven/stoves are even less standardized
+            in terms of product data sheets and manuals. Each brand has a lot of
+            models and their data sheets only cover the color variations of one
+            model, meaning more entries, but not much more data as well as
+            slower entry. <br />
+            <u>Next Steps:</u> Review user stories. Pipeline work to begin
+            getting from the metadata links to the schema, getting the retrieved
+            specs to be more accurate. Deployment plan and sustainability study
+            for P7. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Pushed new table format, updated columns, updated
-            some input forms.
+            <u>Highlights:</u> Fix results table mobile view. Add realistic
+            params to backend API call. Created user stories for P7.
             <br />
-            <u>Challenges:</u> Tried to implement selection feature on tabulator
-            to improve UX but couldn’t find enough information online. Lacks
-            freedom using tabulator for react.
+            <u>Challenges:</u> Some blocking due to lagging backend API and
+            shifting requirements.
             <br />
-            <u>Next Steps:</u> Adjust table for mobile viewing, incorporate new
-            API results into frontend.
+            <u>Next Steps:</u> For all appliances, update results table to add
+            more column and add more filtering options on the headers. Rehaul
+            frontend to remove query params and initial user inputs.
             <br />
           </p>
         </div>
@@ -242,18 +245,17 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Finalised and integrated backend API to return
-            data to front-end requests + researched on integrating database such
-            as Postgres with Vercel.
+            <u>Highlights:</u> Added versioning in the backend API, added
+            filtering based on range for tank capacity for water-heater and
+            capacity for dryer. Added support for first hvac appliances. Create
+            new backend request to source all appliances from the data storage.
             <br />
-            <u>Challenges:</u> Vercel only permits vercel-compliant database and
-            will lock down the project in the Vercel eco-system. This makes it
-            hard for the partner to move out of Vercel later on.
+            <u>Challenges:</u> Was feeling unwell due to flu.
             <br />
-            <u>Next Steps:</u> Add versioning in the backend API. Instead of
-            integrating Vercel Postgres into the backend for querying, create a
-            db store with loading data from a raw json store alongside with the
-            project.
+            <u>Next Steps:</u> Convert the backend url request to a more robust
+            type-based approach as the current one is quite fragile. Add support
+            for induction stove appliances. Experiment with supporting multiple
+            weight/height data storage for different units and unit conversions.
             <br />
           </p>
         </div>
