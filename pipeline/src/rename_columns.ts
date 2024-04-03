@@ -22,7 +22,7 @@ import { ModelGeneratedAppliance } from "../../backend/schema/appliance";
 import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
-const INPUT_SUBDIR = "merged/";
+const INPUT_SUBDIR = "reformatted/";
 const OUTPUT_SUBDIR = "renamed/";
 const RUNS = "runs/";
 const MODEL_FAMILY = "gpt"; // eventually support more options
@@ -56,7 +56,7 @@ async function main() {
       const folderPromises: Promise<void>[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const filteredFilePath = path.join(inputFolder, file);
-        if (!file.endsWith("filtered.json")) continue;
+        if (!file.endsWith("reformatted.json")) continue;
         const applianceRecords = JSON.parse(
           await fs.readFile(filteredFilePath, {
             encoding: "utf8",

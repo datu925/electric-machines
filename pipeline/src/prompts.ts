@@ -13,20 +13,26 @@ export function renderSchemaGuide(specs: {
 
 export const TABLE_REFORMAT_PROMPT = `You are a helpful assistant.
   
-You will be given the output of a table that was read from a PDF and converted
+You will be given a series of tables that were read from a PDF and converted
 to JSON. The tables contain technical specifications about appliances, with possibly
 more than one appliance in the tables. Your task is to reformat the tables into
-valid JSON with one key-value record per model. Return an array even if there is only
+valid JSON with one key-value record per appliance model. Return an array even if there is only
 one record.
 
 The only required field is modelNumber. Even if you don't see a column with that name,
 try to find a similarly named column and use that. Otherwise, use the column names in the
 PDF. You can omit columns that don't have any data in them.
 
-If the table is empty of any meaningful data or does not contain any model numbers,
+Some tables may not have a model number, but if they follow a table that does, it's possible
+that table is a continuation of the previous table, and if it has the same
+number of columns as the previous table, you can use the same model numbers.
+
+If a table is empty of any meaningful data or does not contain any model numbers,
 you can return an empty object.
 
-If there are numeric row/column numbers in the table, you can ignore them.
+If there are numeric row/column numbers in the tables, you can ignore them.
+
+Please send the response in plain text without code formatting.
 `;
 
 export function renderSystemPrompt<T>(metadata: SpecsMetadata<T>) {
@@ -53,10 +59,15 @@ ${renderSchemaGuide(metadata)}`;
   return system;
 }
 
-export const REFORMAT_EXAMPLE_1_INPUT: string = `{"0":{"0":"Physical Data","1":"Model No.#","2":"Nominal Tonnage","3":"Valve Connections","4":"Compressor Type","5":"watts","6":"Shipping weight \\u2013 lbs.","7":"Operating  weight \\u2013 lbs."},
+export const REFORMAT_EXAMPLE_1_INPUT: string = `[[{"0":{"0":"Physical Data","1":"Model No.#","2":"Nominal Tonnage","3":"Valve Connections","4":"Compressor Type","5":"watts","6":"Shipping weight \\u2013 lbs.","7":"Operating  weight \\u2013 lbs."},
 "1":{"0":"","1":"RP1418","2":"1.5","3":"","4":"Scroll","5":"151","6":"159","7":"152"},
 "2":{"0":"","1":"RP1424","2":"2.0","3":"","4":"","5":"156","6":"152","7":"145"},
-"3":{"0":"","1":"RP1430","2":"2.5","3":"","4":"","5":"142","6":"208","7":"201"}}
+"3":{"0":"","1":"RP1430","2":"2.5","3":"","4":"","5":"142","6":"208","7":"201"}}],
+[{"0":{"0":"Other Data","1":"Sound Level (decibels)","2":"Minimum Breaker Size"},
+"1":{"0":"","1":"65","2":"15"},
+"2":{"0":"","1":"68","2":"30"},
+"3":{"0":"","1":"72","2":"30"}}]
+]
 `;
 
 export const REFORMAT_EXAMPLE_1_OUTPUT: string = `[
@@ -66,21 +77,27 @@ export const REFORMAT_EXAMPLE_1_OUTPUT: string = `[
     "Compressor Type": "Scroll",
     "watts": 151,
     "Shipping weight \\u2013 lbs.": 159,
-    "Operating  weight \\u2013 lbs.": 152
+    "Operating  weight \\u2013 lbs.": 152,
+    "Sound Level (decibels)": 65,
+    "Minimum Breaker Size": 15
   },
   {
     "modelNumber": "RP1424",
     "Nominal Tonnage": 2.0,
     "watts": 156,
     "Shipping weight \\u2013 lbs.": 152,
-    "Operating  weight \\u2013 lbs.": 145
+    "Operating  weight \\u2013 lbs.": 145,
+    "Sound Level (decibels)": 68,
+    "Minimum Breaker Size": 30
   },
   {
     "modelNumber": "RP1430",
     "Nominal Tonnage": 2.5,
     "watts": 142,
     "Shipping weight \\u2013 lbs.": 208,
-    "Operating  weight \\u2013 lbs.": 201
+    "Operating  weight \\u2013 lbs.": 201,
+    "Sound Level (decibels)": 72,
+    "Minimum Breaker Size": 30
   }
 ]`;
 
