@@ -219,7 +219,8 @@ const HeatPumpWaterHeaterForm = () => {
         columns={columns}
         options={{
           pagination: "local",
-          paginationSize: 8,
+          paginationSize: 10,
+          paginationSizeSelector: true,
           // selectable: true,
         }}
       />
