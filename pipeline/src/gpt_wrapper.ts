@@ -61,12 +61,24 @@ export class GptWrapper {
       });
       return completion.choices[0].message!.content!;
     } catch (error) {
-      if (error instanceof Error) {
-        console.error(`Error with OpenAI API request: ${error.message}`);
+      if (
+        error instanceof Error &&
+        error.message.includes("This model's maximum context length is") &&
+        model !== "gpt-4-1106-preview"
+      ) {
+        console.log(
+          "Retrying request with gpt-4-1106-preview model with larger context window"
+        );
+        const retry = await openai.chat.completions.create({
+          model: "gpt-4-0125-preview",
+          messages: messages,
+          temperature: 0.0,
+          seed: 0,
+        });
+        return retry.choices[0].message!.content!;
       } else {
-        console.error(`Error with OpenAI API request: ${error}`);
+        throw error;
       }
     }
-    return "";
   }
 }
