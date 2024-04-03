@@ -1,0 +1,15 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "PROLINE MASTER SMART ELECTRIC WATER HEATERS",
+  "sourceUrl": "http://www.americanwaterheater.com/media/spec-sheets/NRESS00121.pdf",
+  "Comma-separated model numbers": [
+    "EE8F-40H",
+    "EE8F-50H",
+    "EE8F-55H",
+    "EE8F-40R",
+    "EE8F-50R"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

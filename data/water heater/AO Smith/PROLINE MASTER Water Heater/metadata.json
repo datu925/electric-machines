@@ -1,0 +1,16 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "AO Smith",
+  "Brand": "PROLINE MASTER Water Heater",
+  "sourceUrl": "https://assets.hotwater.com/damroot/Original/10001/AOSRE50607.pdf",
+  "Comma-separated model numbers": [
+    "HNT-40",
+    "HNT-50",
+    "HNT-55",
+    "HNS-40",
+    "HNS-40W",
+    "HNS-50"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

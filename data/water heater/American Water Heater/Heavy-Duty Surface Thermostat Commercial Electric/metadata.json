@@ -1,0 +1,9 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "Heavy-Duty Surface Thermostat Commercial Electric",
+  "sourceUrl": "http://www.americanwaterheater.com/media/41302/lchde40.pdf",
+  "Comma-separated model numbers": ["STCE31-52", "STCE31-80", "STCE31-120"],
+  "tags": ["Product"],
+  "notes": "Commercial"
+}

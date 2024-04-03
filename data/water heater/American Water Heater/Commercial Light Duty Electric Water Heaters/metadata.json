@@ -1,0 +1,23 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "Commercial Light Duty Electric Water Heaters",
+  "sourceUrl": "http://www.americanwaterheater.com/media/50877/american-ldce-spec-sheet-ncess01415.pdf",
+  "Comma-separated model numbers": [
+    "LDCE31-6",
+    "LDCE31-10",
+    "LDCE31-15",
+    "LDCE31-20",
+    "LDCE32-30L-30",
+    "LDCE32-40L-40**",
+    "LDCE32-50L-50",
+    "LDCE32-30R-30",
+    "LDCE32-40R-40",
+    "LDCE32-50R-52",
+    "LDCE32-66R",
+    "LDCE32-80R",
+    "LDCE32-119R"
+  ],
+  "tags": ["Product"],
+  "notes": "Commercial"
+}
