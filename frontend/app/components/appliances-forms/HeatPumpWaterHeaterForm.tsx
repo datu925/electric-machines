@@ -71,7 +71,7 @@ const HeatPumpWaterHeaterForm = () => {
       title: "Model",
       field: "modelNumber",
       hozAlign: "left",
-      minWidth: 165,
+      minWidth: 200,
       headerFilter: "input",
       headerFilterPlaceholder: "Model (e.g., RH375)",
     },
@@ -110,17 +110,18 @@ const HeatPumpWaterHeaterForm = () => {
         "Estimates hot water supply in the first hour, crucial for peak demand.",
     },
     {
-      title: "Weight (kg)",
-      field: "weightInKg",
-      hozAlign: "center",
-      minWidth: 140,
-    },
-    {
       title: "Voltage",
       field: "voltage",
       hozAlign: "center",
       minWidth: 140,
     },
+    {
+      title: "Weight (kg)",
+      field: "weightInKg",
+      hozAlign: "center",
+      minWidth: 140,
+    },
+
     {
       title: "Width (cm)",
       field: "widthInCm",
