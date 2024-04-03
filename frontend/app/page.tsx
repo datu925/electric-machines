@@ -11,13 +11,6 @@ export default function Home() {
       <h1 className={styles.title}>Energy Efficient Household Rewiring</h1>
       <section>
         <h2>Appliance Lookup</h2>
-        <div className={styles.disclaimer}>
-          <p>
-            This is a mockup for demonstration purposes only and does not yet
-            contain any real data.
-          </p>
-        </div>
-        <hr />
         <div>
           <ApplianceLookup />
         </div>

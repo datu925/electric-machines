@@ -9,7 +9,7 @@ const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
 
   //default values
-  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("3.0");
+  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("1.0");
   const [capacity, setCapacity] = useState("3.0");
   const [soundLevel, setSoundLevel] = useState("67");
 
@@ -34,8 +34,8 @@ const HeatPumpDryer = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=${capacity+1}`;
-    // console.log(apiUrl);
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=100`;
+    console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
     // console.log(data);
@@ -98,9 +98,9 @@ const HeatPumpDryer = () => {
             type="range"
             id="cef-slider"
             name="cef"
-            min="3"
-            max="10"
-            step="0.5"
+            min="1.0"
+            max="4.0"
+            step="0.1"
             value={combinedEnergyFactor}
             onChange={(e) => setCombinedEnergyFactor(e.target.value)}
             className={styles.slider}
@@ -187,7 +187,7 @@ const HeatPumpDryer = () => {
             columns={columns}
             options={{
               pagination: "local",
-              paginationSize: 5,
+              paginationSize: 8,
             }}
           />
         </div>
