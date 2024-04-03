@@ -1,0 +1,13 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "HYBRID ELECTRIC HEAT PUMP WATER HEATER WITH CTA-2045",
+  "sourceUrl": "http://www.americanwaterheater.com/media/116238/NRXSS00121.pdf",
+  "Comma-separated model numbers": [
+    "HPHE10250H045DVCTA",
+    "HPHE10266H045DVCTA",
+    "HPHE10280H045DVCTA"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

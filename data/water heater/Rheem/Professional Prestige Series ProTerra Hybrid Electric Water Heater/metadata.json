@@ -1,0 +1,18 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "Rheem",
+  "Brand": "Professional Prestige Series ProTerra Hybrid Electric Water Heater",
+  "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
+  "Comma-separated model numbers": [
+    "PROPH40 T2 RH375-30",
+    "PROPH50 T2 RH375-30",
+    "PROPH65 T2 RH375-30",
+    "PROPH80 T2 RH375-30",
+    "PROPH40 T2 RH375-15",
+    "PROPH50 T2 RH375-15",
+    "PROPH65 T2 RH375-15",
+    "PROPH80 T2 RH375-15"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

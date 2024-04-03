@@ -1,0 +1,13 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "HYBRID ELECTRIC HEAT PUMP",
+  "sourceUrl": "https://s3.amazonaws.com/assets.aosmith.com/damroot/Original/10001/NRXSS00216.pdf",
+  "Comma-separated model numbers": [
+    "HPHE6250H045DV",
+    "HPHE6266H045DV",
+    "HPHE6280H045DV"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

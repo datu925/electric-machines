@@ -1,0 +1,14 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "Rheem",
+  "Brand": "ProTerra Plug-in Heat Pump Water Heater with HydroBoost (120V Shared Circuit)",
+  "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/1DC43590-F660-4E37-978A-B789F2B4E192.pdf",
+  "Comma-separated model numbers": [
+    "PROPH40 T0 RH120-M",
+    "PROPH50 T0 RH120-M",
+    "PROPH65 T0 RH120-M",
+    "PROPH80 T0 RH120-M"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

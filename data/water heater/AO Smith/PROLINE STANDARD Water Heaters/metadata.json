@@ -1,0 +1,28 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "AO Smith",
+  "Brand": "PROLINE STANDARD Water Heaters",
+  "sourceUrl": "https://assets.hotwater.com/damroot/Original/10001/AOSRE50608.pdf",
+  "Comma-separated model numbers": [
+    "ENT-30",
+    "ENT-40",
+    "ENT-50",
+    "ENT-55",
+    "ENSB-30",
+    "ENS-30",
+    "ENS-40",
+    "ENS-40W",
+    "ENS-50",
+    "ENLB-30*",
+    "ENL-30",
+    "ENL-36",
+    "ENL-40",
+    "ENLB-40*",
+    "ENLB-40W*",
+    "ENLB-50*",
+    "ENLB-50W*",
+    "ENL-50"
+  ],
+  "tags": ["Product"],
+  "notes": "Residential"
+}

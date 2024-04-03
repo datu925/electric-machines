@@ -1,0 +1,9 @@
+{
+  "applianceType": "heat_pump_water_heater",
+  "brandName": "American Water Heater",
+  "Brand": "Heavy Duty Immersion Commercial Electric Water Heater",
+  "sourceUrl": "http://www.americanwaterheater.com/media/71350/ncess00908.pdf",
+  "Comma-separated model numbers": ["TCE31-50", "ITCE31-80", "ITCE31-119"],
+  "tags": ["Product"],
+  "notes": "Commercial"
+}
