@@ -51,19 +51,19 @@ async function main() {
       continue;
     }
 
-    const applianceType = record[APPLIANCE_TYPE];
+    const applianceType = record[APPLIANCE_TYPE].trim();
     if (!fs.existsSync(path.join(FILE_BASE, applianceType))) {
       throw new Error(`No appliance type directory found for ${applianceType}`);
     }
     // Note: we actually call Company "brand" in later parts of the process,
     // and Brand is closer to model name. Resolve this discrepancy later.
-    const company = record[COMPANY];
+    const company = record[COMPANY].trim();
     if (!fs.existsSync(path.join(FILE_BASE, applianceType, company))) {
       throw new Error(
         `No company directory found for ${company} under ${applianceType}`
       );
     }
-    const brand = record[BRAND];
+    const brand = record[BRAND].trim();
     const directory = path.join(FILE_BASE, applianceType, company, brand);
     if (fs.existsSync(directory)) {
       console.warn(`Existing directory for ${directory}`);
@@ -94,9 +94,9 @@ async function main() {
       );
     }
     // Rename things.
-    record["applianceType"] = record[APPLIANCE_TYPE];
+    record["applianceType"] = applianceType;
     delete record[APPLIANCE_TYPE];
-    record["brandName"] = record[COMPANY];
+    record["brandName"] = company;
     delete record[COMPANY];
     record["sourceUrl"] = record[URL];
     delete record[URL];
