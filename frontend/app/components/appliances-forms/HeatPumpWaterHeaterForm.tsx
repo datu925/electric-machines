@@ -4,10 +4,17 @@ import styles from "./sharedForms.module.scss";
 import { useState, useMemo, useEffect } from "react";
 import TableContainer from "../TableContainer";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
+import { HeatPumpWaterHeater } from "../../../../backend/schema/appliance";
+
+export function getUnique(values: any[]): any[] {
+  return values.filter((val, ind) => {
+    return values.indexOf(val) === ind;
+  });
+}
 
 const HeatPumpWaterHeaterForm = () => {
   const [showResults, setShowResults] = useState(false);
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<HeatPumpWaterHeater[]>([]);
 
   //default values
   const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
@@ -64,25 +71,42 @@ const HeatPumpWaterHeaterForm = () => {
       title: "Brand",
       field: "brandName",
       minWidth: 165,
-      headerFilter: "input",
-      headerFilterPlaceholder: "Brand (e.g., Rheem)",
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.brandName)),
+        sortValuesList: "asc",
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Model",
       field: "modelNumber",
       hozAlign: "left",
       minWidth: 200,
-      headerFilter: "input",
-      headerFilterPlaceholder: "Model (e.g., RH375)",
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.modelNumber)),
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Capacity (gallons)",
       field: "tankCapacityGallons",
       hozAlign: "center",
       minWidth: 160,
-      headerFilter: "input",
-      headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Minimum (e.g., 40)",
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(
+          results.map((appliance) => appliance.tankCapacityGallons)
+        ),
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
       headerTooltip:
         "Choose based upon your household's hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons.",
     },
@@ -94,7 +118,7 @@ const HeatPumpWaterHeaterForm = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Mininum (e.g., 3.0)",
+      headerFilterPlaceholder: "Mininum: not set",
       headerTooltip:
         "Measures overall energy efficiency, influencing long-term energy costs.",
     },
@@ -105,7 +129,7 @@ const HeatPumpWaterHeaterForm = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Minimum (e.g., 40)",
+      headerFilterPlaceholder: "Minimum: not set",
       headerTooltip:
         "Estimates hot water supply in the first hour, crucial for peak demand.",
     },
@@ -114,6 +138,28 @@ const HeatPumpWaterHeaterForm = () => {
       field: "voltage",
       hozAlign: "center",
       minWidth: 140,
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.voltage)),
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
+    },
+    {
+      title: "Breaker Size",
+      field: "electricBreakerSize",
+      hozAlign: "center",
+      minWidth: 150,
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(
+          results.map((appliance) => appliance.electricBreakerSize)
+        ),
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Weight (kg)",
@@ -137,12 +183,6 @@ const HeatPumpWaterHeaterForm = () => {
     {
       title: "Length (cm)",
       field: "lengthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Breaker Size",
-      field: "electricBreakerSize",
       hozAlign: "center",
       minWidth: 150,
     },
