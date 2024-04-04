@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
 // import "react-tabulator/lib/styles.css";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
+import { getUnique } from "./HeatPumpWaterHeaterForm";
 
 const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
@@ -43,7 +44,7 @@ const HeatPumpDryer = () => {
   //   setResults(data);
   //   setShowResults(true);
   // };
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState<any[]>([]);
 
   const fetchData = async () => {
     const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;
@@ -61,16 +62,28 @@ const HeatPumpDryer = () => {
       title: "Brand",
       field: "brandName",
       minWidth: 165,
-      headerFilter: "input",
-      headerFilterPlaceholder: "Brand (e.g., Rheem)",
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.brandName)),
+        sortValuesList: "asc",
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Model",
       field: "modelNumber",
       hozAlign: "left",
       minWidth: 200,
-      headerFilter: "input",
-      headerFilterPlaceholder: "Model (e.g., RH375)",
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.modelNumber)),
+        sortValuesList: "asc",
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Capacity (cu-ft)",
@@ -79,7 +92,7 @@ const HeatPumpDryer = () => {
       minWidth: 160,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Minimum (e.g., 3.0)",
+      headerFilterPlaceholder: "Minimum: not set",
       headerTooltip:
         "Capacity refers to the volume of clothes the dryer can hold and dry efficiently, usually measured in cubic feet. A larger capacity is ideal for big households or doing less frequent, larger loads.",
     },
@@ -90,7 +103,7 @@ const HeatPumpDryer = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Mininum (e.g., 1.0)",
+      headerFilterPlaceholder: "Minimum: not set",
       headerTooltip:
         "A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings.",
     },
@@ -101,7 +114,7 @@ const HeatPumpDryer = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: "<=",
-      headerFilterPlaceholder: "Maximum (e.g., 65)",
+      headerFilterPlaceholder: "Maximum (not set)",
       headerTooltip:
         "<60 dB: Very quiet, ideal for living areas. 60-65 dB: Noticeable, not too loud, common for dryers. >65 dB: Loud, like a vacuum, might be disruptive.",
     },
@@ -110,6 +123,30 @@ const HeatPumpDryer = () => {
       field: "voltage",
       hozAlign: "center",
       minWidth: 140,
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(results.map((appliance) => appliance.voltage)),
+        sortValuesList: "asc",
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
+    },
+    {
+      title: "Breaker Size",
+      field: "electricBreakerSize",
+      hozAlign: "center",
+      minWidth: 150,
+      headerFilter: "select",
+      headerFilterFunc: "in",
+      headerFilterParams: {
+        values: getUnique(
+          results.map((appliance) => appliance.electricBreakerSize)
+        ),
+        sortValuesList: "asc",
+        multiselect: true,
+      },
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Weight (kg)",
@@ -133,12 +170,6 @@ const HeatPumpDryer = () => {
     {
       title: "Length (cm)",
       field: "lengthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Breaker Size",
-      field: "electricBreakerSize",
       hozAlign: "center",
       minWidth: 150,
     },
