@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
 // import "react-tabulator/lib/styles.css";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
-import { getUnique } from "./HeatPumpWaterHeaterForm";
+import { getUnique, link } from "./HeatPumpWaterHeaterForm";
 
 const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
@@ -172,6 +172,13 @@ const HeatPumpDryer = () => {
       field: "lengthInCm",
       hozAlign: "center",
       minWidth: 150,
+    },
+    {
+      title: "URL",
+      field: "sourceUrl",
+      hozAlign: "center",
+      minWidth: 150,
+      formatter: link,
     },
   ];
 
