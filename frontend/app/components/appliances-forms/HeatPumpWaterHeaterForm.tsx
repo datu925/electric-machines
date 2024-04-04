@@ -11,6 +11,11 @@ export function getUnique(values: any[]): any[] {
   });
 }
 
+export function link(cell: any, formatterParams: any) {
+  var url = cell.getValue();
+  return `<a href='${url}' target='_blank'>${url}</a>`;
+}
+
 const HeatPumpWaterHeaterForm = () => {
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState<any[]>([]);
@@ -184,6 +189,13 @@ const HeatPumpWaterHeaterForm = () => {
       field: "lengthInCm",
       hozAlign: "center",
       minWidth: 150,
+    },
+    {
+      title: "URL",
+      field: "sourceUrl",
+      hozAlign: "center",
+      minWidth: 150,
+      formatter: link,
     },
   ];
 
