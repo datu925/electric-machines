@@ -5,7 +5,6 @@ import "./tabulator-modern-custom.css";
 // import "react-tabulator/lib/styles.css";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 import { getUnique } from "./HeatPumpWaterHeaterForm";
-import { HeatPumpDryer as HeatPumpDryerType } from "../../../../backend/schema/heat_pump_dryer";
 
 const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
@@ -45,7 +44,7 @@ const HeatPumpDryer = () => {
   //   setResults(data);
   //   setShowResults(true);
   // };
-  const [results, setResults] = useState<HeatPumpDryerType[]>([]);
+  const [results, setResults] = useState<any[]>([]);
 
   const fetchData = async () => {
     const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;

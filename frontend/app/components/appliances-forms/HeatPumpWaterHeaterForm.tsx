@@ -4,7 +4,6 @@ import styles from "./sharedForms.module.scss";
 import { useState, useMemo, useEffect } from "react";
 import TableContainer from "../TableContainer";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
-import { HeatPumpWaterHeater } from "../../../../backend/schema/appliance";
 
 export function getUnique(values: any[]): any[] {
   return values.filter((val, ind) => {
@@ -14,7 +13,7 @@ export function getUnique(values: any[]): any[] {
 
 const HeatPumpWaterHeaterForm = () => {
   const [showResults, setShowResults] = useState(false);
-  const [results, setResults] = useState<HeatPumpWaterHeater[]>([]);
+  const [results, setResults] = useState<any[]>([]);
 
   //default values
   const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
