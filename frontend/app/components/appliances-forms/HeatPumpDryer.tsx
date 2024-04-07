@@ -4,7 +4,11 @@ import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
 // import "react-tabulator/lib/styles.css";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
-import { getUnique, link } from "./HeatPumpWaterHeaterForm";
+import {
+  getUniqueStrings,
+  getUniqueNumbers,
+  link,
+} from "./HeatPumpWaterHeaterForm";
 
 const HeatPumpDryer = () => {
   const [showResults, setShowResults] = useState(false);
@@ -65,7 +69,9 @@ const HeatPumpDryer = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.brandName)),
+        values: getUniqueStrings(
+          results.map((appliance) => appliance.brandName)
+        ),
         sortValuesList: "asc",
         multiselect: true,
       },
@@ -79,7 +85,9 @@ const HeatPumpDryer = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.modelNumber)),
+        values: getUniqueStrings(
+          results.map((appliance) => appliance.modelNumber)
+        ),
         sortValuesList: "asc",
         multiselect: true,
       },
@@ -89,7 +97,7 @@ const HeatPumpDryer = () => {
       title: "Capacity (cu-ft)",
       field: "capacity",
       hozAlign: "center",
-      minWidth: 160,
+      minWidth: 200,
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
@@ -114,7 +122,7 @@ const HeatPumpDryer = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: "<=",
-      headerFilterPlaceholder: "Maximum (not set)",
+      headerFilterPlaceholder: "Maximum: not set",
       headerTooltip:
         "<60 dB: Very quiet, ideal for living areas. 60-65 dB: Noticeable, not too loud, common for dryers. >65 dB: Loud, like a vacuum, might be disruptive.",
     },
@@ -126,7 +134,7 @@ const HeatPumpDryer = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.voltage)),
+        values: getUniqueNumbers(results.map((appliance) => appliance.voltage)),
         sortValuesList: "asc",
         multiselect: true,
       },
@@ -140,7 +148,7 @@ const HeatPumpDryer = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(
+        values: getUniqueNumbers(
           results.map((appliance) => appliance.electricBreakerSize)
         ),
         sortValuesList: "asc",

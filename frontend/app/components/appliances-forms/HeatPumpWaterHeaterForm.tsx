@@ -5,10 +5,16 @@ import { useState, useMemo, useEffect } from "react";
 import TableContainer from "../TableContainer";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 
-export function getUnique(values: any[]): any[] {
-  return values.filter((val, ind) => {
-    return values.indexOf(val) === ind;
-  });
+export function getUniqueStrings(values: string[]): string[] {
+  return values
+    .filter((val, index, self) => self.indexOf(val) === index)
+    .sort((a, b) => a.localeCompare(b));
+}
+
+export function getUniqueNumbers(values: number[]): number[] {
+  return values
+    .filter((val, index, self) => self.indexOf(val) === index)
+    .sort((a, b) => a - b);
 }
 
 export function link(cell: any, formatterParams: any) {
@@ -78,11 +84,13 @@ const HeatPumpWaterHeaterForm = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.brandName)),
+        values: getUniqueStrings(
+          results.map((appliance) => appliance.brandName)
+        ),
         sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: All",
+      headerFilterPlaceholder: "Filter: Select multiple",
     },
     {
       title: "Model",
@@ -92,27 +100,28 @@ const HeatPumpWaterHeaterForm = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.modelNumber)),
+        values: getUniqueStrings(
+          results.map((appliance) => appliance.modelNumber)
+        ),
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: All",
+      headerFilterPlaceholder: "Filter: Select multiple",
     },
     {
       title: "Capacity (gallons)",
       field: "tankCapacityGallons",
       hozAlign: "center",
-      minWidth: 160,
+      minWidth: 200,
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(
+        values: getUniqueNumbers(
           results.map((appliance) => appliance.tankCapacityGallons)
         ),
+        sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: All",
-      headerTooltip:
-        "Choose based upon your household's hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons.",
+      headerFilterPlaceholder: "Filter: Select multiple",
     },
 
     {
@@ -122,9 +131,7 @@ const HeatPumpWaterHeaterForm = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Mininum: not set",
-      headerTooltip:
-        "Measures overall energy efficiency, influencing long-term energy costs.",
+      headerFilterPlaceholder: "Set minimum value",
     },
     {
       title: "FHR",
@@ -133,9 +140,7 @@ const HeatPumpWaterHeaterForm = () => {
       minWidth: 150,
       headerFilter: "input",
       headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Minimum: not set",
-      headerTooltip:
-        "Estimates hot water supply in the first hour, crucial for peak demand.",
+      headerFilterPlaceholder: "Set minimum value",
     },
     {
       title: "Voltage",
@@ -145,10 +150,10 @@ const HeatPumpWaterHeaterForm = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(results.map((appliance) => appliance.voltage)),
+        values: getUniqueNumbers(results.map((appliance) => appliance.voltage)),
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: All",
+      headerFilterPlaceholder: "Filter: Select multiple",
     },
     {
       title: "Breaker Size",
@@ -158,12 +163,12 @@ const HeatPumpWaterHeaterForm = () => {
       headerFilter: "select",
       headerFilterFunc: "in",
       headerFilterParams: {
-        values: getUnique(
+        values: getUniqueNumbers(
           results.map((appliance) => appliance.electricBreakerSize)
         ),
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: All",
+      headerFilterPlaceholder: "Filter: Select multiple",
     },
     {
       title: "Weight (kg)",
@@ -199,72 +204,43 @@ const HeatPumpWaterHeaterForm = () => {
     },
   ];
 
+  const [isToggled, setIsToggled] = useState(true);
+
+  const toggle = () => {
+    setIsToggled(!isToggled);
+  };
+
   return (
     <>
-      {/* <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.sliderGroup}>
-          <label className={styles.labelWithInfo} htmlFor="capacity-slider">
-            <InfoSquare
-              text={`Choose based upon your household's hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons. `}
-            />
-            &nbsp;Tank Capacity (gallons): {tankCapacityGallons}
-          </label>
-          <input
-            type="range"
-            id="capacity-slider"
-            name="capacity"
-            min="30"
-            max="80"
-            step="10"
-            value={tankCapacityGallons}
-            onChange={(e) => setTankCapacityGallons(e.target.value)}
-            className={styles.slider}
-          />
-        </div>
-        <div className={styles.sliderGroup}>
-          <label className={styles.labelWithInfo} htmlFor="uef-slider">
-            <InfoSquare text="Measures overall energy efficiency, influencing long-term energy costs." />
-            &nbsp;Uniform Energy Factor (UEF): {uniformEnergyFactor}
-          </label>
-          <input
-            type="range"
-            id="uef-slider"
-            name="uef"
-            min="0.90"
-            max="3.00"
-            step="0.1"
-            value={uniformEnergyFactor}
-            onChange={(e) => setUniformEnergyFactor(e.target.value)}
-            className={styles.slider}
-          />
-        </div>
-        <div className={styles.sliderGroup}>
-          <label className={styles.labelWithInfo} htmlFor="fhr-slider">
-            <InfoSquare text="Estimates hot water supply in the first hour, crucial for peak demand." />
-            &nbsp;First Hour Rating (FHR): {firstHourRating} gallons
-          </label>
-          <input
-            type="range"
-            id="fhr-slider"
-            name="fhr"
-            min="40"
-            max="120"
-            step="10"
-            value={firstHourRating}
-            onChange={(e) => setFirstHourRating(e.target.value)}
-            className={styles.slider}
-          />
-        </div>
+      <div className={styles.tableHelpSection}>
         <div>
-          <input
-            className={styles.submitButton}
-            type="submit"
-            value="Start Lookup"
-          />
+          <label>
+            <input type="checkbox" checked={isToggled} onChange={toggle} />
+            <span className="switch" />
+            Show Table Column Descriptions
+          </label>
         </div>
-      </form> */}
-      {/* {showResults && (
-        <> */}
+        {isToggled && (
+          <div className={styles.tableHelp}>
+            <ul>
+              <li>
+                <b>Capacity </b>(gallons): Choose based upon your household's
+                hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60
+                gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons.
+              </li>
+              <li>
+                <b>UEF (Uniform Energy Factor)</b>: Measures overall energy
+                efficiency, influencing long-term energy costs.
+              </li>
+              <li>
+                <b>FHR (First Hour Rating)</b>: Measures overall energy
+                efficiency, influencing long-term energy costs.
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
+
       <ReactTabulator
         data={results}
         columns={columns}
