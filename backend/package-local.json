@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap -- --ts \"test/**/*.test.ts\"",
+    "vercel": "vercel dev",
+    "tsc": "tsc",
+    "build": "rimraf build && tsc",
+    "start": "node build/src/server-local.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@vercel/node": "^1.11.1",
+    "ajv": "^8.12.0",
+    "json-schema-to-ts": "^3.0.1",
+    "tap": "^18.7.2",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^4.26.2"
+  }
+}

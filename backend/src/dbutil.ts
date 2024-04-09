@@ -1,4 +1,6 @@
 import * as dt from "../schema/appliance";
+import * as req from "./model/applianceRequest";
+
 import fs = require("fs");
 import path from "path";
 
@@ -18,46 +20,33 @@ export const STOVE: dt.Stove[] = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../data/stove.json"), "utf-8")
 );
 
-export function findWaterHeater(
-  tankCapacityMin: number,
-  tankCapacityMax: number,
-  uniformEnergyFactor: number,
-  firstHourRating: number
-) {
+export function findWaterHeater(r: req.HeatPumpWaterHeaterRequest) {
   return WATER_HEATERS.filter((heater) => {
     return (
-      heater.tankCapacityGallons >= tankCapacityMin &&
-      heater.tankCapacityGallons <= tankCapacityMax &&
-      heater.uniformEnergyFactor >= uniformEnergyFactor &&
-      heater.firstHourRating >= firstHourRating
+      heater.tankCapacityGallons >= r.tankCapacityMin &&
+      heater.tankCapacityGallons <= r.tankCapacityMax &&
+      heater.uniformEnergyFactor >= r.uniformEnergyFactor &&
+      heater.firstHourRating >= r.firstHourRating
     );
   });
 }
 
-export function findDryer(
-  capacityMin: number,
-  capacityMax: number,
-  combinedEnergyFactor: number,
-  soundLevel: number
-) {
+export function findDryer(r: req.HeatPumpDryerRequest) {
   return DRYERS.filter((dryer) => {
     return (
-      dryer.capacity >= capacityMin &&
-      dryer.capacity <= capacityMax &&
-      dryer.combinedEnergyFactor >= combinedEnergyFactor &&
-      dryer.soundLevelMax <= soundLevel
+      dryer.capacity >= r.capacityMin &&
+      dryer.capacity <= r.capacityMax &&
+      dryer.combinedEnergyFactor >= r.combinedEnergyFactor &&
+      dryer.soundLevelMax <= r.soundLevel
     );
   });
 }
 
-export function findHvac(
-  tonnageMin: number,
-  tonnageMax: number,
-) {
+export function findHvac(r: req.HeatPumpHvacRequest) {
   return HEATPUMPS.filter((hp) => {
     return (
-      hp.tonnage >= tonnageMin &&
-      hp.tonnage <= tonnageMax
+      hp.tonnage >= r.tonnageMin &&
+      hp.tonnage <= r.tonnageMax
     );
   });
 }

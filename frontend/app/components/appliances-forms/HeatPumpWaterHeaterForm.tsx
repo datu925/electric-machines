@@ -32,7 +32,7 @@ const HeatPumpWaterHeaterForm = () => {
   const [firstHourRating, setFirstHourRating] = useState("40");
 
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&capacityMin=1&capacityMax=1000&uef=1&fhr=1`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh`;
     const response = await fetch(apiUrl);
     const data = await response.json();
     setResults(data);
@@ -43,7 +43,7 @@ const HeatPumpWaterHeaterForm = () => {
   }, []); // runs once
 
   // sample API call:
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityGallons=40&uniformEnergyFactor=2.5&firstHourRating=60
+  // https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=40&tankCapacityMax=70&uniformEnergyFactor=2.5&firstHourRating=60
 
   // Sample API response
   // [
@@ -65,9 +65,9 @@ const HeatPumpWaterHeaterForm = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&capacityMin=${tankCapacityGallons}&capacityMax=${
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=${tankCapacityGallons}&tankCapacityMax=${
       tankCapacityGallons + 10
-    }&uef=${uniformEnergyFactor}&fhr=${firstHourRating}`;
+    }&uniformEnergyFactor=${uniformEnergyFactor}&firstHourRating=${firstHourRating}`;
     // console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
