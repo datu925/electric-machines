@@ -1,6 +1,6 @@
 import { FastifyInstance, FastifyReply, FastifyRequest } from "fastify";
 import * as db from "../dbutil";
-import * as ar from "../model/applianceRequest"
+import * as ar from "../model/appliance_request"
 
 export default async function (fastify: FastifyInstance,) {
     // Heatpump WaterHeater:  https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=40&tankCapacityMax=60&uniformEnergyFactor=2.5&firstHourRating=60

@@ -1,5 +1,5 @@
 import * as dt from "../schema/appliance";
-import * as req from "./model/applianceRequest";
+import * as req from "./model/appliance_request";
 
 import fs = require("fs");
 import path from "path";

@@ -1,5 +1,5 @@
 import fastify from "fastify";
-import router from "./server-router";
+import router from "./router";
 
 const FASTIFY_PORT = Number(process.env.FASTIFY_PORT) || 8080;
 const app = fastify({
