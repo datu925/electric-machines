@@ -3,7 +3,7 @@ from pathlib import Path
 import os
 import sys
 
-DATA_DIR: str = "data/"
+DATA_DIR: str = "../data/"
 
 if __name__ == "__main__":
   # TODO: implement caching – this is pretty slow even on small PDFs.
