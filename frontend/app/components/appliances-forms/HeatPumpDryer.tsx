@@ -15,7 +15,7 @@ const HeatPumpDryer = () => {
   const [soundLevel, setSoundLevel] = useState("67");
 
   //sample API call
-  //electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=62&combinedEnergyFactor=7.0&capacity=6.0
+  //electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=62&combinedEnergyFactor=7.0&capacity=6.0
 
   //sample API results
   // {
@@ -35,8 +35,8 @@ const HeatPumpDryer = () => {
 
   // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
   //   event.preventDefault();
-  //   // const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=100`;
-  //   const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;
+  //   // const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=${soundLevel}&cef=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=100`;
+  //   const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;
   //   console.log(apiUrl);
   //   const response = await fetch(apiUrl);
   //   const data = await response.json();
@@ -47,7 +47,7 @@ const HeatPumpDryer = () => {
   const [results, setResults] = useState<any[]>([]);
 
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=100&cef=1.0&capacityMin=1.0&capacityMax=100`;
     const response = await fetch(apiUrl);
     const data = await response.json();
     setResults(data);
