@@ -183,19 +183,15 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Accomplished – recorded P6 videos. First PR
-            setting up JSON data stores and making backend respect frontend
-            request params. generate_metadata_files script, export to csv add-on
-            to validate_data.ts.
+            <u>Highlights:</u> Frontend changes prior to field evaluations.
+            Field evaluations and field evaluation writeups. Wrapped Python
+            script in Node. Explored feeding all tables to GPT at once (good)
+            and feeding GPT the PDF text outside of tables (bad).
             <br />
-            <u>Challenges:</u> Dryer PDFs are more difficult to parse; unit
-            conversions still a challenge.
+            <u>Challenges:</u> Naively feeding GPT the PDF text didn’t work
             <br />
-            <u>Next Steps:</u> Tweak format of reformat_tables.ts to give the
-            LLM more context. Explore pdf-to-text parsing as an addition to the
-            table extraction since the dryer sheets don’t have many tables. This
-            is probably good for the other sheets anyway. Refine export-to-csv
-            procedure so that columns are easier to work with.
+            <u>Next Steps:</u> Get the PDF text in and then run lots of data
+            through the pipeline
             <br />
           </p>
         </div>
@@ -203,34 +199,33 @@ export default function Home() {
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Added dryers and ovens/stoves to component
-            metadata. Continued breath first approach to appliance data sheet
-            coverage.
+            <u>Highlights:</u> Ran metadata through the pipeline to spot trends
+            in the model data that is not validated. Wrote deployment and
+            sustainability report for P7.
             <br />
-            <u>Challenges:</u> Dryers and oven/stoves are even less standardized
-            in terms of product data sheets and manuals. Each brand has a lot of
-            models and their data sheets only cover the color variations of one
-            model, meaning more entries, but not much more data as well as
-            slower entry. <br />
-            <u>Next Steps:</u> Review user stories. Pipeline work to begin
-            getting from the metadata links to the schema, getting the retrieved
-            specs to be more accurate. Deployment plan and sustainability study
-            for P7. <br />
+            <u>Challenges:</u> Differences between Mac and Windows made using
+            the pipeline difficult initially. OpenAI API key is at a lower tier
+            than the pipeline is designed for, so some data is lost in the
+            process. <br />
+            <u>Next Steps:</u> Write script to convert .csv output into JSON
+            data files separated by appliance type. Write user manual for P8.
+            Put more data through the pipeline. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Fix results table mobile view. Add realistic
-            params to backend API call. Created user stories for P7.
+            <u>Highlights:</u> Updated results table to add more columns and
+            filtering options on the headers. Rehaul frontend to remove query
+            parameters and initial user inputs. Added an expandable section to
+            give info about table headers.
             <br />
-            <u>Challenges:</u> Some blocking due to lagging backend API and
-            shifting requirements.
+            <u>Challenges:</u> Unable to add icons to tabulator tooltip & other
+            issues with tabulator.
             <br />
-            <u>Next Steps:</u> For all appliances, update results table to add
-            more column and add more filtering options on the headers. Rehaul
-            frontend to remove query params and initial user inputs.
+            <u>Next Steps:</u> Add imperial/metric selection, and change the
+            results table accordingly along with API call.
             <br />
           </p>
         </div>
@@ -238,17 +233,19 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Added versioning in the backend API, added
-            filtering based on range for tank capacity for water-heater and
-            capacity for dryer. Added support for first hvac appliances. Create
-            new backend request to source all appliances from the data storage.
+            <u>Highlights:</u> Added support for induction stove appliances.
+            Refactor the backend API such that it can be ran locally. In the
+            final step of converting the backend URL request to type-based
+            approach and supports optional query parameters. Decided a data
+            schema that supports both imperial and metric units.
             <br />
-            <u>Challenges:</u> Was feeling unwell due to flu.
+            <u>Challenges:</u> The backend API testing was only conducted
+            through slow Vercel deployments. Spent a few hours on making it
+            testable locally.
             <br />
-            <u>Next Steps:</u> Convert the backend url request to a more robust
-            type-based approach as the current one is quite fragile. Add support
-            for induction stove appliances. Experiment with supporting multiple
-            weight/height data storage for different units and unit conversions.
+            <u>Next Steps:</u> Finalized the multiple unit data schema from the
+            backend and add support for looking up data in both metric and
+            imperial units. Discussion
             <br />
           </p>
         </div>
