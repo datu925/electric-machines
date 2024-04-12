@@ -33,37 +33,15 @@ function handleAppliance(request: FastifyRequest<ar.ApplianceRequest>) {
   const { applianceType } = request.query as ar.ApplianceRequest
   switch (applianceType.toLowerCase()) {
     case "hpwh":
-      let hpwh = setOptionalsForWaterHeater(request.query as ar.HeatPumpWaterHeaterRequest);
-      return db.findWaterHeater(hpwh);
+      let hpwh = ar.setOptionalsForWaterHeater(request.query as ar.HeatPumpWaterHeaterRequest);
+      return db.queryWaterHeater(hpwh);
     case "hpd":
-      let hpd = setOptionalsForDryer(request.query as ar.HeatPumpDryerRequest);
-      return db.findDryer(hpd);
+      let hpd = ar.setOptionalsForDryer(request.query as ar.HeatPumpDryerRequest);
+      return db.queryDryer(hpd);
     case "hphvac":
-      let hphvac = setOptionalsForHvac(request.query as ar.HeatPumpHvacRequest);
-      return db.findHvac(hphvac);
+      let hphvac = ar.setOptionalsForHvac(request.query as ar.HeatPumpHvacRequest);
+      return db.queryHvac(hphvac);
     default:
         return [];
   }
-}
-
-function setOptionalsForWaterHeater(r: ar.HeatPumpWaterHeaterRequest) {
-  r.tankCapacityMin = r.tankCapacityMin ?? 0;
-  r.tankCapacityMax = r.tankCapacityMax ?? Number.MAX_VALUE;
-  r.firstHourRating = r.firstHourRating ?? 0;
-  r.uniformEnergyFactor = r.uniformEnergyFactor ?? 0;
-  return r
-}
-
-function setOptionalsForDryer(r: ar.HeatPumpDryerRequest) {
-  r.capacityMin = r.capacityMin ?? 0;
-  r.capacityMax = r.capacityMax ?? Number.MAX_VALUE;
-  r.soundLevel = r.soundLevel ?? Number.MAX_VALUE;
-  r.combinedEnergyFactor = r.combinedEnergyFactor ?? 0;
-  return r
-}
-
-function setOptionalsForHvac(r: ar.HeatPumpHvacRequest) {
-  r.tonnageMin = r.tonnageMin ?? 0;
-  r.tonnageMax = r.tonnageMax ?? Number.MAX_VALUE;
-  return r
 }
