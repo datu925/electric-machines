@@ -399,6 +399,39 @@ const HeatPumpDryer = () => {
         )}
       </div>
 
+      <br />
+      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+        <label className={styles.labelWithInfo} htmlFor="unit">
+          Unit System:
+        </label>
+        <div className={styles.radioOptions}>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
+          </label>
+          <label htmlFor="unitImperial">
+            <input
+              type="radio"
+              id="unitImperial"
+              name="unit"
+              value="imperial"
+              className={styles.radioInput}
+              checked={unit === "imperial"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Imperial</span>
+          </label>
+        </div>
+      </div>
+
       <div className={styles.resultTable}>
         <ReactTabulator
           data={results}
