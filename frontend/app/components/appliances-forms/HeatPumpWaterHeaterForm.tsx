@@ -27,20 +27,23 @@ const HeatPumpWaterHeaterForm = () => {
   const [results, setResults] = useState<any[]>([]);
 
   //default values
-  const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
-  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
-  const [firstHourRating, setFirstHourRating] = useState("40");
+  // const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
+  // const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
+  // const [firstHourRating, setFirstHourRating] = useState("40");
+
+  const [unit, setUnit] = useState("metric");
 
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&unit=${unit}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
+    // console.log(apiUrl);
     setResults(data);
   };
 
   useEffect(() => {
     fetchData();
-  }, []); // runs once
+  }, [unit]); // runs in the beginning, and each time {unit} changes
 
   // sample API call:
   // https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=40&tankCapacityMax=70&uniformEnergyFactor=2.5&firstHourRating=60
@@ -63,20 +66,77 @@ const HeatPumpWaterHeaterForm = () => {
   // },
   // ];
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=${tankCapacityGallons}&tankCapacityMax=${
-      tankCapacityGallons + 10
-    }&uniformEnergyFactor=${uniformEnergyFactor}&firstHourRating=${firstHourRating}`;
-    // console.log(apiUrl);
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    // console.log(data);
-    setResults(data);
-    setShowResults(true);
-  };
+  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=${tankCapacityGallons}&tankCapacityMax=${
+  //     tankCapacityGallons + 10
+  //   }&uniformEnergyFactor=${uniformEnergyFactor}&firstHourRating=${firstHourRating}`;
+  //   // console.log(apiUrl);
+  //   const response = await fetch(apiUrl);
+  //   const data = await response.json();
+  //   // console.log(data);
+  //   setResults(data);
+  //   setShowResults(true);
+  // };
+
+  const metricFields: ColumnDefinition[] = [
+    {
+      title: "Width (cm)",
+      field: "widthInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Height (cm)",
+      field: "heightInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Length (cm)",
+      field: "lengthInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Weight (kg)",
+      field: "weightInKg",
+      hozAlign: "center",
+      minWidth: 140,
+    },
+  ];
+
+  const imperialFields: ColumnDefinition[] = [
+    {
+      title: "Width (in)",
+      field: "widthInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Height (in)",
+      field: "heightInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Length (in)",
+      field: "lengthInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Weight (lb)",
+      field: "weightInPounds",
+      hozAlign: "center",
+      minWidth: 140,
+    },
+  ];
+
+  // const columns: ColumnDefinition[] = [
 
   const columns: ColumnDefinition[] = [
+    // ...metricFields,
     {
       title: "Brand",
       field: "brandName",
@@ -170,31 +230,7 @@ const HeatPumpWaterHeaterForm = () => {
       },
       headerFilterPlaceholder: "Filter: Select multiple",
     },
-    {
-      title: "Weight (kg)",
-      field: "weightInKg",
-      hozAlign: "center",
-      minWidth: 140,
-    },
-
-    {
-      title: "Width (cm)",
-      field: "widthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Height (cm)",
-      field: "heightInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Length (cm)",
-      field: "lengthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
+    ...(unit === "imperial" ? imperialFields : metricFields),
     {
       title: "URL",
       field: "sourceUrl",
@@ -212,6 +248,7 @@ const HeatPumpWaterHeaterForm = () => {
 
   return (
     <>
+      <br />
       <div className={styles.tableHelpSection}>
         <div>
           <label>
@@ -240,19 +277,52 @@ const HeatPumpWaterHeaterForm = () => {
           </div>
         )}
       </div>
+      <br />
 
-      <ReactTabulator
-        data={results}
-        columns={columns}
-        options={{
-          pagination: "local",
-          paginationSize: 10,
-          paginationSizeSelector: true,
-          // selectable: true,
-        }}
-      />
-      {/* </>
-      )} */}
+      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+        <label className={styles.labelWithInfo} htmlFor="unit">
+          Unit System:
+        </label>
+        <div className={styles.radioOptions}>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
+          </label>
+          <label htmlFor="unitImperial">
+            <input
+              type="radio"
+              id="unitImperial"
+              name="unit"
+              value="imperial"
+              className={styles.radioInput}
+              checked={unit === "imperial"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Imperial</span>
+          </label>
+        </div>
+      </div>
+
+      <div className={styles.resultTable}>
+        <ReactTabulator
+          data={results}
+          columns={columns}
+          options={{
+            pagination: "local",
+            paginationSize: 10,
+            paginationSizeSelector: true,
+            // selectable: true,
+          }}
+        />
+      </div>
     </>
   );
 };

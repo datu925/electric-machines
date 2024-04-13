@@ -50,8 +50,10 @@ const HeatPumpDryer = () => {
   // };
   const [results, setResults] = useState<any[]>([]);
 
+  const [unit, setUnit] = useState("metric");
+
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&unit=${unit}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
     setResults(data);
@@ -59,7 +61,61 @@ const HeatPumpDryer = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [unit]);
+
+  const metricFields: ColumnDefinition[] = [
+    {
+      title: "Width (cm)",
+      field: "widthInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Height (cm)",
+      field: "heightInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Length (cm)",
+      field: "lengthInCm",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Weight (kg)",
+      field: "weightInKg",
+      hozAlign: "center",
+      minWidth: 140,
+    },
+  ];
+
+  const imperialFields: ColumnDefinition[] = [
+    {
+      title: "Width (in)",
+      field: "widthInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Height (in)",
+      field: "heightInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Length (in)",
+      field: "lengthInInches",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: "Weight (lb)",
+      field: "weightInPounds",
+      hozAlign: "center",
+      minWidth: 140,
+    },
+  ];
 
   const columns: ColumnDefinition[] = [
     {
@@ -156,31 +212,7 @@ const HeatPumpDryer = () => {
       },
       headerFilterPlaceholder: "Filter: All",
     },
-    {
-      title: "Weight (kg)",
-      field: "weightInKg",
-      hozAlign: "center",
-      minWidth: 140,
-    },
-
-    {
-      title: "Width (cm)",
-      field: "widthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Height (cm)",
-      field: "heightInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Length (cm)",
-      field: "lengthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
+    ...(unit === "imperial" ? imperialFields : metricFields),
     {
       title: "URL",
       field: "sourceUrl",
@@ -303,6 +335,39 @@ const HeatPumpDryer = () => {
       layout={"fitData"} */}
 
       {/* {showResults && ( */}
+      <br />
+      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+        <label className={styles.labelWithInfo} htmlFor="unit">
+          Unit System:
+        </label>
+        <div className={styles.radioOptions}>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
+          </label>
+          <label htmlFor="unitImperial">
+            <input
+              type="radio"
+              id="unitImperial"
+              name="unit"
+              value="imperial"
+              className={styles.radioInput}
+              checked={unit === "imperial"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Imperial</span>
+          </label>
+        </div>
+      </div>
+
       <div className={styles.resultTable}>
         <ReactTabulator
           data={results}
