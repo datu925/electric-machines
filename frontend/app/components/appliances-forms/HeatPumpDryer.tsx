@@ -157,8 +157,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
-      headerTooltip:
-        "Capacity refers to the volume of clothes the dryer can hold and dry efficiently, usually measured in cubic feet. A larger capacity is ideal for big households or doing less frequent, larger loads.",
     },
     {
       title: "CEF",
@@ -168,8 +166,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
-      headerTooltip:
-        "A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings.",
     },
     {
       title: "Sound Level (dB)",
@@ -179,8 +175,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: "<=",
       headerFilterPlaceholder: "Maximum: not set",
-      headerTooltip:
-        "<60 dB: Very quiet, ideal for living areas. 60-65 dB: Noticeable, not too loud, common for dryers. >65 dB: Loud, like a vacuum, might be disruptive.",
     },
     {
       title: "Voltage",
@@ -221,6 +215,12 @@ const HeatPumpDryer = () => {
       formatter: link,
     },
   ];
+
+  const [isToggled, setIsToggled] = useState(true);
+
+  const toggle = () => {
+    setIsToggled(!isToggled);
+  };
 
   return (
     <>
@@ -366,6 +366,37 @@ const HeatPumpDryer = () => {
             <span className={styles.radioText}>Imperial</span>
           </label>
         </div>
+
+      <div className={styles.tableHelpSection}>
+        <div>
+          <label>
+            <input type="checkbox" checked={isToggled} onChange={toggle} />
+            <span className="switch" />
+            Show Table Column Descriptions
+          </label>
+        </div>
+        {isToggled && (
+          <div className={styles.tableHelp}>
+            <ul>
+              <li>
+                <b>Capacity </b>(cu-ft): Capacity refers to the volume of
+                clothes the dryer can hold and dry efficiently, usually measured
+                in cubic feet. A larger capacity is ideal for big households or
+                doing less frequent, larger loads.
+              </li>
+              <li>
+                <b>CEF (Combined Energy Factor)</b>: A higher CEF means better
+                energy efficiency, leading to lower operating costs over time.
+                Consider this factor for long-term savings.
+              </li>
+              <li>
+                <b>Sound Level</b> (dB): &lt;60 dB: Very quiet, ideal for living
+                areas. 60-65 dB: Noticeable, not too loud, common for dryers.
+                &gt;65 dB: Loud, like a vacuum, might be disruptive.
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
 
       <div className={styles.resultTable}>
