@@ -19,10 +19,10 @@ const RAW_DRYERS = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/drye
 const RAW_HEATPUMPS = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hvac.json"), "utf-8"));
 const RAW_STOVE = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/stove.json"), "utf-8"));
 
-const PROCEED_WATER_HEATERS = RAW_WATER_HEATERS.map(d => toQueryable(d)) as dt.HeatPumpWaterHeater[];
-const PROCEED_DRYERS = RAW_DRYERS.map(d => toQueryable(d)) as dt.HeatPumpDryer[];
-const PROCEED_HEATPUMPS = RAW_HEATPUMPS.map(d => toQueryable(d)) as dt.HeatPump[];
-const PROCEED_STOVE = RAW_STOVE.map(d => toQueryable(d)) as dt.Stove[];
+const PROCESSED_WATER_HEATERS = RAW_WATER_HEATERS.map(d => toQueryable(d)) as dt.HeatPumpWaterHeater[];
+const PROCESSED_DRYERS = RAW_DRYERS.map(d => toQueryable(d)) as dt.HeatPumpDryer[];
+const PROCESSED_HEATPUMPS = RAW_HEATPUMPS.map(d => toQueryable(d)) as dt.HeatPump[];
+const PROCESSED_STOVE = RAW_STOVE.map(d => toQueryable(d)) as dt.Stove[];
 
 function toQueryable<Type extends dt.Appliance>(data: Type): Type {
     data.weight.value = convertUnit(data.weight.value, data.weight.unit, DbDefaultUnits['weight']);
@@ -42,7 +42,7 @@ function toViewUnits<Type extends dt.Appliance>(d: Type, dimensionUnit: string, 
 }
 
 export function queryWaterHeater(q: HeatPumpWaterHeaterQuery) {
-    return PROCEED_WATER_HEATERS
+    return PROCESSED_WATER_HEATERS
             .filter((heater) =>
                         heater.weight.value <= q.weight &&
                         heater.electricBreakerSize <= q.electricBreakerSize &&
@@ -55,7 +55,7 @@ export function queryWaterHeater(q: HeatPumpWaterHeaterQuery) {
 }
 
 export function queryDryer(q: HeatPumpDryerQuery) {
-    return PROCEED_DRYERS
+    return PROCESSED_DRYERS
             .filter((dryer) =>
                 dryer.weight.value <= q.weight &&
                 dryer.electricBreakerSize <= q.electricBreakerSize &&
@@ -68,7 +68,7 @@ export function queryDryer(q: HeatPumpDryerQuery) {
 }
 
 export function queryHvac(q: HeatPumpHvacQuery) {
-    return PROCEED_HEATPUMPS
+    return PROCESSED_HEATPUMPS
             .filter((hp) =>
                 hp.weight.value <= q.weight &&
                 hp.electricBreakerSize <= q.electricBreakerSize &&
