@@ -3,10 +3,16 @@
     "brandName": "Rheem",
     "modelNumber": "RP1724",
     "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
-    "weightInKg": 2000,
-    "widthInCm": 85.7,
-    "heightInCm": 88.9,
-    "lengthInCm": 85.7,
+    "weight":{
+      "value": 223,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 33.75,
+      "height": 35,
+      "length": 33.75,
+      "unit": "in"
+    },
     "electricBreakerSize": 35,
     "voltage": 230,
     "tonnage": 2
@@ -15,10 +21,16 @@
     "brandName": "Rheem",
     "modelNumber": "RP1748",
     "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
-    "weightInKg": 4000,
-    "widthInCm": 90.8,
-    "heightInCm": 99.0,
-    "lengthInCm": 90.8,
+    "weight":{
+      "value": 250,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 35.75,
+      "height": 39,
+      "length": 35.75,
+      "unit": "in"
+    },
     "electricBreakerSize": 45,
     "voltage": 230,
     "tonnage": 4

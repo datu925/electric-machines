@@ -1,15 +1,21 @@
 export const coreProperties = {
-  weightInKg: {
-    type: "number",
+  weight: {
+    type: "object",
+    properties: {
+      value: { type: "number" },
+      unit: { type: "string" },
+    },
+    required: ["value", "unit"],
   },
-  lengthInCm: {
-    type: "number",
-  },
-  widthInCm: {
-    type: "number",
-  },
-  heightInCm: {
-    type: "number",
+  dimensions: {
+    type: "object",
+    properties: {
+      length: { type: "number" },
+      width: { type: "number" },
+      height: { type: "number" },
+      unit: { type: "string" },
+    },
+    required: ["length", "width", "height", "unit"],
   },
   electricBreakerSize: {
     type: "number",
@@ -26,10 +32,8 @@ export const coreProperties = {
 } as const;
 
 export const requiredCore = [
-  "weightInKg",
-  "lengthInCm",
-  "widthInCm",
-  "heightInCm",
+  "weight",
+  "dimensions",
   "electricBreakerSize",
   "voltage",
 ] as const;

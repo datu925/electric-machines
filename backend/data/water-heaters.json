@@ -4,10 +4,16 @@
     "modelNumber": "PROPH40 T2 RH375-30",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 40,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 157,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 20.5,
+      "height": 62.3125,
+      "length": 25.375,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 3.83,
@@ -18,10 +24,16 @@
     "modelNumber": "PROPH50 T2 RH375-30",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 50,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 178,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 22.5,
+      "height": 61.75,
+      "length": 27.375,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 3.88,
@@ -32,10 +44,16 @@
     "modelNumber": "PROPH65 T2 RH375-30",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 65,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 225,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 24.625,
+      "height": 64.1875,
+      "length": 29.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 4.05,
@@ -46,10 +64,16 @@
     "modelNumber": "PROPH80 T2 RH375-30",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 80,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 244,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 24.625,
+      "height": 74.1875,
+      "length": 29.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 4.07,
@@ -60,10 +84,16 @@
     "modelNumber": "PROPH40 T2 RH375-15",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 40,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 157,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 20.5,
+      "height": 62.3125,
+      "length": 25.375,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 240,
     "uniformEnergyFactor": 3.45,
@@ -74,10 +104,16 @@
     "modelNumber": "PROPH50 T2 RH375-15",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 50,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 178,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 22.5,
+      "height": 61.75,
+      "length": 27.375,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 240,
     "uniformEnergyFactor": 3.75,
@@ -88,10 +124,16 @@
     "modelNumber": "PROPH65 T2 RH375-15",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 65,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 225,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 24.625,
+      "height": 64.1875,
+      "length": 29.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 240,
     "uniformEnergyFactor": 3.55,
@@ -102,10 +144,16 @@
     "modelNumber": "PROPH80 T2 RH375-15",
     "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
     "tankCapacityGallons": 80,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 244,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 24.625,
+      "height": 74.1875,
+      "length": 29.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 240,
     "uniformEnergyFactor": 3.7,
@@ -116,10 +164,16 @@
     "modelNumber": "HPTV-66",
     "sourceUrl": "https://assets.hotwater.com/damroot/Original/10008/ARXSS00123.pdf",
     "tankCapacityGallons": 68,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 289,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 26.5,
+      "height": 61.5,
+      "length": 26.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 120,
     "uniformEnergyFactor": 3.2,
@@ -130,10 +184,16 @@
     "modelNumber": "HPTV-80",
     "sourceUrl": "https://assets.hotwater.com/damroot/Original/10008/ARXSS00123.pdf",
     "tankCapacityGallons": 82,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 307,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 26.5,
+      "height": 69,
+      "length": 26.5,
+      "unit": "in"
+    },
     "electricBreakerSize": 15,
     "voltage": 120,
     "uniformEnergyFactor": 3,
@@ -144,10 +204,16 @@
     "modelNumber": "HPTU-50N",
     "sourceUrl": "https://assets.hotwater.com/damroot/Original/10001/AOSXE50007.pdf",
     "tankCapacityGallons": 46,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 196,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 22,
+      "height": 63,
+      "length": 22,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 3.45,
@@ -158,10 +224,16 @@
     "modelNumber": "HPTU-66N",
     "sourceUrl": "https://assets.hotwater.com/damroot/Original/10001/AOSXE50007.pdf",
     "tankCapacityGallons": 67,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 289,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 27,
+      "height": 61,
+      "length": 27,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 3.45,
@@ -172,10 +244,16 @@
     "modelNumber": "HPTU-80N",
     "sourceUrl": "https://assets.hotwater.com/damroot/Original/10001/AOSXE50007.pdf",
     "tankCapacityGallons": 82,
-    "weightInKg": 71.214,
-    "widthInCm": 50,
-    "heightInCm": 160.02,
-    "lengthInCm": 50,
+    "weight":{
+      "value": 307,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 27,
+      "height": 69,
+      "length": 27,
+      "unit": "in"
+    },
     "electricBreakerSize": 30,
     "voltage": 240,
     "uniformEnergyFactor": 3.45,

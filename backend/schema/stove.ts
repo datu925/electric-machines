@@ -17,10 +17,11 @@ export const StoveProperties = {
     enum: powerType,
   },
   ovenCapacity: {
-    type: "number"
-  },
-  ovenCapacityUnit: {
-    type: "string"
+    type: "object",
+    properties: {
+      value: { type: "number" },
+      unit: { type: "string" },
+    }
   },
   bakeWattage: {
     type: "number"

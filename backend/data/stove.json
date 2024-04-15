@@ -3,16 +3,24 @@
     "brandName": "General Electric",
     "modelNumber": "PHS930BLTS",
     "sourceUrl": "https://www.geappliances.com/appliance/GE-Profile-30-Smart-Slide-In-Front-Control-Induction-and-Convection-Range-PHS930BLTS",
-    "weightInKg": 90.7185,
-    "widthInCm": 75.8825,
-    "heightInCm": 94.615,
-    "lengthInCm": 71.755,
+    "weight":{
+        "value": 200,
+        "unit": "lb"
+      },
+    "dimensions": {
+      "width": 29.875,
+      "height": 37.25,
+      "length": 28.25,
+      "unit": "in"
+    },
     "electricBreakerSize": 40,
     "voltage": 240,
     "numElements": 5,
     "cooktopsPowerType": "induction",
-    "ovenCapacity": 5.3,
-    "ovenCapacityUnit": "cu ft",
+    "ovenCapacity": {
+      "value": 5.3,
+      "unit": "cuft"
+    },
     "bakeWattage": 2850,
     "broilerWattage": 4000,
     "convectionWattage": 2500
@@ -21,16 +29,24 @@
     "brandName": "General Electric",
     "modelNumber": "PB965YPFS",
     "sourceUrl": "https://www.geappliances.com/appliance/GE-Profile-30-Smart-Free-Standing-Electric-Double-Oven-Convection-Range-with-No-Preheat-Air-Fry-PB965YPFS",
-    "weightInKg": 73.0284,
-    "widthInCm": 75.8825,
-    "heightInCm": 120.65,
-    "lengthInCm": 71.755,
+    "weight":{
+      "value": 161,
+      "unit": "lb"
+    },
+    "dimensions": {
+      "width": 29.875,
+      "height": 47.5,
+      "length": 28.25,
+      "unit": "in"
+    },
     "electricBreakerSize": 40,
     "voltage": 240,
     "numElements": 5,
     "cooktopsPowerType": "electric",
-    "ovenCapacity": 6.6,
-    "ovenCapacityUnit": "cu ft",
+    "ovenCapacity": {
+      "value": 6.6,
+      "unit": "cuft"
+    },
     "bakeWattage": 2650,
     "broilerWattage": 3600
   }
