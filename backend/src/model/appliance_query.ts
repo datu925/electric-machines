@@ -1,5 +1,10 @@
 export interface ApplianceQuery {
     readonly applianceType: string;
+    weight: number;
+    weightUnit: string;
+    dimensionUnit: string;
+    electricBreakerSize: number;
+    voltage: number;
 };
 
 export interface HeatPumpWaterHeaterQuery extends ApplianceQuery {

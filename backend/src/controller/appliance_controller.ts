@@ -33,14 +33,14 @@ function handleAppliance(request: FastifyRequest<ar.ApplianceRequest>) {
   const { applianceType } = request.query as ar.ApplianceRequest
   switch (applianceType.toLowerCase()) {
     case "hpwh":
-      let hpwh = ar.setOptionalsForWaterHeater(request.query as ar.HeatPumpWaterHeaterRequest);
-      return db.queryWaterHeater(hpwh);
+      let hpwhRequest = request.query as ar.HeatPumpWaterHeaterRequest
+      return db.queryWaterHeater(ar.toWaterHeaterQuery(hpwhRequest));
     case "hpd":
-      let hpd = ar.setOptionalsForDryer(request.query as ar.HeatPumpDryerRequest);
-      return db.queryDryer(hpd);
+      let hpdRequest = request.query as ar.HeatPumpDryerRequest
+      return db.queryDryer(ar.toDryerQuery(hpdRequest));
     case "hphvac":
-      let hphvac = ar.setOptionalsForHvac(request.query as ar.HeatPumpHvacRequest);
-      return db.queryHvac(hphvac);
+      let hvacRequest = request.query as ar.HeatPumpHvacRequest
+      return db.queryHvac(ar.toHvacQuery(hvacRequest));
     default:
         return [];
   }
