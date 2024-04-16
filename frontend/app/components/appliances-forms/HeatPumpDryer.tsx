@@ -39,7 +39,7 @@ const HeatPumpDryer = () => {
 
   const [results, setResults] = useState<any[]>([]);
 
-  const [unit, setUnit] = useState("metric");
+  const [unit, setUnit] = useState("imperial");
 
   const fetchData = async () => {
     const unitParams =
@@ -71,60 +71,6 @@ const HeatPumpDryer = () => {
   useEffect(() => {
     fetchData();
   }, [unit]);
-
-  const metricFields: ColumnDefinition[] = [
-    {
-      title: "Width (cm)",
-      field: "widthValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Height (cm)",
-      field: "heightValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Length (cm)",
-      field: "lengthValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Weight (kg)",
-      field: "weightValue",
-      hozAlign: "center",
-      minWidth: 140,
-    },
-  ];
-
-  const imperialFields: ColumnDefinition[] = [
-    {
-      title: `Width (in)`,
-      field: "widthValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Height (in)",
-      field: "heightValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Length (in)",
-      field: "lengthValue",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Weight (lb)",
-      field: "weightValue",
-      hozAlign: "center",
-      minWidth: 140,
-    },
-  ];
 
   const columns: ColumnDefinition[] = [
     {
@@ -221,7 +167,30 @@ const HeatPumpDryer = () => {
       },
       headerFilterPlaceholder: "Filter: All",
     },
-    ...(unit === "imperial" ? imperialFields : metricFields),
+    {
+      title: `Width ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "widthValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Height ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "heightValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Length ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "lengthValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Weight ${unit === "imperial" ? "(lb)" : "(kg)"}`,
+      field: "weightValue",
+      hozAlign: "center",
+      minWidth: 140,
+    },
     {
       title: "URL",
       field: "sourceUrl",
@@ -389,18 +358,6 @@ const HeatPumpDryer = () => {
           Unit System:
         </label>
         <div className={styles.radioOptions}>
-          <label htmlFor="unitMetric">
-            <input
-              type="radio"
-              id="unitMetric"
-              name="unit"
-              value="metric"
-              className={styles.radioInput}
-              checked={unit === "metric"}
-              onChange={(event) => setUnit(event.target.value)}
-            />
-            <span className={styles.radioText}>Metric</span>
-          </label>
           <label htmlFor="unitImperial">
             <input
               type="radio"
@@ -412,6 +369,18 @@ const HeatPumpDryer = () => {
               onChange={(event) => setUnit(event.target.value)}
             />
             <span className={styles.radioText}>Imperial</span>
+          </label>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
           </label>
         </div>
       </div>
