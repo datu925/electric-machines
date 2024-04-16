@@ -183,15 +183,14 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> Frontend changes prior to field evaluations.
-            Field evaluations and field evaluation writeups. Wrapped Python
-            script in Node. Explored feeding all tables to GPT at once (good)
-            and feeding GPT the PDF text outside of tables (bad).
+            <u>Highlights:</u> P8 presentation slides and delivery. Some code
+            review. Mid-progress on adding a second pass with GPT to fill in
+            missing fields using the PDF text.
             <br />
-            <u>Challenges:</u> Naively feeding GPT the PDF text didn’t work
+            <u>Challenges:</u> A bit sick.
             <br />
-            <u>Next Steps:</u> Get the PDF text in and then run lots of data
-            through the pipeline
+            <u>Next Steps:</u> Work exclusively on the pipeline to generate a
+            lot of data.
             <br />
           </p>
         </div>
@@ -199,33 +198,32 @@ export default function Home() {
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Ran metadata through the pipeline to spot trends
-            in the model data that is not validated. Wrote deployment and
-            sustainability report for P7.
+            <u>Highlights:</u> Wrote script to convert CSV to JSON; will make
+            changes possibly tonight. User manual/documentation.
             <br />
-            <u>Challenges:</u> Differences between Mac and Windows made using
-            the pipeline difficult initially. OpenAI API key is at a lower tier
-            than the pipeline is designed for, so some data is lost in the
-            process. <br />
-            <u>Next Steps:</u> Write script to convert .csv output into JSON
-            data files separated by appliance type. Write user manual for P8.
-            Put more data through the pipeline. <br />
+            <u>Challenges:</u> Making the script grow with the project (if we
+            e.g. add fields).
+            <br />
+            <u>Next Steps:</u> Go back into the pipeline – some fields where we
+            have everything and then in the rename step. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Updated results table to add more columns and
-            filtering options on the headers. Rehaul frontend to remove query
-            parameters and initial user inputs. Added an expandable section to
-            give info about table headers.
+            <u>Highlights:</u> Added unit selection and made changes according
+            to backend specifications for dryer. Updated table to show correct
+            units according to selection.
             <br />
-            <u>Challenges:</u> Unable to add icons to tabulator tooltip & other
-            issues with tabulator.
+            <u>Challenges:</u> Unable to use data as it, update frontend to
+            extract and reformat data received from the backend to work with
+            Tabulator.
             <br />
-            <u>Next Steps:</u> Add imperial/metric selection, and change the
-            results table accordingly along with API call.
+            <u>Next Steps:</u> Add unit selection to heat pump water heater and
+            create HVAC component. Add frontend part of the architectural
+            diagram and data flow. Take screenshots and get lighthouse metrics.
+            Do the architectural pipeline.
             <br />
           </p>
         </div>
@@ -233,19 +231,20 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Added support for induction stove appliances.
-            Refactor the backend API such that it can be ran locally. In the
-            final step of converting the backend URL request to type-based
-            approach and supports optional query parameters. Decided a data
-            schema that supports both imperial and metric units.
+            <u>Highlights:</u> Add change to support optional parameters for
+            incoming GET requests, and support for multiple measurement units
+            i.e. metrics and imperial in the backend API. Recorded walkthrough
+            video for P8.
             <br />
-            <u>Challenges:</u> The backend API testing was only conducted
-            through slow Vercel deployments. Spent a few hours on making it
-            testable locally.
+            <u>Challenges:</u> The convert-unit library does not support
+            Typescript out of the box. It took considerable time to find a
+            workaround solution.
             <br />
-            <u>Next Steps:</u> Finalized the multiple unit data schema from the
-            backend and add support for looking up data in both metric and
-            imperial units. Discussion
+            <u>Next Steps:</u> Add error handling in the backend API calls. Add
+            Swagger homepage listing all the supported API calls. Add unit tests
+            in the backend and make a README document that reflects the current
+            state of the backend API. Create backend developer documentation for
+            P9.
             <br />
           </p>
         </div>
