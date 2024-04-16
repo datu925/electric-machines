@@ -233,8 +233,8 @@ const HeatPumpWaterHeaterForm = () => {
                 efficiency, influencing long-term energy costs.
               </li>
               <li>
-                <b>FHR (First Hour Rating)</b>: Measures overall energy
-                efficiency, influencing long-term energy costs.
+                <b>FHR (First Hour Rating)</b>: Estimates hot water supply in
+                the first hour, crucial for peak demand.
               </li>
             </ul>
           </div>

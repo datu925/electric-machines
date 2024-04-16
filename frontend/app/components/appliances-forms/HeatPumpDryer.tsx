@@ -37,29 +37,40 @@ const HeatPumpDryer = () => {
   //   "capacity": 7.8
   // },
 
-  // const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-  //   // const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=${soundLevel}&combinedEnergyFactor=${combinedEnergyFactor}&capacityMin=${capacity}&capacityMax=100`;
-  //   const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=65&combinedEnergyFactor=2.0&capacityMin=4.0&capacityMax=8.0`;
-  //   console.log(apiUrl);
-  //   const response = await fetch(apiUrl);
-  //   const data = await response.json();
-  //   // console.log(data);
-  //   setResults(data);
-  //   setShowResults(true);
-  // };
   const [results, setResults] = useState<any[]>([]);
 
+  const [unit, setUnit] = useState("imperial");
+
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd`;
+    const unitParams =
+      unit === "metric"
+        ? `weightUnit=kg&dimensionUnit=cm`
+        : `weightUnit=lb&dimensionUnit=in`;
+
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&${unitParams}`;
+    console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
-    setResults(data);
+
+    //formatting data for tabulator use
+    const tabulatorData = data.map((appliance: any) => {
+      const { weight, dimensions, ...restOfApplianceData } = appliance;
+      return {
+        ...appliance,
+        weightValue: Math.round(weight.value),
+        widthValue: Math.round(dimensions.width),
+        heightValue: Math.round(dimensions.height),
+        lengthValue: Math.round(dimensions.length),
+      };
+    });
+
+    console.log(data);
+    setResults(tabulatorData);
   };
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [unit]);
 
   const columns: ColumnDefinition[] = [
     {
@@ -101,6 +112,8 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
+      headerTooltip:
+        "Capacity refers to the volume of clothes the dryer can hold and dry efficiently, usually measured in cubic feet. A larger capacity is ideal for big households or doing less frequent, larger loads.",
     },
     {
       title: "CEF",
@@ -110,6 +123,8 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
+      headerTooltip:
+        "A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings.",
     },
     {
       title: "Sound Level (dB)",
@@ -119,6 +134,8 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: "<=",
       headerFilterPlaceholder: "Maximum: not set",
+      headerTooltip:
+        "<60 dB: Very quiet, ideal for living areas. 60-65 dB: Noticeable, not too loud, common for dryers. >65 dB: Loud, like a vacuum, might be disruptive.",
     },
     {
       title: "Voltage",
@@ -151,29 +168,28 @@ const HeatPumpDryer = () => {
       headerFilterPlaceholder: "Filter: All",
     },
     {
-      title: "Weight (kg)",
-      field: "weightInKg",
+      title: `Width ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "widthValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Height ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "heightValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Length ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "lengthValue",
+      hozAlign: "center",
+      minWidth: 150,
+    },
+    {
+      title: `Weight ${unit === "imperial" ? "(lb)" : "(kg)"}`,
+      field: "weightValue",
       hozAlign: "center",
       minWidth: 140,
-    },
-
-    {
-      title: "Width (cm)",
-      field: "widthInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Height (cm)",
-      field: "heightInCm",
-      hozAlign: "center",
-      minWidth: 150,
-    },
-    {
-      title: "Length (cm)",
-      field: "lengthInCm",
-      hozAlign: "center",
-      minWidth: 150,
     },
     {
       title: "URL",
@@ -334,6 +350,39 @@ const HeatPumpDryer = () => {
             </ul>
           </div>
         )}
+      </div>
+      <br />
+
+      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+        <label className={styles.labelWithInfo} htmlFor="unit">
+          Unit System:
+        </label>
+        <div className={styles.radioOptions}>
+          <label htmlFor="unitImperial">
+            <input
+              type="radio"
+              id="unitImperial"
+              name="unit"
+              value="imperial"
+              className={styles.radioInput}
+              checked={unit === "imperial"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Imperial</span>
+          </label>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
+          </label>
+        </div>
       </div>
 
       <div className={styles.resultTable}>
