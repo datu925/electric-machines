@@ -108,7 +108,7 @@ async function main() {
         }
 
         const metadata = await retrieveMetadata(applianceFolder);
-        const columnsToCopy = ["applianceType", "brandName", "sourceUrl"];
+        const columnsToCopy = ["brandName", "sourceUrl"];
         const metadataToCopy = _.pick(metadata, columnsToCopy);
 
         const specs = Array.isArray(filtered["data"])
@@ -131,6 +131,7 @@ async function main() {
           }
           let spreadsheetRecord = {
             valid: validate(augmentedSpec) ? "true" : "false",
+            applianceType: metadata.applianceType,
             ...augmentedSpec,
           };
           const matchingRecord = findMatchingInput(
