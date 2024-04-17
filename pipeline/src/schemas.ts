@@ -19,17 +19,13 @@ export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
     description:
       "The nominal tonnage of the appliance. Format as a number even if it is supplied as a string.",
   },
-  weightInKg: {
-    description: "The weight or operating weight of the appliance.",
+  weight: {
+    description:
+      "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kg' for kilograms, 'lb' for pounds, or 'other' for other units.",
   },
-  lengthInCm: {
-    description: "The operating length of the equipment in centimeters.",
-  },
-  widthInCm: {
-    description: "The operating width of the equipment in centimeters.",
-  },
-  heightInCm: {
-    description: "The operating height of the equipment in centimeters.",
+  dimensions: {
+    description:
+      "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
   },
   electricBreakerSize: {
     description:
@@ -59,17 +55,13 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
     tankCapacityGallons: {
       description: "The tank capacity in gallons.",
     },
-    weightInKg: {
-      description: "The weight or operating weight of the appliance.",
+    weight: {
+      description:
+        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kilograms' or 'pounds'.",
     },
-    lengthInCm: {
-      description: "The operating length of the equipment in centimeters.",
-    },
-    widthInCm: {
-      description: "The operating width of the equipment in centimeters.",
-    },
-    heightInCm: {
-      description: "The operating height of the equipment in centimeters.",
+    dimensions: {
+      description:
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit is a values like 'inches', 'centimeters', 'millimeters', 'feet', etc.",
     },
     electricBreakerSize: {
       description:
@@ -106,17 +98,13 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
     capacity: {
       description: "The capacity of the dryer in cubic feet.",
     },
-    weightInKg: {
-      description: "The weight or operating weight of the appliance.",
+    weight: {
+      description:
+        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kilograms' or 'pounds'.",
     },
-    lengthInCm: {
-      description: "The operating length of the equipment in centimeters.",
-    },
-    widthInCm: {
-      description: "The operating width of the equipment in centimeters.",
-    },
-    heightInCm: {
-      description: "The operating height of the equipment in centimeters.",
+    dimensions: {
+      description:
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit is a values like 'inches', 'centimeters', 'millimeters', 'feet', etc.",
     },
     electricBreakerSize: {
       description:

@@ -115,23 +115,32 @@ export const MAPPING_EXAMPLE_1_OUTPUT: string = `{
       {
         "modelNumber": "RP1418",
         "tonnage": 1.5,
-        "weightInKg": 152
+        "weight": {
+          "value": 152,
+          "unit": "kg"
+        }
       },
       {
         "modelNumber": "RP1424",
         "tonnage": 2.0,
-        "weightInKg": 145
+        "weight": {
+          "value": 145,
+          "unit": "kg"
+        }
       },
       {
         "modelNumber": "RP1430",
         "tonnage": 2.5,
-        "weightInKg": 201
+        "weight": {
+          "value": 201,
+          "unit": "kg"
+        }
       }
     ]
   },
   "mapping": {
     "modelNumber": "modelNumber",
     "Nominal Tonnage": "tonnage",
-    "Operating weight \\u2013 kg.": "weightInKg"
+    "Operating weight \\u2013 kg.": "weight"
   }
 }`;
