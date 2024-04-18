@@ -7,7 +7,7 @@ import {
   REFORMAT_EXAMPLE_1_INPUT,
   REFORMAT_EXAMPLE_1_OUTPUT,
   TABLE_REFORMAT_PROMPT,
-} from "./prompts";
+} from "./prompts/prompts";
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";

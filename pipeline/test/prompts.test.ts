@@ -1,6 +1,6 @@
 import { t } from "tap";
 import { FieldMetadata } from "../src/schemas";
-import { renderSchemaGuide, renderSystemPrompt } from "../src/prompts";
+import { renderSchemaGuide, renderSystemPrompt } from "../src/prompts/prompts";
 
 t.test("render schema correctly", (t) => {
   const metadata: { [index: string]: FieldMetadata } = {
