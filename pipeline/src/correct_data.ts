@@ -4,9 +4,9 @@ import fs = require("node:fs/promises");
 import path = require("node:path");
 
 import {
-  renderSystemPrompt,
-  MAPPING_EXAMPLE_1_INPUT,
-  MAPPING_EXAMPLE_1_OUTPUT,
+  renderMissingDataPrompt,
+  MISSING_EXAMPLE_1_INPUT,
+  MISSING_EXAMPLE_1_OUTPUT,
 } from "./prompts";
 
 import { GptWrapper } from "./gpt_wrapper";
@@ -22,8 +22,8 @@ import { ModelGeneratedAppliance } from "../../backend/schema/appliance";
 import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
-const INPUT_SUBDIR = "reformatted/";
-const OUTPUT_SUBDIR = "renamed/";
+const INPUT_SUBDIR = "renamed/";
+const OUTPUT_SUBDIR = "corrected/";
 const RUNS = "runs/";
 const MODEL_FAMILY = "gpt"; // eventually support more options
 
@@ -76,6 +76,9 @@ async function main() {
         if (!("applianceType" in metadata)) {
           throw new Error("applianceType not set in metadata");
         }
+
+        const textFilePath = path.join(applianceFolder, "raw.txt");
+        const txt = await fs.readFile(textFilePath, { encoding: "utf-8" });
         const applianceType = metadata.applianceType;
 
         let modelMetadata: SpecsMetadata<ModelGeneratedAppliance>;
@@ -90,29 +93,62 @@ async function main() {
             "No model metadata configured for this appliance type"
           );
         }
+        const missingFields: Set<string> = new Set();
+        for (const field of Object.keys(modelMetadata)) {
+          for (const record of applianceRecords["data"]) {
+            if (!(field in record)) {
+              missingFields.add(field);
+            }
+          }
+        }
+        const relevantMetadata = Object.fromEntries(
+          Object.entries(modelMetadata).filter(([key]) =>
+            missingFields.has(key)
+          )
+        );
 
         console.log(`Querying ${MODEL_FAMILY} with ${filteredFilePath}`);
         const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
         const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
         const promise = queryFunc(
           JSON.stringify(applianceRecords),
-          renderSystemPrompt(modelMetadata),
-          [[MAPPING_EXAMPLE_1_INPUT, MAPPING_EXAMPLE_1_OUTPUT]]
+          renderMissingDataPrompt(relevantMetadata),
+          [[MISSING_EXAMPLE_1_INPUT, MISSING_EXAMPLE_1_OUTPUT]]
         ).then(async (msg: string) => {
           if (msg == "") return;
           console.log(`Got response from ${filteredFilePath}`);
           try {
             let response = JSON.parse(msg);
             await fs.writeFile(
+              path.join(outputFolder, "raw_response.json"),
+              JSON.stringify(response, null, 2),
+              {
+                encoding: "utf-8",
+                flag: "w",
+              }
+            );
+
+            // Iterate through
+            if (
+              Symbol.iterator in Object(response) &&
+              Symbol.iterator in Object(applianceRecords["data"])
+            ) {
+              for (const record of applianceRecords["data"]) {
+                for (const resp of response) {
+                  if (record.modelNumber === resp.modelNumber) {
+                    for (const prop in resp) {
+                      if (prop in record || resp[prop] === null) {
+                        continue;
+                      }
+                      record[prop] = resp[prop];
+                    }
+                  }
+                }
+              }
+            }
+            await fs.writeFile(
               path.join(outputFolder, "records.json"),
-              JSON.stringify(
-                {
-                  ...response,
-                  input: applianceRecords,
-                },
-                null,
-                2
-              ),
+              JSON.stringify(applianceRecords, null, 2),
               {
                 encoding: "utf-8",
                 flag: "w",

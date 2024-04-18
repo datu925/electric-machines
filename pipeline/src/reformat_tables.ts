@@ -4,7 +4,6 @@ import fs = require("node:fs/promises");
 import path = require("node:path");
 
 import {
-  renderSystemPrompt,
   REFORMAT_EXAMPLE_1_INPUT,
   REFORMAT_EXAMPLE_1_OUTPUT,
   TABLE_REFORMAT_PROMPT,
@@ -12,14 +11,6 @@ import {
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
-import { APPLIANCE_TYPES } from "../../backend/schema/metadata";
-import {
-  HEAT_PUMP_DRYER_METADATA,
-  HEAT_PUMP_METADATA,
-  HEAT_PUMP_WATER_HEATER_METADATA,
-  SpecsMetadata,
-} from "./schemas";
-import { ModelGeneratedAppliance } from "../../backend/schema/appliance";
 import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
@@ -64,7 +55,7 @@ async function main() {
       const applianceFolder = path.dirname(inputFolder);
       const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
       await fs.mkdir(outputFolder, { recursive: true });
-      const folderPromises: Promise<void>[] = [];
+      const jsons: any[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const tableFilePath = path.join(inputFolder, file);
         if (!file.endsWith(".json")) continue;
@@ -78,44 +69,32 @@ async function main() {
           console.log(`Skipping ${tableFilePath} because it is empty`);
           continue;
         }
+        jsons.push(table);
+      }
 
-        if (opts.wait) {
-          await new Promise((f) => setTimeout(f, +opts.wait));
-        }
+      if (opts.wait) {
+        await new Promise((f) => setTimeout(f, +opts.wait));
+      }
 
-        const metadata = await retrieveMetadata(applianceFolder);
-        if (!("applianceType" in metadata)) {
-          throw new Error("applianceType not set in metadata");
-        }
-        const applianceType = metadata.applianceType;
+      const metadata = await retrieveMetadata(applianceFolder);
+      if (!("applianceType" in metadata)) {
+        throw new Error("applianceType not set in metadata");
+      }
+      const applianceType = metadata.applianceType;
 
-        let modelMetadata: SpecsMetadata<ModelGeneratedAppliance>;
-        if (applianceType === APPLIANCE_TYPES.heat_pump) {
-          modelMetadata = HEAT_PUMP_METADATA;
-        } else if (applianceType === APPLIANCE_TYPES.heat_pump_water_heater) {
-          modelMetadata = HEAT_PUMP_WATER_HEATER_METADATA;
-        } else if (applianceType === APPLIANCE_TYPES.heat_pump_dryer) {
-          modelMetadata = HEAT_PUMP_DRYER_METADATA;
-        } else {
-          throw new Error(
-            "No model metadata configured for this appliance type"
-          );
-        }
-
-        console.log(`Querying ${MODEL_FAMILY} with ${tableFilePath}`);
-        const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
-        const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
-        const promise = queryFunc(
-          JSON.stringify(table),
-          TABLE_REFORMAT_PROMPT,
-          [[REFORMAT_EXAMPLE_1_INPUT, REFORMAT_EXAMPLE_1_OUTPUT]]
-        ).then(async (msg: string) => {
-          if (msg == "") return;
-          console.log(`Got response from ${tableFilePath}`);
+      console.log(`Querying ${MODEL_FAMILY} with ${applianceFolder}`);
+      const gpt_wrapper = new GptWrapper(MODEL_FAMILY);
+      const queryFunc = gpt_wrapper.queryGpt.bind(gpt_wrapper);
+      const promise = queryFunc(JSON.stringify(jsons), TABLE_REFORMAT_PROMPT, [
+        [REFORMAT_EXAMPLE_1_INPUT, REFORMAT_EXAMPLE_1_OUTPUT],
+      ])
+        .then(async (msg: string) => {
+          if (msg === "") return;
+          console.log(`Got response for ${applianceFolder}`);
           try {
             let response = JSON.parse(msg);
             await fs.writeFile(
-              path.join(outputFolder, file),
+              path.join(outputFolder, "records.json"),
               JSON.stringify(response, null, 2),
               {
                 encoding: "utf-8",
@@ -124,12 +103,13 @@ async function main() {
             );
           } catch (error) {
             console.error(`Error parsing json: ${error}, ${msg}`);
-            droppedFiles.push(tableFilePath);
+            droppedFiles.push(applianceFolder);
           }
+        })
+        .catch((error) => {
+          console.log(`LLM error on ${applianceFolder}: ${error}`);
         });
-        allPromises.push(promise);
-        folderPromises.push(promise);
-      }
+      allPromises.push(promise);
     }
   }
   await Promise.allSettled(allPromises).then(async () => {
