@@ -152,6 +152,7 @@ data/**/reformatted/
 data/**/renamed/
 data/**/merged/
 data/**/validated/
+data/**/corrected/
 data/runs/*
 data/**/filtered.json
 data/**/merged.json

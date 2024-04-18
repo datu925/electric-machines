@@ -1,0 +1,58 @@
+[
+  {
+    "modelNumber": "RP18AZ24AJVCA",
+    "tonnage": 2,
+    "weight": {
+      "value": 278,
+      "unit": "lb"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 208,
+    "soundLevelMin": 65,
+    "soundLevelMax": 70,
+    "brandName": "Rheem",
+    "sourceUrl": "https://files.myRheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf"
+  },
+  {
+    "modelNumber": "RP18AZ36AJVCA",
+    "tonnage": 3,
+    "weight": {
+      "value": 298,
+      "unit": "lb"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 208,
+    "soundLevelMin": 65,
+    "soundLevelMax": 70,
+    "brandName": "Rheem",
+    "sourceUrl": "https://files.myRheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf"
+  },
+  {
+    "modelNumber": "RP18AZ48AJVCA",
+    "tonnage": 4,
+    "weight": {
+      "value": 298,
+      "unit": "lb"
+    },
+    "electricBreakerSize": 60,
+    "voltage": 208,
+    "soundLevelMin": 65,
+    "soundLevelMax": 70,
+    "brandName": "Rheem",
+    "sourceUrl": "https://files.myRheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf"
+  },
+  {
+    "modelNumber": "RP18AZ60AJVCA",
+    "tonnage": 5,
+    "weight": {
+      "value": 301,
+      "unit": "lb"
+    },
+    "electricBreakerSize": 60,
+    "voltage": 208,
+    "soundLevelMin": 65,
+    "soundLevelMax": 70,
+    "brandName": "Rheem",
+    "sourceUrl": "https://files.myRheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf"
+  }
+]
