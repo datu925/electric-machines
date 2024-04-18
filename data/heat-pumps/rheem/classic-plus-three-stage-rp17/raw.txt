@@ -1,0 +1,1145 @@
+                                                                             Heat Pumps
+                                                                     Air
+
+                                                                             RP17 Series
+
+Rheem Classic Plus® Series
+Three-Stage Heat Pump
+
+                       RP17 Series
+
+                           Efficiencies: up to 18.5 SEER/13 EER/9.5 HSPF
+                           Nominal Sizes 2, 3, 4 & 5 Ton
+                           [70.3, 10.6, 12.7 & 17.6 kW]
+                           Cooling Capacities 17.3 to 60.5 kBTU
+                           [5.7 to 17.7 kW]
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       18.5
+
+                                                  "Proper sizing and installation of equipment is critical to achieve optimal
+                                                   performance. Split system air conditioners and heat pumps must be
+                                                   matched with appropriate coil components to meet Energy Star.
+                                                   Ask your Contractor for details or visit www.energystar.gov."
+
+· EcoNet® Enabled product. The EcoNet Smart Home System              · Rust resistant screws - confirmed through 1500-hour salt
+   provides advanced air & water control for maximum energy             spray testing
+   savings and ideal comfort.
+                                                                     · PlusOne® Expanded Valve Space - 3"-4"-5" service valve
+· The inverter driven, variable speed compressor provides three         space - provides a minimum working area of 27-square
+   stages of heating and cooling operation for maximum comfort          inches for easier access
+   and energy savings. The overdrive feature in heating provides
+   heating down to 7°F.                                              · Integrated heat pump lift receptacle - allows standard CPVC
+                                                                        stands to be inserted into the base
+· Equipped with electronic expansion valve to precisely control
+   variable refrigerant flow.                                        · PlusOne® Triple Service Access - 15" wide, industry leading
+                                                                        corner service access - makes repairs easier and faster. The
+· New composite base pan - dampens sound, captures louver               two fastener removable corner allows optimal access to inter-
+   panels, eliminates corrosion and reduces number of fasteners         nal unit components. Individual louver panels come out once
+   needed                                                               fastener is removed, for faster coil cleaning and easier cabi-
+                                                                        net reassembly
+· Improved tubing design - reduces vibration and stress, mak-
+   ing unit quieter and reducing opportunity for leaks               · Diagnostic service window with two-fastener opening -
+                                                                        provides access to the TXV valves and the heat pump revers-
+· Optimized defrost characteristics - decrease defrosting and           ing valve before opening the unit.
+   provide better home comfort
+                                                                     · External gauge port access - allows easy connection of
+· Powder coat paint system - for a long lasting professional finish     "low-loss" gauge ports
+
+· Optimized reversing valve sizing - improves shifting perfor-       · Single-row condenser coil - makes unit lighter and allows thor-
+   mance for quieter unit operation and increased life of the           ough coil cleaning to maintain "out of the box" performance
+   system
+                                                                     · 35% fewer cabinet fasteners and fastener-free base - allow
+· Enhanced mufflers - help to dissipate vibration energy for            for faster access to internal components and hassle-free
+   quieter unit operation                                               panel removal
+
+· Modern cabinet aesthetics - increased curb appeal with visu-       · Service trays - hold fasteners or caps during service calls
+   ally appealing design
+                                                                     · QR code - provides technical information on demand for
+· Curved louver panels - provide ultimate coil protection,              faster service calls
+   enhance cabinet strength, and increased cabinet rigidity
+                                                                     · Fan motor harness with extra-long wires - allows unit top to
+· Optimized fan orifice - optimizes airflow and reduces unit            be removed without disconnecting fan wire
+   sound
+
+                                                                     FORM NO. P11-809 REV. 6
+         Table of Contents
+Air
+
+         RP17 Series
+
+                                         TABLE OF CONTENTS
+
+                          Standard Feature Table ............................................................................................3
+                          Available SKUs ........................................................................................................3
+                          Features & Benefits ..............................................................................................4-8
+                          Model Number Identification ..............................................................................9-10
+                          Physical Data ..........................................................................................................11
+                          Electrical Data ........................................................................................................11
+                          Accessories ............................................................................................................12
+                          Weighted Sound Power ..........................................................................................12
+                          Smart Home Systems ............................................................................................13
+                          Unit Dimensions......................................................................................................14
+                          Clearances ..............................................................................................................15
+                          Wiring Diagrams ....................................................................................................16
+                          Application Guidelines ............................................................................................16
+                          Refrigerant Line Size Information ......................................................................17-18
+                          Performance Data ..................................................................................................19
+                          Guide Specifications ..............................................................................................20
+                          Limited Warranty ....................................................................................................21
+
+2
+                                                                Standard Feature Table/Available SKUs
+                                                        Air
+
+                                                                RP17 Series
+
+Standard Feature Table                      24    36    48    60
+
+                                 Feature                      
+       R-410a Refrigerant
+       Maximum SEER                         18.5  17.5  17.0  17.0
+       Maximum EER
+       Maximum HSPF                         13.0  11.5  10.5  9.5
+       EcoNetTM Enabled
+       Electronic Expansion Valve           9.5   8.5   8.5   8.5
+       Variable Speed Compressor
+       Field Installed Filter Drier                           
+       Front Seating Service Valves
+       High Pressure Switch                                   
+       Low Pressure Transducer
+       Internal Pressure Relief Valve                         
+       Low Ambient capability
+       3-4-5 Service Valve Access                             
+       Composite Basepan
+       1 Screw Control Box Access                             
+       15" Access to Internal Components
+       Quick release louver panel design                      
+       No fasteners to remove along bottom
+       Optimized Venturi Airflow                              
+       Single row condenser coil
+       Powder coated paint                                    
+       Rust resistant screws
+       QR code                                                
+       External gauge ports
+       Service trays                                          
+ = Standard
+                                                              
+Available SKUs
+                                                              
+                 Available Models
+                  RP1724AJVCA                                 
+                  RP1736AJVCA
+                  RP1748AJVCA                                 
+                  RP1760AJVCA
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                                    3
+                  Features & Benefits                               Along with the EcoNet Smart Home System the RP17 is
+         Air                                                        matched with the RH2T Constant Torque Two-Stage EcoNet
+                                                                    Enabled Air Handler ( 3 ) or can be applied in a Dual Fuel appli-
+                  RP17 Series                                       cation with the EcoNet Enabled Two-Stage Variable Speed
+                                                                    R802V or R96V, or the modulating R97V Gas Furnaces and RCF
+Introduction to RP17 Heat Pump                                      Aluminum Cased Furnace Coils with EEV ( 4 ). See individual
+                                                                    specification documents for more details of the indoor products.
+The RP17 is our EcoNet® Enabled, inverter driven Classic Plus®
+Series Three-Stage Heat Pump and is part of the Rheem Heat              2
+Pump product line that extends from 13 to 20 SEER. This highly
+featured and reliable heat pump is designed for years of reliable,
+efficient operation when matched with Rheem indoor aluminum
+evaporator coils and furnaces or air handler units with aluminum
+evaporators.
+
+      WARNING: This product is not approved for installa-
+      tion at 2000 meters (6,561 feet) above sea level or
+      higher. Installation at higher altitudes may result in
+      control and unit failures due to electrical arc tracking
+      between electrical components on the invertor drive
+      control board possibly resulting in fire, electrical
+      shock, property damage, personal injury or death.
+
+The RP17 Classic Plus® Series inverter-driven Three-Stage Heat
+Pump is part of a new line of Rheem smart heating, cooling and
+water heating products. Using the latest in sensor technology
+and a powerful EcoNet® monitoring system, Rheem provides
+homeowners with a new level of protection, control and energy
+savings. Rheem smart heating, cooling and water heating prod-
+ucts will alert the homeowner if there is ever an issue via the
+EcoNet Smart Thermostat ( 1 ) and the EcoNet Mobile app. The
+EcoNet Mobile App makes it easy for homeowners to manage
+their home comfort environment at home or on-the-go*, while
+enjoying the convenience and savings benefits of a highly effi-
+cient system.
+
+   1
+
+                                                                    3
+
+*WiFi broadband internet connection required. Download the EcoNet App from the App Store or Google Play to set up your EcoNet Smart Thermostat.
+ Receipt of notifications depend on home WiFi set up. WiFi broadband internet connection required.
+
+       4
+                                                                                                  Features & Benefits
+                                                                                          Air
+
+                                                                                                  RP17 Series
+                                                                         5
+
+                                                            13
+                                      9
+
+                                                              14
+
+17
+
+                11      12                                        7
+
+                        8
+
+16                                                                   19
+
+                    18
+
+             6                              20
+10                      15
+
+How It Works                                                      wing fan technology ( 14 ) and the Electronic Expansion Valve
+                                                                  (EEV) ( 15 ) which syncs up with the compressor speed to deliver
+The RP17 Classic Plus® Series Inverter Driven Three-Stage Heat    the exact capacity the home needs to meet its comfort require-
+Pump's ( 5 ) variable speed outdoor unit control (VSODU) ( 6 )    ments. The result of this advanced technology is significantly
+continuously monitors the EcoNet control temperature and          improved energy efficiency and comfort. Energy efficiency is
+humidity set point, suction pressure ( 7 ), suction temperature   improved by precise load matching, less cycling on and off and
+( 8 ), outdoor coil temperature ( 9 ) and outdoor temperature     low amp gradual compressor, outdoor and indoor motor opera-
+( 10 ) and feeds this information to the Inverter Control Motor   tion. Comfort is improved by precise temperature control, pre-
+Drive ( 11 ). The Inverter Control Motor Drive converts AC to DC  cise humidity control and extra capacity during extreme cold
+power, sends it to the variable speed compressor ( 12 ) Brush-    weather conditions.
+less Permanent Magnet motor (BPM), dynamically adjusting its
+speed. Simultaneously the VSODU provides output to the out-
+door fan motor ( 13 ) which is equipped with the latest swept
+
+                                                                         5
+           Features & Benefits
+   Air
+
+           RP17 Series
+
+5                                                                      1
+
+                            9
+                                             14
+
+17
+
+                                12               7
+
+          11
+
+                           8
+
+      16                                                           19
+                   18                            20
+
+              6
+
+      10               15
+
+System Component Descriptions                                          The Electronic Expansion Valve (EEV) - ( 15 ) is an electroni-
+                                                                       cally driven refrigerant control valve. A small stepper motor is
+EcoNet Smart Thermostat - ( 1 ): The EcoNet Smart Thermo-              used to open and close valve to precisely control refrigerant
+stat serves as the hub of communication for a home's Heating,          flow. It is controlled by the VSODU, which receives input from
+Cooling and Water Heating systems and is required to operate           the pressure transducer and suction line temperature sensor to
+an EcoNet Enabled Heating and Cooling system in a fully com-           control the RP17 in the heating mode. The VSODU drives it fully
+municating mode. The EcoNet Smart Thermostat displays detail           open in the cooling mode. The EEV is superior to a TXV (ther-
+diagnostic from outdoor and indoor connected units.                    mostatic expansion valve) because the EEV controls superheat
+                                                                       at the evaporator coil under varying load and refrigerant flow
+Variable Speed Outdoor Unit Control (VSODU) - ( 6 ) is where           conditions, more precisely than traditional TXV's.
+control wiring is hooked to the RP17. The VSODU control takes
+input from the EcoNet Control Center, outdoor suction tempera-         The Filter - ( 16 ) is an electrical device that "cleans" the AC
+ture and pressure sensors, outdoor air and coil temperatures and       power component. This low pass filter only permits the passage
+communicates to the Inverter Control Motor Drive, EEV, reversing       of 60-Hertz signal to the inverter drive.
+valve, outdoor fan and indoor blower to precisely control system
+capacity output of the heat pump in heating and cooling modes.         The Pressure Transducer - ( 7 ) is used to measure suction
+It also is equipped with Dual Seven-Segment Display for techni-        pressure in the outdoor heat pump. The VSODU takes this input
+cian interface, operation status and fault code communication.         to operate the EEV and make decisions on system operation
+Two momentary buttons allow technician to initiate various oper-       such as low ambient cooling.
+ating modes. Various LED's communicate active EcoNet com-
+munication, microprocessor activity and EEV operation. See I&O         Various temperature sensors - are located on the Heat Pump.
+for more details.                                                      There is an outdoor air sensor ( 10 ), an outdoor coil sensor ( 9 ),
+                                                                       a discharge line temperature sensor (not shown, located on
+The Inverter Control Motor Drive - ( 11 ) converts incoming            discharge line), a suction line temperature sensor ( 8 ) and a
+single-phase AC power to 3 phase DC simulated sine wave                compressor sump temperature sensor (not shown, located bot-
+power. Once power is converted the Inverter Control Motor Drive        tom of compressor). The VSODU uses these temperature mea-
+varies frequency of the power to the compressor varying the            surements to operate the system.
+compressor speed. The Inverter Control Motor Drive has active
+protection algorithms that keep the compressor safely inside its       The Choke - ( 17 ) is provided to absorb power spikes that might
+operating envelope.                                                    occur on the DC line.
+
+The Variable Speed compressor - ( 12 ) utilizes a Brushless            Ferrite Rings - ( 18 ) are iron cores through which AC power is
+Permanent Magnet Motor (BPM) that varies the Scroll speed,             looped keeping any electrical noise contained. They also reduce
+thus, varying the refrigerant flow. The robust scroll design has       the induction of electrical transient into the DC drive.
+proven reliability over competing compressor technologies.
+                                                                       The Suction Accumulator - ( 19 ) prevents liquid refrigerant from
+Swept Wing Fan Blade - ( 14 ) is the latest technology in out-         entering the compressor.
+door fans that increase efficiency and reduces air noise.
+                                                                       The Reversing Valve - ( 20 ) reverses the flow of refrigerant in
+                                                                       cooling versus heating.
+
+   6
+Features                                                                                                                                                                 Features & Benefits
+                                                                                                                                                                Air
+In addition all RP17 Classic Plus Series Inverter Driven Three-
+Stage Heat Pumps have the following features:                                                                                                                            RP17 Series
+                                                                                                                                              18 20
+   3
+
+      4                                                                                                16
+                                                                                                                                                           17
+6        8
+   6        5       7
+
+Our unique composite base ( 3 ) reduces sound emission, elimi-                                         ( 17 ). Outdoor coil heights range from as short as 35" to 45".
+                                                                                                       Disassembly to this degree and complete reassembly only takes
+nates rattles, significantly reduces fasteners, eliminates corrosion                                   a first time service technician less than 10 minutes. ( 17 )
+and has integrated brass compressor attachment inserts ( 4 ).
+                                                                                                       All units utilize formed louver panels
+Furthermore it has incorporated into the design, water manage-
+ment features, means for hand placement ( 5 ) for unit maneu-                                          which provide industry leading coil
+
+vering, screw trays ( 6 ) and inserts for lifting off unit pad. ( 7 )                                  protection. Louver removal for coil                     19
+
+Service Valves ( 8 ) are rigidly mounted in the composite base                                         cleaning is accomplished by removing
+with 3" between suction and discharge valves, 4" clearance
+below service valves and a minimum of 5" above the service                                             one screw and lifting the panel out of
+valves, creating industry leading ease of installation. The minimum
+                                                                                                       the composite base pan. ( 19 ) All RP17
+
+                                                                                                       units utilize single row coils ( 18 )
+
+                                                                                                       making cleaning easy and complete,
+
+                                                                                                       restoring the performance of the air
+
+                                                                                                       conditioner back to out of the box
+
+            10  13                                                                                     performance levels year after year.
+
+      9                                                                                                The outdoor fan motor has ball bearings and is inherently pro-
+                                                                                                       tected. The motor is totally enclosed for maximum protection
+            12  11                                                                                     from weather, dust and corrosion. ( 20 ) Access to the outdoor fan
+                                                                                                       is made by removing four fasteners from the fan grille. The out-
+27 square-inches around the service valves allows ample room                                           door fan can be removed from the fan grille by removing 4 fas-
+to remove service valve schrader prior to brazing, plenty of clear-                                    teners in the rare case outdoor fan motor fails.
+ance for easy brazing of the suction and discharge lines to ser-
+vice valve outlets, easy access and hookup of low loss refriger-                                       Each cabinet has optimized composite ( 21 ) fan orifice assuring
+ant gauges ( 9 ), and access to the service valve caps for                                             efficient and quiet airflow.
+opening.
+                                                                                                                                                                   21
+Controls are accessed from the corner of the unit by removing
+only one fastener from the control access cover, revealing the                                         The entire cabinet has post powder paint ( 22 ) achieving 1000
+industry's largest 15" wide and 22" tall control area ( 10 ). With all                                 hour salt spray rating, allowing the cabinet to retain its aesthetics
+this room in the control area the high voltage electrical whip ( 11 )                                  throughout its life.
+can easily be inserted through the right size opening in the
+bottom of the control area. Routing it leads directly to lugs for                                                                                                              26
+connection. The low voltage control wires ( 12 ) are easily con-                                                                            22
+nected to the units VSODU terminal strip. The service window
+( 14 ) can be removed by removing two screws, to access the EEV                                                                                                           25
+and view interior of unit. ( 15 ) (High and low pressure is standard
+on RP17 models).                                                                                                                                              24
+                                                                                                                                                                           23
+               14
+                                                                                                       The Variable Speed compressors with standard internal pressure
+                                                                                                   15  relief and internal thermal overload are used on all capacities
+                                                                                                       assuring longevity of high efficient and quiet operation for the life
+If in the rare event, greater access is needed to internal compo-                                      of the product. All RP17 Heat Pump come standard with high
+nents, such as the compressor, the entire corner of the unit can                                       and low pressure controls reinforced vinyl compressor sound
+be removed along with the top cover assembly to have unprece-                                          covers containing a 11/2 inch thick batt of fiberglass insulation
+dented access to interior of the unit ( 16 ). Extra wire length is                                     and open edges are sealed with a 1 inch wide hook and loop
+incorporated into each outdoor fan and compressor so top                                               fastening tape for superior sound quality.
+cover and control panel can be positioned next to the unit. Or
+with minimal effort the plug can be removed from the compres-
+sor and the outdoor fan wires can be removed from the VSODU
+to allow even more uncluttered access to the interior of the unit
+
+                                                                                                                                                                       7
+                  Features & Benefits                                   Optional Accessories
+         Air
+                                                                        (Refer to accessory chart for model #)
+                  RP17 Series
+                                                                        3"/6"/12"
+Features (con't.)                                                       · Gray high density polyethylene feet are available to raise unit
+
+Each unit is shipped with filter drier for field installation and will    off of mounting surface away from moisture
+trap any moisture or dirt that could contaminate the refrigerant
+system.                                                                 Accessories
+
+                                     27                                 EcoNet Smart Thermostat
+
+All cabinets have industry leading structural strength due to the                                              The EcoNet Smart Thermostat
+composite base pan ( 23 ), interlocking corner post ( 24 ), formed                                             serves as the hub of communica-
+curved louver panels ( 25 ) and drawn top cover ( 26 ) making it                                               tion for a home's Heating, Cooling
+the most durable cabinet on the market today.                                                                  and Water Heating systems, and is
+Each RP17 capacity has undergone rigorous psychometric test-                                                   required to operate an EcoNet
+ing to assure performance ratings of capacity, SEER,                                                           Enabled Heating & Cooling system
+EER and HSPF per AHRI Standard 210/240 rating condi-                                                           in a fully communicating mode.
+tions. Also each unit bears the UL mark and each unit is
+certified to UL 1995 safety standards.                                            RETST700SYS
+Each unit has undergone specific strain and modal testing to
+assure tubing ( 27 ) is outside the units natural frequency and that
+the suction and discharge lines connected to the compressor
+withstand any starting, steady state operation, or shut down
+forces imposed by the compressor.
+All units have been sound tested in sound chamber to AHRI 270
+rating conditions, and A-weighted Sound Power Level tables
+produced, assuring units have acceptable noise qualities (see
+page 12). Each unit has been ran in cooling operation at 95°F
+and 47°F and sound ratings for the RP17 range from as low as
+67 dBA to 74.3 dBA.
+All units have been ship tested to assure units meet stringent
+"over the road" shipping conditions.
+As manufactured, all units in the RP17 family have cooling capa-
+bility to 40°F. Addition of low ambient control will allow the unit
+to operate down to 0°F. Factory testing is performed on each
+unit. All component parts meet well defined specification and
+continually go through receiving inspections. Each component
+installed on a unit is scanned, assuring correct component uti-
+lization for a given unit capacity and voltage. All condenser coils
+are leak tested with pressurization test to 550#'s and once
+installed and assembled, each units' complete refrigerant
+system is helium leak tested. All units are fully charged from the
+factory for up to 15 feet of piping. All units are factory run tested.
+The RP17 has a 10-year conditional unit replacement warranty
+(registration required) and a 10 year limited parts warranty.
+
+8
+Heat Pumps
+
+R      P                     17             24                      A               J                            V                      C                      A                *
+                                                                                                               Type                 Controls
+Brand     Product         SEER                      Capacity        Major Series*          Voltage          V - Inverter      C - Communicating                 Minor       Option
+Rheem     Category    20 - 20 SEER                   BTU/HR                         J - 1ph, 208-230/60                                                       Series**      Code
+                                                                    A - 1st Design
+       P - Heat Pump                        24 - 24,000 [7.03 kW]   B - 2nd Design                                                                          A - 1st Design   N/A
+                                            36 - 36,000 [10.55 kW]
+                                            48 - 48,000 [14.07 kW]
+                                            60 - 60,000 [17.58 kW]
+
+Air Conditioners (For Reference)
+
+R         A                        17           24                         A                   J                     2                      C               B                *
+                                                                    Major Series*
+Brand         Product            SEER               Capacity        A - 1st Design         Voltage                 Type                 Controls     Minor Series** Option Code
+Rheem        Category                            BTU/HR [kW]
+                             13 - 13 SEER                                           J - 1ph, 208-230/60     1 - Single-stage  C - Communicating      A - 1st Design          N/A
+       A - Air Conditioners  14 - 14 SEER   18 - 18,000 [5.28 kW]                   C - 3ph, 208-230/60     2 - Two-stage     N - Non-communicating
+                             16 - 16 SEER   24 - 24,000 [7.03 kW]                   D - 3ph, 460/60         V - Inverter
+                             17 - 17 SEER   30 - 30,000 [8.79 kW]
+                             20 - 20 SEER   36 - 36,000 [10.55 kW]
+                                            42 - 42,000 [12.31 kW]
+                                            48 - 48,000 [14.07 kW]
+                                            60 - 60,000 [17.58 kW]
+
+Furnace Coils (For Reference)
+
+R      C                     F                          24              17              S             E            A                 M               C            A                *
+                                                                                                            Major Series*       Orientation
+Brand    Product              Type                  Capacity          Width        Efficiency     Metering  A -1st Design     M - Multi-poise     Casing    Minor Series**   Option
+Rheem    Category                                    BTU/HR                                        Device                                                    A - 1st Design  Code
+                      F - Furn Coil         24 - 24,000 [7.03 kW]   14 - 14"    S- Standard Eff.  T-TXV                                        C - Cased
+       C - Evap Coil  H - Air-Handler Coil  36 - 36,000 [10.55 kW]  17 - 17.5"  M- Mid Eff.       E-EEV                                        U - Uncased                    N/A
+                                            48 - 48,000 [14.07 kW]  21 - 21"    H- High Eff.      P-Piston
+                                            60 - 60,000 [17.58 kW]  24 - 24.5"
+
+                                                                                                                                                                                                                                                                                                                                  Model Number Identification
+                                                                                                                                                                                                                                                                                                                                Air
+
+                                                                                                                                                                                                                                                                                                                              RP17 Series
+9
+[ ] Designates Metric Conversions
+90%+ AFUE Gas Furnaces (For Reference)
+
+                                                                                                                                                                                                                                                                                                                                  Model Number IdentificationR96VA702317MSA
+                                                                                                                                                                                                                                                                                                                                AirConfigurationMinor Rev
+Brand     Series              Motor         Major Rev                           Input              Stages                    Air Flow          Cabinet        M - Multi-poise          Nox            A - 1st Design
+                                                                                                                                                                                                                                                                                                                              RP17 SeriesRheemA - 1st DesignBTU/HR [kW]Width
+10     90 - 90 AFUE        V - Variable                                                       1 - Single-stage         3 - up to 3 ton         14 - 14"                           X - Low Nox
+       92 - 92 AFUE            speed                                040 - 42,000 [12.31 kW]   2 - Two-stage            5 - 3 1/2 up to 5 ton   17 - 17.5"                         S - Standard
+       95 - 95 AFUE                                                 060 - 56,000 [16.41 kW]   M - Modulating                                   21 - 21"
+       96 - 96 AFUE        T - Constant                             070 - 70,000 [20.51 kW]                                                    24 - 24.5"
+       97 - 97 AFUE           Torque                                085 - 84,000 [24.62 kW]
+                              (X-13)                                100 - 98,000 [28.72 kW]
+                                                                    115 - 112,000 [32.82 kW]
+                           P - PSC
+
+80% AFUE Gas Furnaces (For Reference)
+
+R         80                       2                         V                       A                   075                         3           17           M                               S            A
+
+Brand  Series              Stages                            Motor      Major Rev                       Input                    Air Flow        Cabinet         Configuration               Nox      Minor Rev
+                                                                                                   BTU/HR [kW]                                    Width
+Rheem  80 - 80+ AFUE    1 - Single-stage  V - Variable speed            A - 1st Design        050 - 50,000 [15 kW]        3 - up to 3 ton                     M - Multi                 X - Low Nox     A - 1st
+                        2 - Two-stage     T - Constant Torque (X-13)                          075 - 75,000 [22 kW]        4 - 2 1/2 to 4 ton     14 - 14"     D - Down                  S - Standard    Design
+                                          P - PSC premium                                     100 - 100,000 [29 kW]       5 - 3 1/2 up to 5 ton  17 - 17.5"   Z - Down &
+                                          S - PSC standard                                    125 - 125,000 [37 kW]                              21 - 21"
+                                                                                              150 - 150,000 [44 kW]                              24 - 24.5"       zero clearance
+                                                                                                                                                                  down flow
+
+Air Handlers (For Reference)
+
+R      H                2                 T                         36                  17    S                        E  A                                C                   A             A        000 *
+
+Brand      Product      Stages of        Motor Type                  Capacity        Width    Coil Size                Metering Major Series*    Controls                      Voltage        Minor Factory Option
+Rheem     Category       Airflow                                      BTU/HR                                            Device                                                               Series** Heat Cap Code
+
+       H - Air Handler  1 - Single-stage V - Variable Speed  24 - 24,000 [7.03 kW]   14 - 14" S - Standard Efficiency  T - TEV A -1st Design   C - Communicating A - 1ph, 115/60              A -1st 00 - no N/A
+                        2 - Two-stage T - Constant Torque    36 - 36,000 [10.55 kW]  17 - 17.5" M -Mid Efficiency      E - EEV                 N - Non-communicating J - 1ph, 208-240/60      Design factory
+                        M - Modulating P - PSC               48 - 48,000 [14.07 kW]  21 - 21" H - High Efficiency      P - Piston
+                                                             60 - 60,000 [17.58 kW]  24 - 24.5"                                                                             D - 3ph, 480/60              heat with
+                                                                                                                                                                                                         option
+                                                                                                                                                                                                         code
+
+[ ] Designates Metric Conversions
+                                                                                                                    Physical Data/Electrical Data
+                                                                                                            Air
+
+                                                                                                                    RP17 Series
+
+Physical Data                                                         RP1724        RP1736                  RP1748  RP1760
+                                                                        2.0           3.0                     4.0     5.0
+Model No.#
+Nominal Tonnage                              Liquid Line O.D. - in.     3/8         3/8                     3/8       3/8
+Valve Connections                          Suction Line O.D. - in.      3/4                                           7/8
+                                                                        130         3/4                     7/8       210
+Refrigerant (R410A) furnished oz.¹      Net face area - Outer Coil
+Compressor Type                         Net face area - Inner Coil      19.8        140                     209       28.3
+Outdoor Coil                                                             --                                            --
+                                               Tube diameter - in.      3/8                 Variable Speed            3/8
+Outdoor Fan                                        Number of rows         1                                             1
+                                                       Fins per inch     18         19.8                    24.2       20
+Shipping weight - lbs.
+Operating weight - lbs.                              Diameter - in.      24         --                      --         26
+                                                 Number of blades         2                                             3
+                                                                        1/6         3/8                     3/8       1/5
+                                                           Motor hp    3250                                          4280
+                                                                CFM    1075         1                       1         850
+                                                                RPM     167                                           187
+                                                               watts    230         20                      20        289
+                                                                        223                                           282
+                                                                                    24                      26
+
+                                                                                    2                       3
+
+                                                                                    1/6                     1/5
+
+                                                                                    3270                    4000
+
+                                                                                    910                     870
+
+                                                                                    145                     194
+
+                                                                                    230                     257
+
+                                                                                    223                     250
+
+Electrical Data
+
+Line Voltage Data (Volts-Phase-Hz)                                    208/230-1-60  208/230-1-60  208/230-1-60      208/230-1-60
+
+Minimum overcurrent protection (amps)²                                25            30                      35      50
+
+Maximum overcurrent protection (amps)²                                35            35                      45      60
+
+Minimum circuit ampacity³                                             21            22                      28      44
+
+Compressor
+
+                                        Rated load amps               16.0          16.3                    21.6    33.8
+
+                                        Locked rotor amps             35            35                      35      50
+
+Condenser Fan Motor
+
+                                        Full load amps                0.8           0.8                     1.0     1.0
+
+                                        Locked rotor amps             1.5           1.5                     1.5     2.4
+
+¹Refrigerant charge sufficient for 15 ft. length of refrigerant lines. For longer line set requirements see the installation instructions for information about set length and additional
+refrigerant charge required.
+²HACR type circuit breaker of fuse.
+³Refer to National Electrical Code manual to determine wire, fuse and disconnect size requirements.
+
+                                                                                                                          11
+        Accessories/Weighted Sound Power
+Air
+
+        RP17 Series
+
+Accessories
+
+             Model No.                          RP1724                                        RP1736            RP1748                                         RP1760
+                                                                                          RETST700SYS       RETST700SYS                                    RETST700SYS
+EcoNet Smart Thermostat   Solenoid Valve   RETST700SYS                                   Factory Standard  Factory Standard                               Factory Standard
+Compressor sound blanket  Solenoid Coil   Factory Standard                               Factory Standard  Factory Standard                               Factory Standard
+Low Ambient to 40         Bi-flow kit*    Factory Standard                               Factory Standard  Factory Standard                               Factory Standard
+Low pressure control      Solenoid Valve  Factory Standard                               Factory Standard  Factory Standard                               Factory Standard
+High pressure control     Solenoid Coil   Factory Standard                                200RD2T3TVLC      200RD3T3TVLC                                   200RD3T3TVLC
+                          Bi-flow kit*     200RD2T3TVLC
+Liquid Line Solenoid                                                                        61-AMG24V         61-AMG24V                                      61-AMG24V
+(24 VAC, 50/60 Hz)                           61-AMG24V                                        KS30387           KS30387                                        KS30387
+                                               KS30387
+Liquid Line Solenoid                                                                      200RD2T3TVLC      200RD3T3TVLC                                   200RD3T3TVLC
+(120/240 VAC, 50/60 Hz)                    200RD2T3TVLC                                  61-AMG120/240V    61-AMG120/240V                                 61-AMG120/240V
+                                          61-AMG120/240V
+Heat Pump Riser - 6 inch                                                                      KS30387           KS30387                                        KS30387
+                                               KS30387                                         686020            686020                                         686020
+                                                686020
+
+*Bi-flow kits are required when installing a liquid line solenoid on a heat pump.
+
+Weighted Sound Power Level (dBA)
+
+                                                                           RP17 Sound Power Level
+
+Model        Sound Power Level [dB(A)]                                                   Full Octave Linear Sound Power Level dB - Center Frequency - Hz
+
+             High Speed/Low Speed         125                                      250   500       1000    2000  4000        6300                         8000
+
+RP1724                    68.2            54.1                                     54.9  58.5      57.6    56.3  53.2        47.8                         44.1
+
+                          71.3            52.1                                     54.4  59.7      61.9    58.1  54.3        49.1                         48.3
+
+RP1736                    66.8            48.9                                     47.3  56.8      56.4    54    52.1        47.0                         44.5
+
+                          73.5            50.2                                     52.6  60.9      63.2    58.1  58.5        54.7                         58.1
+
+RP1748                    73.8            63.9                                     57.1  67.9      61.3    57.9  54.9        50.8                         48.6
+
+                          74.3            59.8                                     55.4  65.2      65.0    60.4  55.6        51.2                         49.5
+
+RP1760                    69.4            57.3                                     52.4  64.3      56.1    54.3  49.7        47.6                         44.4
+
+                          75.6            52.8                                     55.6  64.5      63.2    62.3  62.9        55.1                         52.0
+
+NOTE: Tested in accordance with AHRI Standard 270-08 (not listed in AHRI)
+
+12
+                                                                                                                           Smart Home Systems
+                                                                                                                   Air
+
+                                                                                                                           RP17 Series
+
+THE ECONET® SMART THERMOSTAT                                                                                       RETST700SYS
+
+BUILT-IN WIFI
+4.3 LCD TOUCH SCREEN
+LOCAL WEATHER - Current conditions plus 6-day forecast
+5 OPERATING MODES - Heat, Cool, Auto, Emergency Heat and Fan Only
+7-DAY PROGRAMMABLE SCHEDULE - Offers comfort without thought
+ONE-TOUCH AWAY - Quickly switch to your energy-saving away preferences
+VACATION SCHEDULING - Allows you to save while you're away and come home to comfort
+MOTION SENSOR - Automatically wakes the screen as you approach
+STANDBY SCREEN - Displays indoor temperature and current weather
+
+OPERATIONAL FEATURES
+
+AUTOMATIC CHANGEOVER - Transitions between heating and cooling automatically to keep the house comfortable
+INTEGRATED WATER CONTROL - Enables easy water heater management
+SMOOTH ARRIVAL - Prompts the system to start ahead of schedule to ensure the home is at the desired temperature at the scheduled time
+HUMIDITY CONTROL - Supports humidifier accessories or over-cool based dehumidification
+DETAILED OPERATING STATUS - View pertinent equipment status information and run times
+CONTINUOUS FAN - Offers 5 speeds (Low, Medium Low, Medium, Medium High, High)
+SHORT-CYCLE PROTECTION - Avoids damage to equipment from short run cycles
+
+MONITORING & REMOTE CONTROL FEATURES
+
+ACTIVE MONITORING - Alerts to problems that need immediate attention
+REMOTE CONTROL - Allows adjusting of comfort and settings from anywhere using a mobile device
+SERVICE ALERTS - Sends routine maintenance reminders
+AIR FILTER MONITORING - Detects when it's time to replace the air filter
+ALARM HISTORY - Displays time-stamped alarm codes with clear descriptions
+
+ECONET SMART THERMOSTAT COMPATIBILITY
+
+                                            Heating & Cooling
+
+     Models           Gas Furnaces                Air Handlers                                 Air Conditioners          Heat Pumps
+RETST700SYS
+             R802V  R96V  R97V        R98V  RHMV                RH2T                 RA20      RA17*               RP20              RP17
+                                        
+                                                                                                                                     
+
+                                                  *Models not EcoNet Enabled: RA1724AJ2NB, RA1736AJ2NB, RA1748AJ2NB, RA1760AJ2NB
+
+                                                                                                                                     13
+        Unit Dimensions
+Air
+
+        RP17 Series
+
+Unit Dimensions
+
+                                   OPERATING                              SHIPPING
+
+ MODEL  H (Height)                 L (Length)  W (Width)    H (Height)    L (Length)   W (Width)
+NUMBER
+        INCHES           mm    INCHES  mm      INCHES  mm   INCHES  mm    INCHES  mm   INCHES  mm
+RP1724
+RP1736  35               889   33.75   357     33.75   857  35.75   908   36.38   924  36.38   924
+RP1748
+RP1760  35               889   33.75   857     33.75   857  36.75   933   36.38   924  36.38   924
+
+        39               990   35.75   908     35.75   908  40.75   1035  38.38   974  38.38   974
+
+        45               1143  35.75   908     35.75   908  46.75   1187  38.38   974  38.38   974
+
+[ ] Designates Metric Conversions                                                      ST-A1226-02-00
+14
+    CLEARANCES                                                                                                                                                                                WALL
+
+                    WALL                                                                                                                                                                                     24
+                                                                                                                                                                                                          (609.6)
+                             6                                                                                                                                                                            Service
+                          (152.4)
+      24                                                                                                                                                                               12                                   WALL
+    (609.6)                 12                                                                                                                                                       (304.8)
+    Service               (304.8)
+
+                                                                                                                                                                                                                      6
+                                                                                                                                                                                                                   (152.4)
+
+                6
+             (152.4)
+
+                                                                                                                                                                                                12
+                                                                                                                                                                                              (304.8)
+
+               24                         WALL                                                                                                                                                  24
+             (609.6)                                                                                                                                                                          (609.6)
+             Service                         24                                                                                                                                               Service
+                                          (609.6)
+                                          Service
+
+      18                           24                       24
+    (457.2)                     (609.6)                  (609.6)
+
+                          24 recommended           24 recommended
+                          9 minimum                9 minimum
+
+    NOTE: NUMBERS IN () = mm                                                                                                                                                                                                           Clearances
+                                                                                                                                                                                                                                     Air
+    IMPORTANT: When installing multiple units in an alcove, roof well or partially enclosed area, ensure there is adequate ventillation to prevent re-circulation of discharge air.
+                                                                                                                                                                                                                                   RP17 Series
+15                                                                                                                                                                                                                 ST-A1225-01-00
+        Wiring Diagram/Application Guidelines
+Air
+
+        RP17 Series
+
+Control Wiring
+
+                TYPICAL ECONET SCMONATRRTOTLHECREMNTOESRTAHTOHOOKOUKPUP          TYPICAL 2-STAGE THERMOSTAT AND DUAL-FUEL
+                                                                                 APPLICATION
+
+                               Econet Control                                       Typical                   Fur nace                           (-)P17
+                                   Center                                        Two-Stage                    Contr ol                        Heat Pump
+                                                                                 Thermostat                                                  Outdoor Unit
+                Indoor         1 2RC                                   Outdoor
+                 Unit                                                    Unit                R                                                          RR
+                                                                                             C                R                                         C BR
+                    1 Y/PK                                         Y/PK 1                    Y                                                          YY
+                   2 O/W                                           O/W 2           (6) Y2                     C                                         Y2 Y/B L
+                                                                                            W2                                                          D PR
+                   RR                                               RR                                        YL
+                   C BR                                             BR C                             (5)                                                1 Y/PK
+                                                                                            W/E               YH                                        2 O/W
+                                                                                             G                                                          B BL
+                                                                                             V                W           PS  (3)
+                                                                                             B
+                               Line Voltage  F ield-Installed                                +                 G
+                                             Fa ctory Standard                               S                W2
+                                                                                             -
+                TYPICAL 2-STAGE THERMOSTAT: (-)P17 HEAT PUMP
+                WITH ELECTRIC HEAT USING A HUMIDISTAT                                       12 FT .           Outdoor
+                FOR DEHUMIDIFICATION                                                        (3.7 M )          Sensor (2)
+
+                               Typical Tw o-Stage Thermostat                     NOTES:
+
+                   Air                  B Y1 Y2 G E/W1 W2 C R DHM                (1) FOR PROGRAMMING THERMOST AT IN DUAL-FUEL APPLICA TION, SEE
+                Handler                                                            THERMOST AT INST ALLA TION INFORMA TION.
+
+                                                                       (-)P17    (2) FOR REMOTE SENSOR INST ALLA TION, SEE THERMOST AT INST ALLA TION INFORMA TION.
+                                                                    Heat Pump
+                W1 W/BK                                            Outdoor Unit  (3) OPTIONAL PLENUM SENSOR.
+
+                W2 W/BL                                                Y Y1      (4) FOR TWO ST AGES, CONNECT W2 ON THERMOST AT TO W2 ON THE CONTROL BOARD.
+                                                                     Y/BL Y2
+                                                                      BL B       (5) EMERGENCY HEA T (E) CONNECTION MA Y NOT BE ALLOWED BY LOCAL CODES.
+
+                Y1 Y                                                   RR        TY(6P)2-ISCT AAGELHE2AT-SPUTMAPOGNLEY. THERMOSTAT: HEAT PUMP WITH
+                                                                      BR C
+                Y2 Y/BL                                              W/R L
+                                                                      PR D
+                B BL
+
+                R           R
+
+                C BR                                                             TYPICAL TWO-STAGE THERMOSTAT: (-)P17 HEAT PUMP
+                                                                                 WITH ELECTRIC HEAT USING A HUMIDISTAT FOR
+                GG                                                               HUMIDIFICATION
+
+                ODD
+
+                     Line Voltage            F ield-Installed                                             Typical Tw o-Stage Thermostat
+                                             Fa ctory Standa rd
+                                                                                                                  B Y1 Y2 G E/W1 W2 C R Humidistat
+                TYPICAL 2-STAGE THERMOSTAT: (-)P17 HEAT PUMP                        Air
+                WITH ELECTRIC HEAT USING A TWO-STAGE                             Handler                                                                      (-)P17
+                THERMOSTAT WITH DEHUMIDIFICATION AND A                                                                                                    Heat Pump
+                MALFUNCTION LIGHT                                                        W1 W/BK                                                         Outdoor Unit
+
+                                                                                         W2 W/BL                                                                                 Y Y1
+                                                                                                                                                                               Y/BL Y2
+                                                                                         Y1 Y                                                                                   BL B
+
+                                                                                         Y2 Y/BL                                                                                 RR
+                                                                                                                                                                                BR C
+                                                                                         B BL                                                                                  W/R L
+                                                                                                                                                                                PR D
+                               Typical Tw o-Stage Thermostat                             R    R
+
+                                     B Y1 Y2 G E/W1 W2 C R DHM L                         C BR
+
+                   Air                                                                   GG
+                Handler
+                                                                       (-)P17            ODD
+                                                                    Heat Pump
+                W1 W/BK                                            Outdoor Unit
+
+                W2 W/BL                                                Y Y1                   Line Voltage    F ield-Installed
+                                                                     Y/BL Y2                                  Fa ctory Standa rd
+                Y1 Y                                                  BL B
+
+                Y2 Y/BL                                                RR
+                                                                      BR C
+                B BL                                                 W/R L
+                                                                      PR D
+                R           R                                                    TYPICAL TWO-STAGE THERMOSTAT: HEAT PUMP
+                                                                                 WITH ELECTRIC HEAT
+                C BR
+
+                GG
+
+                ODD                                                                                       Typical Tw o-Stage Thermostat
+
+                     Line Voltage                                                   Air                               B Y1 Y2 G E/W1 W2 C R
+                                                                                 Handler
+                                             F ield-Installed                                                                                    (-)P17
+                                             Fa ctory Standa rd                       W1 W/BK                                                 Heat Pump
+                                                                                      W2 W/BL                                                Outdoor Unit
+                *Add jumper between W1 and W2 for maximum                             Y1 Y
+                 temperature rise if desired.                                         Y2 Y/BL                                                    Y Y1
+                                                                                       B BL                                                    Y/BL Y2
+                                                                                       RR                                                       BL B
+                                                                                       C BR
+                                                                                       GG                                                        RR
+                                                                                                                                                BR C
+                                                                                        ODD                                                     W/R L
+                                                                                                                                                PR D
+
+                                                                                              Line Voltage    F ield-Installed
+                                                                                                              Fa ctory Standa rd
+
+Application Guidelines
+
+1. Intended for outdoor installation with free air inlet and outlet. Outdoor fan external static pressure available is less than 0.01 -in. wc.
+2. Minimum outdoor operation air temperature for cooling mode without low-ambient operation accessory is 55°F (12.8°C).
+3. Maximum outdoor operating air temperature is 125°F (51.7°C).
+4. For reliable operation, unit should be level in all horizontal planes.
+5. Use only copper wire for electric connections at unit. Aluminum and clad aluminum are not acceptable for the type of connector
+
+   provided.
+6. Do not apply capillary tube indoor coils to these units.
+7. Factory - supplied filter drier must be installed.
+
+16
+                                                                                                                                                                   Refrigerant Line Size Information
+                                                                                                                                                           Air
+
+                                                                                                                                                                   RP17 Series
+
+Table 2A: Refrigerant Line Sizing Chart (English Units)
+
+                                               17 SEER 3-Stage Heat Pumps
+
+           Allowable         Allowable                     Outdoor Unit ABOVE or BELOW Indoor Unit
+                                                                      Equivelent Length (Feet)
+Unit Size  Liquid Line       Vapor Line
+                                         < 25     26-50                    51-75                                                                  76-100   101-125  126-150
+           Size              Size
+
+                                                  Maximum Vertical Separation/Capacity Multiplier
+
+           1/4"              5/8"        25/0.99  50/0.98                  29/0.97                                                                0/0.97   N/R      N/R
+
+2.0 Ton    5/16"              5/8"       25/0.99  50/0.98                  50/0.97                                                                50/0.97  50/0.96  50/0.95
+ *SEE       3/8"              5/8"       25/0.99  50/0.98                  50/0.97                                                                50/0.97  50/0.96  50/0.95
+NOTE 3      1/4"             *3/4"*      25/1.00  50/1.00                  29/0.99                                                                0/0.99
+                             *3/4"*      25/1.00  50/1.00                  50/0.99                                                                50/0.99    N/R      N/R
+           5/16"                                                                                                                                           50/0.98  50/0.98
+
+           3/8"              *3/4"*      25/1.00  50/1.00                  50/0.99                                                                50/0.99  50/0.98  50/0.98
+
+           5/16"             5/8"        25/0.99  50/0.97                  50/0.95                                                                49/0.93  31/0.91  N/R
+
+           3/8"              5/8"        25/0.99  50/0.97                  50/0.95                                                                50/0.93  50/0.91  N/R
+
+3 Ton      5/16"             3/4"        25/1.00  50/0.99                  50/0.99                                                                49/0.98  31/0.97  14/0.96
+
+           3/8"              3/4"        25/1.00  50/0.99                  50/0.99                                                                50/0.98  50/0.97  50/0.96
+
+           1/2"              3/4"        25/1.00  50/0.99                  50/0.99                                                                50/0.98  50/0.97  50/0.96
+
+           3/8"              3/4"        25/0.99  50/0.98                  50/0.97                                                                50/0.95  50/0.94  50/0.92
+
+                       1/2"  3/4"        25/0.99  50/0.98                  50/0.97                                                                50/0.95  50/0.94  50/0.92
+4 Ton
+                             7/8"        25/1.00  50/0.99                  50/0.99                                                                50/0.98  50/0.98  50/0.97
+                       3/8"
+
+           1/2"              7/8"        25/1.00  50/0.99                  50/0.99                                                                50/0.98  50/0.98  50/0.97
+
+           3/8"              3/4"        25/0.99  50/0.96                  50/0.94                                                                50/0.92  N/R      N/R
+
+                       1/2"  3/4"        25/0.99  50/0.96                  50/0.94                                                                50/0.92  N/R      N/R
+5 Ton
+                             7/8"        25/1.00  50/0.99                  50/0.98                                                                50/0.97  45/0.96  30/0.95
+                       3/8"
+
+           1/2"              7/8"        25/1.00  50/0.99                  50/0.98                                                                50/0.97  50/0.96  50/0.95
+
+NOTES:                                                                                                                                                     [ ] Designates Metric Conversions
+1) Do not exceed 150 ft linear line length.
+2) Do not exceed 50 ft vertical separation between indoor and outdoor units.
+3) * 3/4" vapor line should only be used for 2 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+4) Always use the smallest liquid line allowable to minimize refrigerant charge.
+5) Applications shaded in light gray indicate capacity multipliers between 0.90 and 0.96 which are not recommended, but are allowed.
+6) Applications shaded in dark gray are not recommended due to excessive liquid or suction pressure drop.
+
+                                                                                                                                                                    17
+                Refrigerant Line Size Information
+        Air
+
+                RP17 Series
+
+Table 2B: Refrigerant Line Sizing Chart (Metric Units)
+
+                                                                                  17 SEER 3-Stage Heat Pumps
+
+            Allowable                           Allowable                                  Outdoor Unit ABOVE or BELOW Indoor Unit
+                                                                                                    Equivelent Length (Meters)
+Unit Size LiquSiidzeLine VapSoirzeLine < 8
+            mm [in.]                            mm [in.]                          8-15                        16-23                   24-30                    31-38    39-46
+
+                                                                                  Maximum Vertical Separation/Capacity Multiplier
+
+            6.35 [1/4]                          15.88 [5/8]  8/0.99               15/0.98                     9/0.97                  0/0.97                   N/R      N/R
+
+ 7.0 kW     7.94 [5/16]   15.88 [5/8]                        8/0.99               15/0.98                     15/0.97                 15/0.97                  15/0.96  15/0.95
+[2.0 Ton]   9.53 [3/8]    15.88 [5/8]                        8/0.99               15/0.99                     15/0.97                 15/0.97                  15/0.96  15/0.95
+            6.35 [1/4]   *19.05 [3/4]*                       8/1.00               15/0.99
+  *SEE      7.94 [5/16]  *19.05 [3/4]*                       8/1.00               15/0.99                      9/0.99                  0/0.99                    N/R      N/R
+NOTE 3                                                                                                        15/0.99                 15/0.99                  15/0.98  15/0.98
+
+            9.53 [3/8]   *19.05 [3/4]*                       8/1.00               15/0.99                     15/0.99                 15/0.99                  15/0.98  15/0.98
+
+            7.94 [5/16]                         15.88 [5/8]  8/0.99               15/0.97                     15/0.95                 15/0.93                  9/0.91   N/R
+
+10.6 kW     9.53 [3/8]                          15.88 [5/8]  8/0.99               15/0.97                     15/0.95                 15/0.93                  15/0.91    N/R
+[3 Ton]     7.94 [5/16]                         19.05 [3/4]  8/1.00               15/0.99                     15/0.99                 15/0.98                   9/0.97   4/0.96
+            9.53 [3/8]                          19.05 [3/4]  8/1.00               15/0.99                     15/0.99                 15/0.98                           15/0.96
+                                                                                                                                                               15/0.97
+
+            12.7 [1/2]                          19.05 [3/4]  8/1.00               15/0.99                     15/0.99                 15/0.98                  15/0.97  15/0.96
+
+            9.53 [3/8]                          19.05 [3/4]  8/0.99               15/0.98                     15/0.97                 15/0.95                  15/0.94  15/0.92
+
+14.1 kW     12.7 [1/2]                          19.05 [3/4]  8/0.99               15/0.98                     15/0.97                 15/0.95                  15/0.94  15/0.92
+[4 Ton]     9.53 [3/8]                          22.23 [7/8]  8/1.00               15/0.99                     15/0.99                 15/0.98                  15/0.98  15/0.97
+
+            12.7 [1/2]                          22.23 [7/8]  8/1.00               15/0.99                     15/0.99                 15/0.98                  15/0.98  15/0.97
+
+            9.53 [3/8]                          19.05 [3/4]  8/0.99               15/0.96                     15/0.94                 15/0.92                  N/R      N/R
+
+17.6 kW     12.7 [1/2]                          19.05 [3/4]  8/0.99               15/0.96                     15/0.94                 15/0.92                    N/R    N/R
+[5 Ton]     9.53 [3/8]                          22.23 [7/8]  8/1.00               15/0.99                     15/0.98                 15/0.97                  14/0.96  9/0.95
+
+            12.7 [1/2]                          22.23 [7/8]  8/1.00               15/0.99                     15/0.98                 15/0.97                  15/0.96  15/0.95
+
+NOTES:                                                                                                                                         [               ] Designates Metric Conversions
+
+1) Do not exceed 47 meters linear line length.
+
+2) Do not exceed 15 meters vertical separation between indoor and outdoor units.
+
+3) * 19.05mm [3/4 in.] vapor line should only be used for 2 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+
+4) Always use the smallest liquid line allowable to minimize refrigerant charge.
+
+5) Applications shaded in light gray indicate capacity multipliers between 0.90 and 0.96 which are not recommended, but are allowed.
+
+6) Applications shaded in dark gray are not recommended due to excessive liquid or suction pressure drop.
+
+        18
+Performance Data @ AHRI Standard Conditions - Heat Pump
+
+High Sales Volume Tested Combination (HSVTC)
+
+Outdoor    Air Handler             Total Capacity  Net Sensible  Net Latent   SEER                                       47 Degree                        47 Degree      17 Degree     47 Degree  Region
+  Unit                              BTU/H [kW]     BTU/H [kW]    BTU/H [kW]         EER Indoor CFM [L/s] Heating Capacity                                    COP     Heating Capacity     COP     IV HSPF
+                                                                              18.5
+                                                   17300 [5.1]    6700 [2.0]  17.5                                      BTU/H [kW]                           3.46       BTU/H [kW]        1.96       9.5
+                                                   26800 [7.9]    8400 [2.5]  17.0                                                                           3.76                         2.30       8.5
+RP1724AJV  RH2T2417SEAC            24000 [7.0]     34400 [10.1]  13600 [4.0]  17.0  13.0  750 [354.0]                                       24500 [7.2]      3.46      15600 [4.6]        2.20       8.5
+RP1736AJV  RH2T3617SEAC            35200 [10.3]    39400 [11.5]  19100 [5.6]                                                                                 3.30                         2.46       8.5
+RP1748AJV  RH2T4821MEAC            48000 [14.1]                                     11.5 1225 [578.1]                                       31000 [9.1]                19400 [5.7]
+RP1760AJV  RH2T6021SEAC            58500 [17.1]
+                                                                                    10.5 1400 [660.7]                                       46500 [13.7]               29000 [8.5]
+
+                                                                                    9.5 1575 [743.3]                                        62000 [18.2]               41500 [12.2]
+
+Note: Additional ratings and system match ups can be accessed on MyRheem.com at: https://my.rheem.com/static/private/ahriresidential.html
+Additional ratings and system match ups and downloadable ratings certificates can be accessed from the AHRI website: www.ahridirectory.org
+
+[ ] Designates Metric Conversions
+
+                                                                                                                                                                                                                                                                                                                                  Performance Data
+                                                                                                                                                                                                                                                                                                                                Air
+
+                                                                                                                                                                                                                                                                                                                              RP17 Series
+19
+        Guide Specifications
+Air
+
+        RP17 Series
+
+GUIDE SPECIFICATIONS                                                   AIR-COOLED, SPLIT-SYSTEM HEAT PUMP
+                                                                       RP17
+General                                                                1-1/2 TO 5 NOMINAL TONS
+                                                                       Fans
+System Description                                                     -- Condenser fan will be direct-drive propeller type, discharging
+Outdoor-mounted, air-cooled, split-system heat pump unit suit-
+able for ground or rooftop installation. Unit consists of a hermetic      air upward.
+compressor, composite basepan, an air-cooled coil, propeller-
+type condenser fan, suction and liquid line service valve, and a       -- Condenser fan motors will be totally enclosed, 1-phase type
+control box. Unit will discharge supply air upward as shown on            with class B insulation and permanently lubricated bearings.
+contract drawings. Unit will be used in a refrigeration circuit to        Shafts will be corrosion resistant.
+match up to a coil unit.
+                                                                       -- Fan blades will be statically and dynamically balanced.
+Quality Assurance
+-- Unit will be rated in accordance with the latest edition of AHRI    -- Condenser fan openings will be equipped with coated steel
+                                                                          wire safety guards.
+   Standard 210.
+                                                                       Compressor
+-- Unit will be certified for capacity and efficiency, and listed in   -- Compressor will be hermetically sealed.
+   the latest AHRI directory.
+                                                                       -- Compressor will be mounted on rubber vibration isolators.
+-- Unit construction will comply with latest edition of ANSI/
+   ASHRAE and with NEC.                                                Condenser Coil
+                                                                       -- Condenser coil will be air cooled.
+-- Unit will be constructed in accordance with UL standards and
+   will carry the UL label of approval. Unit will have c-UL-us         -- Coil will be constructed of aluminum fins mechanically bonded
+   approval.                                                              to copper tubes.
+
+-- Unit cabinet will be capable of withstanding ASTM B117 1000-        Refrigeration Components
+   hr salt spray test.                                                 -- Refrigeration circuit components will include liquid-line shutoff
+
+-- Air-cooled condenser coils will be leak tested at 150 psig and         valve with sweat connections, vapor-line shutoff valve with
+   pressure tested at 550 psig.                                           sweat connections, system charge of R-410A refrigerant, and
+                                                                          compressor oil.
+-- Unit constructed in ISO9001 approved facility.
+                                                                       -- Unit will be equipped with filter drier for R-410A refrigerant for
+Delivery, Storage, and Handling                                           field installation.
+-- Unit will be shipped as single package only and is stored and
+                                                                       Operating Characteristics
+   handled per unit manufacturer's recommendations.                    -- The capacity of the unit will meet or exceed _____ Btuh at a
+
+Warranty (for inclusion by specifying engineer) -- U.S. and               suction temperature of _____ °F/°C. The power consumption
+Canada only.                                                              at full load will not exceed _____ kW.
+
+Products                                                               -- Combination of the unit and the evaporator or fan coil unit will
+                                                                          have a total net cooling capacity of _____ Btuh or greater at
+Equipment                                                                 conditions of _____ CFM entering air temperature at the evap-
+Factory assembled, single piece, air-cooled heat pump unit. Con-          orator at _____ °F/°C wet bulb and _____ °F/°C dry bulb, and
+tained within the unit enclosure is all factory wiring, piping, con-      air entering the unit at _____ °F/°C.
+trols, compressor, refrigerant charge R-410A, and special fea-
+tures required prior to field start-up.                                -- The system will have a SEER of _____ Btuh/watt or greater at
+                                                                          DOE conditions.
+Unit Cabinet
+-- Unit cabinet will be constructed of galvanized steel, bonder-       Electrical Requirements
+                                                                       -- Nominal unit electrical characteristics will be _____ v, single
+   ized, and coated with a powder coat paint.
+                                                                          phase, 60 hz. The unit will be capable of satisfactory operation
+-- All units constructed with louver coil protection and corner post.     within voltage limits of _____ v to _____ v.
+   Louver can be removed by removing one fastener per louver
+   panel.                                                              -- Nominal unit electrical characteristics will be _____ v, three
+                                                                          phase, 60 hz. The unit will be capable of satisfactory operation
+                                                                          within voltage limits of _____ v to _____ v.
+
+                                                                       -- Unit electrical power will be single point connection.
+
+                                                                       -- Control circuit will be 24v.
+
+                                                                       Special Features
+                                                                       -- Refer to section of this literature identifying accessories and
+
+                                                                          descriptions for specific features and available enhancements.
+
+20
+                                                                                     Limited Warranty
+                                                                             Air
+
+                                                                                     RP17 Series
+
+GENERAL TERMS OF LIMITED WARRANTY*                                           Conditional Unit Replacement
+                                                                                (Registration Required) ...............................Ten (10) Years
+Rheem will furnish a replacement for any part of this product
+which fails in normal use and service within the applicable                  Parts ............................................................Ten (10) Years
+period stated, in accordance with the terms of the limited
+warranty.
+
+ *For complete details of the Limited and Conditional Warranties, including
+  applicable terms and conditions, contact your local contractor or the
+  Manufacturer for a copy of the product warranty certificate.
+
+                                                                             21
+         Notes
+Air
+
+         RP17 Series
+22
+        Notes
+Air
+
+        RP17 Series
+           23
+The new degree of comfort.TM
+
+In keeping with its policy of continuous progress and product improvement, Rheem reserves the right to make changes without notice.
+
+Rheem Heating, Cooling & Water Heating · 5600 Old Greenwood Road  Rheem Canada Ltd./Ltée · 125 Edgeware Road, Unit 1
+                 Fort Smith, Arkansas 72908 · www.rheem.com                         Brampton, Ontario · L6Y 0P5
+
+                                                                  PRINTED IN U.S.A. 11/19 QG FORM NO. P11-809 REV. 6
+

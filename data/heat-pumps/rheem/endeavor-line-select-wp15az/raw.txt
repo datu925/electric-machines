@@ -1,0 +1,543 @@
+                                                                                                                                                                                                                  Heat Pumps
+                                                                                                                                                                                                                  WP15AZ
+
+           EndeavorTM Line Select® Series
+                       iC Heat Pumps
+
+              WP15AZ
+
+                 Cooling Efficiencies up to: 16 SEER2/11.7 EER2
+                 Heating Efficiencies up to: 8.1 HSPF2
+                 Nominal Sizes: 11/2 to 5 Ton [5.28 to 17.6 kW]
+                 Cooling Capacities: 17.1 to 55.5 kBTU [5.0 to 16.3 kW]
+
+                                                                                *
+
+*Proper sizing and installation of equipment is critical to achieve optimal performance. Split system air conditioners and heat pumps
+must be matched with appropriate coil components to meet Energy Star. Ask your Contractor for details or visit www.energystar.gov.
+
+                                                                                                                                                                                                                                                                                       FORM NO. P33-837 REV. 1
+Table of Contents
+WP15AZ
+
+                                          Table of Contents
+
+                   Features & Benefits...................................................................3
+                   Model Number Identification.....................................................4
+                   General Data/Electrical Data.....................................................5
+                   Accessories...............................................................................6
+                   Weighted Sound Power........................................................... 6
+                   Unit Dimensions........................................................................7
+                   Clearances................................................................................8
+                   Refrigerant Line Size Information........................................ 9-10
+                   Performance Data...................................................................11
+                   Limited Warranty.....................................................................12
+
+2
+Features and Benefits                                                                                                                             Features and Benefits
+                                                                                                                                                  WP15AZ
+· Fully Louvered Steel Cabinet: Features durable construction
+   to add protection from yard hazards, weather corrosion        · Inverted Reversing Valve: Allows for faster heat transfer with
+                                                                    gravity assist shifting and reduced joint stress for increased
+· Two-Stage Scroll Compressor: Features two speeds (high            reliability
+   and low) of cooling and heating, providing more precise
+   temperature control, lower humidity and greater efficiency    · Easily Accessible Control Box: Ease of installation and
+   when compared to single stage compressors                        serviceability
+
+· 7 mm Condenser Copper Coil1: Requires less refrigerant
+   allowing for a smaller and lighter footprint while enhancing
+   reliability
+
+1Does not apply to the 5 Ton Model
+                                                                                                                                                                                                          3
+Model Number Identification
+WP15AZ
+
+ Heat Pumps
+
+   W              P              15               A                 Z           18                      A                   J             2            N                      A
+
+       Brand         Product          SEER2           Region       Refrigerant  Capacity                Major Series    Voltage              Type               Controls      Minor Series
+W - Rheem Select     Category    15 - 15.2 SEER2  A - All Regions  Z - R-410A                                                             2 - 2-Stage  N - Non-Communicating  A - 1st Design
+                                                                                18 - 18,000 [5.28 kW]   A - 1st Design  J - 208/230/1/60
+                  P - Heat Pump                                                 24 - 24,000 [7.03 kW]
+                                                                                30 - 30,000 [8.79 kW]
+                                                                                36 - 36,000 [10.55 kW]
+                                                                                42 - 42,000 [12.31 kW]
+                                                                                48 - 48,000 [14.07 kW]
+                                                                                60 - 60,000 [17.58 kW]
+
+[ ] Designates Metric Conversions
+
+      AVAILABLE MODELS                                                                                                           STANDARD EQUIPMENT
+        WP15AZ18AJ2N
+        WP15AZ24AJ2N                                                                                    R-410A Refrigerant
+        WP15AZ30AJ2N
+        WP15AZ36AJ2N                                                                                    Scroll Compressor
+        WP15AZ42AJ2N
+        WP15AZ48AJ2N                                                                                    Field Installed Filter Drier
+        WP15AZ60AJ2N
+                                                  BRAND                         PRODUCT CATE-           Front Seating Service Valves         CAPACITY                         MAJOR SE- VOLTAGE
+                                                  W - Rheem Select              P - Heat Pump           SEER2 REGION REFRIGER-               18 - 18,000 [5.28 kW]            A - 1ST DE- J - 208/230 / 1
+                                                                                                        Internal Pressure Relief Valve       24 - 24,000 [7.03 kW]
+                                                                                                        14 - 14.3 A - ALL RE- Z - R-410A     30 - 30,000 [8.79 kW]
+                                                                                                        Internal Thermal Overload            36 - 36,000 [10.55 kW]
+                                                                                                        Long Line capability                 42 - 42,000 [12.31 kW]
+                                                                                                        Low Ambient capability with Kit
+                                                                                                        3-4-5 Expanded Valve Space
+                                                                                                        Optimized Venturi Airflow
+
+                                                                                                        Single row condenser coil            48 - 48,000 [14.07 kW]
+
+                                                                                                        Rust resistant screws                60 - 60,000 [17.58 kW]
+                                                                                                        QR code
+
+                                                                                                        External gauge ports
+
+                     WP15AZ18AJ1NA
+
+                     WP15AZ18AJ2NA                                                                      WP15AZ18AJ1NA
+
+                     WP15AZ24AJ2NA                                                                      WP15AZ18AJ2NA                                                                         R-
+
+                     WP15AZ30AJ2NA                                                                      WP15AZ24AJ2NA                                                                         Sc
+
+                     WP15AZ36AJ2NA                                                                      WP15AZ30AJ2NA                                                                         Fie
+
+                     WP15AZ42AJ2NA                                                                      WP15AZ36AJ2NA                                                                         Fro
+
+                     WP15AZ48AJ2NA                                                                      WP15AZ42AJ2NA                                                                         Int
+
+                     WP15AZ60AJ2NA                                                                      WP15AZ48AJ2NA                                                                         Int
+
+                                                                                                        WP15AZ60AJ2NA                                                                         Lo
+
+                                                                                                                                                                                              Lo
+
+                                                                                                                                                                                              3-
+
+                                                                                                                                                                                              Co
+
+                                                                                                                                                                                              2 S
+
+                                                                                                                                                                                              15
+
+                                                                                                                                                                                              Qu
+
+                                                                                                                                                                                              No
+
+4                                                                                                                                                                                             Op
+
+                                                                                                                                                                                              Sin
+                                                                                                           General Data/Electrical Data
+                                                                                                           WP15AZ
+
+General Data                                       (-)P15AZ  (-)P15AZ  (-)P15AZ  (-)P15AZ        (-)P15AZ  (-)P15AZ  (-)P15AZ
+                                                   18AJ2NA   24AJ2NA   30AJ2NA   36AJ2NA         42AJ2NA   48AJ2NA   60AJ2NA
+  MODEL NO.
+                                                     0.375     0.375   0.375          0.375      0.375       0.375     0.375
+  Nominal Tonnage                                    0.75      0.75    0.75           0.75       0.875       0.875     0.875
+  Valve Connections                                   118       118     120            127        143         146       220
+                                                                                 2-stage Scroll
+                          Liquid Line O.D. - in.     10.9      10.9                                          21.5      32.5
+                        Suction Line O.D. - in.      10.5      10.5    19.5      21.5            21.5
+  Refrigerant (R410A) furnished oz.¹                 0.276     0.276                                         0.276     0.375
+  Compressor Type                                                      0.276     0.276           0.276         1         1
+  Outdoor Coil                                         2         2       1         1               1           22        20
+                    Net face area - Outer Coil         22        22     22        22              22
+                     Net face area - Inner Coil                                                                24        26
+                                                       20        20    24        24              24            3         3
+                            Tube diameter - in.        2         2                                            1/5       1/5
+                               Number of rows         1/6       1/6    3         3               3           4206      5106
+                                   Fins per inch     2582      2582                                           850       850
+                                                     1075      1075    1/5       1/5             1/5          246       294
+  Outdoor Fan                                         145       145
+                                  Diameter - in.                       4077      4206            4206
+
+                              Number of blades                         850       850             850
+                                        Motor hp
+                                             CFM                       222       246             246
+                                             RPM
+                                            watts                            COMING SOON
+
+  Shipping weight - lbs.
+  Operating weight - lbs.
+
+Electrical Data
+
+Line Voltage Data (Volts-Phase-Hz)                 208/230-1-60 208/230-1-60 208/230-1-60 208/230-1-60 208/230-1-60 208/230-1-60 208/230-1-60
+
+Maximum overcurrent protection (amps)²             15        25        30        30              45        45        50
+
+Minimum circuit ampacity³                          11        15        18        20              26        28        31
+
+Compressor
+
+                           Rated load amps         8         11        14        15              20        21        24
+
+                     Locked rotor amps             56        61        87        102             151       0         151
+
+Condenser Fan Motor
+
+                           Full load amps          0.75      0.75      1.0       1.0             1.0       1.0       1.0
+
+                     Locked rotor amps             1.5       1.5       2.56      2.56            2.56      2.56      2.56
+
+¹Refrigerant charge sufficient for 15 ft. length of refrigerant lines. For longer line set requirements see the installation instructions for information about set length and additional
+refrigerant charge required.
+²HACR type circuit breaker of fuse.
+³Refer to National Electrical Code manual to determine wire, fuse and disconnect size requirements.
+
+                                                                                                                                                                                           5
+Accessories/Weighted Sound Power
+WP15AZ
+
+Accessories
+
+MODEL NO.                                WP15AZ18**2           WP15AZ24                             WP15AZ30          WP15AZ36            WP15AZ42         WP15AZ48           WP15AZ60
+                                                                                                  44-17402-44       44-17402-44         44-17402-45       44-17402-45     Factory Standard
+Compressor crankcase heater*                 44-17402-44   44-17402-44                              RXAD-A08          RXAD-A08            RXAD-A08          RXAD-A08
+                                                                                                  68-23427-26       68-23427-26         68-23427-25       68-23427-25         RXAD-A08
+Low ambient control                          RXAD-A08          RXAD-A08                                                                                                     68-23427-25
+                                                                                                      SK-A1             SK-A1               SK-A1             SK-A1
+Compressor sound cover                       68-23427-26   68-23427-26                          Factory Standard  Factory Standard    Factory Standard  Factory Standard        SK-A1
+                                                                                                Factory Standard  Factory Standard    Factory Standard  Factory Standard  Factory Standard
+Compressor hard start kit                    SK-A1               SK-A1                           200RD2T3TVLC      200RD2T3TVLC        200RD2T3TVLC      200RD3T3TVLC     Factory Standard
+                                                                                                                                                                           200RD3T3TVLC
+Low pressure control                     Factory Standard Factory Standard                         61-AMG24V         61-AMG24V           61-AMG24V         61-AMG24V
+                                                                                                 200RD2T3TVLC      200RD2T3TVLC        200RD2T3TVLC      200RD3T3TVLC        61-AMG24V
+High pressure control                    Factory Standard Factory Standard                      61-AMG120/240V    61-AMG120/240V      61-AMG120/240V    61-AMG120/240V     200RD3T3TVLC
+                                                                                                  91-101123-21      91-101123-21        91-101123-21      91-101123-21    61-AMG120/240V
+Liquid Line Solenoid     Solenoid Valve   200RD2T3TVLC      200RD2T3TVLC                                                                                                    91-101123-21
+(24 VAC, 50/60 Hz)       Solenoid Coil      61-AMG24V         61-AMG24V
+
+Liquid Line Solenoid     Solenoid Valve   200RD2T3TVLC      200RD2T3TVLC
+(120/240 VAC,            Solenoid Coil   61-AMG120/240V    61-AMG120/240V
+50/60 Hz)
+                                           91-101123-21      91-101123-21
+Classic Top Cap w/Label
+
+*Bi-flow kits are required when installing a liquid line solenoid on a heat pump.
+
+Weighted SoMoudenl Ndo. Power Level (dBA) WP15AZ18**1                                                             WP15AZ18**2               WP15AZ24                      WP15AZ30
+
+   UCNoImTpSreIZssEo-r crankcase heateSr*TANDARD                 44-17402-44TYPICAL OCTAVE4B4A-1N7D40S2P-4E4CTRUM (dBA with4o4u-t17to4n0e2-4a4djustment)                  44-17402-44
+VOLTLAoGwEa,mSbEieRnItEcSontrol RATING (DBA)
+                                                           125 RXAD-A08250                            500RXAD-A08 1000                      R2X0A0D0-A08     4000          RXAD8-0A0080
+                                                                                                                                                                          68-2345207.-526
+WPC1o5mApZre1s8sAor sound cover          73                58.0 68-23427-2568.8                       626.08-23427-26 62.3                  685-293.2427-26  56.6
+
+WPC1o5mApZre2s4sAor hard start kit       73                56.6 SK-A1 59.6                            62.2 SK-A1 62.1                       5S8K.8-A1        55.4         SK-5A01.8
+
+WPL1ow5ApZre3s0sAure control             72                48.9 Factory Stand5ar5d.3                  6F3a.c6tory Standard 61.0             Fact5or9y.1Standard 56.5 Factory S4ta8n.7dard   Fa
+
+WPH1ig5hApZr3e6ssAure control            74                51.2 Factory Stand5ar6d.4                  6F3a.c1tory Standard 63.8             Fact6or0y.8Standard 57.4 Factory S5ta6n.5dard   Fa
+
+WPL1iq5uAidZL4i2neASolenoid              74                56.8                           58.7        65.9                      66.2        62.9             59.4         54.2
+
+WP(2145AVAZC4,85A0/60 Hz)                S7o4lenoid Valve  57.3 200RD2T3TV5L6C.6                      6240.10RD2T3TVLC 64.0                 2006R1D.21T3TVLC 58.0 200RD2T536T.5VLC          2
+
+WP15AZ60A                                S7o4lenoid Coil   43.9 61-AMG24V55.2                         63.641-AMG24V 65.8                    616-1A.M7G24V    57.9         61-AM5G22.49V
+
+NOTE: TesteLdiqiunidaLcicnoerdSaonlecneoiwdith AHRI Standard 270-08 (not listed in AHRI)
+
+(120/240 VAC, 50/60 Hz)                  Solenoid Valve          200RD2T3TVLC                                     200RD2T3TVLC              200RD2T3TVLC                  200RD2T3TVLC      2
+
+                                         Solenoid Coil           61-AMG120/240V                       61-AMG120/240V                        61-AMG120/240V                61-AMG120/240V    61
+
+Classic Top Cap w/Label                                          91-101123-21                                     91-101123-21              91-101123-21                  91-101123-21
+
+                       Unit Size -       Standard TYPICAL
+Voltage, Series Rating (dBA) OCTAVE
+
+                                                           125                            250   500               1000                2000  4000             8000
+
+                      WP15AZ18A              73            58                             58.8  62                62.3                59.2  56.6             50.5
+
+                      WP15AZ24A              73            56.6                           59.6  62.2              62.1                58.8  55.4             50.8
+
+                      WP15AZ30A              72            48.9                           55.3  63.6              61                  59.1  56.5             48.7
+
+                      WP15AZ36A              74            51.2                           56.4  63.1              63.8                60.8  57.4             56.5
+
+                      WP15AZ42A              74            56.8                           58.7  65.9              66.2                62.9  59.4             54.2
+
+                      WP15AZ48A              74            57.3                           56.6  64.1              64                  61.1  58               56.5
+
+                      WP15AZ60A              74            43.9                           55.2  63.4              65.8                61.7  57.9             52.9
+
+                                                     Refrigerant charge sufficient for 15 ft. length of refrigerant lines. For longer line set requirements see the installation instrucitons for inform
+                                                                                                                    length and additional refrigerant charge required.
+
+6
+                                                                                                                                  Unit Dimensions
+                                                                                                                                  WP15AZ
+
+Unit Dimensions
+
+                                       OPERATING                                                             SHIPPING
+
+      MODEL      H (Height)            L (Length)           W (Width)                    H (Height)          L (Length)           W (Width)
+        NO.
+                 INCHES    mm          INCHES   mm          INCHES   mm       INCHES       mm        INCHES     mm       INCHES    mm
+(-)P15AZ18AJ2NA  25.170   639.32       29.543  750.39       29.543  750.39    27.063      687.39     32.625    828.68    32.625   828.68
+(-)P15AZ24AJ2NA  25.170   639.32       29.543  750.39       29.543  750.39    27.063      687.39     32.625    828.68    32.625   828.68
+(-)P15AZ30AJ2NA  35.170   893.32       33.655  854.84       33.655  854.84    37.063      941.39     36.625    930.28    36.625   930.28
+(-)P15AZ36AJ2NA  39.170   994.92       33.655  854.84       33.655  854.84    41.063     1042.99     36.625    930.28    36.625   930.28
+(-)P15AZ42AJ2NA  39.170   994.92       33.655  854.84       33.655  854.84    41.063     1042.99     36.625    930.28    36.625   930.28
+(-)P15AZ48AJ2NA  39.170   994.92       33.655  854.84       33.655  854.84    41.063     1042.99     36.625    930.28    36.625   930.28
+(-)P15AZ60AJ2NA  51.170  1299.72       35.543  902.79       35.543  902.79    53.063     1347.79     38.625    981.08    38.625   981.08
+
+                 (-)P15AZ18AJ2NA       25.170      639.32   29.543       750.39          29.543      750.39  27.063      687.39   32.625                             828.68
+                 (-)P15AZ24AJ2NA       25.170      639.32   29.543       750.39          29.543      750.39  27.063      687.39   32.625                             828.68
+                 (-)P15AZ30AJ2NA       35.170      893.32   33.655       854.84          33.655      854.84  37.063      941.39   36.625                             930.28
+                 (-)P15AZ36AJ2NA       39.170      994.92   33.655                       33.655      854.84  41.063      1042.99  36.625                             930.28
+                 (-)P15AZ42AJ2NA       39.170      994.92   33.655     H 854.84          33.655      854.84  41.063      1042.99  36.625                             930.28
+                                       39.170      994.92   33.655                       33.655      854.84  41.063      1042.99  36.625                             930.28
+                 (-)P15AZ48AJ2NA W     51.170      1299.72  35.543       854.84          35.543      902.79  53.063      1347.79  38.625                             981.08
+                                                                         854.84
+                 (-)P15AZ60AJ2NA                                         902.79
+
+L
+
+                                                                       LOW VOLTAGE                                       HIGH VOLTAGE
+                                                                            7/8 [22 mm]                                  13/32 [27 mm]
+                                                                                                                         HOLE DIAMETER
+                                                                    HOLE DIAMETER
+
+                                                                    SERVICE                                                       SERVICE
+                                                                     FITTING                                                      FITTING
+
+                                                                                LIQUID LINE                              VAPOR LINE
+                                                                              CONNECTION                                 CONNECTION
+
+                         SEE DETAIL A                                                                DETAIL A                                       Illustration
+[ ] Designates Metric Conversions                                                                                                                ST-A1331-01
+                                                                                                                                             Rev. 10-20-2022
+
+                                                                                                                                                                  7
+8                                                                                                                                                                                                                                     Clearances
+                                                                                                                                                                                                                                  WP15AZ
+   CLEARANCES
+                                                                                                                                                                                             WALL
+                   WALL
+                                                                                                                                                                                                            24
+                            6                                                                                                                                                                            (609.6)
+                         (152.4)                                                                                                                                                                         Service
+
+     24                    12                                                                                                                                                         12                                   WALL
+   (609.6)               (304.8)                                                                                                                                                    (304.8)
+   Service
+
+                                                                                                                                                                                                                     6
+                                                                                                                                                                                                                  (152.4)
+
+               6
+            (152.4)
+
+                                                                                                                                                                                               12
+                                                                                                                                                                                             (304.8)
+
+              24                         WALL                                                                                                                                                  24
+            (609.6)                                                                                                                                                                          (609.6)
+            Service                         24                                                                                                                                               Service
+                                         (609.6)
+                                         Service
+
+     18                           24                       24
+   (457.2)                     (609.6)                  (609.6)
+
+                         24 recommended           24 recommended
+                         6 minimum                6 minimum
+
+   NOTE: NUMBERS IN () = mm
+
+   IMPORTANT: When installing multiple units in an alcove, roof well or partially enclosed area, ensure there is adequate ventillation to prevent re-circulation of discharge air.
+
+                                                                                                                                                                                                                  ST-A1225-01-00
+                                                                                                                                              Refrigerant Line Size Information
+                                                                                                                                              WP15AZ
+
+Refrigerant Line Size Information
+
+                                       SINGLE- AND TWO-STAGE HEAT PUMPS
+
+                                                  OUTDOOR UNIT ABOVE OR BELOW INDOOR UNIT
+
+UNIT     MAX.  SUCTION                            EQUIVALENT LENGTH (FEET)
+
+SIZE LILNIQEUSIIDZE LINE SIZE  0-15    16-25      26-50                                                                51-80      81-100      101-125      126-150
+
+                                                  MAXIMUM VERTICAL SEPARATION/CAPACITY MULTIPLIER                                                         115 / 0.95
+                                                                                                                                                          115 / 0.98
+               1/2"            15 / 1  25 / 1     50 / 0.99                                                            80 / 0.97  100 / 0.97  115 / 0.96  115 / 0.98
+                                                                                                                                                          95 / 0.95
+1.5 Ton  3/8"  5/8"            15 / 1  25 / 1     50 / 1                                                               80 / 0.99  100 / 0.99  115 / 0.99  95 / 0.98
+                                                                                                                                                          85 / 0.93
+               3/4"            15 / 1  25 / 1     50 / 1                                                               80 / 0.99  100 / 0.99  115 / 0.99  85 / 0.97
+
+2 Ton    3/8"  5/8"            15 / 1  25 / 1     50 / 0.99                                                            80 / 0.98  100 / 0.97  100 / 0.96   75 / 0.9
+                                                                                                                                                          75 / 0.96
+               3/4"            15 / 1  25 / 1     50 / 1                                                               80 / 0.99  100 / 0.99  100 / 0.99  75 / 0.98
+                                                                                                                                                          65 / 0.95
+2.5 Ton  3/8"  5/8"            15 / 1  25 / 0.99  50 / 0.98                                                            80 / 0.97  95 / 0.96   90 / 0.94   65 / 0.98
+                                                                                                                                                          50 / 0.94
+               3/4"            15 / 1  25 / 1     50 / 0.99                                                            80 / 0.99  95 / 0.98   90 / 0.98   50 / 0.97
+                                                                                                                                                           15 / 0.9
+               5/8"            15 / 1  25 / 0.99  50 / 0.97                                                            80 / 0.95  85 / 0.94   80 / 0.92   15 / 0.96
+
+3 Ton    3/8"  3/4"            15 / 1  25 / 1     50 / 0.99                                                            80 / 0.98  85 / 0.98   80 / 0.97
+
+               7/8"            15 / 1  25 / 1     50 / 1                                                               80 / 0.99  85 / 0.99   80 / 0.99
+
+3.5 Ton  3/8"  3/4"            15 / 1  25 / 0.99  50 / 0.98                                                            80 / 0.97  80 / 0.97   70 / 0.96
+
+               7/8"            15 / 1  25 / 1     50 / 0.99                                                            80 / 0.99  80 / 0.99   70 / 0.98
+
+4 Ton    3/8"  3/4"            15 / 1  25 / 0.99  50 / 0.98                                                            75 / 0.97  70 / 0.96   60 / 0.95
+
+               7/8"            15 / 1  25 / 1     50 / 0.99                                                            75 / 0.99  70 / 0.98   60 / 0.98
+
+5 Ton    3/8"  3/4"            15 / 1  25 / 0.99  50 / 0.97                                                            65 / 0.95  45 / 0.94   30 / 0.92
+
+               7/8"            15 / 1  25 / 0.99  50 / 0.99                                                            65 / 0.98  45 / 0.97   30 / 0.96
+
+NOTES:
+1) Maximum Equivelent Line Length may not exceed 250'
+2) Maximum Actual Line Length may not exceed 200'
+3) Light Grey shaded areas are considered long line and may require accessories as recommended in Long Line Set Guide
+4) Refer to supplemental Long Line Set Guide for applications that require liquid line size other than 3/8"
+5) DO NOT use suction line traps in the suction riser as this adds additional unwanted pressure drop in the system
+
+               SINGLE AND
+               TWO STAGE
+               HEAT PUMPS
+
+                                                                                                                                                                      9
+Refrigerant Line Size Information
+WP15AZ
+
+Refrigerant Line Size Information (Con't.)
+
+                                                   SINGLE- AND TWO-STAGE HEAT PUMPS
+
+                                                             OUTDOOR UNIT ABOVE OR BELOW INDOOR UNIT
+
+    UNIT     MAX.                  SUCTION                   EQUIVALENT LENGTH (METERS)
+
+    SIZE LILNIQEUSIIDZE LINE SIZE           0-5    5.5-8     8.5-15                                                    15.5-24    24.5-30    30.5-38    38.5-46
+
+                                                             MAXIMUM VERTICAL SEPARATION/CAPACITY MULTIPLIER                                            35 / 0.95
+                                                                                                                                                        35 / 0.98
+                                   1/2"     5 / 1  8 / 1     15 / 0.99                                                 24 / 0.97  30 / 0.97  35 / 0.96  35 / 0.98
+                                                                                                                                                        29 / 0.95
+    1.5 Ton  3/8"                  5/8"     5 / 1  8 / 1     15 / 1                                                    24 / 0.99  30 / 0.99  35 / 0.99  29 / 0.98
+                                                                                                                                                        26 / 0.93
+                                   3/4"     5 / 1  8 / 1     15 / 1                                                    24 / 0.99  30 / 0.99  35 / 0.99  26 / 0.97
+                                                                                                                                                        23 / 0.9
+    2 Ton    3/8"                  5/8"     5 / 1  8 / 1     15 / 0.99                                                 24 / 0.98  30 / 0.97  30 / 0.96  23 / 0.96
+                                                                                                                                                        23 / 0.98
+                                   3/4"     5 / 1  8 / 1     15 / 1                                                    24 / 0.99  30 / 0.99  30 / 0.99  20 / 0.95
+                                                                                                                                                        20 / 0.98
+    2.5 Ton  3/8"                  5/8"     5 / 1  8 / 0.99  15 / 0.98                                                 24 / 0.97  29 / 0.96  27 / 0.94  15 / 0.94
+                                                                                                                                                        15 / 0.97
+                                   3/4"     5 / 1  8 / 1     15 / 0.99                                                 24 / 0.99  29 / 0.98  27 / 0.98
+                                                                                                                                                         5 / 0.9
+                                   5/8"     5 / 1  8 / 0.99  15 / 0.97                                                 24 / 0.95  26 / 0.94  24 / 0.92  5 / 0.96
+
+    3 Ton    3/8"                  3/4"     5 / 1  8 / 1     15 / 0.99                                                 24 / 0.98  26 / 0.98  24 / 0.97
+
+                                   7/8"     5 / 1  8 / 1     15 / 1                                                    24 / 0.99  26 / 0.99  24 / 0.99
+
+    3.5 Ton  3/8"                  3/4"     5 / 1  8 / 0.99  15 / 0.98                                                 24 / 0.97  24 / 0.97  21 / 0.96
+
+                                   7/8"     5 / 1  8 / 1     15 / 0.99                                                 24 / 0.99  24 / 0.99  21 / 0.98
+
+    4 Ton    3/8"                  3/4"     5 / 1  8 / 0.99  15 / 0.98                                                 23 / 0.97  21 / 0.96  18 / 0.95
+
+                                   7/8"     5 / 1  8 / 1     15 / 0.99                                                 23 / 0.99  21 / 0.98  18 / 0.98
+
+    5 Ton 3/8" 3/4" 5 / 1 8 / 0.99 15 / 0.97 20 / 0.95 14 / 0.94 9 / 0.92
+                                   7/8"     5 / 1  8 / 0.99  15 / 0.99                                                 20 / 0.98  14 / 0.97  9 / 0.96
+
+NOTES:
+1) Maximum Equivelent Line Length may not exceed 76 meters
+2) Maximum Actual Line Length may not exceed 61 meters
+3) Light Grey shaded areas are considered long line and may require accessories as recommended in Long Line Set Guide
+4) Refer to supplemental Long Line Set Guide for applications that require liquid line size other than 9.5mm
+5) DO NOT use suction line traps in the suction riser as this adds additional unwanted pressure drop in the system
+
+10
+                                                                                                                    Performance Data
+                                                                                                                    WP15AZ
+
+Performance Data @ AHRI Standard Conditions - Cooling
+
+DESIGNATED TESTED COMBINATION (DTC)
+
+OUTDOOR  AIR HANDLER       TOTAL         NET            NET               INDOOR    47 DEGREE      47   17 DEGREE      17 REGION
+   UNIT                  CAPACITY     SENSIBLE        LATENT SEER2 EER2  CFM [L/S]   HEATING    DEGREE   HEATING    DEGREE IV
+                        BTU/H [kW]   BTU/H [kW]     BTU/H [kW]                       CAPACITY            CAPACITY
+                                                                                    BTU/H [KW]    COP   BTU/H [KW]    COP HSPF2
+
+WP15AZ18AJ2N RH2TZ2417STANN 17,100 [5.0] 13,100 [3.8] 4,000 [1.2] 15.2 11.7 ,625 [295.0] 17,100 [5.0] 3.87 11,600 [3.4] 2.60 7.8
+
+WP15AZ24AJ2N RH2TZ2417STANN 22,800 [6.7] 17,400 [5.1] 5,400 [1.6] 15.2 11.7 ,775 [365.8] 22,600 [6.6] 3.88 15,600 [4.6] 2.80 7.8
+
+WP15AZ30AJ2N RH2TZ3617STANN 28,400 [8.3] 21,800 [6.4] 6,600 [1.9] 15.2 11.7 ,900 [424.8] 28,400 [8.3] 3.62 19,700 [5.8] 2.60 7.8
+
+WP15AZ36AJ2N RH2TZ3617STANN 34,200 [10.0] 26,200 [7.7] 8,000 [2.3] 15.2 11.7 1,050 [495.5] 34,200 [10.0] 3.62 24,400 [7.2] 2.70 7.8
+
+WP15AZ42AJ2N RH2TZ4821STANN 40,000 [11.7] 30,500 [8.9] 9,500 [2.8] 15.2 11.7 1,325 [625.3] 39,500 [11.6] 3.95 28,200 [8.3] 2.90 7.8
+
+WP15AZ48AJ2N RH2TZ4821STANN 45,500 [13.3] 35,000 [10.3] 10,500 [3.1] 15.2 11.7 1,450 [684.3] 45,000 [13.2] 3.92 33,200 [9.7] 2.90 7.8
+
+WP15AZ60AJ2N RH2TZ6024STANN 57,000 [16.7] 43,500 [12.7] 13,500 [4.0] 15.2 11.7 1,800 [849.5] 57,000 [16.7] 4.04 42,500 [12.5] 3.00 7.8
+
+NOTE: This data includes DTC (Designated Test Combination) ratings and is for reference purposes only. A full listing of official ratings and system match-ups, along with
+       downloadable certificates, can be accessed from the AHRI website: www.ahridirectory.org.
+
+[ ] Designates Metric Conversions
+
+          Outdoor Unit                 Air Handler  Total Capacity  Net Sensible   Net Latent   SEER2   EER2        Indoor CFM                                              47 Degree
+         WP15AZ18AJ2N              RH2TZ2417STANN    BTU/H [kW]     BTU/H [kW]    BTU/H [kW]     15.2   11.7            [L/s]                                               Heating Ca-
+         WP15AZ24AJ2N              RH2TZ2417STANN    17100 [5.0]    13100 [3.8]   4000 [1.2]     15.2   11.7
+         WP15AZ30AJ2N              RH2TZ3617STANN    22800 [6.7]    17400 [5.1]   5400 [1.6]     15.2   11.7                                                                   pacity
+         WP15AZ36AJ2N              RH2TZ3617STANN    28400 [8.3]    21800 [6.4]   6600 [1.9]     15.2   11.7
+         WP15AZ42AJ2N              RH2TZ4821STANN   34200 [10.0]    26200 [7.7]   8000 [2.3]     15.2   11.7        625 [295.0] 17100 [5.0]
+         WP15AZ48AJ2N              RH2TZ4821STANN   40000 [11.7]    30500 [8.9]   9500 [2.8]     15.2   11.7
+         WP15AZ60AJ2N              RH2TZ6024STANN   45500 [13.3]    35000 [10.3]  10500 [3.1]    15.2   11.7        775 [365.8] 22600 [6.6]
+                                                    57000 [16.7]    43500 [12.7]  13500 [4.0]
+                                                                                                                    900 [424.8] 28400 [8.3]
+
+                                                                                                                    1050 [495.5] 34200 [10.0]
+
+                                                                                                                    1325 [625.3] 39500 [11.6]
+
+                                                                                                                    1450 [684.3] 45000 [13.2]
+
+                                                                                                                    1800 [849.5] 57000 [16.7]
+
+                                                                                                                                                                            11
+GENERAL TERMS OF LIMITED WARRANTY*                                           Parts............................................................. Five (5)Years
+
+Rheem will furnish a replacement for any part of this product
+which fails in normal use and service within the applicable
+period stated, in accordance with the terms of the limited
+warranty.
+
+ *For complete details of the Limited and Conditional Warranties, including
+applicable terms and conditions, contact your local contractor or the
+Manufacturer for a copy of the product warranty certificate.
+
+Before proceeding with installation, refer to installation instructions packaged with each model, as well as complying with all Federal,
+                                                   State, Provincial, and Local codes, regulations, and practices.
+
+                  © 2023 Rheem Manufacturing Company. Rheem trademarks owned by Rheem Manufacturing Company.
+In keeping with its policy of continuous progress and product improvement, Rheem reserves the right to make changes without notice.
+
+Rheem Heating, Cooling & Water Heating · 5600 Old Greenwood Road             Rheem Canada Ltd./Ltée · 125 Edgeware Road, Unit 1
+                Fort Smith, Arkansas 72908 · www.rheem.com                           Brampton, Ontario · L6Y 0P5 · rheem.ca
+
+                                                                             PRINTED IN U.S.A. 6/23 QG FORM NO. P33-837 REV. 1
+
