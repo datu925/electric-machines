@@ -1,4 +1,4 @@
-import { FieldMetadata, SpecsMetadata } from "./schemas";
+import { FieldMetadata, SpecsMetadata } from "../schemas";
 
 export function renderSchemaGuide(specs: {
   [index: string]: FieldMetadata;

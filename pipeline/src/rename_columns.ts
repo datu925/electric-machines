@@ -7,7 +7,7 @@ import {
   renderSystemPrompt,
   MAPPING_EXAMPLE_1_INPUT,
   MAPPING_EXAMPLE_1_OUTPUT,
-} from "./prompts";
+} from "./prompts/prompts";
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
