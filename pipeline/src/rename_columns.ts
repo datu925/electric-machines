@@ -56,7 +56,7 @@ async function main() {
       const folderPromises: Promise<void>[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const filteredFilePath = path.join(inputFolder, file);
-        if (!file.endsWith("reformatted.json")) continue;
+        if (!file.endsWith("records.json")) continue;
         const applianceRecords = JSON.parse(
           await fs.readFile(filteredFilePath, {
             encoding: "utf8",
@@ -104,7 +104,7 @@ async function main() {
           try {
             let response = JSON.parse(msg);
             await fs.writeFile(
-              path.join(outputFolder, file),
+              path.join(outputFolder, "records.json"),
               JSON.stringify(
                 {
                   ...response,

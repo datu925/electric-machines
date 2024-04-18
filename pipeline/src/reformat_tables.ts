@@ -4,7 +4,6 @@ import fs = require("node:fs/promises");
 import path = require("node:path");
 
 import {
-  renderSystemPrompt,
   REFORMAT_EXAMPLE_1_INPUT,
   REFORMAT_EXAMPLE_1_OUTPUT,
   TABLE_REFORMAT_PROMPT,
@@ -12,14 +11,6 @@ import {
 
 import { GptWrapper } from "./gpt_wrapper";
 import { glob } from "glob";
-import { APPLIANCE_TYPES } from "../../backend/schema/metadata";
-import {
-  HEAT_PUMP_DRYER_METADATA,
-  HEAT_PUMP_METADATA,
-  HEAT_PUMP_WATER_HEATER_METADATA,
-  SpecsMetadata,
-} from "./schemas";
-import { ModelGeneratedAppliance } from "../../backend/schema/appliance";
 import { retrieveMetadata } from "./metadata";
 
 const SPECS_FILE_BASE = "../data/";
@@ -103,7 +94,7 @@ async function main() {
           try {
             let response = JSON.parse(msg);
             await fs.writeFile(
-              path.join(outputFolder, "reformatted.json"),
+              path.join(outputFolder, "records.json"),
               JSON.stringify(response, null, 2),
               {
                 encoding: "utf-8",

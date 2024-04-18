@@ -89,7 +89,7 @@ async function main() {
       const invalid: Table[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const filteredPath = path.join(inputFolder, file);
-        if (!(file === "output.json")) continue;
+        if (!(file === "records.json")) continue;
         const filtered = JSON.parse(
           await fs.readFile(filteredPath, {
             encoding: "utf8",
