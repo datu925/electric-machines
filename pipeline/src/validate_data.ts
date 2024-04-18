@@ -20,7 +20,7 @@ import { APPLIANCE_TYPES } from "../../backend/schema/metadata";
 import { HEAT_PUMP_WATER_HEATER_SCHEMA } from "../../backend/schema/heat_pump_water_heater";
 
 const SPECS_FILE_BASE = "../data/";
-const INPUT_SUBDIR = "renamed/";
+const INPUT_SUBDIR = "corrected/";
 const OUTPUT_SUBDIR = "validated/";
 const RUNS = "runs/";
 
@@ -89,7 +89,7 @@ async function main() {
       const invalid: Table[] = [];
       for (const file of await fs.readdir(inputFolder)) {
         const filteredPath = path.join(inputFolder, file);
-        if (!(file === "filtered.json")) continue;
+        if (!(file === "output.json")) continue;
         const filtered = JSON.parse(
           await fs.readFile(filteredPath, {
             encoding: "utf8",

@@ -32,7 +32,8 @@ export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
       "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
   },
   voltage: {
-    description: "The required voltage for the equipment.",
+    description:
+      "The required voltage for the equipment. Common values are 120 or 240. Sometimes given along with phase and frequency such as 240-1-60, in which case it will be the first number.",
   },
   soundLevelMin: {
     description: "The minimum sound level in decibels.",
@@ -68,7 +69,8 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
         "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
     },
     voltage: {
-      description: "The required voltage for the equipment.",
+      description:
+        "The required voltage for the equipment. Common values are 120 or 240. Sometimes given along with phase and frequency such as 240-1-60, in which case it will be the first number.",
     },
     soundLevelMin: {
       description: "The minimum sound level in decibels.",
@@ -111,7 +113,8 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
         "The required breaker size for the equipment. May also be called Maximum Overcurrent Protection (MOP).",
     },
     voltage: {
-      description: "The required voltage for the equipment.",
+      description:
+        "The required voltage for the equipment. Common values are 120 or 240. Sometimes given along with phase and frequency such as 240-1-60, in which case it will be the first number.",
     },
     soundLevelMin: {
       description: "The minimum sound level in decibels.",
