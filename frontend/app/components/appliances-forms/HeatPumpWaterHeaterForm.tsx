@@ -31,50 +31,35 @@ const HeatPumpWaterHeaterForm = () => {
   const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
   const [firstHourRating, setFirstHourRating] = useState("40");
 
+  const [unit, setUnit] = useState("imperial");
+
   const fetchData = async () => {
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh`;
+    const unitParams =
+      unit === "metric"
+        ? `weightUnit=kg&dimensionUnit=cm`
+        : `weightUnit=lb&dimensionUnit=in`;
+
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&${unitParams}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
-    setResults(data);
+
+    //formatting data for tabulator use
+    const tabulatorData = data.map((appliance: any) => {
+      const { weight, dimensions, ...restOfApplianceData } = appliance;
+      return {
+        ...appliance,
+        weightValue: Math.round(weight.value),
+        widthValue: Math.round(dimensions.width),
+        heightValue: Math.round(dimensions.height),
+        lengthValue: Math.round(dimensions.length),
+      };
+    });
+    setResults(tabulatorData);
   };
 
   useEffect(() => {
     fetchData();
-  }, []); // runs once
-
-  // sample API call:
-  // https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=40&tankCapacityMax=70&uniformEnergyFactor=2.5&firstHourRating=60
-
-  // Sample API response
-  // [
-  // {
-  //   "brandName": "Rheem",
-  //   "modelNumber": "PROPH40 T2 RH375-30",
-  //   "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/65DF1261-86D9-4756-AAAD-F403E9FF124A.pdf",
-  //   "tankCapacityGallons": 40,
-  //   "weightInKg": 71.214,
-  //   "widthInCm": 50,
-  //   "heightInCm": 160.02,
-  //   "lengthInCm": 50,
-  //   "electricBreakerSize": 30,
-  //   "voltage": 240,
-  //   "uniformEnergyFactor": 3.83,
-  //   "firstHourRating": 60
-  // },
-  // ];
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&tankCapacityMin=${tankCapacityGallons}&tankCapacityMax=${
-      tankCapacityGallons + 10
-    }&uniformEnergyFactor=${uniformEnergyFactor}&firstHourRating=${firstHourRating}`;
-    // console.log(apiUrl);
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    // console.log(data);
-    setResults(data);
-    setShowResults(true);
-  };
+  }, [unit]);
 
   const columns: ColumnDefinition[] = [
     {
@@ -170,30 +155,30 @@ const HeatPumpWaterHeaterForm = () => {
       },
       headerFilterPlaceholder: "Filter: Select multiple",
     },
-    {
-      title: "Weight (kg)",
-      field: "weightInKg",
-      hozAlign: "center",
-      minWidth: 140,
-    },
 
     {
-      title: "Width (cm)",
-      field: "widthInCm",
+      title: `Width ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "widthValue",
       hozAlign: "center",
       minWidth: 150,
     },
     {
-      title: "Height (cm)",
-      field: "heightInCm",
+      title: `Height ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "heightValue",
       hozAlign: "center",
       minWidth: 150,
     },
     {
-      title: "Length (cm)",
-      field: "lengthInCm",
+      title: `Length ${unit === "imperial" ? "(in)" : "(cm)"}`,
+      field: "lengthValue",
       hozAlign: "center",
       minWidth: 150,
+    },
+    {
+      title: `Weight ${unit === "imperial" ? "(lb)" : "(kg)"}`,
+      field: "weightValue",
+      hozAlign: "center",
+      minWidth: 140,
     },
     {
       title: "URL",
@@ -239,6 +224,39 @@ const HeatPumpWaterHeaterForm = () => {
             </ul>
           </div>
         )}
+      </div>
+      <br />
+
+      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+        <label className={styles.labelWithInfo} htmlFor="unit">
+          Unit System:
+        </label>
+        <div className={styles.radioOptions}>
+          <label htmlFor="unitImperial">
+            <input
+              type="radio"
+              id="unitImperial"
+              name="unit"
+              value="imperial"
+              className={styles.radioInput}
+              checked={unit === "imperial"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Imperial</span>
+          </label>
+          <label htmlFor="unitMetric">
+            <input
+              type="radio"
+              id="unitMetric"
+              name="unit"
+              value="metric"
+              className={styles.radioInput}
+              checked={unit === "metric"}
+              onChange={(event) => setUnit(event.target.value)}
+            />
+            <span className={styles.radioText}>Metric</span>
+          </label>
+        </div>
       </div>
 
       <ReactTabulator
