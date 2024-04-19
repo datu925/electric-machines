@@ -5,6 +5,7 @@ import styles from "./ApplianceLookup.module.scss";
 // import InfoSquare from "./InfoSquare";
 import HeatPumpWaterHeaterForm from "./appliances-forms/HeatPumpWaterHeaterForm";
 import HeatPumpDryer from "./appliances-forms/HeatPumpDryer";
+import HeatPumpHVAC from "./appliances-forms/HeatPumpHVAC";
 
 const MachineLookup = () => {
   const [selectedAppliance, setSelectedAppliance] = useState("");
@@ -32,7 +33,7 @@ const MachineLookup = () => {
         <option value="HeatPumpDryer">Heat Pump Dryer</option>
       </select>
 
-      {selectedAppliance === "HeatPumpHVAC" && <p>Not yet implemented!</p>}
+      {selectedAppliance === "HeatPumpHVAC" && <HeatPumpHVAC />}
 
       {selectedAppliance === "HeatPumpWaterHeater" && (
         <HeatPumpWaterHeaterForm />

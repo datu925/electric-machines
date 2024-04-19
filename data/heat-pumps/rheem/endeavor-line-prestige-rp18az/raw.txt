@@ -1,0 +1,579 @@
+                                                                                                                                                                                                                        Heat Pumps
+                                                                                                                                                                                                                        RP18AZ
+
+            Endeavor® Line Prestige® Series
+                           Heat Pumps
+
+                 RP18AZ
+
+                    Cooling Efficiencies up to: 20.0 SEER2/12.5 EER2
+                    Heating Efficiency: 8.5 HSPF2
+                    Nominal Sizes: 2 to 5 Ton [7.0 to 17.6 kW]
+                    Cooling Capacities 22.8 to 55.0 kBTU [6.7 to 16.1 kW]
+
+                                              *
+
+                                                                                                                                    19.0
+
+= A.F.U.E. (Annual Fuel Utilization Efficiency) calculated in accordance withDepartment of Energy test p­ rocedures.
+The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Rheem® is under license.
+
+                                                     Other trademarks and trade names are those of their respective owners.
+      *Proper sizing and installation of equipment is critical to achieve optimal performance. Split system air conditioners and heat pumps
+     must be matched with appropriate coil components to meet Energy Star. Ask your Contractor for details or visit www.energystar.gov.
+
+                                                                                                                                                                                                                                                                                                FORM NO. P11-823 REV. 3
+Table of Contents
+RP18AZ
+
+                                          Table of Contents
+
+                   Features & Benefits...................................................................3
+                   Model Number Identification.....................................................4
+                   General Data/Electrical Data.....................................................5
+                   Accessories...............................................................................6
+                   Unit Dimensions........................................................................7
+                   Clearances................................................................................8
+                   Refrigerant Line Size Information........................................ 9-10
+                   Capacity Ranges............................................................... 11-14
+                   Performance Data...................................................................15
+                   Smart Home Systems.............................................................16
+                   Limited Warranty.....................................................................20
+
+2
+Features and Benefits                                                                                                                           Features and Benefits
+                                                                                                                                                RP18AZ
+· EcoNet® Enabled: Automatic system configuration and
+   optimization                                                · Brushless DC Condenser Motors (BLDC): Enhances
+                                                                  reliability and allows for easier serviceability
+· PlusOne® Diagnostics & Bluetooth®1 Connectivity: With
+   the Rheem Contractor & EcoNet® Apps, built-in technology    · Swept Wing Fan Technology: Features quieter operation
+   makes advanced set-up, monitoring, troubleshooting, and        and improved unit acoustics
+   repairing the product easier than ever before
+
+· Variable Speed Scroll Compressor & Inverter Drive:
+   --F eatures variable speed operation from 40 to 100%
+      capacity with the EcoNet® Smart Thermostat
+
+   --O ffers overdrive capability up to 115% to maintain
+      performance in extreme conditions
+
+   --P rovides precise temperature control, advanced humidity
+      control and greater efficiency
+
+1The Bluetooth® word mark and logos are registered trademarks owned by Bluetooth SIG, Inc. and any use of such marks by Rheem® is under license.
+ Other trademarks and trade names are those of their respective owners.
+
+                                                                                                                                                                                                          3
+Model Number Identification
+RP18AZ
+
+ Heat Pumps
+
+   R              P              18      A                 Z         24                      A             J                  V                   N         A
+
+   Brand    Product           SEER2      Region Refrigerant          Capacity                Major Series  Voltage            Type                Controls  Minor Series
+            Category      18 - 18 SEER2
+
+R - Rheem P - Heat Pump                  A - All Regions Z - R-410A  24 - 24,000 [7.03 kW]   A - 1st Design J - 208/230/1/60  V - Fully Variable  C - Communicating A - 1st Design
+                                                                     36 - 36,000 [10.55 kW]
+                                                                     48 - 48,000 [14.07 kW]
+                                                                     60 - 60,000 [17.58 kW]
+
+[ ] Designates Metric Conversions
+
+            AVAILABLE MODELS                                                                             DESCRIPTION
+              RP18AZ24AJVCA                 Endeavor® Line Prestige ® Series 2 ton EcoNet® Enabled Inverter Driven Variable Speed iM Heat Pump - 208/230/1/60
+              RP18AZ36AJVCA                 Endeavor® Line Prestige ® Series 3 ton EcoNet® Enabled Inverter Driven Variable Speed iM Heat Pump - 208/230/1/60
+              RP18AZ48AJVCA                 Endeavor® Line Prestige ® Series 4 ton EcoNet® Enabled Inverter Driven Variable Speed iM Heat Pump - 208/230/1/60
+              RP18AZ60AJVCA                 Endeavor® Line Prestige ® Series 5 ton EcoNet® Enabled Inverter Driven Variable Speed iM Heat Pump - 208/230/1/60
+
+                                 STANDARD EQUIPMENT
+
+   R-410A Refrigerant
+
+   EcoNet® Enabled
+
+   Variable Speed Compressor
+
+   Compressor Sound Blanket
+
+   Variable speed outdoor fan motor                                                                                      R-410A Refrigerant
+                                                                                                                         Maximum SEER2: 16SEER2
+   Swept wing fan blade
+                                                                                                                                R-410A Refrigerant
+   Field Installed Filter Drier                                                                                                 Maximum SEER2: 16SEER2
+                                                                                                                                Maximum EER2: 11 EER2
+   Front Seating Service Valves                                                                                                 Maximum HSPF: 8 HSPF
+                                                                                                                                EcoNet Enabled Description
+   Internal Pressure Relief Valve                          EndeavorTM Line Prestige ® Series 2 ton EcoNet® Enabled InVvaerriatebrleDSripveendVCaorimabplereSsspoered Heat Pump - 208/230/1/60
+                                                           EndeavorTM Line Prestige ® Series 3 ton EcoNet® Enabled InCvoemrtperreDsrsiovrenSoVuanridabBlelaSnkpeeted Heat Pump - 208/230/1/60
+   Internal Thermal Overload             Available Models  EndeavorTM Line Prestige ® Series 4 ton EcoNet® Enabled InVvaerriatebrleDsrpiveeendVoaurtiadboloerSfapneemdoHtoear t Pump - 208/230/1/60
+   Low Ambient capability                RP18AZ24AJVCA     EndeavorTM Line Prestige ® Series 5 ton EcoNet® Enabled InSvweertpetrwDirnivgefnanVabrliaadbele Speed Heat Pump - 208/230/1/60
+   3-4-5 Expanded Valve Space                                                                                                   Field Installed Filter Drier
+                                                                                                                                Front Seating Service Valves
+   Composite Basepan                     RP18AZ36AJVCA                                                                          Internal Pressure Relief Valve
+   1" Screw Control Box Access           RP18AZ48AJVCA                                                                          Internal Thermal Overload
+   Quick release louver panel design     RP18AZ60AJVCA                                                                          Low Ambient capability
+   No fasteners to remove along bottom                                                                                          3-4-5 Expanded Valve Space
+                                                                                                                                Composite Basepan
+   Optimized Venturi Airflow                                                                                                    1" Screw Control Box Access
+                                                                                                                                15" Access to Internal Components
+   Single row condenser coil                                                                                                    Quick release louver panel design
+                                                                                                                                No fasteners to remove along bottom
+   Powder coated paint                                                                                                          Optimized Venturi Airflow
+                                                                                                                                Single row condenser coil
+   Rust resistant screws                                                                                                        Powder coated paint
+                                                                                                                                Rust resistant screws
+   QR code                                                                                                                      QR code
+                                                                                                                                External gauge ports
+   External gauge ports                                                                                                         Service trays
+
+   Service trays
+
+4
+                                                                                                       General Data/Electrical Data
+                                                                                                       RP18AZ
+
+General Data                                      RP18AZ24AJVCA  RP18AZ36AJVCA          RP18AZ48AJVCA  RP18AZ60AJVCA
+                                                          2.0            3.0                    4.0            5.0
+  MODEL NO.
+  Nominal Tonnage                                         3/8    3/8                    3/8                    3/8
+  Valve Connections                                       3/4                                                  7/8
+                                                          210    3/4                    7/8                    252
+                         Liquid Line O.D. - in.
+                        Suction Line O.D. - in.          28.3    212                    222                   32.5
+  Refrigerant (R410A) furnished oz.¹                      --                                                   --
+  Compressor Type                                        0.375                  Scroll                        0.375
+  Outdoor Coil                                             1                                                    1
+                    Net face area - Outer Coil            20     32.5                   32.5                   20
+                    Net face area - Inner Coil                    --                     --
+                                                          26     0.375                  0.375                  26
+                            Tube diameter - in.            3       1                      1                     3
+                               Number of rows             1/2     20                     20                    1/2
+                                   Fins per inch          282                                                  309
+                                                          278    24                     24                     301
+  Outdoor Fan
+                                  Diameter - in.                 3                      3
+
+                             Number of blades                    1/2                    1/2
+                                       Motor hp
+                                                                 306                    306
+  Shipping weight - lbs.
+  Operating weight - lbs.                                        298                    298
+
+Electrical Data
+
+Line Voltage Data (Volts-Phase-Hz)                208/230-1-60   208/230-1-60           208/230-1-60   208/230-1-60
+
+Maximum overcurrent protection (amps)²            30             50                     60             60
+
+Minimum circuit ampacity³                         22             32                     37             42
+
+Compressor
+
+                 Rated load amps                  15.4           24                     28.1           31.7
+
+            Locked rotor amps                     35             50                     50             50
+
+1Refrigerant charge sufficient for 15 ft. length of refrigerant lines. For longer line set requirements see the installation instructions for information about set length and additional
+ refrigerant charge required.
+2HACR type circuit breaker of fuse.
+3Refer to National Electrical Code manual to determine wire, fuse, and disconnect size requirements.
+
+                                                                                                                                                                                           5
+Accessories/Weighted Sound Power                        RP2024                       RP2036       RP2048              RP2060
+RP18AZ                                              RETST800SYS                  RETST800SYS  RETST800SYS         RETST800SYS
+
+Accessories                                             686020                       686020       686020              686020
+                                                      RXHT-A02                     RXHT-A02     RXHT-A02            RXHT-A02
+                          MODEL NO.
+    EcoNet® Smart Thermostat
+    Heat Pump Riser 6 in.
+    Supply/Return Sensor
+
+Weighted Sound Power Level (dBA)
+
+MODEL                                SOUND POWER           RP18AZ SOUND POWER LEVEL                               SOUND POWER
+                                     LEVEL [DB(A)]               FULL OCTAVE LINEAR SOUND POWER LEVEL DB -        LEVEL [DB(A)]
+                                      LOW SPEED/                                CENTER FREQUENCY - HZ       8000   WITH SOUND
+                                      HIGH SPEED
+                                                    125 250 500 1000 2000 4000 6300                                  BLANKET
+
+RP18AZ24AJVCA                        59             34.8 39.7 50.8 48.4 42.5 40.2 34.6 34.5                            Sound
+                                                                                                                     Blankets -
+                                     69             45.0 50.6 59.5 57.9 56.6 49.5 45.7 44.8                           Standard
+
+RP18AZ36AJVCA                        60             33.6 38.3 57.6 48.2 43.6 39.7 43.0 39.3
+
+                                     70             44.8 51.1 60.8 60.1 56.2 50.3 49.9 48.3
+
+RP18AZ48AJVCA                        59             34.0 38.9 52.3 48.0 43.5 39.8 42.2 37.3
+
+                                     73             48.5 54.4 65.4 63.1 58.0 55.0 53.3 51.6
+
+RP18AZ60AJVCA                        58             36.0 39.3 51.4 46.2 43.8 43.0 41.3 40.2
+
+                                     73             49.8 54.0 68.0 59.2 55.9 53.7 50.7 49.3
+
+NOTE: Tested in accordance with AHRI Standard 270-08 (not listed in AHRI)
+
+RP18AZ Sound Power
+
+               Model                 Sound Power    Full Octave
+
+                                                    125                    250   500          1000          2000  4000           6300
+
+       RP18AZ24AJVCA                     59         34.8                   39.7  50.8         48.4          42.5  40.2           34.6
+
+                                         69         45.0                   50.6  59.5         57.9          56.6  49.5           45.7
+
+       RP18AZ36AJVCA                     60         33.6                   38.3  57.6         48.2          43.6  39.7           43.0
+
+                                         70         44.8                   51.1  60.8         60.1          56.2  50.3           49.9
+
+       RP18AZ48AJVCA                     59         34.0                   38.9  52.3         48.0          43.5  39.8           42.2
+
+                                         73         48.5                   54.4  65.4         63.1          58.0  55.0           53.3
+
+       RP18AZ60AJVCA                     58         36.0                   39.3  51.4         46.2          43.8  43.0           41.3
+
+                                         73         49.8                   54.0  68.0         59.2          55.9  53.7           50.7
+
+NOTE: Tested in
+
+                                                     Refrigerant charge sufficient for 15 ft. length of refrigerant lines. For longer line set requirements see the installation instrucitons for inform
+                                                                                                                    length and additional refrigerant charge required.
+
+6
+                                                                                                     Unit Dimensions
+                                                                                                     RP18AZ
+
+Unit Dimensions
+
+                                   OPERATING                                          SHIPPING
+
+     MODEL       H (Height)        L (Length)          W (Width)  H (Height)          L (Length)     W (Width)
+        NO.
+               INCHES mm           INCHES mm   INCHES      mm     INCHES     mm  INCHES  mm          INCHES       mm
+RP18AZ24AJVCA
+RP18AZ36AJVCA  45.17  1147         36.13  918  36.13       918    48.18   1224   39.37   1000        39.64        1007
+RP18AZ48AJVCA
+RP18AZ60AJVCA  51.17  1300         36.13  918  36.13       918    53.56   1360   39.37   1000        39.64        1007
+
+               51.17  1300         36.13  918  36.13       918    53.56   1360   39.37   1000        39.64        1007
+
+               51.17  1300         36.13  918  36.13       918    53.56   1360   39.37   1000        39.64        1007
+
+MODEL                 OPERATING                                                          SHIPPING
+
+                      H (Height)               L (Length)         W (Width)              H (Height)                     L (Length)
+
+                      INCHES       mm          INCHES      mm     INCHES         mm      INCHES             mm                    INCHES
+
+RP18AZ24AJVCA         45.17        1147        36.13       918    36.13          918     48.18              1224                  39.37
+
+RP18AZ36AJVCA         51.17        1300        36.13       918    36.13          918     53.56              1360                  39.37
+
+RP18AZ48AJVCA         51.17        1300        36.13       918    36.13          918     53.56              1360                  39.37
+
+RP18AZ60AJVCA         51.17        1300        36.13       918    36.13          918     53.56              1360                  39.37
+
+[ ] Designates Metric Conversions                                                                 ST-A1226-02-00
+                                                                                                                               7
+8                                                                                                                                                                                                                                     Clearances
+                                                                                                                                                                                                                                  RP18AZ
+   CLEARANCES
+                                                                                                                                                                                             WALL
+                   WALL
+                                                                                                                                                                                                            24
+                            6                                                                                                                                                                            (609.6)
+                         (152.4)                                                                                                                                                                         Service
+
+     24                    12                                                                                                                                                         12                                   WALL
+   (609.6)               (304.8)                                                                                                                                                    (304.8)
+   Service
+
+                                                                                                                                                                                                                     6
+                                                                                                                                                                                                                  (152.4)
+
+               6
+            (152.4)
+
+                                                                                                                                                                                               12
+                                                                                                                                                                                             (304.8)
+
+              24                         WALL                                                                                                                                                  24
+            (609.6)                                                                                                                                                                          (609.6)
+            Service                         24                                                                                                                                               Service
+                                         (609.6)
+                                         Service
+
+     18                           24                       24
+   (457.2)                     (609.6)                  (609.6)
+
+                         24 recommended           24 recommended
+                         6 minimum                6 minimum
+
+   NOTE: NUMBERS IN () = mm
+
+   IMPORTANT: When installing multiple units in an alcove, roof well or partially enclosed area, ensure there is adequate ventillation to prevent re-circulation of discharge air.
+
+                                                                                                                                                                                                                  ST-A1225-01-00
+                                                                                                                                                   Refrigerant Line Size Information
+                                                                                                                                                   RP18AZ
+
+Refrigerant Line Size Information
+
+                                        18 SEER2 VARIABLE SPEED HEAT PUMPS
+
+         ALLOWABLE           ALLOWABLE           OUTDOOR UNIT ABOVE OR BELOW INDOOR UNIT
+                                                             EQUIVALENT LENGTH (FEET)
+UNIT SIZE LILNIQEUSIIDZE LIVNAEPSOIRZE < 25
+                                                 26-50    51-75             76-100                                                                 101-125  126-150
+
+                                                 MAXIMUM VERTICAL SEPARATION/CAPACITY MULTIPLIER                                                               NR
+                                                                                                                                                            50/0.95
+         1/4"                5/8"       25/1.00  50/0.99  33/0.98           60/0.97                                                                NR       50/0.95
+
+2.0 TON  5/16"               5/8"       25/1.00  50/0.99  50/0.98           50/0.97                                                                50/0.96     NR
+ *SEE    3/8"                5/8"       25/1.00  50/0.99  50/0.98           50/0.97                                                                50/0.96  50/0.98
+NOTE 3   1/4"                3/4"*      25/1.00  50/1.00  33/0.99           60/0.99                                                                         50/0.98
+         5/16"               3/4"*      25/1.00  50/1.00  50/0.99           50/0.99                                                                  NR
+                                                                                                                                                   50/0.99     NR
+                                                                                                                                                               NR
+         3/8"                3/4"*      25/1.00  50/1.00  50/0.99           50/0.99                                                                50/0.99  20/0.96
+                                                                                                                                                            50/0.96
+         5/16"               5/8"       25/0.99  50/0.97  50/0.95           50/0.93                                                                36/0.91  50/0.96
+                                                                                                                                                            50/0.92
+         3/8"                5/8"       25/0.99  50/0.97  50/0.95           50/0.93                                                                50/0.91  50/0.92
+                                                                                                                                                            50/0.97
+3 TON    5/16"               3/4"       25/1.00  50/0.99  50/0.99           50/0.98                                                                36/0.97  50/0.97
+                                                                                                                                                               NR
+         3/8"                3/4"       25/1.00  50/0.99  50/0.99           50/0.98                                                                50/0.97     NR
+                                                                                                                                                            38/0.95
+         1/2"                3/4"       25/1.00  50/0.99  50/0.99           50/0.98                                                                50/0.97  50/0.95
+                                                                                                                                                            38/0.99
+         3/8"                3/4"       25/0.99  50/0.98  50/0.96           50/0.95                                                                50/0.93  50/0.99
+
+                       1/2"  3/4"       25/0.99  50/0.98  50/0.96           50/0.95                                                                50/0.93
+4 TON
+                             7/8"       25/1.00  50/0.99  50/0.99           50/0.98                                                                50/0.98
+                       3/8"
+
+         1/2"                7/8"       25/1.00  50/0.99  50/0.99           50/0.98                                                                50/0.98
+
+         3/8"                3/4"       25/0.98  50/0.97  50/0.95           50/0.93                                                                46/0.91
+
+         1/2"                3/4"       25/0.98  50/0.97  50/0.95           50/0.93                                                                50/0.91
+
+                       3/8"  7/8"       25/0.99  50/0.99  50/0.98           50/0.97                                                                50/0.96
+5 TON
+                             7/8"       25/0.99  50/0.99  50/0.98           50/0.97                                                                50/0.96
+                       1/2"
+
+         3/8"                1-1/8"**   25/1.00  50/1.00  50/1.00           50/0.99                                                                50/0.99
+
+         1/2"                1-1/8"**   25/1.00  50/1.00  50/1.00           50/0.99                                                                50/0.99
+
+NOTES:
+1) **Do not exceed 150 ft. linear line length.
+2) **Do not exceed 50 ft. vertical separation between indoor and outdoor units.
+3) **3/4" vapor line should only be used for 2 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+4)**1-1/8" vapor line should only be used for 5 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+5) **Always use the smallest liquid line allowable to minimize refrigerant charge.
+6) **Applications shaded in light gray indicate capacity multipliers between 0.90 and 0.96 which are not recommended, but are allowed.
+7) **Applications shaded in dark gray are not recommended due to excessive liquid or suction pressure drop.
+
+                                                                                                                                                                     9
+Refrigerant Line Size Information
+RP18AZ
+
+Refrigerant Line Size Information (Con't.)
+
+                                                    18 SEER2 VARIABLE SPEED HEAT PUMPS
+
+               ALLOWABLE           ALLOWABLE                      OUTDOOR UNIT ABOVE OR BELOW INDOOR UNIT
+                                                                            EQUIVALENT LENGTH (METERS)
+    UNIT SIZE  LIQUID              VAPOR
+                                                    < 8     9-15     16-23              24-30    31-38                                                         39-46
+               LINE SIZE           LINE SIZE
+                                                            MAXIMUM VERTICAL SEPARATION/CAPACITY MULTIPLIER                                                     NR
+                                                                                                                                                              15/0.95
+               6.35 [1/4]          15.88 [5/8]      8/1.00  15/0.99  10/0.98            20/0.97            NR                                                 15/0.95
+
+     7.0 kW    7.94 [5/16]         15.88 [5/8]      8/1.00  15/0.99  15/0.98            15/0.97  15/0.96                                                        NR
+    [2.0 TON]  9.53 [3/8]          15.88 [5/8]      8/1.00  15/0.99  15/0.98            15/0.97  15/0.96                                                      15/0.98
+               6.35 [1/4]          19.05 [3/4]      8/1.00  15/0.99  10/0.99            20/0.99                                                               15/0.98
+      *SEE     7.94 [5/16]         19.05 [3/4]      8/1.00  15/0.99  15/0.99            15/0.99    NR
+     NOTE 3                                                                                      15/0.99                                                        NR
+                                                                                                                                                                NR
+               9.53 [3/8]          19.05 [3/4]      8/1.00  15/0.99  15/0.99            15/0.99  15/0.99                                                      6/0.96
+                                                                                                                                                              15/0.96
+               7.94 [5/16]         15.88 [5/8]      8/0.99  15/0.97  15/0.95            15/0.93  11/0.91                                                      15/0.96
+                                                                                                                                                              15/0.92
+    10.6 kW    9.53 [3/8]          15.88 [5/8]      8/0.99  15/0.97  15/0.95            15/0.93  15/0.91                                                      15/0.92
+    [3 TON]    7.94 [5/16]         19.05 [3/4]      8/1.00  15/0.99  15/0.99            15/0.98  11/0.97                                                      15/0.97
+               9.53 [3/8]          19.05 [3/4]      8/1.00  15/0.99  15/0.99            15/0.98  15/0.97                                                      15/0.97
+                                                                                                                                                                NR
+               12.70 [1/2]         19.05 [3/4]      8/1.00  15/0.99  15/0.99            15/0.98  15/0.97                                                        NR
+                                                                                                                                                              12/0.95
+               9.53 [3/8]          19.05 [3/4]      8/0.99  15/0.98  15/0.96            15/0.95  15/0.93                                                      15/0.95
+                                                                                                                                                              12/0.99
+    14.1 kW    12.70 [1/2]         19.05 [3/4]      8/0.99  15/0.98  15/0.96            15/0.95  15/0.93                                                      15/0.99
+    [4 TON]     9.53 [3/8]         22.23 [7/8]      8/1.00  15/0.99  15/0.99            15/0.98  15/0.98
+
+               12.70 [1/2]         22.23 [7/8]      8/1.00  15/0.99  15/0.99            15/0.98  15/0.98
+
+               9.53 [3/8]          19.05 [3/4]      8/0.98  15/0.97  15/0.95            15/0.93  14/0.91
+
+               12.70 [1/2]         19.05 [3/4]      8/0.98  15/0.97  15/0.95            15/0.93  15/0.91
+
+    17.6 kW     9.53 [3/8]         22.23 [7/8]      8/0.99  15/0.99  15/0.98            15/0.97  15/0.96
+    [5 TON]    12.70 [1/2]         22.23 [7/8]      8/0.99  15/0.99  15/0.98            15/0.97  15/0.96
+
+               9.53 [3/8]          28.58 [1-1/8]**  8/1.00  15/0.99  15/0.99            15/0.99  15/0.99
+
+               12.70 [1/2]         28.58 [1-1/8]**  8/1.00  15/0.99  15/0.99            15/0.99  15/0.99
+
+NOTES:
+1)  Do not exceed 46 meters linear line length.
+2)  Do not exceed 15 meters vertical separation between indoor and outdoor units.
+3)  *19.05mm [3/4"] vapor line should only be used for 2 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+4) **28.58mm [1-1/8"] vapor line should only be used for 5 ton systems if outdoor unit is below or at same level as indoor unit to assure proper oil return.
+5)  Always use the smallest liquid line allowable to minimize refrigerant charge.
+6)  Applications shaded in light gray indicate capacity multipliers between 0.90 and 0.96 which are not recommended, but are allowed.
+7)  Applications shaded in dark gray are not recommended due to excessive liquid or suction pressure drop.
+
+10
+            Capacity Ranges
+            RP18AZ
+
+(-)P18AZ24
+
+(-)P18AZ24
+
+            11
+Capacity Ranges
+RP18AZ
+
+                 (-)P18AZ36
+
+                             (-)P18AZ36
+
+12
+            Capacity Ranges
+            RP18AZ
+
+(-)P18AZ48
+
+(-)P18AZ48
+
+                                                                                                                                                           13
+Capacity Ranges
+RP18AZ
+
+                 (-)P18AZ60
+
+                 (-)P18AZ60
+
+14
+                                                                                                   Performance Data
+                                                                                                   RP18AZ
+
+Performance Data @ AHRI Standard Conditions - Cooling
+
+DESIGNATED TESTED COMBINATION (DTC)
+
+OUTDOOR UNIT AIR HANDLER    TOTAL       NET      NET        SEER2 EER2 CIFNMDO[LO/Rs]  47 DEGREE      47 17 DEGREE 17 REGION
+                          CAPACITY   SENSIBLE  LATENT                                   HEATING                 HEATING DEGREE IV
+                                                                                        CAPACITY
+                          BTU/H [kW] BTU/H [kW] BTU/H [kW]                             BTU/H [kW]  DECGORPEE CAPACITY COP HSPF2
+                                                                                                               BTU/H [kW]
+
+RP18AZ24AJVC RHMVZ2421HEACA 22800 [6.7] 17500 [5.1] 5300 [1.6] 18.0 12.5 785 [370.5] 22800 [6.7] 3.00 23000 [6.7] 2.00 8.5
+
+RP18AZ36AJVC RHMVZ6021SEACA 34200 [10.0] 26200 [7.7] 8000 [2.3] 18.0 12.5 1225 [578.1] 32000 [9.4] 3.00 37400 [11.0] 2.00 8.5
+
+RP18AZ48AJVC RHMVZ6021SEACA 45800 [13.4] 34500 [10.1] 10500 [3.1] 18.0 12.0 1590 [750.4] 40000 [11.7] 2.50 41000 [12.0] 1.50 8.5
+
+RP18AZ60AJVC RHMVZ6021SEACA 53000 [15.5] 40600 [11.9] 12400 [3.6] 18.0 10.5 1685 [795.2] 48500 [14.2] 2.50 47000 [13.8] 1.50 8.5
+
+NOTE: This data includes DTC (Designated Test Combination) ratings and is for reference purposes only. A full listing of official ratings and system match-ups, along with
+       downloadable certificates, can be accessed from the AHRI website: www.ahridirectory.org.
+
+[ ] Designates Metric Conversions
+
+                                                                                                                                                                            15
+Smart Home Systems
+RP18AZ
+
+Integrated Controls
+
+    EcoNet® is smart, technology developed exclusively by Rheem that allows Heating, Cooling,
+      and Water Heating products to communicate with each other on one integrated network.
+
+THE ECONET® SMART THERMOSTAT
+
+BUILT-IN WIFI                                                                                  RETST800SYS
+4.3" LCD TOUCH SCREEN
+LOCAL WEATHER - Current conditions plus 6-day forecast
+5 OPERATING MODES - Heat, Cool, Auto, Emergency Heat and Fan Only
+7-DAY PROGRAMMABLE SCHEDULE - Offers comfort without thought
+ONE-TOUCH AWAY - Quickly switch to your energy-saving away preferences
+VACATION SCHEDULING - Allows you to save while you're away and come home to comfort
+STANDBY SCREEN - Displays indoor temperature and current weather
+
+OPERATIONAL FEATURES
+
+AUTOMATIC CHANGEOVER - Transitions between heating and cooling automatically to keep the house comfortable
+INTEGRATED WATER CONTROL - Enables easy water heater management
+SMOOTH ARRIVAL - Prompts the system to start ahead of schedule to ensure the home is at the desired temperature at the scheduled time
+HUMIDITY CONTROL - Supports humidifier accessories or over-cool based dehumidification
+DETAILED OPERATING STATUS - View pertinent equipment status information and run times
+CONTINUOUS FAN - Offers 5 speeds (Low, Medium Low, Medium, Medium High, High)
+SHORT-CYCLE PROTECTION - Avoids damage to equipment from short run cycles
+
+MONITORING & REMOTE CONTROL FEATURES
+
+ACTIVE MONITORING - Alerts to problems that need immediate attention
+REMOTE CONTROL - Allows adjusting of comfort and settings from anywhere using a mobile device
+SERVICE ALERTS - Sends routine maintenance reminders
+AIR FILTER MONITORING - Detects when it's time to replace the air filter
+ALARM HISTORY - Displays time-stamped alarm codes with clear descriptions
+
+16
+Notes
+RP18AZ
+
+      17
+Notes
+RP18AZ
+
+18
+Notes
+RP18AZ
+
+      19
+GENERAL TERMS OF LIMITED WARRANTY*                                           Conditional Unit Replacement
+                                                                             (Registration Required)............................. Ten (10) Years
+Rheem will furnish a replacement for any part of this product                Parts....................................................... Ten (10) Years
+which fails in normal use and service within the applicable
+period stated, in accordance with the terms of the limited
+warranty.
+
+ *For complete details of the Limited and Conditional Warranties, including
+applicable terms and conditions, contact your local contractor or the
+Manufacturer for a copy of the product warranty certificate.
+
+Before proceeding with installation, refer to installation instructions packaged with each model, as well as complying with all Federal,
+                                                   State, Provincial, and Local codes, regulations, and practices.
+
+                  © 2023 Rheem Manufacturing Company. Rheem trademarks owned by Rheem Manufacturing Company.
+In keeping with its policy of continuous progress and product improvement, Rheem reserves the right to make changes without notice.
+
+Rheem Heating, Cooling & Water Heating · 5600 Old Greenwood Road             Rheem Canada Ltd./Ltée · 125 Edgeware Road, Unit 1
+                Fort Smith, Arkansas 72908 · www.rheem.com                           Brampton, Ontario · L6Y 0P5 · rheem.ca
+
+                                                                             PRINTED IN U.S.A. 12/23 QG FORM NO. P11-823 REV. 3
+
