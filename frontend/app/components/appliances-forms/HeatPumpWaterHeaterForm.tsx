@@ -17,6 +17,10 @@ export function getUniqueNumbers(values: number[]): number[] {
     .sort((a, b) => a - b);
 }
 
+export function formatNumber(value: number, decimals = 2) {
+  return (Math.round(value * 100) / 100).toFixed(2);
+}
+
 export function link(cell: any, formatterParams: any) {
   var url = cell.getValue();
   return `<a href='${url}' target='_blank'>${url}</a>`;
@@ -48,10 +52,10 @@ const HeatPumpWaterHeaterForm = () => {
       const { weight, dimensions, ...restOfApplianceData } = appliance;
       return {
         ...appliance,
-        weightValue: Math.round(weight.value),
-        widthValue: Math.round(dimensions.width),
-        heightValue: Math.round(dimensions.height),
-        lengthValue: Math.round(dimensions.length),
+        weightValue: formatNumber(weight.value),
+        widthValue: formatNumber(dimensions.width),
+        heightValue: formatNumber(dimensions.height),
+        lengthValue: formatNumber(dimensions.length),
       };
     });
     setResults(tabulatorData);

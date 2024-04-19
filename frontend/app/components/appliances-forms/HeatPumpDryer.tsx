@@ -8,6 +8,7 @@ import {
   getUniqueStrings,
   getUniqueNumbers,
   link,
+  formatNumber,
 } from "./HeatPumpWaterHeaterForm";
 
 const HeatPumpDryer = () => {
@@ -56,10 +57,10 @@ const HeatPumpDryer = () => {
       const { weight, dimensions, ...restOfApplianceData } = appliance;
       return {
         ...appliance,
-        weightValue: Math.round(weight.value),
-        widthValue: Math.round(dimensions.width),
-        heightValue: Math.round(dimensions.height),
-        lengthValue: Math.round(dimensions.length),
+        weightValue: formatNumber(weight.value),
+        widthValue: formatNumber(dimensions.width),
+        heightValue: formatNumber(dimensions.height),
+        lengthValue: formatNumber(dimensions.length),
       };
     });
 
