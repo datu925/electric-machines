@@ -99,6 +99,20 @@
 //   }
 // }
 
+.mobileHint {
+  display: none; //usually hides, shows only on screens up to 1024
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    p {
+      color: red !important;
+    }
+  }
+}
+
 .tableHelpSection {
   margin-bottom: 1rem;
 

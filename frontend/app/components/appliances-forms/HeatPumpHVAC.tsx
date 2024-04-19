@@ -1,40 +1,17 @@
-import InfoSquare from "../InfoSquare";
-// import styles from "../ApplianceLookup.module.scss";
 import styles from "./sharedForms.module.scss";
 import { useState, useMemo, useEffect } from "react";
-import TableContainer from "../TableContainer";
+import "./tabulator-modern-custom.css";
+// import "react-tabulator/lib/styles.css";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
+import {
+  getUniqueStrings,
+  getUniqueNumbers,
+  link,
+  formatNumber,
+} from "./HeatPumpWaterHeaterForm";
 
-export function getUniqueStrings(values: string[]): string[] {
-  return values
-    .filter((val, index, self) => self.indexOf(val) === index)
-    .sort((a, b) => a.localeCompare(b));
-}
-
-export function getUniqueNumbers(values: number[]): number[] {
-  return values
-    .filter((val, index, self) => self.indexOf(val) === index)
-    .sort((a, b) => a - b);
-}
-
-export function formatNumber(value: number, decimals = 2) {
-  return (Math.round(value * 100) / 100).toFixed(2);
-}
-
-export function link(cell: any, formatterParams: any) {
-  var url = cell.getValue();
-  return `<a href='${url}' target='_blank'>${url}</a>`;
-}
-
-const HeatPumpWaterHeaterForm = () => {
-  const [showResults, setShowResults] = useState(false);
+const HeatPumpHVAC = () => {
   const [results, setResults] = useState<any[]>([]);
-
-  //default values
-  const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
-  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
-  const [firstHourRating, setFirstHourRating] = useState("40");
-
   const [unit, setUnit] = useState("imperial");
 
   const fetchData = async () => {
@@ -43,7 +20,7 @@ const HeatPumpWaterHeaterForm = () => {
         ? `weightUnit=kg&dimensionUnit=cm`
         : `weightUnit=lb&dimensionUnit=in`;
 
-    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&${unitParams}`;
+    const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hphvac&${unitParams}`;
     const response = await fetch(apiUrl);
     const data = await response.json();
 
@@ -60,7 +37,6 @@ const HeatPumpWaterHeaterForm = () => {
     });
     setResults(tabulatorData);
   };
-
   useEffect(() => {
     fetchData();
   }, [unit]);
@@ -79,7 +55,7 @@ const HeatPumpWaterHeaterForm = () => {
         sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: Select multiple",
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Model",
@@ -92,44 +68,10 @@ const HeatPumpWaterHeaterForm = () => {
         values: getUniqueStrings(
           results.map((appliance) => appliance.modelNumber)
         ),
-        multiselect: true,
-      },
-      headerFilterPlaceholder: "Filter: Select multiple",
-    },
-    {
-      title: "Capacity (gallons)",
-      field: "tankCapacityGallons",
-      hozAlign: "center",
-      minWidth: 200,
-      headerFilter: "select",
-      headerFilterFunc: "in",
-      headerFilterParams: {
-        values: getUniqueNumbers(
-          results.map((appliance) => appliance.tankCapacityGallons)
-        ),
         sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: Select multiple",
-    },
-
-    {
-      title: "UEF",
-      field: "uniformEnergyFactor",
-      hozAlign: "center",
-      minWidth: 150,
-      headerFilter: "input",
-      headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Set minimum value",
-    },
-    {
-      title: "FHR",
-      field: "firstHourRating",
-      hozAlign: "center",
-      minWidth: 150,
-      headerFilter: "input",
-      headerFilterFunc: ">=",
-      headerFilterPlaceholder: "Set minimum value",
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Voltage",
@@ -140,9 +82,10 @@ const HeatPumpWaterHeaterForm = () => {
       headerFilterFunc: "in",
       headerFilterParams: {
         values: getUniqueNumbers(results.map((appliance) => appliance.voltage)),
+        sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: Select multiple",
+      headerFilterPlaceholder: "Filter: All",
     },
     {
       title: "Breaker Size",
@@ -155,11 +98,11 @@ const HeatPumpWaterHeaterForm = () => {
         values: getUniqueNumbers(
           results.map((appliance) => appliance.electricBreakerSize)
         ),
+        sortValuesList: "asc",
         multiselect: true,
       },
-      headerFilterPlaceholder: "Filter: Select multiple",
+      headerFilterPlaceholder: "Filter: All",
     },
-
     {
       title: `Width ${unit === "imperial" ? "(in)" : "(cm)"}`,
       field: "widthValue",
@@ -198,39 +141,9 @@ const HeatPumpWaterHeaterForm = () => {
   const toggle = () => {
     setIsToggled(!isToggled);
   };
-
   return (
     <>
-      <div className={styles.tableHelpSection}>
-        <div>
-          <label>
-            <input type="checkbox" checked={isToggled} onChange={toggle} />
-            <span className="switch" />
-            Show Table Column Descriptions
-          </label>
-        </div>
-        {isToggled && (
-          <div className={styles.tableHelp}>
-            <ul>
-              <li>
-                <b>Capacity </b>(gallons): Choose based upon your household's
-                hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60
-                gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons.
-              </li>
-              <li>
-                <b>UEF (Uniform Energy Factor)</b>: Measures overall energy
-                efficiency, influencing long-term energy costs.
-              </li>
-              <li>
-                <b>FHR (First Hour Rating)</b>: Estimates hot water supply in
-                the first hour, crucial for peak demand.
-              </li>
-            </ul>
-          </div>
-        )}
-      </div>
       <br />
-
       <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
         <label className={styles.labelWithInfo} htmlFor="unit">
           Unit System:
@@ -285,20 +198,19 @@ const HeatPumpWaterHeaterForm = () => {
         </p>
       </div>
 
-      <ReactTabulator
-        data={results}
-        columns={columns}
-        options={{
-          pagination: "local",
-          paginationSize: 10,
-          paginationSizeSelector: true,
-          // selectable: true,
-        }}
-      />
-      {/* </>
-      )} */}
+      <div className={styles.resultTable}>
+        <ReactTabulator
+          data={results}
+          columns={columns}
+          options={{
+            pagination: "local",
+            paginationSize: 8,
+          }}
+        />
+      </div>
+      {/* )} */}
     </>
   );
 };
 
-export default HeatPumpWaterHeaterForm;
+export default HeatPumpHVAC;

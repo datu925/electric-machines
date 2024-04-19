@@ -8,6 +8,7 @@ import {
   getUniqueStrings,
   getUniqueNumbers,
   link,
+  formatNumber,
 } from "./HeatPumpWaterHeaterForm";
 
 const HeatPumpDryer = () => {
@@ -48,7 +49,6 @@ const HeatPumpDryer = () => {
         : `weightUnit=lb&dimensionUnit=in`;
 
     const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&${unitParams}`;
-    console.log(apiUrl);
     const response = await fetch(apiUrl);
     const data = await response.json();
 
@@ -57,14 +57,13 @@ const HeatPumpDryer = () => {
       const { weight, dimensions, ...restOfApplianceData } = appliance;
       return {
         ...appliance,
-        weightValue: Math.round(weight.value),
-        widthValue: Math.round(dimensions.width),
-        heightValue: Math.round(dimensions.height),
-        lengthValue: Math.round(dimensions.length),
+        weightValue: formatNumber(weight.value),
+        widthValue: formatNumber(dimensions.width),
+        heightValue: formatNumber(dimensions.height),
+        lengthValue: formatNumber(dimensions.length),
       };
     });
 
-    console.log(data);
     setResults(tabulatorData);
   };
 
@@ -112,8 +111,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
-      headerTooltip:
-        "Capacity refers to the volume of clothes the dryer can hold and dry efficiently, usually measured in cubic feet. A larger capacity is ideal for big households or doing less frequent, larger loads.",
     },
     {
       title: "CEF",
@@ -123,8 +120,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: ">=",
       headerFilterPlaceholder: "Minimum: not set",
-      headerTooltip:
-        "A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings.",
     },
     {
       title: "Sound Level (dB)",
@@ -134,8 +129,6 @@ const HeatPumpDryer = () => {
       headerFilter: "input",
       headerFilterFunc: "<=",
       headerFilterPlaceholder: "Maximum: not set",
-      headerTooltip:
-        "<60 dB: Very quiet, ideal for living areas. 60-65 dB: Noticeable, not too loud, common for dryers. >65 dB: Loud, like a vacuum, might be disruptive.",
     },
     {
       title: "Voltage",
@@ -208,118 +201,6 @@ const HeatPumpDryer = () => {
 
   return (
     <>
-      {/* <form className={styles.form} onSubmit={handleSubmit}>
-        <div className={styles.sliderGroup}>
-          <label className={styles.labelWithInfo} htmlFor="capacity-slider">
-            <InfoSquare text="Capacity refers to the volume of clothes the dryer can hold and dry efficiently, usually measured in cubic feet. A larger capacity is ideal for big households or doing less frequent, larger loads." />
-            &nbsp;Capacity: {capacity} cu-ft
-          </label>
-          <input
-            type="range"
-            id="capacity-slider"
-            name="capacity"
-            min="3"
-            max="9"
-            step="0.5"
-            value={capacity}
-            onChange={(e) => setCapacity(e.target.value)}
-            className={styles.slider}
-          />
-        </div>
-
-        <div className={styles.sliderGroup}>
-          <label className={styles.labelWithInfo} htmlFor="cef-slider">
-            <InfoSquare text="A higher CEF means better energy efficiency, leading to lower operating costs over time. Consider this factor for long-term savings." />
-            &nbsp;Combined Energy Factor (CEF): {combinedEnergyFactor}
-          </label>
-          <input
-            type="range"
-            id="cef-slider"
-            name="cef"
-            min="1.0"
-            max="4.0"
-            step="0.1"
-            value={combinedEnergyFactor}
-            onChange={(e) => setCombinedEnergyFactor(e.target.value)}
-            className={styles.slider}
-          />
-        </div>
-        <div className={styles.radioGroup}>
-          <label className={styles.labelWithInfo} htmlFor="sound-level">
-            <InfoSquare text="High sound levels are louder and might be more noticeable, but these models can be more cost-effective and are best placed in separate utility areas, away from living spaces." />
-            <span>&nbsp;Sound Level </span>
-          </label>
-
-          <div>
-            <div className={styles.radioOptions}>
-              <label htmlFor="soundExtraSilent">
-                <input
-                  type="radio"
-                  id="soundExtraSilent"
-                  name="sound-level"
-                  value="62"
-                  className={styles.radioInput}
-                  checked={soundLevel === "62"}
-                  onChange={(event) => setSoundLevel(event.target.value)}
-                />
-                <span className={styles.radioText}>
-                  Extra Silent(&lt;62 dB)
-                </span>
-              </label>
-              <label htmlFor="soundSilent">
-                <input
-                  type="radio"
-                  id="soundSilent"
-                  name="sound-level"
-                  value="64"
-                  className={styles.radioInput}
-                  checked={soundLevel === "64"}
-                  onChange={(event) => setSoundLevel(event.target.value)}
-                />
-                <span className={styles.radioText}>Silent(&lt;64dB)</span>
-              </label>
-
-              <label htmlFor="soundNormal">
-                <input
-                  type="radio"
-                  id="soundNormal"
-                  name="sound-level"
-                  value="66"
-                  className={styles.radioInput}
-                  checked={soundLevel === "66"}
-                  onChange={(event) => setSoundLevel(event.target.value)}
-                />
-                <span className={styles.radioText}>Normal(&lt;66dB)</span>
-              </label>
-
-              <label htmlFor="soundLoud">
-                <input
-                  type="radio"
-                  id="soundLoud"
-                  name="sound-level"
-                  value="67"
-                  className={styles.radioInput}
-                  checked={soundLevel === "67"}
-                  onChange={(event) => setSoundLevel(event.target.value)}
-                />
-                <span className={styles.radioText}>Loud(&lt;67dB)</span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <input
-            className={styles.submitButton}
-            type="submit"
-            value="Start Lookup"
-          />
-        </div>
-      </form>
-      layout={"fitData"} */}
-
-      {/* {showResults && ( */}
-
       <div className={styles.tableHelpSection}>
         <div>
           <label>
@@ -384,7 +265,28 @@ const HeatPumpDryer = () => {
           </label>
         </div>
       </div>
-
+      <div className={styles.mobileHint}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="#888"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 9h.01" />
+          <path d="M11 12h1v4h1" />
+          <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+        </svg>
+        <p>
+          To optimize readability, we recommend viewing the app on a larger
+          screen.
+        </p>
+      </div>
       <div className={styles.resultTable}>
         <ReactTabulator
           data={results}
