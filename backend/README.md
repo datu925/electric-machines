@@ -1,10 +1,20 @@
 # Backend API
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 ![Architecture Diagram](../doc/architecture-backend.PNG "Architecture Diagram")
 
 The backend API service is built using Typescript and fastify web framework. This API service loads all data into memory upon startup and perform searching within the loaded data store instead of replying on a dedicated database service. Two functions that this API provided are:
 
-1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria with the following request parameters:
-| Parameter             | Mandatory | Supported Appliances | Comment                                                                                                                           |
+1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria.
+2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+
+- Command to build in local: `npm run build-local`
+- Command to start service in localhost (port 8080): `npm start`
+
+### Appliance Parameters
+
+| Parameter             | Mandatory | Supported Appliances | 
+Comment                                                                                                                           |
 |-----------------------|-----------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | applianceType         | Y         | ALL                  | Mandatory for every request. `hpwh` for water-heaters, `hpd` for dryers, `hphvac` for HVACs and `stove` for stove appliance data  |
 | weight                |           | ALL                  | Numerical value for weight                                                                                                        |
@@ -23,10 +33,6 @@ The backend API service is built using Typescript and fastify web framework. Thi
 | tonnageMin            |           | HVAC                 | Minimum tonnage that an HVAC can make change in air in an hour.                                                                   |
 | tonnageMax            |           | HVAC                 | Maximum tonnage that an HVAC can make change in air in an hour.  
 
-2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
-
-- Command to build in local: `npm run build-local`
-- Command to start service in localhost (port 8080): `npm start`
 
 ### Notable Libraries
 - [factify v4.26.2](https://fastify.dev/)
