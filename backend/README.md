@@ -37,9 +37,9 @@ The backend API service is built using Typescript and Fastify web framework. Rat
 | tonnageMax 	|  	| HVAC 	| Maximum tonnage that an HVAC can make change in air in an hour. 	|
 
 ## Recommend Hosting
-Both the source code and its associated data are resided in GitHub. The backend API itself is deployed onto the Vercel.
+Both the source code and its associated appliance data are resided in GitHub. The backend API itself is deployed onto the Vercel platform. 
 
-Appliance data are stored as json files as there is no significant amount of data. If this approach of data storage becomes the bottleneck of the service, an alternative approach is to create a Postgres database with new tables that maps directly to each of the appliances [schema](schema) and deployed said database onto cloud provider such as vercel or Heroku. The cost of doing such will be around $50 dollar per month max.
+The appliance data are stored as JSON files as the volume of data is not much of a concern. When this storage approach becomes the bottleneck of the service, an alternative will be to utilise a Postgres database with tables that map directly to each of the appliance [schemas](schema). Querying data will be done from the database instead. Such database can then be deployed onto a cloud provider such as vercel, Heroku or AWS. The cost of doing such will be around 50 US dollars per month depending on the amount of data. 
 
 ## Application Deployment 
 The backend API service is deployed onto the Vercel platform. Refer to [vercel documentation](https://vercel.com/) regarding account creation and project management. To deploy the current branch onto vercel for testing and development purposes, run `vercel`. Once the result is satisfactory, deploy to the production environment by running `vercel --prod`
