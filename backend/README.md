@@ -5,11 +5,11 @@
 
 The backend API service is built using Typescript and Fastify web framework. Rather than relying on a dedicated database, this backend service first loads all data into its memory upon start-up and performs querying for incoming requests directly among the loaded data. Two functions that this API currently provides are:
 
-1. `GET appliance/appliance`: Enable users to query for appliances with the matching criteria. See [appliance parameters](#appliance-get-request-parameters) for more detail.
+1. `GET appliance/appliance`: Enable users to query for appliances with the matching criteria. See [appliance parameters](#appliance-get-request-parameters) for more details.
 2. `GET appliance/all`: Returns all raw appliance data with no modification to the requester.
 
-To build in local, run `npm run build-local`.
-To start service in localhost (port 8080), run `npm start`.
+- To build locally, run `npm run build-local`.
+- To start service locally (defaults to port 8080), run `npm start`.
 
 ### Notable Third-party Libraries
 - [factify v4.26.2](https://fastify.dev/)
@@ -37,12 +37,12 @@ To start service in localhost (port 8080), run `npm start`.
 | tonnageMax 	|  	| HVAC 	| Maximum tonnage that an HVAC can make change in air in an hour. 	|
 
 ## Recommend Hosting
-The source code of the backend-API and its associated data are both resided in GitHub. The service itself is deployed onto the Vercel directly. 
+Both the source code and its associated data are resided in GitHub. The backend API itself is deployed onto the Vercel.
 
-Appliance data are stored as json files as there is not a significant amount of data. When data storage with the filesystem become the bottleneck of backend service, an alternative solution is to create a Postgres database with tables maps to each of the appliances the (schema)[schema] provided and deploy the database onto 
+Appliance data are stored as json files as there is no significant amount of data. If this approach of data storage becomes the bottleneck of the service, an alternative approach is to create a Postgres database with new tables that maps directly to each of the appliances [schema](schema) and deployed said database onto cloud provider such as vercel or Heroku. The cost of doing such will be around $50 dollar per month max.
 
 ## Application Deployment 
-The backend API service is deployed onto the Vercel platform. Refer to the [official documentation](https://vercel.com/) regarding account creation and project management. To deploy the current branch onto vercel for testing and development purposes, run `vercel`. Once the result is satisfactory, deploy to the production environment by running `vercel --prod`
+The backend API service is deployed onto the Vercel platform. Refer to [vercel documentation](https://vercel.com/) regarding account creation and project management. To deploy the current branch onto vercel for testing and development purposes, run `vercel`. Once the result is satisfactory, deploy to the production environment by running `vercel --prod`
 
 ## Authentication and Authorization 
 Due to no inclusion of sensitive or personal data, authentication and authorization are not required, therefore they were not implemented at this stage in time. Rewiring America can add an API key authentication layer on top of this backend service with relative ease if necessary.
