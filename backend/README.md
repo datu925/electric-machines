@@ -1,19 +1,19 @@
 # Backend API
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-![Architecture Diagram](../doc/architecture-backend.PNG "Architecture Diagram")
-
 <p align="center">
   <img src="../doc/architecture-backend.PNG" />
 </p>
 
+The backend API service is built using Typescript and fastify web framework. This API service first loads all data into memory upon start and perform searching for incoming requests among the loaded data instead of replying on a dedicated database service. Two functions that this API currently provides are: 
+1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See [parameters](3-Appliance-get-request-parameters)
+2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+
 - Command to build in local: `npm run build-local`
 - Command to start service in localhost (port 8080): `npm start`
 
-The backend API service is built using Typescript and fastify web framework. This API service loads all data into memory upon startup and perform searching within the loaded data store instead of replying on a dedicated database service. Two functions that this API provided are:
-
-1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See 
-2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+### Notable Third-party Libraries
+- [factify v4.26.2](https://fastify.dev/)
+- [json-schema-to-ts v3.0.1](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
+- [convert-units v3.0.0-beta.6](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
 
 ### Appliance GET Request Parameters
 | Parameter 	| Mandatory 	| Supported Appliances 	| Comment 	|
@@ -35,10 +35,6 @@ The backend API service is built using Typescript and fastify web framework. Thi
 | tonnageMin 	|  	| HVAC 	| Minimum tonnage that an HVAC can make change in air in an hour. 	|
 | tonnageMax 	|  	| HVAC 	| Maximum tonnage that an HVAC can make change in air in an hour. 	|
 
-### Notable Third-party Libraries
-- [factify v4.26.2](https://fastify.dev/)
-- [json-schema-to-ts v3.0.1](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
-- [convert-units v3.0.0-beta.6](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
 
 ## Recommend Hosting
 The source code of the backend-API and its associated data are both resided in GitHub. The service itself is deployed onto the Vercel directly. 
