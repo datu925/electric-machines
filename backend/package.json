@@ -7,7 +7,7 @@
     "test": "tap -- --ts \"test/**/*.test.ts\"",
     "vercel": "vercel dev",
     "tsc": "tsc",
-    "build-local": "rimraf build && tsc",
+    "build-local": "rimraf build && tsc && cp -r data/ build",
     "start": "node build/src/server-local.js"
   },
   "author": "",
