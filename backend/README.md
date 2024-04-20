@@ -3,13 +3,13 @@
   <img src="../doc/architecture-backend.PNG" />
 </p>
 
-The backend API service is built using Typescript and fastify web framework. This API service first loads all data into memory upon start and perform searching for incoming requests among the loaded data instead of replying on a dedicated database service. Two functions that this API currently provides are: 
+The backend API service is built using Typescript and Fastify web framework. Rather than relying on a dedicated database, this backend service first loads all data into its memory upon start-up and performs querying for incoming requests directly among the loaded data. Two functions that this API currently provides are:
 
-1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See [parameters](#appliance-get-request-parameters) for more detail.
-2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+1. `GET appliance/appliance`: Enable users to query for appliances with the matching criteria. See [appliance parameters](#appliance-get-request-parameters) for more detail.
+2. `GET appliance/all`: Returns all raw appliance data with no modification to the requester.
 
-- Command to build in local: `npm run build-local`
-- Command to start service in localhost (port 8080): `npm start`
+To build in local, run `npm run build-local`.
+To start service in localhost (port 8080), run `npm start`.
 
 ### Notable Third-party Libraries
 - [factify v4.26.2](https://fastify.dev/)
@@ -35,7 +35,6 @@ The backend API service is built using Typescript and fastify web framework. Thi
 | combinedEnergyFactor 	|  	| dryer 	| Minimum efficiency that dryers should have. 	|
 | tonnageMin 	|  	| HVAC 	| Minimum tonnage that an HVAC can make change in air in an hour. 	|
 | tonnageMax 	|  	| HVAC 	| Maximum tonnage that an HVAC can make change in air in an hour. 	|
-
 
 ## Recommend Hosting
 The source code of the backend-API and its associated data are both resided in GitHub. The service itself is deployed onto the Vercel directly. 
