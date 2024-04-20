@@ -26,15 +26,13 @@ The source code of the backend-API and its associated data are both resided in G
 Appliance data are stored as json files as there is not a significant amount of data. When data storage with the filesystem become the bottleneck of backend service, an alternative solution is to create a Postgres database with tables maps to each of the appliances the (schema)[schema] provided and deploy the database onto 
 
 ## Application Installation 
-The backend API service replies upon the Vercel platform for deployment. Refer to the (official site)[https://vercel.com/] regarding on account creation and project management. To deploy current branch onto Vercel development, run `vercel`. Once you are happy with the result of the dev deployment, run `vercel --prod`
+The backend API service is deployed onto the Vercel platform. Refer to the [official documentation](https://vercel.com/) regarding account creation and project management. To deploy the current branch onto vercel for testing and development purpose, run `vercel`. Once the result is satisfactory, deploy to production environment by running `vercel --prod`
 
 ## Authentication and Authorization 
-Due to no involvement of sensitive or personal data, authentication and authorization is not required and therefore not implemented as part of this project.
-
-Rewiring America can add a API key authentication with relatively ease if necessary.
+Due to no inclusion of sensitive or personal data, authentication and authorization are not required, therefore they were not implemented at this stage in time. Rewiring America can add an API key authentication layer on top of this backend service with relative ease if necessary.
  
 ## Database Backup
-The appliance data for the backend API service are currently stored inside the [data](data) directory. GitHub is actively being utilised for data versioning control as well as the backup. Due to all data being publicly available, there are no privacy or other regulatory concerns on storing the data directly on GitHub
+All appliance data for the backend API service are stored inside the [data](data) directory. GitHub is actively being utilised for data versioning as well as backup copies. Furthermore, there are no privacy or other regulatory concerns about storing the data directly on GitHub due to all data being publicly available.
 
 ## Environment Variables
 Not applicable. 
