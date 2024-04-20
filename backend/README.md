@@ -3,15 +3,19 @@
 
 ![Architecture Diagram](../doc/architecture-backend.PNG "Architecture Diagram")
 
-The backend API service is built using Typescript and fastify web framework. This API service loads all data into memory upon startup and perform searching within the loaded data store instead of replying on a dedicated database service. Two functions that this API provided are:
-
-1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria.
-2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+<p align="center">
+  <img src="../doc/architecture-backend.PNG" />
+</p>
 
 - Command to build in local: `npm run build-local`
 - Command to start service in localhost (port 8080): `npm start`
 
-### Appliance Parameters
+The backend API service is built using Typescript and fastify web framework. This API service loads all data into memory upon startup and perform searching within the loaded data store instead of replying on a dedicated database service. Two functions that this API provided are:
+
+1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See 
+2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
+
+### Appliance GET Request Parameters
 | Parameter 	| Mandatory 	| Supported Appliances 	| Comment 	|
 |---	|---	|---	|---	|
 | applianceType 	| Y 	| ALL 	| Mandatory for every request. `hpwh` for water-heaters, `hpd` for dryers, `hphvac` for HVACs and `stove` for stove appliance data  	|
