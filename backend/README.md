@@ -12,29 +12,26 @@ The backend API service is built using Typescript and fastify web framework. Thi
 - Command to start service in localhost (port 8080): `npm start`
 
 ### Appliance Parameters
+| Parameter 	| Mandatory 	| Supported Appliances 	| Comment 	|
+|---	|---	|---	|---	|
+| applianceType 	| Y 	| ALL 	| Mandatory for every request. `hpwh` for water-heaters, `hpd` for dryers, `hphvac` for HVACs and `stove` for stove appliance data  	|
+| weight 	|  	| ALL 	| Numerical value for weight 	|
+| weightUnit 	|  	| ALL 	| The searching and display unit for weights. Defaults to `lb` if not provided. 	|
+| dimensionUnit 	|  	| ALL 	| The display unit for dimensions. Defaults to `in` if not provided 	|
+| electricalBreakerSize 	|  	| ALL 	| The maximum breaker size in amperage that appliances can handle. 	|
+| voltage 	|  	| ALL 	| The maximum voltage that appliances can handle. 	|
+| tankCapacityMin 	|  	| water-heater 	| Minimum tank capacity for water-heaters, measured in US gallon. 	|
+| tankCapacityMax 	|  	| water-heater 	| Maximum tank capacity for water-heaters, measured in US gallon. 	|
+| uniformEnergyFactor 	|  	| water-heater 	| Minimum efficiency that water-heaters should have. 	|
+| firstHourRating 	|  	| water-heater 	| Minimum first hour rating that water-heaters should have 	|
+| capacityMin 	|  	| dryer 	| Minimum load capacity for dryers, measured in cubic feet. 	|
+| capacityMax 	|  	| dryer 	| Maximum load capacity for dryers, measured in cubic feet. 	|
+| soundLevel 	|  	| dryer 	| Maximum acceptable sound level for dryers, measured in decibel. 	|
+| combinedEnergyFactor 	|  	| dryer 	| Minimum efficiency that dryers should have. 	|
+| tonnageMin 	|  	| HVAC 	| Minimum tonnage that an HVAC can make change in air in an hour. 	|
+| tonnageMax 	|  	| HVAC 	| Maximum tonnage that an HVAC can make change in air in an hour. 	|
 
-| Parameter             | Mandatory | Supported Appliances | 
-Comment                                                                                                                           |
-|-----------------------|-----------|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| applianceType         | Y         | ALL                  | Mandatory for every request. `hpwh` for water-heaters, `hpd` for dryers, `hphvac` for HVACs and `stove` for stove appliance data  |
-| weight                |           | ALL                  | Numerical value for weight                                                                                                        |
-| weightUnit            |           | ALL                  | The searching and display unit for weights. Defaults to `lb` if not provided.                                                     |
-| dimensionUnit         |           | ALL                  | The display unit for dimensions. Defaults to `in` if not provided                                                                 |
-| electricalBreakerSize |           | ALL                  | The maximum breaker size in amperage that appliances can handle.                                                                  |
-| voltage               |           | ALL                  | The maximum voltage that appliances can handle.                                                                                   |
-| tankCapacityMin       |           | water-heater         | Minimum tank capacity for water-heaters, measured in US gallon.                                                                   |
-| tankCapacityMax       |           | water-heater         | Maximum tank capacity for water-heaters, measured in US gallon.                                                                   |
-| uniformEnergyFactor   |           | water-heater         | Minimum efficiency that water-heaters should have.                                                                                |
-| firstHourRating       |           | water-heater         | Minimum first hour rating that water-heaters should have                                                                          |
-| capacityMin           |           | dryer                | Minimum load capacity for dryers, measured in cubic feet.                                                                         |
-| capacityMax           |           | dryer                | Maximum load capacity for dryers, measured in cubic feet.                                                                         |
-| soundLevel            |           | dryer                | Maximum acceptable sound level for dryers, measured in decibel.                                                                   |
-| combinedEnergyFactor  |           | dryer                | Minimum efficiency that dryers should have.                                                                                       |
-| tonnageMin            |           | HVAC                 | Minimum tonnage that an HVAC can make change in air in an hour.                                                                   |
-| tonnageMax            |           | HVAC                 | Maximum tonnage that an HVAC can make change in air in an hour.  
-
-
-### Notable Libraries
+### Notable Third-party Libraries
 - [factify v4.26.2](https://fastify.dev/)
 - [json-schema-to-ts v3.0.1](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
 - [convert-units v3.0.0-beta.6](https://www.npmjs.com/package/json-schema-to-ts/v/3.0.1)
