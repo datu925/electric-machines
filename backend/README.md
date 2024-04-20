@@ -4,10 +4,9 @@
 </p>
 
 The backend API service is built using Typescript and fastify web framework. This API service first loads all data into memory upon start and perform searching for incoming requests among the loaded data instead of replying on a dedicated database service. Two functions that this API currently provides are: 
-1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See [parameters](#3-Appliance-get-request-parameters)
-2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
 
-<!-- <h3 tabindex="-1" class="heading-element" dir="auto">Appliance GET Request Parameters</h3> -->
+1. `GET appliance/appliance`: Enable users to look upon appliances with the matching criteria. See [parameters](#appliance-get-request-parameters) for more detail.
+2. `GET appliance/all`: Returns all raw appliance data back to the requester without any modification.
 
 - Command to build in local: `npm run build-local`
 - Command to start service in localhost (port 8080): `npm start`
