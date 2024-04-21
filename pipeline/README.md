@@ -48,17 +48,17 @@ Output of this stage:
 - for each input table, a `.json` file from the LLM is created in the `reformatted/` directory. It should just be a possibly-empty list of reformatted records.
 - a `dropped_files.json` file in the `runs/` directory, noting which files could not be parsed by the LLM.
 
-## Merge and Filter
-
-We then merge the reformatted tables by model number and do a minimal-effort filter on the results to try to get rid of garbage models. The output of this stage is still schema-less.
-
-Usage: `npx ts-node src/merge_tables.ts --folders <folders>`
-
 ## Rename Columns
 
 We now go back to the LLM to rename columns to try to fit our schema. We don't do this earlier to avoid throwing out/losing data too early, since a lot of things can go wrong in this stage.
 
 Usage: `npx ts-node src/rename_columns.ts --wait 100 --folders <folders>`
+
+## Correct Data
+
+We use the LLM again to read through the text outside of the tables in the PDF and fill in any fields we are missing. This can help catch fields in the schema that are common across all models listed in the documentation, like breaker size.
+
+Usage: `npx ts-node src/correct_data.ts --wait 100 --folders <folders>`
 
 ## Validate Against Schema
 
@@ -84,3 +84,13 @@ TODO: add a script that exports JSON records from `csv` format so that we can ea
 2. Tables on the same page sometimes rely on "column continuation" – the headers aren't repeated, but it's clear from a previous table which column corresponds to which model. Unfortunately, this context is lost to the LLM right now. We can fix it by coalescing all of the tables before we send them to the LLM.
 3. Unit conversions (e.g. imperial to metric) are likely to be messy and haphazard right now. We're going to evolve the schema to allow multiple units from the LLM, and then have separate code that converts them.
 4. Sometimes we drop output from the LLM because it's too long, and becomes malformed JSON. There are a few ways to address this, though the easiest might actually be switching to the Palm API since Google models have a longer context window. Alternatively, we can have a special retry prompt that takes the malformed JSON, extracts usable records from it, and feeds that back into the LLM as additional context, asking for the next set of models.
+
+
+# Depreciated Code
+
+## Merge and Filter (Previously Between Reformatting and Renaming)
+
+We then merge the reformatted tables by model number and do a minimal-effort filter on the results to try to get rid of garbage models. The output of this stage is still schema-less.
+
+Usage: `npx ts-node src/merge_tables.ts --folders <folders>`
+
