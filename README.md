@@ -42,3 +42,9 @@ This repository contains three sub-projects. For developer documentation, visit 
 1. [The data pipeline](pipeline/README.md)
 2. [The backend](backend/README.md)
 3. [The frontend](frontend/README.md)
+
+The following diagram illustrates the relationship between the sub-projects and mentions some key libraries/technologies. The left and right side are not directly related, so the data pipeline (left side) can be run offline, and then the resulting data is consumed and served by the backend and passed on to the frontend.
+
+<p align="center">
+  <img src="/doc/electric-machines-diagram.png" />
+</p>
