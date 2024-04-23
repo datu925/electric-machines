@@ -3,11 +3,11 @@ import "./tabulator-modern-custom.css";
 import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 import {
-  getUniqueStrings,
   getUniqueNumbers,
-  link,
+  getUniqueStrings,
   formatNumber,
-} from "./HeatPumpWaterHeaterForm";
+  link,
+} from "./helper";
 
 const HeatPumpDryer = () => {
   const [results, setResults] = useState<any[]>([]);
