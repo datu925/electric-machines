@@ -62,7 +62,7 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
     },
     dimensions: {
       description:
-        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit is a values like 'inches', 'centimeters', 'millimeters', 'feet', etc.",
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
     },
     electricBreakerSize: {
       description:
@@ -106,7 +106,7 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
     },
     dimensions: {
       description:
-        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit is a values like 'inches', 'centimeters', 'millimeters', 'feet', etc.",
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
     },
     electricBreakerSize: {
       description:

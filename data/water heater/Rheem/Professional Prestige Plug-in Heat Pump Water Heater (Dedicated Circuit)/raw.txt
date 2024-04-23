@@ -1,0 +1,210 @@
+                                                                                                    Water  Residential Electric
+                                                                                                           ProTerra Plug-in Heat Pump
+                                                                                                           (Dedicated Circuit) Water Heaters
+
+ProTerra® Plug-In Heat Pump Water Heater
+(120V Dedicated Circuit)
+
+Efficiency                                   Operation Modes                                             ProTerra Plug-in
+                                                                                                             Heat Pump
+· Up to 3.0 UEF reduces ­operating cost      · Heat Pump
+· ENERGY STAR® rated                                                                                (120V Dedicated Circuit)
+· Title 24 Compliant (JA13 Ready)            · Vacation/Away: 2-28 days (or placed
+                                               on hold indefinitely)                                       40 and 50 Capacities
+Performance                                                                                                   120 Volt / 1 PH
+                                             Plus...                                                               Electric
+· Ambient operating range: 37-145° F
+  is widest in class designed to meet        · Premium grade anode rod with                                                          These products meet a stringent
+  Northern Climate Spec (Tier 2)               ­resistor extends the life of the tank                                                set of our internally defined
+                                                                                                                                     sustainability standards.
+Easy Installation                            · 3/4" NPT water inlet and outlet;
+                                               3/4" condensate drain connections
+· Easy access side connections
+· Factory installed plug-in power cord,      · Easy access, top mounted washable
+                                               air filters
+  direct plug-in
+· Easily replaces a standard gas water       · 2" Non-CFC foam insulation
+
+  heater                                     · Enhanced flow brass drain valve
+
+Integration                                  · Temperature and pressure relief valve
+                                               installed
+· LED display allows easy control and
+  system monitoring with alerts and          · Design certified to NSF/ANSI 372
+  audible alarms1                              (Lead Content)
+
+· Integrated EcoNet® Wi-Fi-­connected2       Warranty
+  ­technology and free mobile app
+  gives users ­control over water heater,    · 10-Year limited tank and parts
+  ­allowing for ­customizable ­temperature,    warranty
+  ­vacation settings, energy savings and
+  system monitoring at home or away          See Residential W­ arranty ­Certificate for ­complete
+                                                ­information
+· LeakGuardTM and LeakSenseTM
+  Ready -- Easily add leak detection         Units meet or exceed ANSI requirements and have
+  and ­prevention with leak sensor and       been tested according to D.O.E. procedures. Units
+  ­shutoff valve upgrade kit                 meet or exceed the energy efficiency requirements
+                                             of NAECA, ASHRAE standard 90, ICC Code and all
+· Demand Response Ready - Built-in           state energy efficiency performance criteria.
+  EcoPortTM (CTA-2045 Port) allows easy
+  connection to Utility programs
+
+1Requires additional leak sensing accessory. 2Wi-Fi broadband internet connection required.                                                  LEED Points = 3
+
+                                                                                                    See specifications chart on next page.
+
+                                             IINNTTEEGGRRAATETDE DHOHMOEMCEOCMOFOMRFTO RT
+
+                                                                                                           11/23 FORM NO. RH-PIHP-DC Rev. 4
+ProTerra Plug-in Heat Pump (120V Dedicated Circuit) Specifications
+
+                                          DESCRIPTION                                                      ENERGY                FEATURES                                   TANK DIMENSIONS
+                                                                                                             INFO
+                                                                                                                                                                (SEE SPACE REQUIREMENTS IN DIAGRAMS BELOW)
+                                                                                                           UNIFORM
+NOMINAL     RATED              MODEL       MODEL       ELECTRIC    VOLTAGE                       AVERAGE    ENERGY   COMPRESSOR  SOUND      UEF     RECOVERY    HEIGHT   DIAM.  UNIT                 APPROX.
+ GALLON    GALLON             NUMBER      VARIANT       BREAKER     120V                       ELECTRICAL   FACTOR        BTU/H  LEVEL   FIRST HR.    IN G.P.H      A       B    WT.                 SHIP WT.
+CAPACITY  CAPACITY                                                  120V                                                          (dBA)             60° F RISE                  (LBS)
+                    PROPH40 T0 RH120      700948           SIZE                                  WATTAGE      (UEF)                       RATING                65-5/8  20-1/4                         (LBS.)
+                                                       (MINIMUM)1                                                                          G.P.H.       28                      200
+                    PROPH50 T0 RH120      700949                                                 1100W        3.0                                                 65    22-1/4                         242
+40        37                                               15                                                        12,000      55      51             29                      210
+                                                                                                 1100W        3.0                                                                                      252
+50        46                                               15                                                        12,000      55      51
+
+Uniform Energy Factor and rated gallon capacity based on Department of Energy (DOE) requirements.
+All units have integrated Wi-Fi control board.
+1In cases of fused protection, a time delay fused protection will be required.
+
+  INITIAL TANK            FINAL           HEAT UP TIME (MIN)               Heat Up Time (min)                      Heat Up Time To 120°F vs Initial Tank Water Temp. @ Ambient Air Temperature 75°F
+WATER TEMP (°F)     TANK TEMP (°F)                91.1                                         100
+                                                  83.7
+       40                 120                     77.4                                          75
+       50                 120                     67.1
+       58                 120                      51                                           50
+       70                 120                     37.2
+       87                 120
+       100                120
+
+                                                                                               25
+
+                                                                                               0                     55                             70                  85                           100
+                                                                                                 40
+
+                                                                                                                                 Initial Tank Water Temperature (°F)
+
+                                                                                                                                         2" Clearance Needed
+                                                                                                                                         for T&P Release
+
+                                                                                                                                             F
+
+                                                                   I
+                                                                                                                                          G
+
+                                                                                                                                         B
+
+                                                                   H
+                                                                                           A
+                                                                                                 C
+                                                                                                       E
+
+                 DESCRIPTION                                                                                    D
+
+                                   MODEL                           Insulate ducting to reduce condensation.
+                                  NUMBER
+                             PROPH40                                                                      DIMENSIONS (SHOWN IN INCHES)
+                             PROPH50
+NOMINAL                                                  A           B                                 C       D                   E            F                 G       H               I
+ GALLON                                                65-5/8      20-1/4                          47-13/16  3-5/8               39-5/8      23-3/8             20-1/2    81           21-3/4
+CAPACITY                                                           22-1/4                           47-1/4   3-5/8               39-5/8      25-3/8             22-1/2  80-3/8         21-3/4
+                                                         65
+    40
+
+    50
+
+                                                                                                                                                                                                               2
+Plug-in Heat Pump (Dedicated Circuit) Water Heater
+Installation Guidelines to Provide Optimal Efficiency
+
+All volume is cubic feet.
+
+Not Ducted                                                              Not Ducted
+
+Room size: Larger than 1200 ft3 (e.g. 12' x 10' x 10').                 Room size: 400 ft3 (e.g. 5' x 8' x 10') to 1200 ft3
+Requirements: No additional ventilation needed.                         (e.g. 12' x 10' x 10').
+
+                                                                        Requirements: Full louvered door OR two louvers top and
+                                                                        bottom. 2.9 ft2 minimum louver area.
+
+Ducted with outlet duct                                                 Insufficient air circulation may result in an ­ambient
+                                                                        air temperature drop more than 15° F (8° C) and
+Room size: Smaller than 400 ft3 (5' x 8' x 10') such as a closet.       inefficient operation. Refer to the room size volume
+Requirements: Full louvered door. 3.25 ft2 minimum louver area.         illustrations to determine optimal installation and if
+                                                                        exhaust should be ducted.
+                                                     Insulate ­ducting
+                                                     to reduce          Installation Space Volume is the unoccupied, free
+                                                     ­condensation.     air space required for optimal operation. Additional
+                                                                        objects occupying the space reduce total space
+                                                                        volume.
+
+                                                                        For optimal operation, installation in gray US map zone
+                                                                        is recommended. When installing outside of gray zone,
+                                                                        consult your local plumbing contractor.
+
+MINIMUM CLEARANCES (WITHOUT DUCTING)
+
+REAR  SIDES                TOP                                          Average Ambient Air Temp in January
+                                                                                             Below 37°F
+0"    3"                   9"                                                                Above 37°F
+                                                                                                                                                              3
+                                                                                                                  Water  Residential Electric
+                                                                                                                         ProTerra Plug-in Heat Pump
+                                                                                                                         (Dedicated Circuit) Water Heaters
+
+ProTerra Plug-in Heat Pump Accessories List
+
+PART NUMBER   Leak Sensor DESCRIPTION                                                       USE FOR
+    AP18944D                                            Automatic detection of internal and external leaks
+
+AP20180       Shutoff Valve                             Automatic shut off of water supply to unit
+
+AP21851       Outlet Duct Adapter                       Allows for ducting to be connected to the unit
+
+SP20882       Earthquake Isolation Kit                  Installations in seismic regions
+
+SP20883       Vibration Isolation Kit                   Installation on non-concrete floors
+
+SP20884       8" Diameter UL Certified Termination Kit  Termination to the outside or to the attic with 8" diameter
+
+SP20885       7" Diameter UL Certified Termination Kit  Termination to the outside or to the attic with 7" diameter
+
+SP20886       6" Diameter UL Certified Termination Kit  Termination to the outside or to the attic with 6" diameter
+
+SP20887       5" Diameter UL Certified Termination Kit  Termination to the outside or to the attic with 5" diameter
+
+SP20888       8" Pro Approved Damper Kit                Exhaust only to the outside ducting configuration (no inlet duct)
+
+SP20889       25' Flexible 8" Diameter Duct Kit         For up to 25' of ducting
+
+SP21111       Leak Sensor & Shutoff Valve Kit           Upgrade models to protect home from water damage with leak detection
+                                                        and auto shutoff valve
+
+AP18944D                                  AP20180       AP21851                                                          SP20882
+
+SP20883                                   SP20884       SP20885                                                          SP20886
+
+SP20887                                   SP20888       SP20889                                                                     SP21111
+
+                                                                                                                  UPGRADE KIT (for ProTerra
+                                                                                                                  models without LeakGuard
+                                                                                                                  only) - Add leak detector and
+                                                                                                                  shuttoff valve to protect from
+                                                                                                                  water damage
+
+In keeping with its policy of continuous progress and product improvement, Rheem reserves the right to make changes without notice.
+
+                             Rheem Water Heating · 1115 Northmeadow Parkway, Suite 100                                                               4
+                                           Roswell, Georgia 30076 · www.rheem.com
+                                                                                                                         11/23 FORM NO. RH-PIHP-DC Rev. 4
+                                                                    IINNTTEEGGRRAATETDE DHOHMOEMCEOCMOFOMRFTO RT
+

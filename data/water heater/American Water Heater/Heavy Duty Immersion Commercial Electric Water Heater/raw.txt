@@ -1,0 +1,247 @@
+                                                   Commercial Electric
+                                                   Water Heater
+
+COMMERCIAL HEAVY DUTY WATER HEATER
+WITH IMMERSION THERMOSTAT
+
+Designed for use as a recovery heater having its own storage tank or
+booster for supplying sanitizing rinse water for dish washing.
+
+FEATURES                                           POWER CIRCUIT FUSING                                 MODELS
+                                                   · Protects elements and contactors             ITCE31-50, 80, 119
+· Meets the thermal efficiency and or
+   standby loss requirements of the U.S.              from short circuits, overloading or line
+   Department of Energy and current edition           surges. Meets National Electric Code
+   of ASHRAE/IES 90.1.                                requirements (fusing required when
+                                                      current draw exceeds 48 amps).
+ADVANCED ELECTRONIC
+CONTROL                                            STANDARD VOLTAGES
+                                                   · 208, 240 and 480V single-phase and
+· Plain English text and animated icons
+   display detailed operational and diagnostic        three phase delta. Convertible from three-
+   information. Fault or Alert messages               phase to single-phase (in field) and vice
+   appear if an operational issue occurs.             versa (except 208/54 kW). 277V single-
+                                                      phase also available.
+· Immersion temperature control adjustable
+   through a range of 90°F to 190°F.               TERMINAL BLOCK
+                                                   · Factory installed. Allows for easy service
+ECONOMY MODE OPERATION
+                                                      connection to block.
+· Control system automatically lowers the
+   Operating Set Point by a programmed             MAGNETIC CONTACTORS
+   value during user-defined time periods.         · Heavy duty; UL rated 100,000 cycles.
+   Helps reduce operating costs during
+   unoccupied or off - peak demand periods.        THREE YEAR LIMITED TANK
+                                                   WARRANTY
+LINEAR SEQUENCING                                  · For complete warranty information,
+
+· Banks of heating elements (3 elements               consult written warranty or go to
+   per bank) are energized according to               americanwaterheater.com.
+   adjustable (1 to 20°F) differential set points
+   for each bank. First bank on is the last        OTHER STANDARD FEATURES
+   bank off. Helps reduce current surge and        · Immersion style thermostats
+   provides accurate water temperature
+   control.                                        · Simplified circuitry, color coded for ease
+                                                      of service
+INCOLOY IMMERSION HEATERS
+                                                   · Hinged control compartment door for
+· Heavy-duty medium watt density elements             quick, easy access
+   have Incoloy sheathing; provide excellent
+   protection against oxidation and scaling.       · Two anode rods for maximum corrosion
+                                                      protection
+GLASS-LINED TANK
+                                                   · Cabinet has bonderized undercoat with
+· Three sizes; 50, 80 and 119 gallon                  baked enamel finish
+   capacity. Tank interior is coated with glass
+   specially developed by American for water       · Top outlet, side inlet and relief valve
+   heater use. Foam insulation reduces costly         openings
+   heat loss. ASME (optional) maximum
+   working pressure is 160 psi.                    · Nipple and brass drain valve
+
+                                                   · CSA certified and ASME rated T&P relief
+                                                      valve.
+
+                                                                                                                                                                                      OPTIONAL    Page 1 of 4
+                                                                                                                                                                                                NCESS00908
+For complete warranty information consult the written warranty of American Water Heaters found at:
+www.americanwaterheater.com or call (800) 456-9805 | Copyright © by American Water Heater Company. All Rights reserved. January 2019
+                                                                      Commercial Electric
+                                                                      Water Heater
+
+                                                        WATER
+                                                        OUTLET
+
+                                  C
+
+OPTIONS:
+
+· ASME 160 psi (1103 kPa) tank construction.
+
+· UL Listed conversion kits to adjust voltage and kW requirement in the field before and after installation.
+
+· Manifold kits for multiple tank installations. Two heaters -part # 100109231, three heaters- part # 100109232 and four heaters -
+
+part # 100109233.                                       CONDUIT
+                                                        OPENING
+
+· International voltages - 220, 380, 400, 415, 575, and 600 volts, three phase available with Y connected elements.
+
+                                                        3/4" NPT
+                                                        OPENING
+
+                                                                                                                                         WATER
+                                                                                                                                         OUTLET
+
+A                                                                                                C
+
+   DRAIN                                                  INLET                                                                          CONDUIT
+   VALVE                                                OPENING                                                                          OPENING
+
+                                                             5.25                                                                            3/4" NPT
+                                                                                                                                            OPENING
+
+                           B
+
+ROUGH-IN DIMENSIONS
+
+                                                                Dimensions                                    Inlet/Outlet
+                                                                                                                  (NPT)
+    Model   Tank Capacity                                                                                                           Approx. Shipping Weight
+   Number                                                                                                        Inches
+                                              A                    B                                 C            1-1/4
+ITCE31-50                                                                                                         1-1/4
+            gal.   litre   Inches                MM     Inches        MM A                Inches        MM        1-1/4             lbs          kG
+                                                        21-3/4        55.2
+            50     189        55-3/4             142                                             27     68.6                        265          120
+
+ITCE31-80   80     302        60-1/4             153    25-1/2        64.8                       31     78.7                        280          127
+
+ITCE31-119  119    450        62-1/4             158.1  29-1/2        75                         35     88.9                        390          177
+
+For ASME construction add "A" to the front of the model number (example: AITCE31-50-24).
+
+                                                                                          DRAIN                                               Page 2 of 4
+                                                                                          VALVE                                          OPINNELNCEINTEGSS00908
+                                                                                 Commercial Electric
+                                                                                 Water Heater
+
+RECOVERY CAPACITIES
+
+StanIndpaurdt kW BTU/Hour  30°F  40°F  50°F                          60°F  70°F  80°F  90°F  100°F  110°F  120°F  130°F  140°F
+                           17°C  22°C  28°C                          33°C
+                                                                           39°C  45°C  50°C  56°C   61°C   67°C   72°C   78°C
+12.3  41,980               168   126   101                            84
+                                                                     318    72    56    50     46     42     39     36     63
+                           636   477   382                            92   273   238   212    189    174    159    148    136
+                                                                     349    79    69    62     55     50     46     43     40
+13.5  46,075               184   138   111                           102   299   262   233    209    190    174    161    150
+                                                                     388    88    77    68     61     56     51     47     44
+                           698   523   419                           123   332   291   258    233    211    194    149    166
+                                                                     465   105    92    82     74     67     62     57     53
+                           205   154   123                           164   399   349   310    279    254    233    215    199
+                                                                     620   140   123   109     98     90     82     76     70
+15    51,195                                                         185   532   465   414    372    338    310    286    266
+                                                                     609   158   138   123    111    101     92     85     79
+                           775   582   465                           205   509   523   465    410    391    340    322    299
+                                                                     775    176   154   137   123    112    102     95     88
+18    61,434               246   184   148                           246    665   582   517   465    423    388    358    332
+                                                                     930    211   184   164   148    134    123    113    105
+                           930   698   558                           277    798   698   620   556    508    465    429    399
+                                                                     1047   237   208   185   166    151    138    128    119
+                           328   246   197                           307    897   785   698   628    634    582    537    498
+                                                                     1163   263   230   205   184    168    154    142    132
+24    81,912                                                         359    997   872   755   698    634    582    537    498
+                                                                     1396   316   277   246   221    201    185    170    158
+                           1241  930   744                                 1196  1047   930   837    761    696    644    598
+
+27    92,151               369   276   221
+
+                           1396  1047  938
+
+                           410   307   246
+
+30    102,390
+
+                           1551  1163  930
+
+36    122,868              492   369   295
+
+                           1861  1396  1117
+
+40.5  138,226              554   418   332
+
+                           2094  1570  1256
+
+45    153,585              615   461   369
+
+                           2326  1745  1398
+
+54    184,302              738   554   443
+
+                           2791  2094  1675
+
+Figured at 1 kW (3413 BTU) = 4.1 Gallons at 100°F temperature rise.
+
+                                                                                                                           Page 3 of 4
+                                                                                                                         NCESS00908
+                                                             Commercial Electric
+                                                             Water Heater
+
+                                                                                                             Full Load Current in Amperes
+
+          Model Numbers Tank Capacity in Gallons         Number of Element
+                                                         Elements Wattage
+kW Input                                                                                                Single Phase                        Three Phase
+
+          50            80            119                                                        208V   240V 277V 480V 208V 240V 480V
+                                                                                                   59
+12.3      ITCE31-50-12  ITCE31-80-12  ITCE31-119-12      3                                4,100  64.9   51   44       26              34    30                15
+                                                                                                 72.1
+13.5      ITCE31-50-13.5 ITCE31-80-13.5 ITCE31-119-13.5  3                                4,500  86.5   56.3 **48.7 28.1              37.5  32.5              16.2
+
+15        ITCE31-50-15  ITCE31-80-15  ITCE31-119-15      3                                5,000  115.4  62.5 **54.2 31.3              41.6  36.1              18
+                                                                                                 129.8
+18        ITCE31-50-18  ITCE31-80-18  ITCE31-119-18      3*                               6,000  144.2  75   65       37.5            50    43.3              21.7
+                                                                                                 173.1
+24        ITCE31-50-24  ITCE31-80-24  ITCE31-119-24      6                                4,000  194.7  100  86.6     50              66.6  57.7              28.9
+                                                                                                 216.3
+27        ITCE31-50-27  ITCE31-80-27  ITCE31-119-27      6                                4,500   N/A   112.5 **97.5 56.3             74.9  65                32.5
+
+30        ITCE31-50-30  ITCE31-80-30  ITCE31-119-30      6                                5,000         125 **108.3 62.5              83.3  72.2              36.1
+
+36        ITCE31-50-36  ITCE31-80-36  ITCE31-119-36      6*                               6,000         150  130      75              99.9  86.6              43.3
+
+40.5      N/A           ITCE31-80-40.5 ITCE31-119-40.5   9                                4,500         168.8 **146.2 84.4 112.4 97.4                         48.7
+
+45        N/A           ITCE31-80-45  ITCE31-119-45      9                                5,000         187.5 **162.5 93.8 124.9 108.3 54.1
+
+54        N/A           ITCE31-80-54  ITCE31-119-54      9                                6,000         225  194.9 112.5 149.9 129.9                          65
+
+For ASME construction add "A" to the front of the model number (example: AITCE31-50-24).
+208 volt models may contain three (3) additional elements.
+** Elements available in incoloy only.
+
+SUGGESTED SPECIFICATION
+
+The heater(s) shall be Heavy-Duty Commercial Electric Model Number_________________as manufactured by American
+Water Heaters or equivalent. Heater(s) shall be rated at______________kW ________V _____________phase, 60 cycle AC as
+listed by Underwriters' Laboratories. All models meet National Sanitation Foundation NSF-5 requirements. Water heater shall
+have LCD display with built-in diagnostic and troubleshooting information. Tank(s) shall be _______ (50, 80 or 119) gallon
+capacity with _______(150 [Std] or 160 [ASME]) psi working pressure and equipped with dual extruded high density anodes.
+All internal surfaces of the heater(s) exposed to water shall be glass-lined with an alkaline borosilicate composition that has
+been fused to steel by firing at a temperature range of 1400°F to 1600°F. Electric heating elements shall be 24K Goldenrod
+medium watt density screw-in type with Incoloy sheath and ceramic terminal block. Internal power circuit fusing shall be
+provided. Element operation shall be linear sequencing through individual magnetic contactors. Control circuit shall be factory
+fused and include an immersion thermistor temperature probe with built in ECO control. Control cabinet and jacket shall be
+of baked enamel finish and shall provide full size control and element compartment for complete service and maintenance
+performance through front hinged compartment door, and enclose tank with foam insulation. 1 1/4" inlet and outlet
+connection shall be provided. The heater tank shall have a three year limited warranty and controls and accessories shall have
+a one year limited warranty as outlined in the written warranty. Fully illustrated instruction manual to be included. For multiple
+installation, factory built manifold kits for__________ (2, 3 or 4) heater installation shall be provided. Meets or exceeds the
+thermal efficiency and standby loss requirements of the U.S. Department of Energy and current edition of ASHRAE/IES 90.1.
+
+      For technical information call (800) 456-9805. American Water Heaters reserves the right to make product changes or improvements without prior notice.
+
+For complete warranty information consult the written warranty of American Water Heaters found at:                                                Page 4 of 4
+www.americanwaterheater.com or call (800) 456-9805 | Copyright © by American Water Heater Company. All Rights reserved. January 2019            NCESS00908
+

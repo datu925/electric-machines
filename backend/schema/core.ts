@@ -1,3 +1,9 @@
+export const CIRCUIT_TYPE = {
+  Shared: "Shared",
+  Dedicated: "Dedicated",
+} as const;
+export type CircuitTtype = keyof typeof CIRCUIT_TYPE;
+
 export const coreProperties = {
   weight: {
     type: "object",
@@ -28,6 +34,10 @@ export const coreProperties = {
   },
   soundLevelMax: {
     type: "number",
+  },
+  circuitType: {
+    type: "string",
+    enum: Object.keys(CIRCUIT_TYPE),
   },
 } as const;
 

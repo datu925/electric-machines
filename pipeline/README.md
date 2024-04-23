@@ -100,7 +100,7 @@ For now, inspect and adjust the `all_records.csv` output in the previous stage m
 
 Once you're done, you can use the [convert.ts](src/convert_csv.ts) script to turn the CSV back into JSON to be committed (next step).
 
-Usage: `npx ts-node src/convert.ts --input_file <path_to_file>`
+Usage: `npx ts-node src/convert_csv.ts --input_file <path_to_file>`
 
 ### Commit (manual)
 
