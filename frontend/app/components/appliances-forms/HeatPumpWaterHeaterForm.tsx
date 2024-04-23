@@ -1,8 +1,6 @@
-import InfoSquare from "../InfoSquare";
-// import styles from "../ApplianceLookup.module.scss";
 import styles from "./sharedForms.module.scss";
-import { useState, useMemo, useEffect } from "react";
-import TableContainer from "../TableContainer";
+import "./tabulator-modern-custom.css";
+import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 
 export function getUniqueStrings(values: string[]): string[] {
@@ -27,14 +25,7 @@ export function link(cell: any, formatterParams: any) {
 }
 
 const HeatPumpWaterHeaterForm = () => {
-  const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState<any[]>([]);
-
-  //default values
-  const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
-  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
-  const [firstHourRating, setFirstHourRating] = useState("40");
-
   const [unit, setUnit] = useState("imperial");
 
   const fetchData = async () => {

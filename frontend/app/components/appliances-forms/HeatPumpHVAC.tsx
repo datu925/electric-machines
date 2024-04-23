@@ -1,7 +1,6 @@
 import styles from "./sharedForms.module.scss";
-import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
-// import "react-tabulator/lib/styles.css";
+import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 import {
   getUniqueStrings,
@@ -208,7 +207,6 @@ const HeatPumpHVAC = () => {
           }}
         />
       </div>
-      {/* )} */}
     </>
   );
 };

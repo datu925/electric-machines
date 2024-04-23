@@ -1,18 +1,15 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import styles from "./ApplianceLookup.module.scss";
-// import InfoSquare from "./InfoSquare";
 import HeatPumpWaterHeaterForm from "./appliances-forms/HeatPumpWaterHeaterForm";
 import HeatPumpDryer from "./appliances-forms/HeatPumpDryer";
 import HeatPumpHVAC from "./appliances-forms/HeatPumpHVAC";
 
 const MachineLookup = () => {
   const [selectedAppliance, setSelectedAppliance] = useState("");
-  const [showResults, setShowResults] = useState(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setShowResults(false);
     setSelectedAppliance(event.target.value);
   };
 
