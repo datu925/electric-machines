@@ -43,6 +43,7 @@ export const coreProperties = {
 
 export const requiredCore = [
   "weight",
+  "dimensions",
   "electricBreakerSize",
   "voltage",
 ] as const;
