@@ -9,7 +9,7 @@ import {
   link,
 } from "./helper";
 
-const HeatPumpWaterHeaterForm = () => {
+const HeatPumpWaterHeater = () => {
   const [results, setResults] = useState<any[]>([]);
   const [unit, setUnit] = useState("imperial");
 
@@ -271,10 +271,8 @@ const HeatPumpWaterHeaterForm = () => {
           // selectable: true,
         }}
       />
-      {/* </>
-      )} */}
     </>
   );
 };
 
-export default HeatPumpWaterHeaterForm;
+export default HeatPumpWaterHeater;

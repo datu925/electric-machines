@@ -2,9 +2,9 @@
 
 import React, { useState } from "react";
 import styles from "./ApplianceLookup.module.scss";
-import HeatPumpWaterHeaterForm from "./appliances-forms/HeatPumpWaterHeaterForm";
-import HeatPumpDryer from "./appliances-forms/HeatPumpDryer";
-import HeatPumpHVAC from "./appliances-forms/HeatPumpHVAC";
+import HeatPumpWaterHeater from "./appliances/HeatPumpWaterHeater";
+import HeatPumpDryer from "./appliances/HeatPumpDryer";
+import HeatPumpHVAC from "./appliances/HeatPumpHVAC";
 
 const MachineLookup = () => {
   const [selectedAppliance, setSelectedAppliance] = useState("");
@@ -31,10 +31,7 @@ const MachineLookup = () => {
       </select>
 
       {selectedAppliance === "HeatPumpHVAC" && <HeatPumpHVAC />}
-
-      {selectedAppliance === "HeatPumpWaterHeater" && (
-        <HeatPumpWaterHeaterForm />
-      )}
+      {selectedAppliance === "HeatPumpWaterHeater" && <HeatPumpWaterHeater />}
       {selectedAppliance === "HeatPumpDryer" && <HeatPumpDryer />}
     </>
   );
