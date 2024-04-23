@@ -1,40 +1,16 @@
-import InfoSquare from "../InfoSquare";
-// import styles from "../ApplianceLookup.module.scss";
 import styles from "./sharedForms.module.scss";
-import { useState, useMemo, useEffect } from "react";
-import TableContainer from "../TableContainer";
+import "./tabulator-modern-custom.css";
+import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
+import {
+  getUniqueNumbers,
+  getUniqueStrings,
+  formatNumber,
+  link,
+} from "./helper";
 
-export function getUniqueStrings(values: string[]): string[] {
-  return values
-    .filter((val, index, self) => self.indexOf(val) === index)
-    .sort((a, b) => a.localeCompare(b));
-}
-
-export function getUniqueNumbers(values: number[]): number[] {
-  return values
-    .filter((val, index, self) => self.indexOf(val) === index)
-    .sort((a, b) => a - b);
-}
-
-export function formatNumber(value: number, decimals = 2) {
-  return (Math.round(value * 100) / 100).toFixed(2);
-}
-
-export function link(cell: any, formatterParams: any) {
-  var url = cell.getValue();
-  return `<a href='${url}' target='_blank'>${url}</a>`;
-}
-
-const HeatPumpWaterHeaterForm = () => {
-  const [showResults, setShowResults] = useState(false);
+const HeatPumpWaterHeater = () => {
   const [results, setResults] = useState<any[]>([]);
-
-  //default values
-  const [tankCapacityGallons, setTankCapacityGallons] = useState("30");
-  const [uniformEnergyFactor, setUniformEnergyFactor] = useState("0.9");
-  const [firstHourRating, setFirstHourRating] = useState("40");
-
   const [unit, setUnit] = useState("imperial");
 
   const fetchData = async () => {
@@ -295,10 +271,8 @@ const HeatPumpWaterHeaterForm = () => {
           // selectable: true,
         }}
       />
-      {/* </>
-      )} */}
     </>
   );
 };
 
-export default HeatPumpWaterHeaterForm;
+export default HeatPumpWaterHeater;

@@ -1,45 +1,16 @@
-import InfoSquare from "../InfoSquare";
 import styles from "./sharedForms.module.scss";
-import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
-// import "react-tabulator/lib/styles.css";
+import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 import {
-  getUniqueStrings,
   getUniqueNumbers,
-  link,
+  getUniqueStrings,
   formatNumber,
-} from "./HeatPumpWaterHeaterForm";
+  link,
+} from "./helper";
 
 const HeatPumpDryer = () => {
-  const [showResults, setShowResults] = useState(false);
-
-  //default values
-  const [combinedEnergyFactor, setCombinedEnergyFactor] = useState("1.0");
-  const [capacity, setCapacity] = useState("3.0");
-  const [soundLevel, setSoundLevel] = useState("67");
-
-  //sample API call
-  //electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpd&soundLevel=65&combinedEnergyFactor=2.0&capacityMin=4.0&capacityMax=8.0
-
-  //sample API results
-  // {
-  //   "brandName": "General Electric",
-  //   "modelNumber": "PFD87ESSVWW/ES(P/M)VRS 240V",
-  //   "sourceUrl": "https://products-salsify.geappliances.com/image/upload/s--XdcWb9Qq--/tjtu3zcktpaufsk10vrm.pdf?_ga=2.104748992.1570831524.1711587971-928897490.1711587971",
-  //   "weightInKg": 50,
-  //   "widthInCm": 50,
-  //   "heightInCm": 160.02,
-  //   "lengthInCm": 50,
-  //   "electricBreakerSize": 30,
-  //   "voltage": 240,
-  //   "soundLevelMax": 63,
-  //   "combinedEnergyFactor": 2,
-  //   "capacity": 7.8
-  // },
-
   const [results, setResults] = useState<any[]>([]);
-
   const [unit, setUnit] = useState("imperial");
 
   const fetchData = async () => {
@@ -293,11 +264,12 @@ const HeatPumpDryer = () => {
           columns={columns}
           options={{
             pagination: "local",
-            paginationSize: 8,
+            paginationSize: 10,
+            paginationSizeSelector: true,
+            // selectable: true,
           }}
         />
       </div>
-      {/* )} */}
     </>
   );
 };

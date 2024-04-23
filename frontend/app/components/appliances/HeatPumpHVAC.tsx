@@ -1,14 +1,13 @@
 import styles from "./sharedForms.module.scss";
-import { useState, useMemo, useEffect } from "react";
 import "./tabulator-modern-custom.css";
-// import "react-tabulator/lib/styles.css";
+import { useState, useEffect } from "react";
 import { ReactTabulator, ColumnDefinition } from "react-tabulator";
 import {
-  getUniqueStrings,
   getUniqueNumbers,
-  link,
+  getUniqueStrings,
   formatNumber,
-} from "./HeatPumpWaterHeaterForm";
+  link,
+} from "./helper";
 
 const HeatPumpHVAC = () => {
   const [results, setResults] = useState<any[]>([]);
@@ -204,11 +203,12 @@ const HeatPumpHVAC = () => {
           columns={columns}
           options={{
             pagination: "local",
-            paginationSize: 8,
+            paginationSize: 10,
+            paginationSizeSelector: true,
+            // selectable: true,
           }}
         />
       </div>
-      {/* )} */}
     </>
   );
 };
