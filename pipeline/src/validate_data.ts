@@ -33,7 +33,7 @@ program.parse();
 
 async function initializeValidators() {
   const validators: { [index: string]: ValidateFunction<Appliance> } = {};
-  const ajv = new Ajv({ allErrors: true });
+  const ajv = new Ajv({ allErrors: true, coerceTypes: true });
 
   validators[APPLIANCE_TYPES.heat_pump] = ajv.compile(HEAT_PUMP_SCHEMA);
   validators[APPLIANCE_TYPES.heat_pump_water_heater] = ajv.compile(
