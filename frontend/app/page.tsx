@@ -183,14 +183,19 @@ export default function Home() {
           <p>
             <strong>Dan</strong>
             <br />
-            <u>Highlights:</u> P8 presentation slides and delivery. Some code
-            review. Mid-progress on adding a second pass with GPT to fill in
-            missing fields using the PDF text.
+            <u>Highlights:</u> Added a new stage to incorporate PDF text, eval
+            framework, documentation for P9, got our water heaters into the
+            database.
             <br />
-            <u>Challenges:</u> A bit sick.
+            <u>Challenges:</u> LLM struggles with some fields like dimensions,
+            but it is surprisingly quick to correct. The interface in and out of
+            csv is still a bit awkward because of the nested fields (like
+            dimensions) and the fact that we lose type information going to CSV,
+            so then the numbers appear as strings in the JSON which does not
+            match our schema
             <br />
-            <u>Next Steps:</u> Work exclusively on the pipeline to generate a
-            lot of data.
+            <u>Next Steps:</u> Add more appliances into the database (heat pumps
+            next.)
             <br />
           </p>
         </div>
@@ -198,32 +203,29 @@ export default function Home() {
           <p>
             <strong>Kevin</strong>
             <br />
-            <u>Highlights:</u> Wrote script to convert CSV to JSON; will make
-            changes possibly tonight. User manual/documentation.
+            <u>Highlights:</u> Made changes to csv-to-json script, tried playing
+            around with the new pipeline but mostly ended up overfitting, small
+            changes to the readme.
             <br />
-            <u>Challenges:</u> Making the script grow with the project (if we
-            e.g. add fields).
+            <u>Challenges:</u> Overfitting when prompt engineering.
             <br />
-            <u>Next Steps:</u> Go back into the pipeline – some fields where we
-            have everything and then in the rename step. <br />
+            <u>Next Steps:</u> Complete background for P10 and add slides to
+            final presentation. <br />
           </p>
         </div>
         <div>
           <p>
             <strong>Ricky</strong>
             <br />
-            <u>Highlights:</u> Added unit selection and made changes according
-            to backend specifications for dryer. Updated table to show correct
-            units according to selection.
+            <u>Highlights:</u> Finished adding hvac, and cleaned up the code for
+            the frontend. Removed unused functions and files, named the files
+            more consistently, and factored out helper functions into a helper
+            file. Added part of P9 about frontend.
             <br />
-            <u>Challenges:</u> Unable to use data as it, update frontend to
-            extract and reformat data received from the backend to work with
-            Tabulator.
+            <u>Challenges:</u> Implementing tests.
             <br />
-            <u>Next Steps:</u> Add unit selection to heat pump water heater and
-            create HVAC component. Add frontend part of the architectural
-            diagram and data flow. Take screenshots and get lighthouse metrics.
-            Do the architectural pipeline.
+            <u>Next Steps:</u> Add relevant frontend details to P10. Finish
+            adding frontend tests.
             <br />
           </p>
         </div>
@@ -231,20 +233,14 @@ export default function Home() {
           <p>
             <strong>Chris</strong>
             <br />
-            <u>Highlights:</u> Add change to support optional parameters for
-            incoming GET requests, and support for multiple measurement units
-            i.e. metrics and imperial in the backend API. Recorded walkthrough
-            video for P8.
+            <u>Highlights:</u> Backend developer documentation on GitHub and P9.
+            Added some tests on the backend, error handling implementation in
+            progress.
             <br />
-            <u>Challenges:</u> The convert-unit library does not support
-            Typescript out of the box. It took considerable time to find a
-            workaround solution.
-            <br />
-            <u>Next Steps:</u> Add error handling in the backend API calls. Add
-            Swagger homepage listing all the supported API calls. Add unit tests
-            in the backend and make a README document that reflects the current
-            state of the backend API. Create backend developer documentation for
-            P9.
+            <u>Next Steps:</u> Wrapping up the error handling implementation,
+            cleanup the code and add more descriptive documentation ready to
+            handover to Rewiring America. Testing with the data generated from
+            the pipeline. Final presentation and P10
             <br />
           </p>
         </div>
