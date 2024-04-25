@@ -203,7 +203,7 @@ const HeatPumpHVAC = () => {
           columns={columns}
           options={{
             pagination: "local",
-            paginationSize: 10,
+            paginationSize: 40,
             paginationSizeSelector: true,
             // selectable: true,
           }}
