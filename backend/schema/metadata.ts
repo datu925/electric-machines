@@ -1,7 +1,10 @@
 export const BRANDS = {
+  ACIQ: "ACIQ",
+  AMANA: "AMANA",
   "American Water Heater": "American Water Heater",
   "AO Smith": "AO Smith",
   "General Electric": "General Electric",
+  Goodman: "Goodman",
   Rheem: "Rheem",
   Samsung: "Samsung",
   Unknown: "Unknown",
