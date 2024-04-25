@@ -51,6 +51,9 @@ function findMatchingInput(
   inputs: Table[]
 ): Table | undefined {
   if (modelNumber === undefined) return undefined;
+  if (!Array.isArray(inputs)) {
+    throw new Error("inputs not an array");
+  }
   for (const input of inputs) {
     if ("modelNumber" in input && input["modelNumber"] === modelNumber) {
       return input;
@@ -129,22 +132,25 @@ async function main() {
             }
             invalid.push(augmentedSpec);
           }
-          let spreadsheetRecord = {
+          let matchingRecord: Table | undefined;
+          try {
+            matchingRecord = findMatchingInput(
+              augmentedSpec.modelNumber,
+              filtered["input"]
+            );
+          } catch (e) {
+            throw new Error(`Input not an array for file: ${filteredPath}`);
+          }
+          if (!matchingRecord) {
+            matchingRecord = {};
+          }
+          allRecords.push({
+            file: applianceFolder,
             valid: validate(augmentedSpec) ? "true" : "false",
             applianceType: metadata.applianceType,
             ...augmentedSpec,
-          };
-          const matchingRecord = findMatchingInput(
-            augmentedSpec.modelNumber,
-            filtered["input"]
-          );
-          if (matchingRecord) {
-            spreadsheetRecord = {
-              ...spreadsheetRecord,
-              ...matchingRecord,
-            };
-          }
-          allRecords.push(spreadsheetRecord);
+            ...matchingRecord,
+          });
         }
         const outputFolder = path.join(applianceFolder, OUTPUT_SUBDIR);
         await fs.mkdir(outputFolder, { recursive: true });

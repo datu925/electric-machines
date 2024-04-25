@@ -25,7 +25,7 @@ export const HEAT_PUMP_METADATA: SpecsMetadata<HeatPumpModelGenerated> = {
   },
   dimensions: {
     description:
-      "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
+      "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units. Convert any fractions to decimals, like 3 3/4 to 3.75.",
   },
   electricBreakerSize: {
     description:
@@ -58,11 +58,11 @@ export const HEAT_PUMP_WATER_HEATER_METADATA: SpecsMetadata<HeatPumpWaterHeaterM
     },
     weight: {
       description:
-        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kilograms' or 'pounds'.",
+        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kg' for kilograms, 'lb' for pounds, or 'other' for other units.",
     },
     dimensions: {
       description:
-        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units. Convert any fractions to decimals, like 3 3/4 to 3.75.",
     },
     electricBreakerSize: {
       description:
@@ -102,11 +102,11 @@ export const HEAT_PUMP_DRYER_METADATA: SpecsMetadata<HeatPumpDryerModelGenerated
     },
     weight: {
       description:
-        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kilograms' or 'pounds'.",
+        "The weight or operating weight of the appliance. If found, this should given as a nested object with keys 'value' for the numeric amount and 'unit' for the measurement unit, which will either be 'kg' for kilograms, 'lb' for pounds, or 'other' for other units.",
     },
     dimensions: {
       description:
-        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units.",
+        "The operating length, width, or height of the equipment. If found, this should be given as a nested object with keys 'length', 'width', 'height', and 'unit', where the unit will be one of 'in' for inches, 'ft' for feet, 'cm' for centimeters', 'mm' for millimeters', and 'other' for other units. Convert any fractions to decimals, like 3 3/4 to 3.75.",
     },
     electricBreakerSize: {
       description:

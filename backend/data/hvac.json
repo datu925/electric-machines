@@ -1,38 +1,1823 @@
 [
   {
     "brandName": "Rheem",
-    "modelNumber": "RP1724",
-    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
-    "weight":{
-      "value": 223,
-      "unit": "lb"
-    },
+    "modelNumber": "WSP14AZ18AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B7B7A9C5-F105-40CD-B64C-D0C9B131DEB7.pdf",
+    "weight": { "value": 135, "unit": "lb" },
     "dimensions": {
-      "width": 33.75,
-      "height": 35,
-      "length": 33.75,
+      "length": 23.63,
+      "width": 23.63,
+      "height": 35.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WSP14AZ24AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B7B7A9C5-F105-40CD-B64C-D0C9B131DEB7.pdf",
+    "weight": { "value": 137, "unit": "lb" },
+    "dimensions": {
+      "length": 23.63,
+      "width": 23.63,
+      "height": 35.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WSP14AZ30AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B7B7A9C5-F105-40CD-B64C-D0C9B131DEB7.pdf",
+    "weight": { "value": 163, "unit": "lb" },
+    "dimensions": {
+      "length": 27.63,
+      "width": 27.63,
+      "height": 35.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 76,
+    "soundLevelMax": 76,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ18AJ1N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 163, "unit": "lb" },
+    "dimensions": {
+      "length": 29.543,
+      "width": 29.543,
+      "height": 25.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ18AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 163, "unit": "lb" },
+    "dimensions": {
+      "length": 29.543,
+      "width": 29.543,
+      "height": 25.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ24AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 158, "unit": "lb" },
+    "dimensions": {
+      "length": 29.543,
+      "width": 29.543,
+      "height": 25.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ30AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 178, "unit": "lb" },
+    "dimensions": {
+      "length": 33.655,
+      "width": 33.655,
+      "height": 27.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ36AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 213, "unit": "lb" },
+    "dimensions": {
+      "length": 33.655,
+      "width": 33.655,
+      "height": 35.17,
       "unit": "in"
     },
     "electricBreakerSize": 35,
-    "voltage": 230,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ42AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 220, "unit": "lb" },
+    "dimensions": {
+      "length": 33.655,
+      "width": 33.655,
+      "height": 35.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ48AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 253, "unit": "lb" },
+    "dimensions": {
+      "length": 33.655,
+      "width": 33.655,
+      "height": 35.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP14AZ60AJ2N",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/28CC4C4F-EAFD-47C5-A422-7BFC619CD5AE.pdf",
+    "weight": { "value": 253, "unit": "lb" },
+    "dimensions": {
+      "length": 35.543,
+      "width": 35.543,
+      "height": 45.17,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1418FJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/EF199E94-23E1-4D7D-A6E2-0A1340ABFB0B.pdf",
+    "weight": { "value": 154, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 27.625,
+      "width": 27.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1424FJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/EF199E94-23E1-4D7D-A6E2-0A1340ABFB0B.pdf",
+    "weight": { "value": 155, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 27.625,
+      "width": 27.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 76,
+    "soundLevelMax": 76,
     "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1430FJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/EF199E94-23E1-4D7D-A6E2-0A1340ABFB0B.pdf",
+    "weight": { "value": 169, "unit": "lb" },
+    "dimensions": {
+      "height": 27.375,
+      "length": 31.625,
+      "width": 31.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 75,
+    "soundLevelMax": 75,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1418AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 145, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 23.625,
+      "width": 23.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMin": 75,
+    "soundLevelMax": 75,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1418BJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 154, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 27.625,
+      "width": 27.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1424AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 145, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 23.625,
+      "width": 23.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1430AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 201, "unit": "lb" },
+    "dimensions": {
+      "height": 26.25,
+      "length": 27.625,
+      "width": 27.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 76,
+    "soundLevelMax": 76,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1436AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 207, "unit": "lb" },
+    "dimensions": {
+      "height": 27.375,
+      "length": 31.625,
+      "width": 31.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1442AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 220, "unit": "lb" },
+    "dimensions": {
+      "height": 35.375,
+      "length": 31.625,
+      "width": 31.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1448AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 223.5, "unit": "lb" },
+    "dimensions": {
+      "height": 35.375,
+      "length": 31.625,
+      "width": 31.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "WP1460BJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/FA2FA362-6DF6-45D0-B061-6B24C8609992.pdf",
+    "weight": { "value": 265, "unit": "lb" },
+    "dimensions": {
+      "height": 35.375,
+      "length": 31.625,
+      "width": 31.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP16AZ24AJ3CA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/C25EFD1A-8B34-4C38-8D05-67AF0D0FACE2.pdf",
+    "weight": { "value": 181, "unit": "lb" },
+    "dimensions": {
+      "height": 27,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 42.2,
+    "soundLevelMax": 47.9,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP16AZ36AJ3CA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/C25EFD1A-8B34-4C38-8D05-67AF0D0FACE2.pdf",
+    "weight": { "value": 198, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 46.9,
+    "soundLevelMax": 45.7,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP16AZ48AJ3CA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/C25EFD1A-8B34-4C38-8D05-67AF0D0FACE2.pdf",
+    "weight": { "value": 203, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 59.9,
+    "soundLevelMax": 72.9,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP16AZ60AJ3CA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/C25EFD1A-8B34-4C38-8D05-67AF0D0FACE2.pdf",
+    "weight": { "value": 307, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 63.6,
+    "soundLevelMax": 72.2,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP18AZ24AJVCA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf",
+    "weight": { "value": 278, "unit": "lb" },
+    "dimensions": {
+      "height": 45.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 59,
+    "soundLevelMax": 69,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP18AZ36AJVCA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf",
+    "weight": { "value": 298, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 60,
+    "soundLevelMax": 70,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP18AZ48AJVCA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf",
+    "weight": { "value": 298, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 60,
+    "voltage": 240,
+    "soundLevelMin": 59,
+    "soundLevelMax": 73,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP18AZ60AJVCA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/3552AAA5-F72D-44EA-A96A-7CFA6DF1D3F9.pdf",
+    "weight": { "value": 301, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 60,
+    "voltage": 240,
+    "soundLevelMin": 58,
+    "soundLevelMax": 73,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ18AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 150, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ24AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 150, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 73,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ30AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 202, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 73,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ36AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 214, "unit": "lb" },
+    "dimensions": {
+      "height": 39,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 74,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ42AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 240, "unit": "lb" },
+    "dimensions": {
+      "height": 39,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ48AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 240, "unit": "lb" },
+    "dimensions": {
+      "height": 39,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP15AZ60AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/0B0BADA1-9DAC-4EEC-BEC1-9F229BCA3A52.pdf",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "height": 51,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 74,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ18AJ1NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 150, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ18AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 150, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ24AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 151, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ30AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 189, "unit": "lb" },
+    "dimensions": {
+      "height": 27,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ36AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 202, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ42AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 232, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ48AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 238, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP14AZ60AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/39622313-F76A-4FBD-9A88-687F7CEE6A37.pdf",
+    "weight": { "value": 278, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RD17AZ24AJ3NA",
+    "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/5F6B0D65-9BEE-4286-A2E3-B7EDA435EE67.pdf",
+    "weight": { "value": 146, "unit": "lb" },
+    "dimensions": {
+      "height": 36.61,
+      "length": 40.16,
+      "width": 16.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMin": 61,
+    "soundLevelMax": 68,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RD17AZ36AJ3NA",
+    "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/5F6B0D65-9BEE-4286-A2E3-B7EDA435EE67.pdf",
+    "weight": { "value": 200, "unit": "lb" },
+    "dimensions": {
+      "height": 46.38,
+      "length": 42.01,
+      "width": 19.29,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 58,
+    "soundLevelMax": 69,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RD17AZ48AJ3NA",
+    "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/5F6B0D65-9BEE-4286-A2E3-B7EDA435EE67.pdf",
+    "weight": { "value": 278, "unit": "lb" },
+    "dimensions": {
+      "height": 57.8,
+      "length": 40.16,
+      "width": 16.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 61,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RD17AZ60AJ3NA",
+    "sourceUrl": "https://files.myrheem.com/webpartnerspublic/ProductDocuments/5F6B0D65-9BEE-4286-A2E3-B7EDA435EE67.pdf",
+    "weight": { "value": 280, "unit": "lb" },
+    "dimensions": {
+      "height": 57.8,
+      "length": 40.16,
+      "width": 16.38,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 63,
+    "soundLevelMax": 73,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP2024B",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/8CEBFBA2-9DE0-430E-86C6-8CA8157EE4EC.pdf",
+    "weight": { "value": 278, "unit": "lb" },
+    "dimensions": {
+      "height": 45.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 59,
+    "soundLevelMax": 69,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP2036B",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/8CEBFBA2-9DE0-430E-86C6-8CA8157EE4EC.pdf",
+    "weight": { "value": 298, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 60,
+    "soundLevelMax": 70,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP2048B",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/8CEBFBA2-9DE0-430E-86C6-8CA8157EE4EC.pdf",
+    "weight": { "value": 298, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 59,
+    "soundLevelMax": 73,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP2060B",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/8CEBFBA2-9DE0-430E-86C6-8CA8157EE4EC.pdf",
+    "weight": { "value": 301, "unit": "lb" },
+    "dimensions": {
+      "height": 51.17,
+      "length": 36.13,
+      "width": 36.13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 58,
+    "soundLevelMax": 73,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1724",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
+    "weight": { "value": 223, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 68.2,
+    "soundLevelMax": 71.3,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1736",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
+    "weight": { "value": 223, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 66.8,
+    "soundLevelMax": 73.5,
+    "tonnage": 3
   },
   {
     "brandName": "Rheem",
     "modelNumber": "RP1748",
     "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
-    "weight":{
-      "value": 250,
-      "unit": "lb"
-    },
+    "weight": { "value": 250, "unit": "lb" },
     "dimensions": {
-      "width": 35.75,
       "height": 39,
       "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 73.8,
+    "soundLevelMax": 74.3,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1760",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/E693F41A-B92C-455E-9A7D-0869E189E279.pdf",
+    "weight": { "value": 282, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 69.4,
+    "soundLevelMax": 75.6,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1624AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B5265097-4CA1-4CC8-AD6F-AB42CF320654.pdf",
+    "weight": { "value": 191, "unit": "lb" },
+    "dimensions": {
+      "height": 31,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMax": 71,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1636AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B5265097-4CA1-4CC8-AD6F-AB42CF320654.pdf",
+    "weight": { "value": 199, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 76,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1648AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B5265097-4CA1-4CC8-AD6F-AB42CF320654.pdf",
+    "weight": { "value": 257, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1660AJ2NA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B5265097-4CA1-4CC8-AD6F-AB42CF320654.pdf",
+    "weight": { "value": 257, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 35.75,
+      "width": 35.75,
       "unit": "in"
     },
     "electricBreakerSize": 45,
-    "voltage": 230,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1518",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 152, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 76.4,
+    "soundLevelMax": 76.4,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1524",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 152, "unit": "lb" },
+    "dimensions": {
+      "height": 25,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 76.4,
+    "soundLevelMax": 76.4,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1530",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 191, "unit": "lb" },
+    "dimensions": {
+      "height": 31,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMin": 75.3,
+    "soundLevelMax": 75.3,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1536",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 199, "unit": "lb" },
+    "dimensions": {
+      "height": 35,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 74.7,
+    "soundLevelMax": 74.7,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1542",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 257, "unit": "lb" },
+    "dimensions": {
+      "height": 39,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 73,
+    "soundLevelMax": 73,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1548",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 257, "unit": "lb" },
+    "dimensions": {
+      "height": 39,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 76.5,
+    "soundLevelMax": 76.5,
     "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1560",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/B3856617-2375-406A-AE78-3FE210968E67.pdf",
+    "weight": { "value": 278, "unit": "lb" },
+    "dimensions": {
+      "height": 45,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 73.9,
+    "soundLevelMax": 73.9,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1418",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 152, "unit": "lb" },
+    "dimensions": {
+      "height": 25.16,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 76.4,
+    "soundLevelMax": 76.4,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1424",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 145, "unit": "lb" },
+    "dimensions": {
+      "height": 25.16,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 75,
+    "soundLevelMax": 75,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1430",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 201, "unit": "lb" },
+    "dimensions": {
+      "height": 25.16,
+      "length": 29.75,
+      "width": 29.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1436",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 187, "unit": "lb" },
+    "dimensions": {
+      "height": 27.16,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 74,
+    "soundLevelMax": 74,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1442",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 221, "unit": "lb" },
+    "dimensions": {
+      "height": 35.16,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMin": 72,
+    "soundLevelMax": 72,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1448",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 227, "unit": "lb" },
+    "dimensions": {
+      "height": 35.16,
+      "length": 33.75,
+      "width": 33.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 77,
+    "soundLevelMax": 77,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1460",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/4DE2A257-F4FC-4696-A2B9-709A01736A94.pdf",
+    "weight": { "value": 262, "unit": "lb" },
+    "dimensions": {
+      "height": 45.17,
+      "length": 35.75,
+      "width": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMin": 73.9,
+    "soundLevelMax": 73.9,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1724HJVXA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/6D836FBE-A0DE-4545-9ACC-75D388562611.pdf",
+    "weight": { "value": 134, "unit": "lb" },
+    "dimensions": {
+      "height": 32.6875,
+      "length": 35.4375,
+      "width": 13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 53,
+    "soundLevelMax": 54,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1730HJVXA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/6D836FBE-A0DE-4545-9ACC-75D388562611.pdf",
+    "weight": { "value": 134, "unit": "lb" },
+    "dimensions": {
+      "height": 32.6875,
+      "length": 35.4375,
+      "width": 13,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 53,
+    "soundLevelMax": 54,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1736HJVXA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/6D836FBE-A0DE-4545-9ACC-75D388562611.pdf",
+    "weight": { "value": 198, "unit": "lb" },
+    "dimensions": {
+      "height": 39.3125,
+      "length": 38.1875,
+      "width": 14.5625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 54,
+    "soundLevelMax": 55,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Rheem",
+    "modelNumber": "RP1748HJVXA",
+    "sourceUrl": "https://files.myrheem.com/webpartners/ProductDocuments/6D836FBE-A0DE-4545-9ACC-75D388562611.pdf",
+    "weight": { "value": 198, "unit": "lb" },
+    "dimensions": {
+      "height": 39.3125,
+      "length": 38.1875,
+      "width": 14.5625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMin": 54,
+    "soundLevelMax": 55,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GVZC20 0241A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gvzc206ee64f0022fa6258827eff0c00754798.pdf?view=true",
+    "weight": { "value": 217, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 38.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMin": 58.4,
+    "soundLevelMax": 76.3,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GVZC20 0361A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gvzc206ee64f0022fa6258827eff0c00754798.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 56,
+    "soundLevelMax": 78.4,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GVZC20 0481A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gvzc206ee64f0022fa6258827eff0c00754798.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMin": 56,
+    "soundLevelMax": 78.4,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GVZC20 0601A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gvzc206ee64f0022fa6258827eff0c00754798.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMin": 59.7,
+    "soundLevelMax": 79.2,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZV902410A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszv9.pdf?view=true",
+    "weight": { "value": 217, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 38.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMax": 68,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZV903610A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszv9.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 70,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZV904810A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszv9.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZV906010A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszv9.pdf?view=true",
+    "weight": { "value": 291, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.25,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZC702410A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszc7.pdf?view=true",
+    "weight": { "value": 219, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 39.5,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMax": 71,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZC703610A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszc7.pdf?view=true",
+    "weight": { "value": 257, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 35.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZC704810A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszc7.pdf?view=true",
+    "weight": { "value": 307, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMax": 77,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZC706010A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszc7.pdf?view=true",
+    "weight": { "value": 315, "unit": "lb" },
+    "dimensions": {
+      "width": 35.5,
+      "length": 35.5,
+      "height": 41.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMax": 78,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB401810A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 176, "unit": "lb" },
+    "dimensions": {
+      "length": 29,
+      "width": 29,
+      "height": 35.6875,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMax": 70,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB402410A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 175, "unit": "lb" },
+    "dimensions": {
+      "length": 29,
+      "width": 29,
+      "height": 35.6875,
+      "unit": "in"
+    },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB403010A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 190, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 39.5, "unit": "in" },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB403610A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 234, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 39.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB404210A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 284, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 35.8125,
+      "unit": "in"
+    },
+    "electricBreakerSize": 40,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB404810A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 292, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 36.4375,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZB406010A*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gszb4.pdf?view=true",
+    "weight": { "value": 325, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 41.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 50,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160181B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 189, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 36.375, "unit": "in" },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160241B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 200, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 34.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160301B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 206, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 34.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160361B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 240, "unit": "lb" },
+    "dimensions": { "length": 35.5, "width": 35.5, "height": 40, "unit": "in" },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 73,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160421B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 237, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 36.375, "unit": "in" },
+    "electricBreakerSize": 35,
+    "voltage": 240,
+    "soundLevelMax": 73,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160481B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 270, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 34.625,
+      "unit": "in"
+    },
+    "electricBreakerSize": 45,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ160601B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz16f0bb4c0022fa6258827eff0a00754798.pdf?view=true",
+    "weight": { "value": 326, "unit": "lb" },
+    "dimensions": { "length": 35.5, "width": 35.5, "height": 40, "unit": "in" },
+    "electricBreakerSize": 60,
+    "voltage": 240,
+    "soundLevelMax": 76,
+    "tonnage": 5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140181B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 143, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 34.5, "unit": "in" },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 1.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140241B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 143, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 34.5, "unit": "in" },
+    "electricBreakerSize": 20,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 2
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140301B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 143, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 36.25, "unit": "in" },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 2.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140361B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 143, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 36.25, "unit": "in" },
+    "electricBreakerSize": 15,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 3
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140421B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 143, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 39.75,
+      "unit": "in"
+    },
+    "electricBreakerSize": 25,
+    "voltage": 240,
+    "soundLevelMax": 72,
+    "tonnage": 3.5
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140481B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 171, "unit": "lb" },
+    "dimensions": { "length": 29, "width": 29, "height": 36.25, "unit": "in" },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 74,
+    "tonnage": 4
+  },
+  {
+    "brandName": "Goodman",
+    "modelNumber": "GSZ140601B*",
+    "sourceUrl": "https://www.goodmanmfg.com/pdfviewer.aspx?pdfurl=docs/librariesprovider6/default-document-library/ss-gsz14.pdf?view=true",
+    "weight": { "value": 186, "unit": "lb" },
+    "dimensions": {
+      "length": 35.5,
+      "width": 35.5,
+      "height": 34.5,
+      "unit": "in"
+    },
+    "electricBreakerSize": 30,
+    "voltage": 240,
+    "soundLevelMax": 75,
+    "tonnage": 5
   }
 ]
