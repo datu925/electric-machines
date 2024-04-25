@@ -25,6 +25,11 @@ Depending on which stages you want to run, you may not need to do all of the fol
 
 The OpenAI API does cost money, but the costs are very manageable given the amount of processing that we do.
 
+### pdftotext Installation
+
+1. Download Xpdf command line tools from https://www.xpdfreader.com/download.html.
+2. Hang on to the path to the `pdftotext` utility specifically, as it will be used later.
+
 ## Directory Structure
 
 The pipeline is organized as a linear set of stages running over the data. Right now, each stage is a standalone script.
@@ -44,6 +49,14 @@ In general, all commands should be run from the `pipeline/` directory.
 Collect the metadata of the PDFs/spec sheets that we want to collect, and put them in a spreadsheet. You should collect the appliance type, company name, brand name, a list of expected model numbers, and the URLs. Here's an [example sheet](https://gtvault-my.sharepoint.com/:x:/r/personal/dturcza3_gatech_edu/_layouts/15/Doc.aspx?sourcedoc=%7B5947E8C3-E1A6-4AAC-93AB-BDF792CF0704%7D&file=Appliance%20Metadata.xlsx&action=default&mobileredirect=true).
 
 Create folders under `data/` for the appliance types you've collected, and sub-folders under those for the companies you've collected. The names should match what's in the spreadsheet exactly. Download the csv and then run: `npx ts-node src/generate_metadata_files.ts --input_file <path to csv>>`. This will populate those directories with a `metadata.json` file as well as a `raw.pdf`. Those files are the starting point for the rest of the process.
+
+For the "Correct Data" stage, we feed in the raw text from the PDF. You'll want to generate that now, unless you want to omit that stage.
+
+To do so, configure `<optional_fragment>` and `<path_to_pdftotext>` in the command below. The `<optional_fragment>` is any path prefix under `data/` such as `heat_pumps` or `heat_pumps/rheem`, if you want to limit which appliances you generate text for. The `<path_to_pdftotext>` is the utility you installed in the Installation step above. Then run:
+```
+find ../data/<optional_fragment> -name raw.pdf -exec bash -c '<path_to_pdftotext> -layout "$0" "${0%.*}.txt"' {} \;
+```
+That will create a `raw.txt` for each `raw.pdf` that is under the path you provided. Now you're ready to process the data.
 
 ### Extract Tables/Text (Wrapper over Python)
 
