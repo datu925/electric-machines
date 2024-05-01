@@ -245,7 +245,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-
+      {/*
       <section>
         <h2>P6 Demo Video</h2>
         <br />
@@ -283,7 +283,7 @@ export default function Home() {
             alt="Lighthouse scores"
           />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

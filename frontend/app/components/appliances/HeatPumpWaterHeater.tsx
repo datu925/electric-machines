@@ -12,6 +12,7 @@ import {
 const HeatPumpWaterHeater = () => {
   const [results, setResults] = useState<any[]>([]);
   const [unit, setUnit] = useState("imperial");
+  const [fetchError, setFetchError] = useState(false);
 
   const fetchData = async () => {
     const unitParams =
@@ -20,21 +21,31 @@ const HeatPumpWaterHeater = () => {
         : `weightUnit=lb&dimensionUnit=in`;
 
     const apiUrl = `https://electric-machines-h6x1.vercel.app/api/v1/appliance/appliance?applianceType=hpwh&${unitParams}`;
-    const response = await fetch(apiUrl);
-    const data = await response.json();
+    try {
+      const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error!`);
+      }
+      const data = await response.json();
+      if (data.length == 0) {
+        setFetchError(true);
+      }
 
-    //formatting data for tabulator use
-    const tabulatorData = data.map((appliance: any) => {
-      const { weight, dimensions, ...restOfApplianceData } = appliance;
-      return {
-        ...appliance,
-        weightValue: formatNumber(weight.value),
-        widthValue: formatNumber(dimensions.width),
-        heightValue: formatNumber(dimensions.height),
-        lengthValue: formatNumber(dimensions.length),
-      };
-    });
-    setResults(tabulatorData);
+      //formatting data for tabulator use
+      const tabulatorData = data.map((appliance: any) => {
+        const { weight, dimensions, ...restOfApplianceData } = appliance;
+        return {
+          ...appliance,
+          weightValue: formatNumber(weight.value),
+          widthValue: formatNumber(dimensions.width),
+          heightValue: formatNumber(dimensions.height),
+          lengthValue: formatNumber(dimensions.length),
+        };
+      });
+      setResults(tabulatorData);
+    } catch {
+      setFetchError(true);
+    }
   };
 
   useEffect(() => {
@@ -177,100 +188,119 @@ const HeatPumpWaterHeater = () => {
 
   return (
     <>
-      <div className={styles.tableHelpSection}>
-        <div>
-          <label>
-            <input type="checkbox" checked={isToggled} onChange={toggle} />
-            <span className="switch" />
-            Show Table Column Descriptions
-          </label>
-        </div>
-        {isToggled && (
-          <div className={styles.tableHelp}>
-            <ul>
-              <li>
-                <b>Capacity </b>(gallons): Choose based upon your household's
-                hot water usage. 1-2 people: 30-40 gallons, 3-4 people: 50-60
-                gallons, 5-6 people: 65-80 gallons, 7+ people: 80+ gallons.
-              </li>
-              <li>
-                <b>UEF (Uniform Energy Factor)</b>: Measures overall energy
-                efficiency, influencing long-term energy costs.
-              </li>
-              <li>
-                <b>FHR (First Hour Rating)</b>: Estimates hot water supply in
-                the first hour, crucial for peak demand.
-              </li>
-            </ul>
+      {!fetchError && (
+        <>
+          <div className={styles.tableHelpSection}>
+            <div>
+              <label>
+                <input type="checkbox" checked={isToggled} onChange={toggle} />
+                <span className="switch" />
+                Show Table Column Descriptions
+              </label>
+            </div>
+            {isToggled && (
+              <div className={styles.tableHelp}>
+                <ul>
+                  <li>
+                    <b>Capacity </b>(gallons): Choose based upon your
+                    household's hot water usage. 1-2 people: 30-40 gallons, 3-4
+                    people: 50-60 gallons, 5-6 people: 65-80 gallons, 7+ people:
+                    80+ gallons.
+                  </li>
+                  <li>
+                    <b>UEF (Uniform Energy Factor)</b>: Measures overall energy
+                    efficiency, influencing long-term energy costs.
+                  </li>
+                  <li>
+                    <b>FHR (First Hour Rating)</b>: Estimates hot water supply
+                    in the first hour, crucial for peak demand.
+                  </li>
+                </ul>
+                <p className={styles.movableColumnsText}>
+                  Note: Table columns are movable.
+                </p>
+              </div>
+            )}
           </div>
-        )}
-      </div>
-      <br />
+          <br />
 
-      <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
-        <label className={styles.labelWithInfo} htmlFor="unit">
-          Unit System:
-        </label>
-        <div className={styles.radioOptions}>
-          <label htmlFor="unitImperial">
-            <input
-              type="radio"
-              id="unitImperial"
-              name="unit"
-              value="imperial"
-              className={styles.radioInput}
-              checked={unit === "imperial"}
-              onChange={(event) => setUnit(event.target.value)}
-            />
-            <span className={styles.radioText}>Imperial</span>
-          </label>
-          <label htmlFor="unitMetric">
-            <input
-              type="radio"
-              id="unitMetric"
-              name="unit"
-              value="metric"
-              className={styles.radioInput}
-              checked={unit === "metric"}
-              onChange={(event) => setUnit(event.target.value)}
-            />
-            <span className={styles.radioText}>Metric</span>
-          </label>
-        </div>
-      </div>
-      <div className={styles.mobileHint}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="#888"
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M12 9h.01" />
-          <path d="M11 12h1v4h1" />
-          <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
-        </svg>
-        <p>
-          To optimize readability, we recommend viewing the app on a larger
-          screen.
+          <div className={`${styles.radioGroup} ${styles.metricSelection}`}>
+            <label className={styles.labelWithInfo} htmlFor="unit">
+              Unit System:
+            </label>
+            <div className={styles.radioOptions}>
+              <label htmlFor="unitImperial">
+                <input
+                  type="radio"
+                  id="unitImperial"
+                  name="unit"
+                  value="imperial"
+                  className={styles.radioInput}
+                  checked={unit === "imperial"}
+                  onChange={(event) => setUnit(event.target.value)}
+                />
+                <span className={styles.radioText}>Imperial</span>
+              </label>
+              <label htmlFor="unitMetric">
+                <input
+                  type="radio"
+                  id="unitMetric"
+                  name="unit"
+                  value="metric"
+                  className={styles.radioInput}
+                  checked={unit === "metric"}
+                  onChange={(event) => setUnit(event.target.value)}
+                />
+                <span className={styles.radioText}>Metric</span>
+              </label>
+            </div>
+          </div>
+          <div className={styles.mobileHint}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#888"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 9h.01" />
+              <path d="M11 12h1v4h1" />
+              <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+            </svg>
+            <p>
+              To optimize readability, we recommend viewing the app on a larger
+              screen.
+            </p>
+          </div>
+          <ReactTabulator
+            data={results}
+            columns={columns}
+            options={{
+              pagination: "local",
+              paginationSize: 20,
+              paginationSizeSelector: true,
+              movableColumns: true,
+            }}
+          />
+        </>
+      )}
+      {fetchError && (
+        <p className={styles.fetchError}>
+          Error fetching data. Please try again later or{" "}
+          <a
+            href="https://github.com/datu925/electric-machines"
+            target="_blank"
+          >
+            send us a message
+          </a>
+          .
         </p>
-      </div>
-
-      <ReactTabulator
-        data={results}
-        columns={columns}
-        options={{
-          pagination: "local",
-          paginationSize: 40,
-          paginationSizeSelector: true,
-          // selectable: true,
-        }}
-      />
+      )}
     </>
   );
 };
